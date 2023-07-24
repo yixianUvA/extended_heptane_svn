@@ -1,0 +1,167 @@
+makefile.depends:  ./src/SymbolTableAttribute.cc ./src/AddressAttribute.cc ./src/ARMWordsAttribute.cc ./src/LoopTree.cc ./src/MetaInstructionAttribute.cc
+obj/SymbolTableAttribute.o: src/SymbolTableAttribute.cc \
+ src/GlobalAttributes.h src/AddressAttribute.h ../cfglib/include/CfgLib.h \
+ ../cfglib/include/Attributed.h ../cfglib/include/Attributes.h \
+ ../cfglib/include/Serialisable.h ../cfglib/include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../cfglib/include/NonSerialisableAttributes.h ../cfglib/include/Node.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Edge.h \
+ ../cfglib/include/Loop.h ../cfglib/include/Program.h \
+ ../utl/src/HeptaneStdTypes.h ../cfglib/include/Cfg.h \
+ ../cfglib/include/Helper.h src/SymbolTableAttribute.h \
+ src/ARMWordsAttribute.h src/MetaInstructionAttribute.h \
+ ../ArchitectureDependent/src/arch.h \
+ ../ArchitectureDependent/src/ParsingStructure.h \
+ ../ArchitectureDependent/src/InstructionType.h \
+ ../ArchitectureDependent/src/InstructionFormat.h \
+ ../ArchitectureDependent/src/arch.h \
+ ../ArchitectureDependent/src/DAAInstruction.h ../utl/src/Logger.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../utl/src -I../ArchitectureDependent/src -I/usr/include/libxml2 -c src/SymbolTableAttribute.cc -o obj/SymbolTableAttribute.o 
+obj/AddressAttribute.o: src/AddressAttribute.cc src/GlobalAttributes.h \
+ src/AddressAttribute.h ../cfglib/include/CfgLib.h \
+ ../cfglib/include/Attributed.h ../cfglib/include/Attributes.h \
+ ../cfglib/include/Serialisable.h ../cfglib/include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../cfglib/include/NonSerialisableAttributes.h ../cfglib/include/Node.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Edge.h \
+ ../cfglib/include/Loop.h ../cfglib/include/Program.h \
+ ../utl/src/HeptaneStdTypes.h ../cfglib/include/Cfg.h \
+ ../cfglib/include/Helper.h src/SymbolTableAttribute.h \
+ src/ARMWordsAttribute.h src/MetaInstructionAttribute.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../utl/src -I../ArchitectureDependent/src -I/usr/include/libxml2 -c src/AddressAttribute.cc -o obj/AddressAttribute.o 
+obj/ARMWordsAttribute.o: src/ARMWordsAttribute.cc src/GlobalAttributes.h \
+ src/AddressAttribute.h ../cfglib/include/CfgLib.h \
+ ../cfglib/include/Attributed.h ../cfglib/include/Attributes.h \
+ ../cfglib/include/Serialisable.h ../cfglib/include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../cfglib/include/NonSerialisableAttributes.h ../cfglib/include/Node.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Edge.h \
+ ../cfglib/include/Loop.h ../cfglib/include/Program.h \
+ ../utl/src/HeptaneStdTypes.h ../cfglib/include/Cfg.h \
+ ../cfglib/include/Helper.h src/SymbolTableAttribute.h \
+ src/ARMWordsAttribute.h src/MetaInstructionAttribute.h \
+ ../utl/src/Logger.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../utl/src -I../ArchitectureDependent/src -I/usr/include/libxml2 -c src/ARMWordsAttribute.cc -o obj/ARMWordsAttribute.o 
+obj/LoopTree.o: src/LoopTree.cc src/LoopTree.h ../cfglib/include/Loop.h \
+ ../cfglib/include/Attributed.h ../cfglib/include/Attributes.h \
+ ../cfglib/include/Serialisable.h ../cfglib/include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../cfglib/include/Program.h ../utl/src/HeptaneStdTypes.h \
+ ../cfglib/include/Node.h ../cfglib/include/Instruction.h \
+ ../cfglib/include/Cfg.h ../cfglib/include/Node.h \
+ ../cfglib/include/Edge.h ../cfglib/include/Loop.h \
+ ../cfglib/include/Program.h ../cfglib/include/Helper.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../utl/src -I../ArchitectureDependent/src -I/usr/include/libxml2 -c src/LoopTree.cc -o obj/LoopTree.o 
+obj/MetaInstructionAttribute.o: src/MetaInstructionAttribute.cc \
+ src/GlobalAttributes.h src/AddressAttribute.h ../cfglib/include/CfgLib.h \
+ ../cfglib/include/Attributed.h ../cfglib/include/Attributes.h \
+ ../cfglib/include/Serialisable.h ../cfglib/include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../cfglib/include/NonSerialisableAttributes.h ../cfglib/include/Node.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Edge.h \
+ ../cfglib/include/Loop.h ../cfglib/include/Program.h \
+ ../utl/src/HeptaneStdTypes.h ../cfglib/include/Cfg.h \
+ ../cfglib/include/Helper.h src/SymbolTableAttribute.h \
+ src/ARMWordsAttribute.h src/MetaInstructionAttribute.h \
+ ../utl/src/Logger.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../utl/src -I../ArchitectureDependent/src -I/usr/include/libxml2 -c src/MetaInstructionAttribute.cc -o obj/MetaInstructionAttribute.o 

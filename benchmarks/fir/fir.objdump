@@ -1,0 +1,299 @@
+
+/tmp/fir:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00008000 l    d  .text	00000000 .text
+000182d0 l    d  .data	00000000 .data
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .wcet_annot	00000000 .wcet_annot
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    df *ABS*	00000000 fir.c
+000080c8 g     F .text	00000008 __aeabi_dcmpun
+00008058 g     F .text	00000008 __aeabi_dcmple
+00019994 g       .data	00000000 _bss_end__
+000080b0 g     F .text	00000008 __aeabi_fadd
+00008080 g     F .text	00000008 __aeabi_fcmpgt
+00008020 g     F .text	00000008 __aeabi_i2f
+00019994 g       .data	00000000 __bss_start__
+000080c0 g     F .text	00000008 __aeabi_ui2d
+000080d0 g     F .text	00000008 __aeabi_dcmplt
+00008028 g     F .text	00000008 __aeabi_ddiv
+00008038 g     F .text	00000008 __aeabi_dmul
+00008060 g     F .text	00000008 __aeabi_d2f
+000080a0 g     F .text	00000008 __aeabi_fsub
+00008018 g     F .text	00000008 __aeabi_fcmpge
+00008068 g     F .text	00000008 __aeabi_dadd
+00008000 g     F .text	00000008 __aeabi_idiv
+00008050 g     F .text	00000008 __aeabi_dcmpgt
+00019994 g       .data	00000000 __bss_end__
+00008040 g     F .text	00000008 __aeabi_dcmpge
+00008030 g     F .text	00000008 __aeabi_dsub
+00008088 g     F .text	00000008 __aeabi_fdiv
+00008008 g     F .text	00000008 __aeabi_i2d
+00019994 g       .data	00000000 __bss_start
+000080d8 g     F .text	00000054 main
+00019994 g       .data	00000000 __end__
+000080b8 g     F .text	00000008 __aeabi_ui2
+00008090 g     F .text	00000008 __aeabi_fcmpeq
+00008098 g     F .text	00000008 __aeabi_fmul
+00018360 g     O .data	00000af4 in_data
+00008078 g     F .text	00000008 __aeabi_fcmplt
+00008010 g     F .text	00000008 __aeabi_uidivmod
+00008048 g     F .text	00000008 __aeabi_dcmpeq
+00019994 g       .data	00000000 _edata
+00019994 g       .data	00000000 _end
+000182d0 g     O .data	00000090 fir_int
+00018e54 g     O .data	00000b40 out_data
+00008070 g     F .text	00000008 __aeabi_d2iz
+0000812c g     F .text	000001a4 fir_filter_int
+00080000 g       .ARM.attributes	00000000 _stack
+000080a8 g     F .text	00000008 __aeabi_f2d
+000182d0 g       .data	00000000 __data_start
+
+
+
+Disassembly of section .text:
+
+00008000 <__aeabi_idiv>:
+    8000:	e1a00000 	nop			; (mov r0, r0)
+    8004:	e12fff1e 	bx	lr
+
+00008008 <__aeabi_i2d>:
+    8008:	e1a00000 	nop			; (mov r0, r0)
+    800c:	e12fff1e 	bx	lr
+
+00008010 <__aeabi_uidivmod>:
+    8010:	e1a00000 	nop			; (mov r0, r0)
+    8014:	e12fff1e 	bx	lr
+
+00008018 <__aeabi_fcmpge>:
+    8018:	e1a00000 	nop			; (mov r0, r0)
+    801c:	e12fff1e 	bx	lr
+
+00008020 <__aeabi_i2f>:
+    8020:	e1a00000 	nop			; (mov r0, r0)
+    8024:	e12fff1e 	bx	lr
+
+00008028 <__aeabi_ddiv>:
+    8028:	e1a00000 	nop			; (mov r0, r0)
+    802c:	e12fff1e 	bx	lr
+
+00008030 <__aeabi_dsub>:
+    8030:	e1a00000 	nop			; (mov r0, r0)
+    8034:	e12fff1e 	bx	lr
+
+00008038 <__aeabi_dmul>:
+    8038:	e1a00000 	nop			; (mov r0, r0)
+    803c:	e12fff1e 	bx	lr
+
+00008040 <__aeabi_dcmpge>:
+    8040:	e1a00000 	nop			; (mov r0, r0)
+    8044:	e12fff1e 	bx	lr
+
+00008048 <__aeabi_dcmpeq>:
+    8048:	e1a00000 	nop			; (mov r0, r0)
+    804c:	e12fff1e 	bx	lr
+
+00008050 <__aeabi_dcmpgt>:
+    8050:	e1a00000 	nop			; (mov r0, r0)
+    8054:	e12fff1e 	bx	lr
+
+00008058 <__aeabi_dcmple>:
+    8058:	e1a00000 	nop			; (mov r0, r0)
+    805c:	e12fff1e 	bx	lr
+
+00008060 <__aeabi_d2f>:
+    8060:	e1a00000 	nop			; (mov r0, r0)
+    8064:	e12fff1e 	bx	lr
+
+00008068 <__aeabi_dadd>:
+    8068:	e1a00000 	nop			; (mov r0, r0)
+    806c:	e12fff1e 	bx	lr
+
+00008070 <__aeabi_d2iz>:
+    8070:	e1a00000 	nop			; (mov r0, r0)
+    8074:	e12fff1e 	bx	lr
+
+00008078 <__aeabi_fcmplt>:
+    8078:	e1a00000 	nop			; (mov r0, r0)
+    807c:	e12fff1e 	bx	lr
+
+00008080 <__aeabi_fcmpgt>:
+    8080:	e1a00000 	nop			; (mov r0, r0)
+    8084:	e12fff1e 	bx	lr
+
+00008088 <__aeabi_fdiv>:
+    8088:	e1a00000 	nop			; (mov r0, r0)
+    808c:	e12fff1e 	bx	lr
+
+00008090 <__aeabi_fcmpeq>:
+    8090:	e1a00000 	nop			; (mov r0, r0)
+    8094:	e12fff1e 	bx	lr
+
+00008098 <__aeabi_fmul>:
+    8098:	e1a00000 	nop			; (mov r0, r0)
+    809c:	e12fff1e 	bx	lr
+
+000080a0 <__aeabi_fsub>:
+    80a0:	e1a00000 	nop			; (mov r0, r0)
+    80a4:	e12fff1e 	bx	lr
+
+000080a8 <__aeabi_f2d>:
+    80a8:	e1a00000 	nop			; (mov r0, r0)
+    80ac:	e12fff1e 	bx	lr
+
+000080b0 <__aeabi_fadd>:
+    80b0:	e1a00000 	nop			; (mov r0, r0)
+    80b4:	e12fff1e 	bx	lr
+
+000080b8 <__aeabi_ui2>:
+    80b8:	e1a00000 	nop			; (mov r0, r0)
+    80bc:	e12fff1e 	bx	lr
+
+000080c0 <__aeabi_ui2d>:
+    80c0:	e1a00000 	nop			; (mov r0, r0)
+    80c4:	e12fff1e 	bx	lr
+
+000080c8 <__aeabi_dcmpun>:
+    80c8:	e1a00000 	nop			; (mov r0, r0)
+    80cc:	e12fff1e 	bx	lr
+
+000080d0 <__aeabi_dcmplt>:
+    80d0:	e1a00000 	nop			; (mov r0, r0)
+    80d4:	e12fff1e 	bx	lr
+
+000080d8 <main>:
+    80d8:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
+    80dc:	e24ddd2d 	sub	sp, sp, #2880	; 0xb40
+    80e0:	e24dd00c 	sub	sp, sp, #12
+    80e4:	e28d1008 	add	r1, sp, #8
+    80e8:	e59f3030 	ldr	r3, [pc, #48]	; 8120 <main+0x48>
+    80ec:	e58d3004 	str	r3, [sp, #4]
+    80f0:	e3a03023 	mov	r3, #35	; 0x23
+    80f4:	e58d3000 	str	r3, [sp]
+    80f8:	e59f3024 	ldr	r3, [pc, #36]	; 8124 <main+0x4c>
+    80fc:	e3a0200a 	mov	r2, #10
+    8100:	e59f0020 	ldr	r0, [pc, #32]	; 8128 <main+0x50>
+    8104:	eb000008 	bl	812c <fir_filter_int>
+    8108:	e3a03000 	mov	r3, #0
+    810c:	e1a00003 	mov	r0, r3
+    8110:	e28ddd2d 	add	sp, sp, #2880	; 0xb40
+    8114:	e28dd00c 	add	sp, sp, #12
+    8118:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
+    811c:	e12fff1e 	bx	lr
+    8120:	0000011d 	.word	0x0000011d
+    8124:	000182d0 	.word	0x000182d0
+    8128:	00018360 	.word	0x00018360
+
+0000812c <fir_filter_int>:
+    812c:	e92d4010 	push	{r4, lr}
+    8130:	e24dd038 	sub	sp, sp, #56	; 0x38
+    8134:	e58d000c 	str	r0, [sp, #12]
+    8138:	e58d1008 	str	r1, [sp, #8]
+    813c:	e58d2004 	str	r2, [sp, #4]
+    8140:	e58d3000 	str	r3, [sp]
+    8144:	e59d3000 	ldr	r3, [sp]
+    8148:	e58d301c 	str	r3, [sp, #28]
+    814c:	e59d3040 	ldr	r3, [sp, #64]	; 0x40
+    8150:	e2833001 	add	r3, r3, #1
+    8154:	e1a030c3 	asr	r3, r3, #1
+    8158:	e58d3014 	str	r3, [sp, #20]
+    815c:	e59d3004 	ldr	r3, [sp, #4]
+    8160:	e2433107 	sub	r3, r3, #-1073741823	; 0xc0000001
+    8164:	e1a03103 	lsl	r3, r3, #2
+    8168:	e59d200c 	ldr	r2, [sp, #12]
+    816c:	e0823003 	add	r3, r2, r3
+    8170:	e58d3010 	str	r3, [sp, #16]
+    8174:	e59d3014 	ldr	r3, [sp, #20]
+    8178:	e2433107 	sub	r3, r3, #-1073741823	; 0xc0000001
+    817c:	e1a03103 	lsl	r3, r3, #2
+    8180:	e59d200c 	ldr	r2, [sp, #12]
+    8184:	e0823003 	add	r3, r2, r3
+    8188:	e58d3024 	str	r3, [sp, #36]	; 0x24
+    818c:	e59d3014 	ldr	r3, [sp, #20]
+    8190:	e58d302c 	str	r3, [sp, #44]	; 0x2c
+    8194:	e3a03000 	mov	r3, #0
+    8198:	e58d3034 	str	r3, [sp, #52]	; 0x34
+    819c:	ea000043 	b	82b0 <fir_filter_int+0x184>
+    81a0:	e59d3024 	ldr	r3, [sp, #36]	; 0x24
+    81a4:	e58d3020 	str	r3, [sp, #32]
+    81a8:	e59d301c 	ldr	r3, [sp, #28]
+    81ac:	e58d3018 	str	r3, [sp, #24]
+    81b0:	e59d3018 	ldr	r3, [sp, #24]
+    81b4:	e2832004 	add	r2, r3, #4
+    81b8:	e58d2018 	str	r2, [sp, #24]
+    81bc:	e5932000 	ldr	r2, [r3]
+    81c0:	e59d3020 	ldr	r3, [sp, #32]
+    81c4:	e2431004 	sub	r1, r3, #4
+    81c8:	e58d1020 	str	r1, [sp, #32]
+    81cc:	e5933000 	ldr	r3, [r3]
+    81d0:	e0030392 	mul	r3, r2, r3
+    81d4:	e58d3028 	str	r3, [sp, #40]	; 0x28
+    81d8:	e3a03001 	mov	r3, #1
+    81dc:	e58d3030 	str	r3, [sp, #48]	; 0x30
+    81e0:	ea00000e 	b	8220 <fir_filter_int+0xf4>
+    81e4:	e59d3018 	ldr	r3, [sp, #24]
+    81e8:	e2832004 	add	r2, r3, #4
+    81ec:	e58d2018 	str	r2, [sp, #24]
+    81f0:	e5932000 	ldr	r2, [r3]
+    81f4:	e59d3020 	ldr	r3, [sp, #32]
+    81f8:	e2431004 	sub	r1, r3, #4
+    81fc:	e58d1020 	str	r1, [sp, #32]
+    8200:	e5933000 	ldr	r3, [r3]
+    8204:	e0030392 	mul	r3, r2, r3
+    8208:	e59d2028 	ldr	r2, [sp, #40]	; 0x28
+    820c:	e0823003 	add	r3, r2, r3
+    8210:	e58d3028 	str	r3, [sp, #40]	; 0x28
+    8214:	e59d3030 	ldr	r3, [sp, #48]	; 0x30
+    8218:	e2833001 	add	r3, r3, #1
+    821c:	e58d3030 	str	r3, [sp, #48]	; 0x30
+    8220:	e59d2030 	ldr	r2, [sp, #48]	; 0x30
+    8224:	e59d302c 	ldr	r3, [sp, #44]	; 0x2c
+    8228:	e1520003 	cmp	r2, r3
+    822c:	baffffec 	blt	81e4 <fir_filter_int+0xb8>
+    8230:	e59d4008 	ldr	r4, [sp, #8]
+    8234:	e2843004 	add	r3, r4, #4
+    8238:	e58d3008 	str	r3, [sp, #8]
+    823c:	e59d1044 	ldr	r1, [sp, #68]	; 0x44
+    8240:	e59d0028 	ldr	r0, [sp, #40]	; 0x28
+    8244:	ebffff6d 	bl	8000 <__aeabi_idiv>
+    8248:	e1a03000 	mov	r3, r0
+    824c:	e5843000 	str	r3, [r4]
+    8250:	e59d2024 	ldr	r2, [sp, #36]	; 0x24
+    8254:	e59d3010 	ldr	r3, [sp, #16]
+    8258:	e1520003 	cmp	r2, r3
+    825c:	1a000006 	bne	827c <fir_filter_int+0x150>
+    8260:	e59d302c 	ldr	r3, [sp, #44]	; 0x2c
+    8264:	e2433001 	sub	r3, r3, #1
+    8268:	e58d302c 	str	r3, [sp, #44]	; 0x2c
+    826c:	e59d301c 	ldr	r3, [sp, #28]
+    8270:	e2833004 	add	r3, r3, #4
+    8274:	e58d301c 	str	r3, [sp, #28]
+    8278:	ea000009 	b	82a4 <fir_filter_int+0x178>
+    827c:	e59d202c 	ldr	r2, [sp, #44]	; 0x2c
+    8280:	e59d3040 	ldr	r3, [sp, #64]	; 0x40
+    8284:	e1520003 	cmp	r2, r3
+    8288:	aa000002 	bge	8298 <fir_filter_int+0x16c>
+    828c:	e59d302c 	ldr	r3, [sp, #44]	; 0x2c
+    8290:	e2833001 	add	r3, r3, #1
+    8294:	e58d302c 	str	r3, [sp, #44]	; 0x2c
+    8298:	e59d3024 	ldr	r3, [sp, #36]	; 0x24
+    829c:	e2833004 	add	r3, r3, #4
+    82a0:	e58d3024 	str	r3, [sp, #36]	; 0x24
+    82a4:	e59d3034 	ldr	r3, [sp, #52]	; 0x34
+    82a8:	e2833001 	add	r3, r3, #1
+    82ac:	e58d3034 	str	r3, [sp, #52]	; 0x34
+    82b0:	e59d2034 	ldr	r2, [sp, #52]	; 0x34
+    82b4:	e59d3004 	ldr	r3, [sp, #4]
+    82b8:	e1520003 	cmp	r2, r3
+    82bc:	baffffb7 	blt	81a0 <fir_filter_int+0x74>
+    82c0:	e1a00000 	nop			; (mov r0, r0)
+    82c4:	e28dd038 	add	sp, sp, #56	; 0x38
+    82c8:	e8bd4010 	pop	{r4, lr}
+    82cc:	e12fff1e 	bx	lr

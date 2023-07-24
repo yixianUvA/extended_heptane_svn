@@ -1,0 +1,21 @@
+There are 13 section headers, starting at offset 0x88f4:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00008000 008000 000200 00  AX  0   0  4
+  [ 2] .comment          PROGBITS        00000000 008200 00006e 01  MS  0   0  1
+  [ 3] .debug_aranges    PROGBITS        00000000 00826e 000020 00      0   0  1
+  [ 4] .debug_info       PROGBITS        00000000 00828e 000131 00      0   0  1
+  [ 5] .debug_abbrev     PROGBITS        00000000 0083bf 0000b2 00      0   0  1
+  [ 6] .debug_line       PROGBITS        00000000 008471 000068 00      0   0  1
+  [ 7] .debug_frame      PROGBITS        00000000 0084dc 000080 00      0   0  4
+  [ 8] .debug_str        PROGBITS        00000000 00855c 0000ce 01  MS  0   0  1
+  [ 9] .ARM.attributes   ARM_ATTRIBUTES  00000000 00862a 000030 00      0   0  1
+  [10] .shstrtab         STRTAB          00000000 00886c 000087 00      0   0  1
+  [11] .symtab           SYMTAB          00000000 00865c 0001a0 10     12  13  4
+  [12] .strtab           STRTAB          00000000 0087fc 000070 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)

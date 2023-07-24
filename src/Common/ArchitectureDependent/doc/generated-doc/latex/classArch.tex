@@ -1,0 +1,553 @@
+\hypertarget{classArch}{}\section{Arch Class Reference}
+\label{classArch}\index{Arch@{Arch}}
+
+
+{\ttfamily \#include $<$arch.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classArch_a6e55f92618422dfae2ecca4a8b760749}{init} (const string \&arch, const bool is\+\_\+big\+\_\+endian)
+\item 
+static void \hyperlink{classArch_a82f5b240caba345011c64b87f69d3573}{kill} ()
+\item 
+static \hyperlink{classArch__dep}{Arch\+\_\+dep} $\ast$ \hyperlink{classArch_a384595c0b0c27547c494ce68ea30390d}{get\+Instance} ()
+\item 
+static bool \hyperlink{classArch_a48a567260b0b9213386f2d1826f8e21c}{is\+Call} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static bool \hyperlink{classArch_ad7b08b24c7d2e633ccb773fe9bd22489}{is\+Return} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static bool \hyperlink{classArch_a852783c61c3b3c8d5b1025938fb59694}{is\+Unconditional\+Jump} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static bool \hyperlink{classArch_a4384bfd7646ca7e0c945d6fb3b36db6f}{is\+Conditional\+Jump} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static bool \hyperlink{classArch_a7c6ebd1702f075660199527678bd8612}{is\+Function} (const string \&line)
+\item 
+static bool \hyperlink{classArch_abcdc8f59823fa08c8dc1e06f67591e60}{is\+Instruction} (const string \&line)
+\item 
+static \hyperlink{classObjdumpFunction}{Objdump\+Function} \hyperlink{classArch_a086a563f23dcbab36b7238d131201471}{parse\+Function} (const string \&line)
+\item 
+static \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \hyperlink{classArch_a15814eafabeb6142fa46098767617d83}{parse\+Instruction} (const string \&line)
+\item 
+static t\+\_\+address \hyperlink{classArch_a14e634f478d8e7f6b76680184ffdddaf}{get\+Jump\+Destination} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static int \hyperlink{classArch_a2cfdbdf8fe0435d65ce6549c4683fd0c}{get\+N\+B\+Instr\+In\+Delay\+Slot} ()
+\item 
+static int \hyperlink{classArch_af990ba7bfa96246fe0eda6248b5a9608}{get\+Instruction\+Size} ()
+\item 
+static bool \hyperlink{classArch_ad5c5d6cd8d1a555d0949baadfb83f59a}{is\+Mem\+Pattern} (const string \&operand)
+\item 
+static \hyperlink{classInstructionType}{Instruction\+Type} $\ast$ \hyperlink{classArch_adc29a91e6fd178a49f2bde6dcc441784}{get\+Instruction\+Type\+From\+Mnemonic} (const string \&mnemonic)
+\item 
+static \hyperlink{classInstructionType}{Instruction\+Type} $\ast$ \hyperlink{classArch_a25ad6eb3a759792bcb793b61cf629da0}{get\+Instruction\+Type\+From\+Asm} (const string \&instr)
+\item 
+static int \hyperlink{classArch_ad443b9fd33ae50f27aec5263ba980c47}{get\+Register\+Number} (const string \&reg\+\_\+name)
+\item 
+static bool \hyperlink{classArch_a23765c24091362fb1e974fba027cdfb1}{is\+Register\+Name} (const string \&reg\+\_\+name)
+\item 
+static bool \hyperlink{classArch_a5bd70d25a0dcb59d10cdb717c43842f2}{is\+Zero\+Register} (const string \&str)
+\item 
+static bool \hyperlink{classArch_ab872a6e1e060fce6dbd631ade563a482}{is\+Dec\+Number} (const string \&str)
+\item 
+static bool \hyperlink{classArch_a98b7249989defd4bdc9cd672592a0262}{is\+Hex\+Number} (const string \&str)
+\item 
+static bool \hyperlink{classArch_ada2832978d79268be376c443b65b37ed}{is\+Addr} (const string \&str)
+\item 
+static bool \hyperlink{classArch_a93077d5c7b72a0db0bea3bda59ca50c7}{is\+Load} (const string \&instr)
+\item 
+static bool \hyperlink{classArch_ab892d0c0ee92b3f04d371e84af1c44da}{is\+Store} (const string \&instr)
+\item 
+static int \hyperlink{classArch_ad07f05d2dfa30d60ae8a32642b029d10}{get\+Size\+Of\+Memory\+Access} (const string \&instr)
+\item 
+static bool \hyperlink{classArch_a580b03c8503aa94ed44905e2f525c6fb}{is\+Big\+Endian} ()
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_a02fb24c4a3666859e5d503b370f980ec}{split\+Instruction} (const string \&instr)
+\item 
+static \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$ \hyperlink{classArch_a056d89310ba797b493afff641bcc15c6}{get\+D\+A\+A\+Instruction} (const string \&instr)
+\item 
+static int \hyperlink{classArch_a4d1796b17b9dbaabed38ab10b8057013}{get\+Latency} (const string \&instr)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_ad43d2ee62f26a9fa2e193fa3a6cc8935}{extract\+Input\+Registers\+From\+Mem} (const string \&operand)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_a620da5dee3720e53e49e97ce6d7b3e0f}{extract\+Output\+Registers\+From\+Mem} (const string \&operand)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_a422c4ccd83e3652e7f11158272198397}{get\+Resource\+Functional\+Units} (const string \&instr)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_ac228ffb5a673b5250d0517a5bf6813b4}{get\+Resource\+Inputs} (const string \&instr)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_a368512825e8cdad354097faf60101ec1}{get\+Resource\+Outputs} (const string \&instr)
+\item 
+static bool \hyperlink{classArch_ad75950a3993e9fd3a94cb62a8211d2b3}{is\+Load\+Multiple} (const string \&instr)
+\item 
+static int \hyperlink{classArch_a3d6b18c0c59e806230a51f42a0373f1f}{get\+Number\+Of\+Loads} (const string \&instr)
+\item 
+static bool \hyperlink{classArch_a54f415f6f7c8adbc0cbd0a48f57f4fb1}{is\+Store\+Multiple} (const string \&instr)
+\item 
+static int \hyperlink{classArch_a16b3caaf64787815c74d2a1e73ccc64e}{get\+Number\+Of\+Stores} (const string \&instr)
+\item 
+static string \hyperlink{classArch_aa12bd08c634af2d42ea31a51461608eb}{get\+Callee\+Name} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static void \hyperlink{classArch_a37495eac849d7f1e895656c67f28048c}{parse\+Symbol\+Table\+Line} (const string \&line, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+static void \hyperlink{classArch_a76f94b5b6ae95117c9f50eb239c8b1f6}{parse\+Read\+Elf\+Line} (const string \&line, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+static bool \hyperlink{classArch_aae45fad85b266ebdddeca74db6dc7757}{is\+Word} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static \hyperlink{classObjdumpWord}{Objdump\+Word} \hyperlink{classArch_ae31c680981598a1b57f5f0cddd211e9d}{read\+Word\+Instruction} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+static string \hyperlink{classArch_a55683507cebf0818b780a01b537b3338}{get\+Architecture\+Name} ()
+\item 
+static bool \hyperlink{classArch_a76615e9f0fe6fee36d6bc97055ce5d69}{is\+Readelf\+Sections\+Marker} (const string \&line)
+\item 
+static bool \hyperlink{classArch_a84e4dcaf28bf07bfb13486a36f303e4b}{is\+Readelf\+Flags\+Marker} (const string \&line)
+\item 
+static bool \hyperlink{classArch_a0c35ca4d2805a080172f6c172762abe6}{is\+Objdump\+Symbol\+Table\+Marker} (const string \&line)
+\item 
+static bool \hyperlink{classArch_a1812a3a694bb2ee08f2d20a68e0796aa}{is\+Objdump\+Text\+Marker} (const string \&line)
+\item 
+static bool \hyperlink{classArch_afd6a6932c55aa195196b2c08936e4696}{is\+Pc\+In\+Input\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static bool \hyperlink{classArch_ae9c76e4a1181bc72d5babaac8a0521cf}{is\+Pc\+In\+Output\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+static vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ \hyperlink{classArch_aab44c957bca6c160dbd3638fc03220cd}{get\+Words\+From\+Instr} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr1, const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr2, vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ words, bool \&is\+\_\+instr2\+\_\+consumed)
+\item 
+static bool \hyperlink{classArch_a804449edaaff729eb0b796b6854f3a58}{is\+Input\+Written\+Register} (const string \&operand)
+\item 
+static string \hyperlink{classArch_aff836e851e244ec98b8223f90a9b5742}{extract\+Register\+From\+Input\+Written\+Operand} (const string \&operand)
+\item 
+static bool \hyperlink{classArch_ae61d5eb0785fac7962ede07c619fc0bc}{is\+Register\+List} (const string \&operand)
+\item 
+static vector$<$ string $>$ \hyperlink{classArch_acb3c4868277968fb7ca1b5841bfc33a5}{extract\+Registers\+From\+Register\+List} (const string \&operand)
+\item 
+static int \hyperlink{classArch_a386c91cdb12d2a36af51dde5e0deb1e0}{get\+Size\+Register\+List} (const string \&operand)
+\item 
+static bool \hyperlink{classArch_ac5b9875dc1b688701498bbf6cde5d787}{is\+Shifter\+Operand} (const string \&operand)
+\item 
+static string \hyperlink{classArch_acbf901aa17d51e8b925888bf866f92b7}{extract\+Register\+From\+Shifter\+Operand} (const string \&operand)
+\item 
+static bool \hyperlink{classArch_aa364e6f5826999632dd128a19fc3d587}{get\+Register\+And\+Index\+Stack} (const string \&instruction\+Asm, string \&reg, int $\ast$i)
+\item 
+static bool \hyperlink{classArch_a05769e18b70c873d0eea0c9f220dabda}{get\+Load\+Store\+A\+R\+M\+Infos} (bool strong\+Context, string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$vaddrmode, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)
+\item 
+static bool \hyperlink{classArch_ace290b0da62662b592bdfdf3e3c334c1}{is\+Pc\+Load\+Instruction} (string \&instr)
+\item 
+static bool \hyperlink{classArch_a3d4760d01a0a07e2d2c063baa991ac43}{get\+Instr1\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2)
+\item 
+static bool \hyperlink{classArch_a33a111fcd02dc3407328d37a38ad1bf8}{get\+Instr2\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)
+\item 
+static bool \hyperlink{classArch_a268deb415f38b6b4dec40ebb7ed5d00c}{is\+A\+R\+M\+Class\+Instr} (const string \&codeop, const string \&prefix)
+\item 
+static bool \hyperlink{classArch_a1ba2bb85ba1f4cb5e7d07506aa21397a}{is\+Conditionned\+A\+R\+M\+Instr} (const string \&codeop, const string \&prefix)
+\item 
+static bool \hyperlink{classArch_a2691fdefb6c6b0b7eb488564aa3f8db6}{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, vector$<$ string $>$ \&reg\+List, bool $\ast$write\+Back)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArch_ad43d2ee62f26a9fa2e193fa3a6cc8935}\label{classArch_ad43d2ee62f26a9fa2e193fa3a6cc8935}} 
+\index{Arch@{Arch}!extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}}
+\index{extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{extract\+Input\+Registers\+From\+Mem()}{extractInputRegistersFromMem()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::extract\+Input\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a620da5dee3720e53e49e97ce6d7b3e0f}\label{classArch_a620da5dee3720e53e49e97ce6d7b3e0f}} 
+\index{Arch@{Arch}!extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}}
+\index{extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{extract\+Output\+Registers\+From\+Mem()}{extractOutputRegistersFromMem()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::extract\+Output\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_aff836e851e244ec98b8223f90a9b5742}\label{classArch_aff836e851e244ec98b8223f90a9b5742}} 
+\index{Arch@{Arch}!extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}}
+\index{extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Input\+Written\+Operand()}{extractRegisterFromInputWrittenOperand()}}
+{\footnotesize\ttfamily static string Arch\+::extract\+Register\+From\+Input\+Written\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_acbf901aa17d51e8b925888bf866f92b7}\label{classArch_acbf901aa17d51e8b925888bf866f92b7}} 
+\index{Arch@{Arch}!extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}}
+\index{extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Shifter\+Operand()}{extractRegisterFromShifterOperand()}}
+{\footnotesize\ttfamily static string Arch\+::extract\+Register\+From\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_acb3c4868277968fb7ca1b5841bfc33a5}\label{classArch_acb3c4868277968fb7ca1b5841bfc33a5}} 
+\index{Arch@{Arch}!extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}}
+\index{extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{extract\+Registers\+From\+Register\+List()}{extractRegistersFromRegisterList()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::extract\+Registers\+From\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a55683507cebf0818b780a01b537b3338}\label{classArch_a55683507cebf0818b780a01b537b3338}} 
+\index{Arch@{Arch}!get\+Architecture\+Name@{get\+Architecture\+Name}}
+\index{get\+Architecture\+Name@{get\+Architecture\+Name}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Architecture\+Name()}{getArchitectureName()}}
+{\footnotesize\ttfamily static string Arch\+::get\+Architecture\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_aa12bd08c634af2d42ea31a51461608eb}\label{classArch_aa12bd08c634af2d42ea31a51461608eb}} 
+\index{Arch@{Arch}!get\+Callee\+Name@{get\+Callee\+Name}}
+\index{get\+Callee\+Name@{get\+Callee\+Name}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Callee\+Name()}{getCalleeName()}}
+{\footnotesize\ttfamily static string Arch\+::get\+Callee\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a056d89310ba797b493afff641bcc15c6}\label{classArch_a056d89310ba797b493afff641bcc15c6}} 
+\index{Arch@{Arch}!get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}}
+\index{get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+D\+A\+A\+Instruction()}{getDAAInstruction()}}
+{\footnotesize\ttfamily static \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction}$\ast$ Arch\+::get\+D\+A\+A\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a384595c0b0c27547c494ce68ea30390d}\label{classArch_a384595c0b0c27547c494ce68ea30390d}} 
+\index{Arch@{Arch}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classArch__dep}{Arch\+\_\+dep}$\ast$ Arch\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+public accessor to the singleton \mbox{\Hypertarget{classArch_a3d4760d01a0a07e2d2c063baa991ac43}\label{classArch_a3d4760d01a0a07e2d2c063baa991ac43}} 
+\index{Arch@{Arch}!get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}}
+\index{get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instr1\+A\+R\+M\+Infos()}{getInstr1ARMInfos()}}
+{\footnotesize\ttfamily static bool Arch\+::get\+Instr1\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a33a111fcd02dc3407328d37a38ad1bf8}\label{classArch_a33a111fcd02dc3407328d37a38ad1bf8}} 
+\index{Arch@{Arch}!get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}}
+\index{get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instr2\+A\+R\+M\+Infos()}{getInstr2ARMInfos()}}
+{\footnotesize\ttfamily static bool Arch\+::get\+Instr2\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_af990ba7bfa96246fe0eda6248b5a9608}\label{classArch_af990ba7bfa96246fe0eda6248b5a9608}} 
+\index{Arch@{Arch}!get\+Instruction\+Size@{get\+Instruction\+Size}}
+\index{get\+Instruction\+Size@{get\+Instruction\+Size}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Size()}{getInstructionSize()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Instruction\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a25ad6eb3a759792bcb793b61cf629da0}\label{classArch_a25ad6eb3a759792bcb793b61cf629da0}} 
+\index{Arch@{Arch}!get\+Instruction\+Type\+From\+Asm@{get\+Instruction\+Type\+From\+Asm}}
+\index{get\+Instruction\+Type\+From\+Asm@{get\+Instruction\+Type\+From\+Asm}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Type\+From\+Asm()}{getInstructionTypeFromAsm()}}
+{\footnotesize\ttfamily static \hyperlink{classInstructionType}{Instruction\+Type}$\ast$ Arch\+::get\+Instruction\+Type\+From\+Asm (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_adc29a91e6fd178a49f2bde6dcc441784}\label{classArch_adc29a91e6fd178a49f2bde6dcc441784}} 
+\index{Arch@{Arch}!get\+Instruction\+Type\+From\+Mnemonic@{get\+Instruction\+Type\+From\+Mnemonic}}
+\index{get\+Instruction\+Type\+From\+Mnemonic@{get\+Instruction\+Type\+From\+Mnemonic}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Type\+From\+Mnemonic()}{getInstructionTypeFromMnemonic()}}
+{\footnotesize\ttfamily static \hyperlink{classInstructionType}{Instruction\+Type}$\ast$ Arch\+::get\+Instruction\+Type\+From\+Mnemonic (\begin{DoxyParamCaption}\item[{const string \&}]{mnemonic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a14e634f478d8e7f6b76680184ffdddaf}\label{classArch_a14e634f478d8e7f6b76680184ffdddaf}} 
+\index{Arch@{Arch}!get\+Jump\+Destination@{get\+Jump\+Destination}}
+\index{get\+Jump\+Destination@{get\+Jump\+Destination}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Jump\+Destination()}{getJumpDestination()}}
+{\footnotesize\ttfamily static t\+\_\+address Arch\+::get\+Jump\+Destination (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a4d1796b17b9dbaabed38ab10b8057013}\label{classArch_a4d1796b17b9dbaabed38ab10b8057013}} 
+\index{Arch@{Arch}!get\+Latency@{get\+Latency}}
+\index{get\+Latency@{get\+Latency}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Latency()}{getLatency()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Latency (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a05769e18b70c873d0eea0c9f220dabda}\label{classArch_a05769e18b70c873d0eea0c9f220dabda}} 
+\index{Arch@{Arch}!get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Load\+Store\+A\+R\+M\+Infos()}{getLoadStoreARMInfos()}}
+{\footnotesize\ttfamily static bool Arch\+::get\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{bool}]{strong\+Context,  }\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$}]{vaddrmode,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a2691fdefb6c6b0b7eb488564aa3f8db6}\label{classArch_a2691fdefb6c6b0b7eb488564aa3f8db6}} 
+\index{Arch@{Arch}!get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos()}{getMultipleLoadStoreARMInfos()}}
+{\footnotesize\ttfamily static bool Arch\+::get\+Multiple\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{vector$<$ string $>$ \&}]{reg\+List,  }\item[{bool $\ast$}]{write\+Back }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a2cfdbdf8fe0435d65ce6549c4683fd0c}\label{classArch_a2cfdbdf8fe0435d65ce6549c4683fd0c}} 
+\index{Arch@{Arch}!get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}}
+\index{get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+N\+B\+Instr\+In\+Delay\+Slot()}{getNBInstrInDelaySlot()}}
+{\footnotesize\ttfamily static int Arch\+::get\+N\+B\+Instr\+In\+Delay\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a3d6b18c0c59e806230a51f42a0373f1f}\label{classArch_a3d6b18c0c59e806230a51f42a0373f1f}} 
+\index{Arch@{Arch}!get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}}
+\index{get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Loads()}{getNumberOfLoads()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Number\+Of\+Loads (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a16b3caaf64787815c74d2a1e73ccc64e}\label{classArch_a16b3caaf64787815c74d2a1e73ccc64e}} 
+\index{Arch@{Arch}!get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}}
+\index{get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Stores()}{getNumberOfStores()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Number\+Of\+Stores (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_aa364e6f5826999632dd128a19fc3d587}\label{classArch_aa364e6f5826999632dd128a19fc3d587}} 
+\index{Arch@{Arch}!get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}}
+\index{get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Register\+And\+Index\+Stack()}{getRegisterAndIndexStack()}}
+{\footnotesize\ttfamily static bool Arch\+::get\+Register\+And\+Index\+Stack (\begin{DoxyParamCaption}\item[{const string \&}]{instruction\+Asm,  }\item[{string \&}]{reg,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ad443b9fd33ae50f27aec5263ba980c47}\label{classArch_ad443b9fd33ae50f27aec5263ba980c47}} 
+\index{Arch@{Arch}!get\+Register\+Number@{get\+Register\+Number}}
+\index{get\+Register\+Number@{get\+Register\+Number}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Register\+Number()}{getRegisterNumber()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Register\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{reg\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a422c4ccd83e3652e7f11158272198397}\label{classArch_a422c4ccd83e3652e7f11158272198397}} 
+\index{Arch@{Arch}!get\+Resource\+Functional\+Units@{get\+Resource\+Functional\+Units}}
+\index{get\+Resource\+Functional\+Units@{get\+Resource\+Functional\+Units}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Resource\+Functional\+Units()}{getResourceFunctionalUnits()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::get\+Resource\+Functional\+Units (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ac228ffb5a673b5250d0517a5bf6813b4}\label{classArch_ac228ffb5a673b5250d0517a5bf6813b4}} 
+\index{Arch@{Arch}!get\+Resource\+Inputs@{get\+Resource\+Inputs}}
+\index{get\+Resource\+Inputs@{get\+Resource\+Inputs}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Resource\+Inputs()}{getResourceInputs()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::get\+Resource\+Inputs (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a368512825e8cdad354097faf60101ec1}\label{classArch_a368512825e8cdad354097faf60101ec1}} 
+\index{Arch@{Arch}!get\+Resource\+Outputs@{get\+Resource\+Outputs}}
+\index{get\+Resource\+Outputs@{get\+Resource\+Outputs}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Resource\+Outputs()}{getResourceOutputs()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::get\+Resource\+Outputs (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ad07f05d2dfa30d60ae8a32642b029d10}\label{classArch_ad07f05d2dfa30d60ae8a32642b029d10}} 
+\index{Arch@{Arch}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a386c91cdb12d2a36af51dde5e0deb1e0}\label{classArch_a386c91cdb12d2a36af51dde5e0deb1e0}} 
+\index{Arch@{Arch}!get\+Size\+Register\+List@{get\+Size\+Register\+List}}
+\index{get\+Size\+Register\+List@{get\+Size\+Register\+List}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Size\+Register\+List()}{getSizeRegisterList()}}
+{\footnotesize\ttfamily static int Arch\+::get\+Size\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_aab44c957bca6c160dbd3638fc03220cd}\label{classArch_aab44c957bca6c160dbd3638fc03220cd}} 
+\index{Arch@{Arch}!get\+Words\+From\+Instr@{get\+Words\+From\+Instr}}
+\index{get\+Words\+From\+Instr@{get\+Words\+From\+Instr}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{get\+Words\+From\+Instr()}{getWordsFromInstr()}}
+{\footnotesize\ttfamily static vector$<$\hyperlink{classObjdumpWord}{Objdump\+Word}$>$ Arch\+::get\+Words\+From\+Instr (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr1,  }\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr2,  }\item[{vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$}]{words,  }\item[{bool \&}]{is\+\_\+instr2\+\_\+consumed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a6e55f92618422dfae2ecca4a8b760749}\label{classArch_a6e55f92618422dfae2ecca4a8b760749}} 
+\index{Arch@{Arch}!init@{init}}
+\index{init@{init}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void Arch\+::init (\begin{DoxyParamCaption}\item[{const string \&}]{arch,  }\item[{const bool}]{is\+\_\+big\+\_\+endian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+public constructor of the singleton \mbox{\Hypertarget{classArch_ada2832978d79268be376c443b65b37ed}\label{classArch_ada2832978d79268be376c443b65b37ed}} 
+\index{Arch@{Arch}!is\+Addr@{is\+Addr}}
+\index{is\+Addr@{is\+Addr}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Addr()}{isAddr()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Addr (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a268deb415f38b6b4dec40ebb7ed5d00c}\label{classArch_a268deb415f38b6b4dec40ebb7ed5d00c}} 
+\index{Arch@{Arch}!is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}}
+\index{is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+A\+R\+M\+Class\+Instr()}{isARMClassInstr()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+A\+R\+M\+Class\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a580b03c8503aa94ed44905e2f525c6fb}\label{classArch_a580b03c8503aa94ed44905e2f525c6fb}} 
+\index{Arch@{Arch}!is\+Big\+Endian@{is\+Big\+Endian}}
+\index{is\+Big\+Endian@{is\+Big\+Endian}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Big\+Endian()}{isBigEndian()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Big\+Endian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a48a567260b0b9213386f2d1826f8e21c}\label{classArch_a48a567260b0b9213386f2d1826f8e21c}} 
+\index{Arch@{Arch}!is\+Call@{is\+Call}}
+\index{is\+Call@{is\+Call}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Call()}{isCall()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Call (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a4384bfd7646ca7e0c945d6fb3b36db6f}\label{classArch_a4384bfd7646ca7e0c945d6fb3b36db6f}} 
+\index{Arch@{Arch}!is\+Conditional\+Jump@{is\+Conditional\+Jump}}
+\index{is\+Conditional\+Jump@{is\+Conditional\+Jump}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Conditional\+Jump()}{isConditionalJump()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Conditional\+Jump (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a1ba2bb85ba1f4cb5e7d07506aa21397a}\label{classArch_a1ba2bb85ba1f4cb5e7d07506aa21397a}} 
+\index{Arch@{Arch}!is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}}
+\index{is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Conditionned\+A\+R\+M\+Instr()}{isConditionnedARMInstr()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Conditionned\+A\+R\+M\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ab872a6e1e060fce6dbd631ade563a482}\label{classArch_ab872a6e1e060fce6dbd631ade563a482}} 
+\index{Arch@{Arch}!is\+Dec\+Number@{is\+Dec\+Number}}
+\index{is\+Dec\+Number@{is\+Dec\+Number}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Dec\+Number()}{isDecNumber()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Dec\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a7c6ebd1702f075660199527678bd8612}\label{classArch_a7c6ebd1702f075660199527678bd8612}} 
+\index{Arch@{Arch}!is\+Function@{is\+Function}}
+\index{is\+Function@{is\+Function}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Function()}{isFunction()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a98b7249989defd4bdc9cd672592a0262}\label{classArch_a98b7249989defd4bdc9cd672592a0262}} 
+\index{Arch@{Arch}!is\+Hex\+Number@{is\+Hex\+Number}}
+\index{is\+Hex\+Number@{is\+Hex\+Number}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Hex\+Number()}{isHexNumber()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Hex\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a804449edaaff729eb0b796b6854f3a58}\label{classArch_a804449edaaff729eb0b796b6854f3a58}} 
+\index{Arch@{Arch}!is\+Input\+Written\+Register@{is\+Input\+Written\+Register}}
+\index{is\+Input\+Written\+Register@{is\+Input\+Written\+Register}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Input\+Written\+Register()}{isInputWrittenRegister()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Input\+Written\+Register (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_abcdc8f59823fa08c8dc1e06f67591e60}\label{classArch_abcdc8f59823fa08c8dc1e06f67591e60}} 
+\index{Arch@{Arch}!is\+Instruction@{is\+Instruction}}
+\index{is\+Instruction@{is\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Instruction()}{isInstruction()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a93077d5c7b72a0db0bea3bda59ca50c7}\label{classArch_a93077d5c7b72a0db0bea3bda59ca50c7}} 
+\index{Arch@{Arch}!is\+Load@{is\+Load}}
+\index{is\+Load@{is\+Load}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Load()}{isLoad()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Load (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ad75950a3993e9fd3a94cb62a8211d2b3}\label{classArch_ad75950a3993e9fd3a94cb62a8211d2b3}} 
+\index{Arch@{Arch}!is\+Load\+Multiple@{is\+Load\+Multiple}}
+\index{is\+Load\+Multiple@{is\+Load\+Multiple}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Load\+Multiple()}{isLoadMultiple()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Load\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ad5c5d6cd8d1a555d0949baadfb83f59a}\label{classArch_ad5c5d6cd8d1a555d0949baadfb83f59a}} 
+\index{Arch@{Arch}!is\+Mem\+Pattern@{is\+Mem\+Pattern}}
+\index{is\+Mem\+Pattern@{is\+Mem\+Pattern}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Mem\+Pattern()}{isMemPattern()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Mem\+Pattern (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a0c35ca4d2805a080172f6c172762abe6}\label{classArch_a0c35ca4d2805a080172f6c172762abe6}} 
+\index{Arch@{Arch}!is\+Objdump\+Symbol\+Table\+Marker@{is\+Objdump\+Symbol\+Table\+Marker}}
+\index{is\+Objdump\+Symbol\+Table\+Marker@{is\+Objdump\+Symbol\+Table\+Marker}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Objdump\+Symbol\+Table\+Marker()}{isObjdumpSymbolTableMarker()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Objdump\+Symbol\+Table\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a1812a3a694bb2ee08f2d20a68e0796aa}\label{classArch_a1812a3a694bb2ee08f2d20a68e0796aa}} 
+\index{Arch@{Arch}!is\+Objdump\+Text\+Marker@{is\+Objdump\+Text\+Marker}}
+\index{is\+Objdump\+Text\+Marker@{is\+Objdump\+Text\+Marker}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Objdump\+Text\+Marker()}{isObjdumpTextMarker()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Objdump\+Text\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_afd6a6932c55aa195196b2c08936e4696}\label{classArch_afd6a6932c55aa195196b2c08936e4696}} 
+\index{Arch@{Arch}!is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}}
+\index{is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Input\+Resources()}{isPcInInputResources()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Pc\+In\+Input\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ae9c76e4a1181bc72d5babaac8a0521cf}\label{classArch_ae9c76e4a1181bc72d5babaac8a0521cf}} 
+\index{Arch@{Arch}!is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}}
+\index{is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Output\+Resources()}{isPcInOutputResources()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Pc\+In\+Output\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ace290b0da62662b592bdfdf3e3c334c1}\label{classArch_ace290b0da62662b592bdfdf3e3c334c1}} 
+\index{Arch@{Arch}!is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}}
+\index{is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Pc\+Load\+Instruction()}{isPcLoadInstruction()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Pc\+Load\+Instruction (\begin{DoxyParamCaption}\item[{string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a84e4dcaf28bf07bfb13486a36f303e4b}\label{classArch_a84e4dcaf28bf07bfb13486a36f303e4b}} 
+\index{Arch@{Arch}!is\+Readelf\+Flags\+Marker@{is\+Readelf\+Flags\+Marker}}
+\index{is\+Readelf\+Flags\+Marker@{is\+Readelf\+Flags\+Marker}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Readelf\+Flags\+Marker()}{isReadelfFlagsMarker()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Readelf\+Flags\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a76615e9f0fe6fee36d6bc97055ce5d69}\label{classArch_a76615e9f0fe6fee36d6bc97055ce5d69}} 
+\index{Arch@{Arch}!is\+Readelf\+Sections\+Marker@{is\+Readelf\+Sections\+Marker}}
+\index{is\+Readelf\+Sections\+Marker@{is\+Readelf\+Sections\+Marker}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Readelf\+Sections\+Marker()}{isReadelfSectionsMarker()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Readelf\+Sections\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ae61d5eb0785fac7962ede07c619fc0bc}\label{classArch_ae61d5eb0785fac7962ede07c619fc0bc}} 
+\index{Arch@{Arch}!is\+Register\+List@{is\+Register\+List}}
+\index{is\+Register\+List@{is\+Register\+List}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Register\+List()}{isRegisterList()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a23765c24091362fb1e974fba027cdfb1}\label{classArch_a23765c24091362fb1e974fba027cdfb1}} 
+\index{Arch@{Arch}!is\+Register\+Name@{is\+Register\+Name}}
+\index{is\+Register\+Name@{is\+Register\+Name}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Register\+Name()}{isRegisterName()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Register\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{reg\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ad7b08b24c7d2e633ccb773fe9bd22489}\label{classArch_ad7b08b24c7d2e633ccb773fe9bd22489}} 
+\index{Arch@{Arch}!is\+Return@{is\+Return}}
+\index{is\+Return@{is\+Return}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Return()}{isReturn()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Return (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ac5b9875dc1b688701498bbf6cde5d787}\label{classArch_ac5b9875dc1b688701498bbf6cde5d787}} 
+\index{Arch@{Arch}!is\+Shifter\+Operand@{is\+Shifter\+Operand}}
+\index{is\+Shifter\+Operand@{is\+Shifter\+Operand}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Shifter\+Operand()}{isShifterOperand()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ab892d0c0ee92b3f04d371e84af1c44da}\label{classArch_ab892d0c0ee92b3f04d371e84af1c44da}} 
+\index{Arch@{Arch}!is\+Store@{is\+Store}}
+\index{is\+Store@{is\+Store}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Store()}{isStore()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Store (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a54f415f6f7c8adbc0cbd0a48f57f4fb1}\label{classArch_a54f415f6f7c8adbc0cbd0a48f57f4fb1}} 
+\index{Arch@{Arch}!is\+Store\+Multiple@{is\+Store\+Multiple}}
+\index{is\+Store\+Multiple@{is\+Store\+Multiple}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Store\+Multiple()}{isStoreMultiple()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Store\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a852783c61c3b3c8d5b1025938fb59694}\label{classArch_a852783c61c3b3c8d5b1025938fb59694}} 
+\index{Arch@{Arch}!is\+Unconditional\+Jump@{is\+Unconditional\+Jump}}
+\index{is\+Unconditional\+Jump@{is\+Unconditional\+Jump}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Unconditional\+Jump()}{isUnconditionalJump()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Unconditional\+Jump (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_aae45fad85b266ebdddeca74db6dc7757}\label{classArch_aae45fad85b266ebdddeca74db6dc7757}} 
+\index{Arch@{Arch}!is\+Word@{is\+Word}}
+\index{is\+Word@{is\+Word}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Word()}{isWord()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Word (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a5bd70d25a0dcb59d10cdb717c43842f2}\label{classArch_a5bd70d25a0dcb59d10cdb717c43842f2}} 
+\index{Arch@{Arch}!is\+Zero\+Register@{is\+Zero\+Register}}
+\index{is\+Zero\+Register@{is\+Zero\+Register}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{is\+Zero\+Register()}{isZeroRegister()}}
+{\footnotesize\ttfamily static bool Arch\+::is\+Zero\+Register (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a82f5b240caba345011c64b87f69d3573}\label{classArch_a82f5b240caba345011c64b87f69d3573}} 
+\index{Arch@{Arch}!kill@{kill}}
+\index{kill@{kill}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily static void Arch\+::kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+public destructor of the singleton \mbox{\Hypertarget{classArch_a086a563f23dcbab36b7238d131201471}\label{classArch_a086a563f23dcbab36b7238d131201471}} 
+\index{Arch@{Arch}!parse\+Function@{parse\+Function}}
+\index{parse\+Function@{parse\+Function}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{parse\+Function()}{parseFunction()}}
+{\footnotesize\ttfamily static \hyperlink{classObjdumpFunction}{Objdump\+Function} Arch\+::parse\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a15814eafabeb6142fa46098767617d83}\label{classArch_a15814eafabeb6142fa46098767617d83}} 
+\index{Arch@{Arch}!parse\+Instruction@{parse\+Instruction}}
+\index{parse\+Instruction@{parse\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{parse\+Instruction()}{parseInstruction()}}
+{\footnotesize\ttfamily static \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} Arch\+::parse\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a76f94b5b6ae95117c9f50eb239c8b1f6}\label{classArch_a76f94b5b6ae95117c9f50eb239c8b1f6}} 
+\index{Arch@{Arch}!parse\+Read\+Elf\+Line@{parse\+Read\+Elf\+Line}}
+\index{parse\+Read\+Elf\+Line@{parse\+Read\+Elf\+Line}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{parse\+Read\+Elf\+Line()}{parseReadElfLine()}}
+{\footnotesize\ttfamily static void Arch\+::parse\+Read\+Elf\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{line,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a37495eac849d7f1e895656c67f28048c}\label{classArch_a37495eac849d7f1e895656c67f28048c}} 
+\index{Arch@{Arch}!parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}}
+\index{parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{parse\+Symbol\+Table\+Line()}{parseSymbolTableLine()}}
+{\footnotesize\ttfamily static void Arch\+::parse\+Symbol\+Table\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{line,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_ae31c680981598a1b57f5f0cddd211e9d}\label{classArch_ae31c680981598a1b57f5f0cddd211e9d}} 
+\index{Arch@{Arch}!read\+Word\+Instruction@{read\+Word\+Instruction}}
+\index{read\+Word\+Instruction@{read\+Word\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{read\+Word\+Instruction()}{readWordInstruction()}}
+{\footnotesize\ttfamily static \hyperlink{classObjdumpWord}{Objdump\+Word} Arch\+::read\+Word\+Instruction (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classArch_a02fb24c4a3666859e5d503b370f980ec}\label{classArch_a02fb24c4a3666859e5d503b370f980ec}} 
+\index{Arch@{Arch}!split\+Instruction@{split\+Instruction}}
+\index{split\+Instruction@{split\+Instruction}!Arch@{Arch}}
+\subsubsection{\texorpdfstring{split\+Instruction()}{splitInstruction()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Arch\+::split\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{arch_8h}{arch.\+h}\end{DoxyCompactItemize}

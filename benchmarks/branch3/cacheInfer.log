@@ -1,0 +1,119 @@
+The argc is 4
+The second program is simple
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000257
+[INFO]	ICacheAnalysis: PS done: 5.5e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000255
+[INFO]	********HH ICACHE: 0.000687
+[INFO]	ICacheAnalysis: MUST done: 0.001513
+[INFO]	ICacheAnalysis: PS done: 7.7e-05
+[INFO]	ICacheAnalysis: MAY done: 0.001334
+[INFO]	********HH ICACHE: 0.003039
+[INFO]	********HH DATAADDRESS: 0.002598
+[INFO]	DcacheAnalysis: MUST done: 0.000287
+[INFO]	DcacheAnalysis: PS done: 5.6e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000179
+[INFO]	********HH DCACHE: 0.000927
+[INFO]	DcacheAnalysis: MUST done: 0.001648
+[INFO]	DcacheAnalysis: PS done: 7.7e-05
+[INFO]	DcacheAnalysis: MAY done: 0.001076
+[INFO]	********HH DCACHE: 0.003281
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.006536
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	********HH IPET: 0.003624
+
+L1	type ICACHE	references 90	hits 77	misses 13	
+L1	type DCACHE	references 17	hits 15	misses 2	
+L2	type ICACHE	references 13	hits 3	misses 10	
+L2	type DCACHE	references 2	hits 1	misses 1	
+[INFO]	********HH CACHESTATISTICS: 0.000447
+[INFO]	 =======Yixian> Total time for the analyses = 0.046539
+WCET: 3557
+[INFO]	********HH SIMPLEPRINT: 4.1e-05
+[INFO]	********HH DOTPRINT: 0.021765
+[INFO]	********HH CODELINE: 0.061491
+[INFO]	********HH HTMLPRINT: 0.000275
+The file name is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The file name is -t
+The file name is ./configWCET.xml
+The file name is simple
+xml_file is ./resICacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 29
+lloop is 155, 147, 
+node: 155
+node: 147
+maxiter: 6
+11
+Address: 33008 ,CacheSet: 7 ,CHMCValue: CHMCL2Code#0
+Address: 33020 ,CacheSet: 7 ,CHMCValue: CHMCL2Code#0
+Address: 33040 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#0
+Address: 33044 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33124 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resICacheL2.xml
+main
+The lanalysis size is 2
+CacheSet: 0 Address: 32768 CACValue: A
+CacheSet: 0 Address: 32784 CACValue: A
+CacheSet: 1 Address: 32800 CACValue: A
+CacheSet: 1 Address: 32816 CACValue: A
+CacheSet: 2 Address: 32832 CACValue: A
+CacheSet: 2 Address: 32848 CACValue: A
+xml_file is ./resDCacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 29
+lloop is 155, 147, 
+node: 155
+node: 147
+maxiter: 6
+12
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resDCacheL2.xml
+main
+The lanalysis size is 2
+[INFO]	 =======**> Infertime Time = 0.002463
+---------------------------------------------------
+CB and HB size information
+The HB size is 11
+The CB size is 6
+******The conflict cache set of Instruction cache Interference*****
+
+******The conflict cache set of Data cache Interference*****
+Conflict Set: 127 Evited Items: 3
+
+*******************Un-united Cache********************
+The sum of conflict cacheset is 0
+The instruction interference is 0
+The sum of conflict cacheset is 1
+The Data Cache Interference is 3
+Interfered by program simple , The times of the evicted item is 3
+
+
+
+*************This is the version of United cache Interference *************
+Interfered by program simple , The times of the evicted item is 3
+******The conflict cache set of Data cache Interference*****
+The conflictUcache size is 1
+Conflict Set: 127 Evited Items: 3
+
+
+xml_file is ./resICacheL2.xml
+__aeabi_idiv
+The lanalysis size is 29
+xml_file is ./resDCacheL2.xml
+__aeabi_idiv
+The lanalysis size is 29

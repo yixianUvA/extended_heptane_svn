@@ -1,0 +1,63 @@
+\hypertarget{ARM_8h}{}\section{src/\+A\+RM.h File Reference}
+\label{ARM_8h}\index{src/\+A\+R\+M.\+h@{src/\+A\+R\+M.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}arch.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classARM}{A\+RM}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARM_8h_ac31a4e74be32e57945f8670dff175c43}{A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER}~13
+\item 
+\#define \hyperlink{ARM_8h_ac2293d494b16f2652ab96a821634c438}{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}~15
+\item 
+\#define \hyperlink{ARM_8h_a331f195ad163c8d6c63de66b72f22a53}{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}~25
+\item 
+\#define \hyperlink{ARM_8h_ab7592c50db1ba60f3f32cd1c67df9b92}{A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}~26 /$\ast$ Using an auxiliary register (\hyperlink{ARM_8h_a331f195ad163c8d6c63de66b72f22a53}{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}) $\ast$/
+\item 
+\#define \hyperlink{ARM_8h_a604ef60aba08c91ce189259867e6e6ba}{I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}(regnum)~(regnum == \hyperlink{ARM_8h_ac2293d494b16f2652ab96a821634c438}{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ARM_8h_a331f195ad163c8d6c63de66b72f22a53}\label{ARM_8h_a331f195ad163c8d6c63de66b72f22a53}} 
+\index{A\+R\+M.\+h@{A\+R\+M.\+h}!A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}
+\index{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!A\+R\+M.\+h@{A\+R\+M.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}{ARM\_AUX\_REGISTER}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER~25}
+
+\mbox{\Hypertarget{ARM_8h_ab7592c50db1ba60f3f32cd1c67df9b92}\label{ARM_8h_ab7592c50db1ba60f3f32cd1c67df9b92}} 
+\index{A\+R\+M.\+h@{A\+R\+M.\+h}!A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS@{A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}}
+\index{A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS@{A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}!A\+R\+M.\+h@{A\+R\+M.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}{ARM\_NB\_REGISTERS}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+N\+B\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS~26 /$\ast$ Using an auxiliary register (\hyperlink{ARM_8h_a331f195ad163c8d6c63de66b72f22a53}{A\+R\+M\+\_\+\+A\+U\+X\+\_\+\+R\+E\+G\+I\+S\+T\+ER}) $\ast$/}
+
+\mbox{\Hypertarget{ARM_8h_ac2293d494b16f2652ab96a821634c438}\label{ARM_8h_ac2293d494b16f2652ab96a821634c438}} 
+\index{A\+R\+M.\+h@{A\+R\+M.\+h}!A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}
+\index{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!A\+R\+M.\+h@{A\+R\+M.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}{ARM\_PC\_REGISTER}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER~15}
+
+\mbox{\Hypertarget{ARM_8h_ac31a4e74be32e57945f8670dff175c43}\label{ARM_8h_ac31a4e74be32e57945f8670dff175c43}} 
+\index{A\+R\+M.\+h@{A\+R\+M.\+h}!A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}
+\index{A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!A\+R\+M.\+h@{A\+R\+M.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER}{ARM\_SP\_REGISTER}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+S\+P\+\_\+\+R\+E\+G\+I\+S\+T\+ER~13}
+
+\mbox{\Hypertarget{ARM_8h_a604ef60aba08c91ce189259867e6e6ba}\label{ARM_8h_a604ef60aba08c91ce189259867e6e6ba}} 
+\index{A\+R\+M.\+h@{A\+R\+M.\+h}!I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}
+\index{I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!A\+R\+M.\+h@{A\+R\+M.\+h}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER}{IS\_PC\_REGISTER}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER(\begin{DoxyParamCaption}\item[{}]{regnum }\end{DoxyParamCaption})~(regnum == \hyperlink{ARM_8h_ac2293d494b16f2652ab96a821634c438}{A\+R\+M\+\_\+\+P\+C\+\_\+\+R\+E\+G\+I\+S\+T\+ER})}
+

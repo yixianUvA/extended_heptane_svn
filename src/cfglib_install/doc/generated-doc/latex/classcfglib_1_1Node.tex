@@ -1,0 +1,218 @@
+\hypertarget{classcfglib_1_1Node}{}\section{cfglib\+:\+:Node Class Reference}
+\label{classcfglib_1_1Node}\index{cfglib\+::\+Node@{cfglib\+::\+Node}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+Inheritance diagram for cfglib\+:\+:Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcfglib_1_1Node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Node_aba4169d7a66bceb6b5ae4e62193f669d}{Get\+Cfg} ()
+\item 
+virtual \hyperlink{classcfglib_1_1Node_a3ff420dfcc34125601765f1ab3444d66}{$\sim$\+Node} ()
+\item 
+\hyperlink{classcfglib_1_1Node}{Node} $\ast$ \hyperlink{classcfglib_1_1Node_a5f9b90a1d189124c775e0af9c209d208}{Clone} (\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&)
+\item 
+virtual std\+::ostream \& \hyperlink{classcfglib_1_1Node_a648aaa3e2703c9b5932bc50ffb14942c}{Write\+Xml} (std\+::ostream \&os, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+virtual void \hyperlink{classcfglib_1_1Node_aaab769075e5d02c61411d58fc94e2070}{Read\+Xml} (\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$tag, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+\hyperlink{namespacecfglib_a44952a45d827aaa271f7e7dac5bf7752}{node\+\_\+type} \hyperlink{classcfglib_1_1Node_a92716d47e55c6808c641ac2fab7e26e2}{Get\+Type} ()
+\item 
+bool \hyperlink{classcfglib_1_1Node_a544488e1ba481dae0d55f2b826ac84a9}{Is\+Call} ()
+\item 
+bool \hyperlink{classcfglib_1_1Node_a2813d33e1f4b848f6f14f2744cb17dfe}{Is\+BB} ()
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$ $>$ \hyperlink{classcfglib_1_1Node_ad7e384556d7ab828b5e95536063668ad}{Get\+Instructions} ()
+\item 
+int \hyperlink{classcfglib_1_1Node_a305a0c9ac27d6840536be1ccbcea29d3}{Get\+Nb\+Instructions} ()
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$ $>$ \hyperlink{classcfglib_1_1Node_a75ef37984de980ec3866b68eb23864ae}{Get\+Asm} ()
+\item 
+\hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$ \hyperlink{classcfglib_1_1Node_ae0dc5993e16a3b637522c02819703833}{Create\+New\+Instruction} (std\+::string const \&code, \hyperlink{namespacecfglib_a5ae32d51cf4ff1db5485367eab63a500}{asm\+\_\+type} \hyperlink{namespacecfglib_a5ae32d51cf4ff1db5485367eab63a500}{asm\+\_\+type}, bool ret)
+\item 
+bool \hyperlink{classcfglib_1_1Node_a879a88114917dcc1084aeab10bd83732}{Is\+Return} ()
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Node_af9e169489c3a49ea3e6ef95e6b24ac69}{Get\+Callee} ()
+\item 
+std\+::string \hyperlink{classcfglib_1_1Node_af50258a896a1960fe337ce9bfb4c038e}{Get\+Callee\+Name} ()
+\item 
+void \hyperlink{classcfglib_1_1Node_a1ffbf02ce392ebbed1e56f75c3bb268d}{Set\+Call} (string called, bool emit\+\_\+warning)
+\item 
+bool \hyperlink{classcfglib_1_1Node_a52c4537c5aac77699ab900b8b60a14eb}{is\+Isolated\+Nop\+Node} ()
+\item 
+bool \hyperlink{classcfglib_1_1Node_a9063f79cf7bf36717b23a71c4027142e}{is\+Isolated\+Nop\+Node\+LB} ()
+\item 
+string \hyperlink{classcfglib_1_1Node_a42c979a43fa0e2314076fbecd3993514}{get\+Identifier} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcfglib_1_1Node_aad28e913031e836a51d46ca3a1a3b68b}{Cfg}
+\item 
+class \hyperlink{classcfglib_1_1Node_a6f7095d721dd1dbd490d97c028eb676f}{Loop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This abstract class represents a \hyperlink{classcfglib_1_1Node}{Node}. Nodes are basic components of a C\+FG. Nodes can be of type {\ttfamily BB} or {\ttfamily Call} A {\ttfamily Call} node contains instructions including the call instruction. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Node_a3ff420dfcc34125601765f1ab3444d66}\label{classcfglib_1_1Node_a3ff420dfcc34125601765f1ab3444d66}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!````~Node@{$\sim$\+Node}}
+\index{````~Node@{$\sim$\+Node}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+Node()}{~Node()}}
+{\footnotesize\ttfamily virtual cfglib\+::\+Node\+::$\sim$\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+basic destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Node_a5f9b90a1d189124c775e0af9c209d208}\label{classcfglib_1_1Node_a5f9b90a1d189124c775e0af9c209d208}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Clone@{Clone}}
+\index{Clone@{Clone}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Node}{Node}$\ast$ cfglib\+::\+Node\+::\+Clone (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&}]{ }\end{DoxyParamCaption})}
+
+cloning function \mbox{\Hypertarget{classcfglib_1_1Node_ae0dc5993e16a3b637522c02819703833}\label{classcfglib_1_1Node_ae0dc5993e16a3b637522c02819703833}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Create\+New\+Instruction@{Create\+New\+Instruction}}
+\index{Create\+New\+Instruction@{Create\+New\+Instruction}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Create\+New\+Instruction()}{CreateNewInstruction()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Instruction}{Instruction}$\ast$ cfglib\+::\+Node\+::\+Create\+New\+Instruction (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{code,  }\item[{\hyperlink{namespacecfglib_a5ae32d51cf4ff1db5485367eab63a500}{asm\+\_\+type}}]{asm\+\_\+type,  }\item[{bool}]{ret }\end{DoxyParamCaption})}
+
+Create new instruction. \hyperlink{classcfglib_1_1Instruction}{Instruction} must be added in the same order than for execution. \mbox{\Hypertarget{classcfglib_1_1Node_a75ef37984de980ec3866b68eb23864ae}\label{classcfglib_1_1Node_a75ef37984de980ec3866b68eb23864ae}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Asm@{Get\+Asm}}
+\index{Get\+Asm@{Get\+Asm}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Asm()}{GetAsm()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$$>$ cfglib\+::\+Node\+::\+Get\+Asm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the list of Code instructions of the \hyperlink{classcfglib_1_1Node}{Node} \mbox{\Hypertarget{classcfglib_1_1Node_af9e169489c3a49ea3e6ef95e6b24ac69}\label{classcfglib_1_1Node_af9e169489c3a49ea3e6ef95e6b24ac69}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Callee@{Get\+Callee}}
+\index{Get\+Callee@{Get\+Callee}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Callee()}{GetCallee()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Node\+::\+Get\+Callee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies to node of type Call to know which function it calls. return 0 on error or if the \hyperlink{classcfglib_1_1Node}{Node} is not a Call. \mbox{\Hypertarget{classcfglib_1_1Node_af50258a896a1960fe337ce9bfb4c038e}\label{classcfglib_1_1Node_af50258a896a1960fe337ce9bfb4c038e}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Callee\+Name@{Get\+Callee\+Name}}
+\index{Get\+Callee\+Name@{Get\+Callee\+Name}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Callee\+Name()}{GetCalleeName()}}
+{\footnotesize\ttfamily std\+::string cfglib\+::\+Node\+::\+Get\+Callee\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the callee of the node is a Call node. returns the empty string if the node is not a Call node \mbox{\Hypertarget{classcfglib_1_1Node_aba4169d7a66bceb6b5ae4e62193f669d}\label{classcfglib_1_1Node_aba4169d7a66bceb6b5ae4e62193f669d}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Cfg@{Get\+Cfg}}
+\index{Get\+Cfg@{Get\+Cfg}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Cfg()}{GetCfg()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Node\+::\+Get\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the \hyperlink{classcfglib_1_1Cfg}{Cfg} this \hyperlink{classcfglib_1_1Node}{Node} belong to. \mbox{\Hypertarget{classcfglib_1_1Node_a42c979a43fa0e2314076fbecd3993514}\label{classcfglib_1_1Node_a42c979a43fa0e2314076fbecd3993514}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!get\+Identifier@{get\+Identifier}}
+\index{get\+Identifier@{get\+Identifier}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{get\+Identifier()}{getIdentifier()}}
+{\footnotesize\ttfamily string cfglib\+::\+Node\+::get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Node_ad7e384556d7ab828b5e95536063668ad}\label{classcfglib_1_1Node_ad7e384556d7ab828b5e95536063668ad}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Instructions@{Get\+Instructions}}
+\index{Get\+Instructions@{Get\+Instructions}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Instructions()}{GetInstructions()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Instruction}{Instruction}$\ast$$>$ cfglib\+::\+Node\+::\+Get\+Instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get instructions vector \mbox{\Hypertarget{classcfglib_1_1Node_a305a0c9ac27d6840536be1ccbcea29d3}\label{classcfglib_1_1Node_a305a0c9ac27d6840536be1ccbcea29d3}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Nb\+Instructions@{Get\+Nb\+Instructions}}
+\index{Get\+Nb\+Instructions@{Get\+Nb\+Instructions}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Nb\+Instructions()}{GetNbInstructions()}}
+{\footnotesize\ttfamily int cfglib\+::\+Node\+::\+Get\+Nb\+Instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of asm lines (instructions + others) of the node \mbox{\Hypertarget{classcfglib_1_1Node_a92716d47e55c6808c641ac2fab7e26e2}\label{classcfglib_1_1Node_a92716d47e55c6808c641ac2fab7e26e2}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily \hyperlink{namespacecfglib_a44952a45d827aaa271f7e7dac5bf7752}{node\+\_\+type} cfglib\+::\+Node\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node type \mbox{\Hypertarget{classcfglib_1_1Node_a2813d33e1f4b848f6f14f2744cb17dfe}\label{classcfglib_1_1Node_a2813d33e1f4b848f6f14f2744cb17dfe}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Is\+BB@{Is\+BB}}
+\index{Is\+BB@{Is\+BB}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+B\+B()}{IsBB()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Node\+::\+Is\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the node is a basic block \mbox{\Hypertarget{classcfglib_1_1Node_a544488e1ba481dae0d55f2b826ac84a9}\label{classcfglib_1_1Node_a544488e1ba481dae0d55f2b826ac84a9}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Is\+Call@{Is\+Call}}
+\index{Is\+Call@{Is\+Call}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Call()}{IsCall()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Node\+::\+Is\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the node is a Call node \mbox{\Hypertarget{classcfglib_1_1Node_a52c4537c5aac77699ab900b8b60a14eb}\label{classcfglib_1_1Node_a52c4537c5aac77699ab900b8b60a14eb}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!is\+Isolated\+Nop\+Node@{is\+Isolated\+Nop\+Node}}
+\index{is\+Isolated\+Nop\+Node@{is\+Isolated\+Nop\+Node}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+Isolated\+Nop\+Node()}{isIsolatedNopNode()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Node\+::is\+Isolated\+Nop\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item true if the node is composed of a instruction nop, and isolated (without pred/succ). In A\+RM, it is possible (there is no delay slot,but ....)
+\item false totherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcfglib_1_1Node_a9063f79cf7bf36717b23a71c4027142e}\label{classcfglib_1_1Node_a9063f79cf7bf36717b23a71c4027142e}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!is\+Isolated\+Nop\+Node\+LB@{is\+Isolated\+Nop\+Node\+LB}}
+\index{is\+Isolated\+Nop\+Node\+LB@{is\+Isolated\+Nop\+Node\+LB}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+Isolated\+Nop\+Node\+L\+B()}{isIsolatedNopNodeLB()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Node\+::is\+Isolated\+Nop\+Node\+LB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Node_a879a88114917dcc1084aeab10bd83732}\label{classcfglib_1_1Node_a879a88114917dcc1084aeab10bd83732}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Is\+Return@{Is\+Return}}
+\index{Is\+Return@{Is\+Return}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Return()}{IsReturn()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Node\+::\+Is\+Return (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return true if the BB ends with a return instruction. \mbox{\Hypertarget{classcfglib_1_1Node_aaab769075e5d02c61411d58fc94e2070}\label{classcfglib_1_1Node_aaab769075e5d02c61411d58fc94e2070}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily virtual void cfglib\+::\+Node\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$}]{tag,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialisation 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_a876d530446317872259356af9b016e13}{cfglib\+::\+Serialisable}.
+
+\mbox{\Hypertarget{classcfglib_1_1Node_a1ffbf02ce392ebbed1e56f75c3bb268d}\label{classcfglib_1_1Node_a1ffbf02ce392ebbed1e56f75c3bb268d}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Set\+Call@{Set\+Call}}
+\index{Set\+Call@{Set\+Call}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Set\+Call()}{SetCall()}}
+{\footnotesize\ttfamily void cfglib\+::\+Node\+::\+Set\+Call (\begin{DoxyParamCaption}\item[{string}]{called,  }\item[{bool}]{emit\+\_\+warning }\end{DoxyParamCaption})}
+
+Set the node as a call node and update the required information. A warning message is printed on stderr if the called function has no \hyperlink{classcfglib_1_1Cfg}{Cfg}. When the called function does not have a \hyperlink{classcfglib_1_1Cfg}{Cfg}, regardless of the generation of a warning message, an empty \hyperlink{classcfglib_1_1Cfg}{Cfg} is generated. \mbox{\Hypertarget{classcfglib_1_1Node_a648aaa3e2703c9b5932bc50ffb14942c}\label{classcfglib_1_1Node_a648aaa3e2703c9b5932bc50ffb14942c}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily virtual std\+::ostream\& cfglib\+::\+Node\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialisation function. Implements the {\ttfamily \hyperlink{classcfglib_1_1Node}{Node}} interface. 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_aaeb80cc7397ad312e5ae34f39412ce42}{cfglib\+::\+Serialisable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Node_aad28e913031e836a51d46ca3a1a3b68b}\label{classcfglib_1_1Node_aad28e913031e836a51d46ca3a1a3b68b}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Cfg@{Cfg}}
+\index{Cfg@{Cfg}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Cfg}{Cfg}}
+{\footnotesize\ttfamily friend class \hyperlink{classcfglib_1_1Cfg}{Cfg}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\hyperlink{classcfglib_1_1Cfg}{Cfg} can create Nodes, et caetera. \mbox{\Hypertarget{classcfglib_1_1Node_a6f7095d721dd1dbd490d97c028eb676f}\label{classcfglib_1_1Node_a6f7095d721dd1dbd490d97c028eb676f}} 
+\index{cfglib\+::\+Node@{cfglib\+::\+Node}!Loop@{Loop}}
+\index{Loop@{Loop}!cfglib\+::\+Node@{cfglib\+::\+Node}}
+\subsubsection{\texorpdfstring{Loop}{Loop}}
+{\footnotesize\ttfamily friend class \hyperlink{classcfglib_1_1Loop}{Loop}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Node_8h}{Node.\+h}\end{DoxyCompactItemize}

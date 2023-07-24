@@ -1,0 +1,4650 @@
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+analysis_name is: comment
+analysis_name is: ENTRYPOINT
+TheNumberOfCFG is 1, TheNumberofNode is 1
+
+*** Begin analysis for entry point: main
+analysis_name is: comment
+analysis_name is: ICACHE
+TheNumberOfCFG is 1, TheNumberofNode is 1
+The CFG String name is main
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheFixPointMustIntialwork::printSet, idCurrentContext = 0
+TheFixPointMustIntialwork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+TheFixPointMustIntialwork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+TheFixPointMustIntialwork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+TheFixPointMustIntialwork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+TheFixPointMustIntialwork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+TheFixPointMustIntialwork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+TheFixPointMustIntialwork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+TheFixPointMustIntialwork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+TheFixPointMustIntialwork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+TheFixPointMustIntialwork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+TheFixPointMustIntialwork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+TheFixPointMustIntialwork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+TheFixPointMustIntialwork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+TheFixPointMustIntialwork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+TheFixPointMustIntialwork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+TheFixPointMustIntialwork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+TheFixPointMustIntialwork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+TheFixPointMustIntialwork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+TheFixPointMustIntialwork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+TheFixPointMustIntialwork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+TheFixPointMustIntialwork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+TheFixPointMustIntialwork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+***Let's start FixPointMust1stStep_ACS_out analysis***
+@@@ This is FixPointMustAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8004, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8008, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 800c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8010, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8014, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8018, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 801c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8024, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8028, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 802c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8030, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8034, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8038, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 803c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8044, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8048, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 804c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8050, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8054, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The Fixpointout getStringId is 0
+The Fixpointout getId is 0
+
+***Let's start FixPointMust1stStep_ACS_in analysis***
+InitalMustWork::printSet, idCurrentContext = 0
+InitalMustWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+InitalMustWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+InitalMustWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+InitalMustWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+InitalMustWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+InitalMustWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+InitalMustWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+InitalMustWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+InitalMustWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+InitalMustWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+InitalMustWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+InitalMustWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+InitalMustWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+InitalMustWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+InitalMustWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+InitalMustWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+InitalMustWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+InitalMustWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+InitalMustWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+InitalMustWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+InitalMustWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+InitalMustWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+***Let's start MustAnalysis_ACS_out analysis***
+@@@ This is MustAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8004, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8008, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 800c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8010, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8014, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8018, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 801c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8024, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8028, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 802c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8030, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8034, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8038, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 803c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8044, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8048, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 804c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8050, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8054, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+***Let's start MustAnalysis_ACS_in analysis***
+The contexts size is 1
+----The CACattName is CACL1Code#0---
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The ClassifMustTest
+The AGEMustAttributeName is AGEL1Code_MUST keepAge() is 0
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+InitalMayAnalysisWork::printSet, idCurrentContext = 0
+InitalMayAnalysisWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+InitalMayAnalysisWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+InitalMayAnalysisWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+InitalMayAnalysisWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+InitalMayAnalysisWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+InitalMayAnalysisWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+InitalMayAnalysisWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+InitalMayAnalysisWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+InitalMayAnalysisWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+InitalMayAnalysisWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+InitalMayAnalysisWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+InitalMayAnalysisWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+InitalMayAnalysisWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+InitalMayAnalysisWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+InitalMayAnalysisWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+InitalMayAnalysisWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+InitalMayAnalysisWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+InitalMayAnalysisWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+InitalMayAnalysisWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+InitalMayAnalysisWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+InitalMayAnalysisWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+InitalMayAnalysisWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+@@@ This is MayAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8004, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8008, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 800c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8010, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8014, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8018, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 801c, accessValue is A
+---------------------------
+{8000} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8024, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8028, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 802c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8030, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8034, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8038, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 803c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8044, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8048, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 804c, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8050, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL1Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The CmpACS_out add is 8054, accessValue is A
+---------------------------
+{8000} | {}
+{8020} | {}
+{8040} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1, The addr is 8020, The Startaddr is 8020, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+The computeSet is 2, The addr is 8040, The Startaddr is 8040, The cacheLine is 20, The nb_sets is 20
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	ICacheAnalysis: MUST done: 0.003128
+[INFO]	ICacheAnalysis: PS done: 1.4e-05
+[INFO]	ICacheAnalysis: MAY done: 0.001399
+[INFO]	********HH ICACHE: 0.00463
+analysis_name is: ICACHE
+TheNumberOfCFG is 1, TheNumberofNode is 1
+The CFG String name is main
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheFixPointMustIntialwork::printSet, idCurrentContext = 0
+TheFixPointMustIntialwork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+TheFixPointMustIntialwork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+TheFixPointMustIntialwork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+TheFixPointMustIntialwork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+TheFixPointMustIntialwork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+TheFixPointMustIntialwork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+TheFixPointMustIntialwork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+TheFixPointMustIntialwork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+TheFixPointMustIntialwork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+TheFixPointMustIntialwork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+TheFixPointMustIntialwork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+TheFixPointMustIntialwork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+TheFixPointMustIntialwork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+TheFixPointMustIntialwork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+TheFixPointMustIntialwork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+TheFixPointMustIntialwork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+TheFixPointMustIntialwork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+TheFixPointMustIntialwork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+TheFixPointMustIntialwork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+TheFixPointMustIntialwork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+TheFixPointMustIntialwork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+TheFixPointMustIntialwork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+***Let's start FixPointMust1stStep_ACS_out analysis***
+@@@ This is FixPointMustAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{8040} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The Fixpointout getStringId is 0
+The Fixpointout getId is 0
+
+***Let's start FixPointMust1stStep_ACS_in analysis***
+InitalMustWork::printSet, idCurrentContext = 0
+InitalMustWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+InitalMustWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+InitalMustWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+InitalMustWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+InitalMustWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+InitalMustWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+InitalMustWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+InitalMustWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+InitalMustWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+InitalMustWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+InitalMustWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+InitalMustWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+InitalMustWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+InitalMustWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+InitalMustWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+InitalMustWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+InitalMustWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+InitalMustWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+InitalMustWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+InitalMustWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+InitalMustWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+InitalMustWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+***Let's start MustAnalysis_ACS_out analysis***
+@@@ This is MustAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{8040} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMUST_in
+***Let's start MustAnalysis_ACS_in analysis***
+The contexts size is 1
+----The CACattName is CACL2Code#0---
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The ClassifMustTest
+The AGEMustAttributeName is AGEL2Code_MUST keepAge() is 0
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+InitalMayAnalysisWork::printSet, idCurrentContext = 0
+InitalMayAnalysisWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+InitalMayAnalysisWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+InitalMayAnalysisWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+InitalMayAnalysisWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+InitalMayAnalysisWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+InitalMayAnalysisWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+InitalMayAnalysisWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+InitalMayAnalysisWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+InitalMayAnalysisWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+InitalMayAnalysisWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+InitalMayAnalysisWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+InitalMayAnalysisWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+InitalMayAnalysisWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+InitalMayAnalysisWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+InitalMayAnalysisWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+InitalMayAnalysisWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+InitalMayAnalysisWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+InitalMayAnalysisWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+InitalMayAnalysisWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+InitalMayAnalysisWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+InitalMayAnalysisWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+InitalMayAnalysisWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+@@@ This is MayAnalysis @@@
+The code is sub sp, sp, 16, The Instruction address is 8000
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8000, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is ldr r2, [sp, 12], The Instruction address is 8004
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is mov r3, r2, The Instruction address is 8008
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is lsl r3, r3, 2, The Instruction address is 800c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is add r3, r3, r2, The Instruction address is 8010
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is lsl r3, r3, 1, The Instruction address is 8014
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is mov r2, r3, The Instruction address is 8018
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is ldr r3, [sp, 8], The Instruction address is 801c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is add r3, r2, r3, The Instruction address is 8020
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8020, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8024
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is str r3, [sp, 12], The Instruction address is 8028
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is mov r3, 0, The Instruction address is 802c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is str r3, [sp, 4], The Instruction address is 8030
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is ldr r3, [sp, 8], The Instruction address is 8034
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is add r3, r3, 1, The Instruction address is 8038
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is str r3, [sp, 8], The Instruction address is 803c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is ldr r3, [sp, 12], The Instruction address is 8040
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+The CmpACS_out add is 8040, accessValue is A
+---------------------------
+{8000} | {} | {} | {} | {} | {} | {} | {}
+{8040} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+The code is sub r3, r3, 1, The Instruction address is 8044
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is str r3, [sp, 12], The Instruction address is 8048
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is nop, The Instruction address is 804c
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is add sp, sp, 16, The Instruction address is 8050
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The code is bx lr, The Instruction address is 8054
+idCurrentContext is 0
+idAccessName is CACL2Code#0
+inAnalysisName is ACSMAY_in
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The computeSet is 0, The addr is 8000, The Startaddr is 8000, The cacheLine is 40, The nb_sets is 40
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+The computeSet is 1, The addr is 8040, The Startaddr is 8040, The cacheLine is 40, The nb_sets is 40
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	ICacheAnalysis: MUST done: 0.001531
+[INFO]	ICacheAnalysis: PS done: 9e-06
+[INFO]	ICacheAnalysis: MAY done: 0.000697
+[INFO]	********HH ICACHE: 0.002312
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: DATAADDRESS
+TheNumberOfCFG is 1, TheNumberofNode is 1
+FixpointInitWork::printSet, idCurrentContext = 0
+FixpointInitWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+FixpointInitWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+FixpointInitWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+FixpointInitWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+FixpointInitWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+FixpointInitWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+FixpointInitWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+FixpointInitWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+FixpointInitWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+FixpointInitWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+FixpointInitWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+FixpointInitWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+FixpointInitWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+FixpointInitWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+FixpointInitWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+FixpointInitWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+FixpointInitWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+FixpointInitWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+FixpointInitWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+FixpointInitWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+FixpointInitWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+FixpointInitWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+ Address compute_out = sub sp, sp, 16
+ Address compute_out = ldr r2, [sp, 12]
+ Address compute_out = mov r3, r2
+ Address compute_out = lsl r3, r3, 2
+ Address compute_out = add r3, r3, r2
+ Address compute_out = lsl r3, r3, 1
+ Address compute_out = mov r2, r3
+ Address compute_out = ldr r3, [sp, 8]
+ Address compute_out = add r3, r2, r3
+ Address compute_out = sub r3, r3, 1
+ Address compute_out = str r3, [sp, 12]
+ Address compute_out = mov r3, 0
+ Address compute_out = str r3, [sp, 4]
+ Address compute_out = ldr r3, [sp, 8]
+ Address compute_out = add r3, r3, 1
+ Address compute_out = str r3, [sp, 8]
+ Address compute_out = ldr r3, [sp, 12]
+ Address compute_out = sub r3, r3, 1
+ Address compute_out = str r3, [sp, 12]
+ Address compute_out = nop
+ Address compute_out = add sp, sp, 16
+ Address compute_out = bx lr
+AddressInitalWork::printSet, idCurrentContext = 0
+AddressInitalWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+AddressInitalWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+AddressInitalWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+AddressInitalWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+AddressInitalWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+AddressInitalWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+AddressInitalWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+AddressInitalWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+AddressInitalWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+AddressInitalWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+AddressInitalWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+AddressInitalWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+AddressInitalWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+AddressInitalWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+AddressInitalWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+AddressInitalWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+AddressInitalWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+AddressInitalWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+AddressInitalWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+AddressInitalWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+AddressInitalWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+AddressInitalWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+ Address compute_out = sub sp, sp, 16
+ Address compute_out = ldr r2, [sp, 12]
+ Address compute_out = mov r3, r2
+ Address compute_out = lsl r3, r3, 2
+ Address compute_out = add r3, r3, r2
+ Address compute_out = lsl r3, r3, 1
+ Address compute_out = mov r2, r3
+ Address compute_out = ldr r3, [sp, 8]
+ Address compute_out = add r3, r2, r3
+ Address compute_out = sub r3, r3, 1
+ Address compute_out = str r3, [sp, 12]
+ Address compute_out = mov r3, 0
+ Address compute_out = str r3, [sp, 4]
+ Address compute_out = ldr r3, [sp, 8]
+ Address compute_out = add r3, r3, 1
+ Address compute_out = str r3, [sp, 8]
+ Address compute_out = ldr r3, [sp, 12]
+ Address compute_out = sub r3, r3, 1
+ Address compute_out = str r3, [sp, 12]
+ Address compute_out = nop
+ Address compute_out = add sp, sp, 16
+ Address compute_out = bx lr
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	********HH DATAADDRESS: 0.000883
+analysis_name is: comment
+analysis_name is: DCACHE
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+DcacheFixPointInitalWork::printSet, idCurrentContext = 0
+DcacheFixPointInitalWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+DcacheFixPointInitalWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+DcacheFixPointInitalWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+DcacheFixPointInitalWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+DcacheFixPointInitalWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+DcacheFixPointInitalWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+DcacheFixPointInitalWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+DcacheFixPointInitalWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+DcacheFixPointInitalWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+DcacheFixPointInitalWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+DcacheFixPointInitalWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+DcacheFixPointInitalWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+DcacheFixPointInitalWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+DcacheFixPointInitalWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+DcacheFixPointInitalWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+DcacheFixPointInitalWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+DcacheFixPointInitalWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+DcacheFixPointInitalWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+DcacheFixPointInitalWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+DcacheFixPointInitalWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+DcacheFixPointInitalWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+DcacheFixPointInitalWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+********This is Dache ComputerOut*********
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+DcacheInitalMustAnalysisWork::printSet, idCurrentContext = 0
+DcacheInitalMustAnalysisWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+DcacheInitalMustAnalysisWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+DcacheInitalMustAnalysisWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+DcacheInitalMustAnalysisWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+DcacheInitalMustAnalysisWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+DcacheInitalMustAnalysisWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+DcacheInitalMustAnalysisWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+DcacheInitalMustAnalysisWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+DcacheInitalMustAnalysisWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+DcacheInitalMustAnalysisWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+DcacheInitalMustAnalysisWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+DcacheInitalMustAnalysisWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+DcacheInitalMustAnalysisWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+DcacheInitalMustAnalysisWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+DcacheInitalMustAnalysisWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+DcacheInitalMustAnalysisWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+DcacheInitalMustAnalysisWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+DcacheInitalMustAnalysisWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+********This is Dache ComputerOut*********
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+********This is Dache ComputerOut*********
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+---------------------------
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{} | {}
+{7fffdfe0} | {}
+The computeSet is 31, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+The computeSet is 1f, The addr is 7fffdfe0, The Startaddr is 7fffdfe0, The cacheLine is 20, The nb_sets is 20
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	DcacheAnalysis: MUST done: 0.000676
+[INFO]	DcacheAnalysis: PS done: 9e-06
+[INFO]	DcacheAnalysis: MAY done: 0.000296
+[INFO]	********HH DCACHE: 0.001247
+analysis_name is: DCACHE
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+DcacheFixPointInitalWork::printSet, idCurrentContext = 0
+DcacheFixPointInitalWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+DcacheFixPointInitalWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+DcacheFixPointInitalWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+DcacheFixPointInitalWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+DcacheFixPointInitalWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+DcacheFixPointInitalWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+DcacheFixPointInitalWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+DcacheFixPointInitalWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+DcacheFixPointInitalWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+DcacheFixPointInitalWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+DcacheFixPointInitalWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+DcacheFixPointInitalWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+DcacheFixPointInitalWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+DcacheFixPointInitalWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+DcacheFixPointInitalWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+DcacheFixPointInitalWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+DcacheFixPointInitalWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+DcacheFixPointInitalWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+DcacheFixPointInitalWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+DcacheFixPointInitalWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+DcacheFixPointInitalWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+DcacheFixPointInitalWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+********This is Dache ComputerOut*********
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+---------------------------
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{7fffdfc0} | {} | {} | {} | {} | {} | {} | {}
+DcacheInitalMustAnalysisWork::printSet, idCurrentContext = 0
+DcacheInitalMustAnalysisWork::printSet, instruction [ 0]= sub sp, sp, 16, the addrOfInstr is 0x8000
+DcacheInitalMustAnalysisWork::printSet, instruction [ 1]= ldr r2, [sp, 12], the addrOfInstr is 0x8004
+DcacheInitalMustAnalysisWork::printSet, instruction [ 2]= mov r3, r2, the addrOfInstr is 0x8008
+DcacheInitalMustAnalysisWork::printSet, instruction [ 3]= lsl r3, r3, 2, the addrOfInstr is 0x800c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 4]= add r3, r3, r2, the addrOfInstr is 0x8010
+DcacheInitalMustAnalysisWork::printSet, instruction [ 5]= lsl r3, r3, 1, the addrOfInstr is 0x8014
+DcacheInitalMustAnalysisWork::printSet, instruction [ 6]= mov r2, r3, the addrOfInstr is 0x8018
+DcacheInitalMustAnalysisWork::printSet, instruction [ 7]= ldr r3, [sp, 8], the addrOfInstr is 0x801c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 8]= add r3, r2, r3, the addrOfInstr is 0x8020
+DcacheInitalMustAnalysisWork::printSet, instruction [ 9]= sub r3, r3, 1, the addrOfInstr is 0x8024
+DcacheInitalMustAnalysisWork::printSet, instruction [ a]= str r3, [sp, 12], the addrOfInstr is 0x8028
+DcacheInitalMustAnalysisWork::printSet, instruction [ b]= mov r3, 0, the addrOfInstr is 0x802c
+DcacheInitalMustAnalysisWork::printSet, instruction [ c]= str r3, [sp, 4], the addrOfInstr is 0x8030
+DcacheInitalMustAnalysisWork::printSet, instruction [ d]= ldr r3, [sp, 8], the addrOfInstr is 0x8034
+DcacheInitalMustAnalysisWork::printSet, instruction [ e]= add r3, r3, 1, the addrOfInstr is 0x8038
+DcacheInitalMustAnalysisWork::printSet, instruction [ f]= str r3, [sp, 8], the addrOfInstr is 0x803c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 10]= ldr r3, [sp, 12], the addrOfInstr is 0x8040
+DcacheInitalMustAnalysisWork::printSet, instruction [ 11]= sub r3, r3, 1, the addrOfInstr is 0x8044
+DcacheInitalMustAnalysisWork::printSet, instruction [ 12]= str r3, [sp, 12], the addrOfInstr is 0x8048
+DcacheInitalMustAnalysisWork::printSet, instruction [ 13]= nop, the addrOfInstr is 0x804c
+DcacheInitalMustAnalysisWork::printSet, instruction [ 14]= add sp, sp, 16, the addrOfInstr is 0x8050
+DcacheInitalMustAnalysisWork::printSet, instruction [ 15]= bx lr, the addrOfInstr is 0x8054
+********This is Dache ComputerOut*********
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+---------------------------
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{7fffdfc0} | {} | {} | {} | {} | {} | {} | {}
+The computeSet is 63, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+********This is Dache ComputerOut*********
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+---------------------------
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{} | {} | {} | {} | {} | {} | {} | {}
+{7fffdfc0} | {} | {} | {} | {} | {} | {} | {}
+The computeSet is 63, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+The computeSet is 3f, The addr is 7fffdfc0, The Startaddr is 7fffdfc0, The cacheLine is 40, The nb_sets is 40
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	DcacheAnalysis: MUST done: 0.0006
+[INFO]	DcacheAnalysis: PS done: 8e-06
+[INFO]	DcacheAnalysis: MAY done: 0.000258
+[INFO]	********HH DCACHE: 0.001124
+analysis_name is: comment
+analysis_name is: PIPELINE
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.001077
+analysis_name is: comment
+analysis_name is: IPET
+IPET method: NOPIPELINE_ICACHE_DCACHE
+TheNumberOfCFG is 1, TheNumberofNode is 1
+[INFO]	********HH IPET: 0.002997
+
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: CACHESTATISTICS
+TheNumberOfCFG is 1, TheNumberofNode is 1
+L1	type ICACHE	references 16	hits 13	misses 3	
+L1	type DCACHE	references 4	hits 3	misses 1	
+L2	type ICACHE	references 3	hits 1	misses 2	
+L2	type DCACHE	references 1	hits 0	misses 1	
+[INFO]	********HH CACHESTATISTICS: 0.000326
+analysis_name is: comment
+analysis_name is: SIMPLEPRINT
+[INFO]	 =======Yixian> Total time for the analyses = 0.022951
+WCET: 766
+[INFO]	********HH SIMPLEPRINT: 3e-06
+analysis_name is: comment
+analysis_name is: DOTPRINT
+[INFO]	********HH DOTPRINT: 0.018479
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: comment
+analysis_name is: CODELINE
+[INFO]	********HH CODELINE: 0.001845
+analysis_name is: HTMLPRINT
+[INFO]	********HH HTMLPRINT: 0.000177
+[INFO]	 =======**> Total Time = 0.044356

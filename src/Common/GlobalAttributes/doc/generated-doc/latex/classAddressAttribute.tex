@@ -1,0 +1,103 @@
+\hypertarget{classAddressAttribute}{}\section{Address\+Attribute Class Reference}
+\label{classAddressAttribute}\index{Address\+Attribute@{Address\+Attribute}}
+
+
+{\ttfamily \#include $<$Address\+Attribute.\+h$>$}
+
+Inheritance diagram for Address\+Attribute\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAddressAttribute}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAddressAttribute_ace33470ed7a894142633a223b64378af}{Address\+Attribute} ()
+\item 
+vector$<$ \hyperlink{classAddressInfo}{Address\+Info} $>$ \hyperlink{classAddressAttribute_ac7c1a2d8160f4db5423fd53dc305f886}{get\+List\+Info} ()
+\item 
+\hyperlink{classAddressAttribute}{Address\+Attribute} $\ast$ \hyperlink{classAddressAttribute_ab418a5c40c38661892b790274dac50a0}{clone} ()
+\item 
+ostream \& \hyperlink{classAddressAttribute_ad189a02a8d2bc9058cd35bebf3f1210f}{Write\+Xml} (std\+::ostream \&, cfglib\+::\+Handle \&)
+\item 
+void \hyperlink{classAddressAttribute_a08871197b24a886864a337896ebab051}{Read\+Xml} (Xml\+Tag const $\ast$xml\+\_\+node, cfglib\+::\+Handle \&)
+\item 
+void \hyperlink{classAddressAttribute_aaa60489ef43cad77278ef19325dcd18c}{add\+Info} (\hyperlink{classAddressInfo}{Address\+Info})
+\item 
+long \hyperlink{classAddressAttribute_afebe2c5206d6e06ff5e479433a299ffa}{get\+Code\+Address} ()
+\item 
+Serialisable\+Attribute $\ast$ \hyperlink{classAddressAttribute_a25b4e25c9284dcdea23b761ca519dcd8}{create} ()
+\item 
+void \hyperlink{classAddressAttribute_a862ec35a0100f0486d466eac3cdb1cc3}{Print} (std\+::ostream \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Address attribute class
+
+This attribute is generate by the M\+I\+P\+S\+Address\+Analysis and is attached to each asm instruction of a program 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAddressAttribute_ace33470ed7a894142633a223b64378af}\label{classAddressAttribute_ace33470ed7a894142633a223b64378af}} 
+\index{Address\+Attribute@{Address\+Attribute}!Address\+Attribute@{Address\+Attribute}}
+\index{Address\+Attribute@{Address\+Attribute}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{Address\+Attribute()}{AddressAttribute()}}
+{\footnotesize\ttfamily Address\+Attribute\+::\+Address\+Attribute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAddressAttribute_aaa60489ef43cad77278ef19325dcd18c}\label{classAddressAttribute_aaa60489ef43cad77278ef19325dcd18c}} 
+\index{Address\+Attribute@{Address\+Attribute}!add\+Info@{add\+Info}}
+\index{add\+Info@{add\+Info}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{add\+Info()}{addInfo()}}
+{\footnotesize\ttfamily void Address\+Attribute\+::add\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{classAddressInfo}{Address\+Info}}]{ }\end{DoxyParamCaption})}
+
+This function add an object \hyperlink{classAddressInfo}{Address\+Info} to the list\+Info vector of this \mbox{\Hypertarget{classAddressAttribute_ab418a5c40c38661892b790274dac50a0}\label{classAddressAttribute_ab418a5c40c38661892b790274dac50a0}} 
+\index{Address\+Attribute@{Address\+Attribute}!clone@{clone}}
+\index{clone@{clone}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classAddressAttribute}{Address\+Attribute}$\ast$ Address\+Attribute\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressAttribute_a25b4e25c9284dcdea23b761ca519dcd8}\label{classAddressAttribute_a25b4e25c9284dcdea23b761ca519dcd8}} 
+\index{Address\+Attribute@{Address\+Attribute}!create@{create}}
+\index{create@{create}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily Serialisable\+Attribute$\ast$ Address\+Attribute\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressAttribute_afebe2c5206d6e06ff5e479433a299ffa}\label{classAddressAttribute_afebe2c5206d6e06ff5e479433a299ffa}} 
+\index{Address\+Attribute@{Address\+Attribute}!get\+Code\+Address@{get\+Code\+Address}}
+\index{get\+Code\+Address@{get\+Code\+Address}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{get\+Code\+Address()}{getCodeAddress()}}
+{\footnotesize\ttfamily long Address\+Attribute\+::get\+Code\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the code begin address of the code associated to the instruction or -\/1 if it is not an asm instruction \mbox{\Hypertarget{classAddressAttribute_ac7c1a2d8160f4db5423fd53dc305f886}\label{classAddressAttribute_ac7c1a2d8160f4db5423fd53dc305f886}} 
+\index{Address\+Attribute@{Address\+Attribute}!get\+List\+Info@{get\+List\+Info}}
+\index{get\+List\+Info@{get\+List\+Info}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{get\+List\+Info()}{getListInfo()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classAddressInfo}{Address\+Info}$>$ Address\+Attribute\+::get\+List\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+accessor \mbox{\Hypertarget{classAddressAttribute_a862ec35a0100f0486d466eac3cdb1cc3}\label{classAddressAttribute_a862ec35a0100f0486d466eac3cdb1cc3}} 
+\index{Address\+Attribute@{Address\+Attribute}!Print@{Print}}
+\index{Print@{Print}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Address\+Attribute\+::\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressAttribute_a08871197b24a886864a337896ebab051}\label{classAddressAttribute_a08871197b24a886864a337896ebab051}} 
+\index{Address\+Attribute@{Address\+Attribute}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily void Address\+Attribute\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Tag const $\ast$}]{xml\+\_\+node,  }\item[{cfglib\+::\+Handle \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressAttribute_ad189a02a8d2bc9058cd35bebf3f1210f}\label{classAddressAttribute_ad189a02a8d2bc9058cd35bebf3f1210f}} 
+\index{Address\+Attribute@{Address\+Attribute}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!Address\+Attribute@{Address\+Attribute}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily ostream\& Address\+Attribute\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{cfglib\+::\+Handle \&}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{AddressAttribute_8h}{Address\+Attribute.\+h}\end{DoxyCompactItemize}

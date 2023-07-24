@@ -1,0 +1,144 @@
+The argc is 4
+The second program is simple
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000387
+[INFO]	ICacheAnalysis: PS done: 0.000107
+[INFO]	ICacheAnalysis: MAY done: 0.000197
+[INFO]	********HH ICACHE: 0.000826
+[INFO]	ICacheAnalysis: MUST done: 0.000573
+[INFO]	ICacheAnalysis: PS done: 0.000267
+[INFO]	ICacheAnalysis: MAY done: 0.000679
+[INFO]	********HH ICACHE: 0.001625
+[INFO]	********HH DATAADDRESS: 0.002697
+[INFO]	DcacheAnalysis: MUST done: 0.00036
+[INFO]	DcacheAnalysis: PS done: 0.000165
+[INFO]	DcacheAnalysis: MAY done: 0.000232
+[INFO]	********HH DCACHE: 0.001513
+[INFO]	DcacheAnalysis: MUST done: 0.000672
+[INFO]	DcacheAnalysis: PS done: 0.000233
+[INFO]	DcacheAnalysis: MAY done: 0.000556
+[INFO]	********HH DCACHE: 0.002096
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.013057
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	********HH IPET: 0.004108
+
+L1	type ICACHE	references 3024	hits 3004	misses 20	
+L1	type DCACHE	references 1902	hits 1900	misses 2	
+L2	type ICACHE	references 20	hits 5	misses 15	
+L2	type DCACHE	references 2	hits 0	misses 2	
+[INFO]	********HH CACHESTATISTICS: 0.000915
+[INFO]	 =======Yixian> Total time for the analyses = 0.061375
+WCET: 50046
+[INFO]	********HH SIMPLEPRINT: 1.7e-05
+[INFO]	********HH DOTPRINT: 0.020697
+[INFO]	********HH CODELINE: 0.056919
+[INFO]	********HH HTMLPRINT: 0.000611
+The file name is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The file name is -t
+The file name is ./configWCET.xml
+The file name is simple
+xml_file is ./resICacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 29
+lloop is 173, 153, 
+node: 173
+node: 153
+maxiter: 10
+lloop is 187, 183, 173, 149, 153, 
+node: 187
+node: 183
+node: 173
+node: 149
+node: 153
+maxiter: 10
+22
+Address: 33008 ,CacheSet: 7 ,CHMCValue: CHMCL2Code#0
+Address: 33040 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#0
+Address: 33072 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33152 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#0
+Address: 33168 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#0
+Address: 33184 ,CacheSet: 13 ,CHMCValue: CHMCL2Code#0
+Address: 33200 ,CacheSet: 13 ,CHMCValue: CHMCL2Code#0
+Address: 33220 ,CacheSet: 14 ,CHMCValue: CHMCL2Code#0
+Address: 33232 ,CacheSet: 14 ,CHMCValue: CHMCL2Code#0
+Address: 33248 ,CacheSet: 15 ,CHMCValue: CHMCL2Code#0
+Address: 33268 ,CacheSet: 15 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resICacheL2.xml
+main
+The lanalysis size is 2
+CacheSet: 0 Address: 32768 CACValue: A
+CacheSet: 0 Address: 32784 CACValue: A
+CacheSet: 1 Address: 32800 CACValue: A
+CacheSet: 1 Address: 32816 CACValue: A
+CacheSet: 2 Address: 32832 CACValue: A
+CacheSet: 2 Address: 32848 CACValue: A
+xml_file is ./resDCacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 29
+lloop is 173, 153, 
+node: 173
+node: 153
+maxiter: 10
+lloop is 187, 183, 173, 149, 153, 
+node: 187
+node: 183
+node: 173
+node: 149
+node: 153
+maxiter: 10
+22
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resDCacheL2.xml
+main
+The lanalysis size is 2
+[INFO]	 =======**> Infertime Time = 0.004733
+---------------------------------------------------
+CB and HB size information
+The HB size is 22
+The CB size is 6
+******The conflict cache set of Instruction cache Interference*****
+
+******The conflict cache set of Data cache Interference*****
+Conflict Set: 127 Evited Items: 3
+
+*******************Un-united Cache********************
+The sum of conflict cacheset is 0
+The instruction interference is 0
+The sum of conflict cacheset is 1
+The Data Cache Interference is 3
+Interfered by program simple , The times of the evicted item is 3
+
+
+
+*************This is the version of United cache Interference *************
+Interfered by program simple , The times of the evicted item is 3
+******The conflict cache set of Data cache Interference*****
+The conflictUcache size is 1
+Conflict Set: 127 Evited Items: 3
+
+
+xml_file is ./resICacheL2.xml
+__aeabi_idiv
+The lanalysis size is 29
+xml_file is ./resDCacheL2.xml
+__aeabi_idiv
+The lanalysis size is 29

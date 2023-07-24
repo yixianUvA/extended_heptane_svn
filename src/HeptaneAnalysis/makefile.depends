@@ -1,0 +1,1746 @@
+makefile.depends:  ./src/Specific/DummyAnalysis/DummyAnalysis.cc ./src/Specific/HtmlPrint/HtmlPrint.cc ./src/Specific/CacheAnalysis/Cache.cc ./src/Specific/CacheAnalysis/ICacheAnalysis.cc ./src/Specific/CacheAnalysis/CacheStatistics.cc ./src/Specific/CacheAnalysis/DCacheAnalysis.cc ./src/Specific/DotPrint/DotPrint.cc ./src/Specific/PipelineAnalysis/InstructionPipeline.cc ./src/Specific/PipelineAnalysis/PipelineAnalysis.cc ./src/Specific/PipelineAnalysis/ARMPipelineAnalysis.cc ./src/Specific/PipelineAnalysis/MIPSPipelineAnalysis.cc ./src/Specific/DataAddressAnalysis/ARMAddressAnalysis.cc ./src/Specific/DataAddressAnalysis/StackAnalysis.cc ./src/Specific/DataAddressAnalysis/ARMRegState.cc ./src/Specific/DataAddressAnalysis/MIPSRegState.cc ./src/Specific/DataAddressAnalysis/RegState.cc ./src/Specific/DataAddressAnalysis/MIPSAddressAnalysis.cc ./src/Specific/DataAddressAnalysis/AddressAnalysis.cc ./src/Specific/DataAddressAnalysis/StackInfoAttribute.cc ./src/Specific/IPETAnalysis/Solver.cc ./src/Specific/IPETAnalysis/IPETAnalysis.cc ./src/Specific/CodeLine/CodeLineAttribute.cc ./src/Specific/CodeLine/CodeLine.cc ./src/Specific/SimplePrint/SimplePrint.cc ./src/main.cc ./src/Generic/CallGraph.cc ./src/Generic/Context.cc ./src/Generic/Analysis.cc ./src/Generic/AnalysisHelper.cc ./src/Generic/ContextHelper.cc ./src/Generic/Timer.cc ./src/Generic/Config.cc
+obj/DummyAnalysis.o: src/Specific/DummyAnalysis/DummyAnalysis.cc \
+ src/Specific/DummyAnalysis/DummyAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DummyAnalysis/DummyAnalysis.cc -o obj/DummyAnalysis.o 
+obj/HtmlPrint.o: src/Specific/HtmlPrint/HtmlPrint.cc \
+ src/Specific/HtmlPrint/HtmlPrint.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Generic/CallGraph.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/HtmlPrint/HtmlPrint.cc -o obj/HtmlPrint.o 
+obj/Cache.o: src/Specific/CacheAnalysis/Cache.cc \
+ src/Specific/CacheAnalysis/Cache.h src/Generic/cow_ptr.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CacheAnalysis/Cache.cc -o obj/Cache.o 
+obj/ICacheAnalysis.o: src/Specific/CacheAnalysis/ICacheAnalysis.cc \
+ src/Specific/CacheAnalysis/ICacheAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Specific/CacheAnalysis/Cache.h \
+ src/Generic/Analysis.h src/Specific/CacheAnalysis/CacheAnalysis.h \
+ src/Generic/Timer.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CacheAnalysis/ICacheAnalysis.cc -o obj/ICacheAnalysis.o 
+obj/CacheStatistics.o: src/Specific/CacheAnalysis/CacheStatistics.cc \
+ src/Specific/CacheAnalysis/CacheStatistics.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CacheAnalysis/CacheStatistics.cc -o obj/CacheStatistics.o 
+obj/DCacheAnalysis.o: src/Specific/CacheAnalysis/DCacheAnalysis.cc \
+ src/Specific/CacheAnalysis/DCacheAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Specific/CacheAnalysis/Cache.h \
+ src/Generic/Analysis.h src/Specific/CacheAnalysis/CacheAnalysis.h \
+ src/Generic/Timer.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CacheAnalysis/DCacheAnalysis.cc -o obj/DCacheAnalysis.o 
+obj/DotPrint.o: src/Specific/DotPrint/DotPrint.cc \
+ src/Specific/DotPrint/DotPrint.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DotPrint/DotPrint.cc -o obj/DotPrint.o 
+obj/InstructionPipeline.o: \
+ src/Specific/PipelineAnalysis/InstructionPipeline.cc \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/PipelineAnalysis/InstructionPipeline.cc -o obj/InstructionPipeline.o 
+obj/PipelineAnalysis.o: src/Specific/PipelineAnalysis/PipelineAnalysis.cc \
+ src/Specific/PipelineAnalysis/PipelineAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/PipelineAnalysis/PipelineAnalysis.cc -o obj/PipelineAnalysis.o 
+obj/ARMPipelineAnalysis.o: \
+ src/Specific/PipelineAnalysis/ARMPipelineAnalysis.cc \
+ src/Specific/PipelineAnalysis/ARMPipelineAnalysis.h \
+ src/Specific/PipelineAnalysis/PipelineAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/PipelineAnalysis/ARMPipelineAnalysis.cc -o obj/ARMPipelineAnalysis.o 
+obj/MIPSPipelineAnalysis.o: \
+ src/Specific/PipelineAnalysis/MIPSPipelineAnalysis.cc \
+ src/Specific/PipelineAnalysis/MIPSPipelineAnalysis.h \
+ src/Specific/PipelineAnalysis/PipelineAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/PipelineAnalysis/MIPSPipelineAnalysis.cc -o obj/MIPSPipelineAnalysis.o 
+obj/ARMAddressAnalysis.o: \
+ src/Specific/DataAddressAnalysis/ARMAddressAnalysis.cc \
+ src/Specific/DataAddressAnalysis/ARMAddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h \
+ src/Specific/DataAddressAnalysis/AbstractRegMem.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/InstructionARM.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ARM.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/ARMAddressAnalysis.cc -o obj/ARMAddressAnalysis.o 
+obj/StackAnalysis.o: src/Specific/DataAddressAnalysis/StackAnalysis.cc \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/StackAnalysis.cc -o obj/StackAnalysis.o 
+obj/ARMRegState.o: src/Specific/DataAddressAnalysis/ARMRegState.cc \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/InstructionARM.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ARM.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/ARMRegState.cc -o obj/ARMRegState.o 
+obj/MIPSRegState.o: src/Specific/DataAddressAnalysis/MIPSRegState.cc \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/MIPS.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/MIPSRegState.cc -o obj/MIPSRegState.o 
+obj/RegState.o: src/Specific/DataAddressAnalysis/RegState.cc \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/RegState.cc -o obj/RegState.o 
+obj/MIPSAddressAnalysis.o: \
+ src/Specific/DataAddressAnalysis/MIPSAddressAnalysis.cc \
+ src/Specific/DataAddressAnalysis/MIPSAddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h \
+ src/Specific/DataAddressAnalysis/AbstractRegMem.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/MIPSAddressAnalysis.cc -o obj/MIPSAddressAnalysis.o 
+obj/AddressAnalysis.o: \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.cc \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ src/Specific/DataAddressAnalysis/AbstractRegMem.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/AddressAnalysis.cc -o obj/AddressAnalysis.o 
+obj/StackInfoAttribute.o: \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.cc \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/DataAddressAnalysis/StackInfoAttribute.cc -o obj/StackInfoAttribute.o 
+obj/Solver.o: src/Specific/IPETAnalysis/Solver.cc \
+ src/Specific/IPETAnalysis/Solver.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Specific/IPETAnalysis/IPETAnalysis.h src/Generic/Analysis.h \
+ src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/IPETAnalysis/Solver.cc -o obj/Solver.o 
+obj/IPETAnalysis.o: src/Specific/IPETAnalysis/IPETAnalysis.cc \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Generic/Config.h \
+ src/Specific/IPETAnalysis/IPETAnalysis.h \
+ src/Specific/IPETAnalysis/Solver.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/IPETAnalysis/IPETAnalysis.cc -o obj/IPETAnalysis.o 
+obj/CodeLineAttribute.o: src/Specific/CodeLine/CodeLineAttribute.cc \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CodeLine/CodeLineAttribute.cc -o obj/CodeLineAttribute.o 
+obj/CodeLine.o: src/Specific/CodeLine/CodeLine.cc \
+ src/Specific/CodeLine/CodeLine.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/CodeLine/CodeLine.cc -o obj/CodeLine.o 
+obj/SimplePrint.o: src/Specific/SimplePrint/SimplePrint.cc \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/LoopTree.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Specific/SimplePrint/SimplePrint.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Specific/SimplePrint/SimplePrint.cc -o obj/SimplePrint.o 
+obj/main.o: src/main.cc \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/Analysis.h src/SharedAttributes/SharedAttributes.h \
+ src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ src/Generic/Analysis.h src/SharedAttributes/SharedAttributes.h \
+ src/Specific/CacheAnalysis/ICacheAnalysis.h src/Generic/Analysis.h \
+ src/Specific/CacheAnalysis/Cache.h src/Generic/Analysis.h \
+ src/Specific/CacheAnalysis/CacheAnalysis.h \
+ src/Specific/CacheAnalysis/CacheStatistics.h src/Generic/Config.h \
+ src/Specific/CacheAnalysis/DCacheAnalysis.h \
+ src/Specific/SimplePrint/SimplePrint.h src/Specific/DotPrint/DotPrint.h \
+ src/Specific/IPETAnalysis/IPETAnalysis.h \
+ src/Specific/IPETAnalysis/Solver.h \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h \
+ src/Specific/DataAddressAnalysis/AbstractRegMem.h \
+ src/Specific/HtmlPrint/HtmlPrint.h src/Generic/CallGraph.h \
+ src/Specific/PipelineAnalysis/PipelineAnalysis.h \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h src/Generic/Timer.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/main.cc -o obj/main.o 
+obj/CallGraph.o: src/Generic/CallGraph.cc src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/CallGraph.cc -o obj/CallGraph.o 
+obj/Context.o: src/Generic/Context.cc src/Generic/Context.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/cow_ptr.h src/SharedAttributes/SharedAttributes.h \
+ src/Generic/Config.h src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/Context.cc -o obj/Context.o 
+obj/Analysis.o: src/Generic/Analysis.cc src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Specific/HtmlPrint/HtmlPrint.h \
+ src/Generic/Analysis.h src/Generic/CallGraph.h src/Generic/Timer.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/Analysis.cc -o obj/Analysis.o 
+obj/AnalysisHelper.o: src/Generic/AnalysisHelper.cc \
+ src/Generic/Analysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/SharedAttributes/SharedAttributes.h src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Generic/AnalysisHelper.h src/Generic/CallGraph.h \
+ src/Generic/ContextHelper.h src/Specific/HtmlPrint/HtmlPrint.h \
+ src/Generic/Analysis.h src/Generic/CallGraph.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/AnalysisHelper.cc -o obj/AnalysisHelper.o 
+obj/ContextHelper.o: src/Generic/ContextHelper.cc \
+ src/Generic/ContextHelper.h src/Generic/Context.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/cow_ptr.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/ContextHelper.cc -o obj/ContextHelper.o 
+obj/Timer.o: src/Generic/Timer.cc src/Generic/Timer.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/Timer.cc -o obj/Timer.o 
+obj/Config.o: src/Generic/Config.cc src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Helper.h \
+ src/Generic/Analysis.h src/SharedAttributes/SharedAttributes.h \
+ src/Generic/Config.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/Generic/Context.h src/Generic/cow_ptr.h \
+ src/Specific/DataAddressAnalysis/StackInfoAttribute.h \
+ src/Specific/CodeLine/CodeLineAttribute.h src/Generic/AnalysisHelper.h \
+ src/Generic/CallGraph.h src/Generic/ContextHelper.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Logger.h \
+ src/Specific/CacheAnalysis/ICacheAnalysis.h src/Generic/Analysis.h \
+ src/Specific/CacheAnalysis/Cache.h src/Generic/Analysis.h \
+ src/Specific/CacheAnalysis/CacheAnalysis.h \
+ src/Specific/CacheAnalysis/CacheStatistics.h src/Generic/Config.h \
+ src/Specific/CacheAnalysis/DCacheAnalysis.h \
+ src/Specific/SimplePrint/SimplePrint.h src/Specific/DotPrint/DotPrint.h \
+ src/Specific/IPETAnalysis/IPETAnalysis.h \
+ src/Specific/IPETAnalysis/Solver.h \
+ src/Specific/DataAddressAnalysis/MIPSAddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/AddressAnalysis.h \
+ src/Specific/DataAddressAnalysis/RegState.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ src/Specific/DataAddressAnalysis/StackAnalysis.h \
+ src/Specific/DataAddressAnalysis/AbstractRegMem.h \
+ src/Specific/DataAddressAnalysis/ARMAddressAnalysis.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/InstructionARM.h \
+ /home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src/Utl.h \
+ src/Specific/CodeLine/CodeLine.h src/Specific/HtmlPrint/HtmlPrint.h \
+ src/Generic/CallGraph.h \
+ src/Specific/PipelineAnalysis/MIPSPipelineAnalysis.h \
+ src/Specific/PipelineAnalysis/PipelineAnalysis.h \
+ src/Specific/PipelineAnalysis/InstructionPipeline.h \
+ src/Specific/PipelineAnalysis/ARMPipelineAnalysis.h \
+ src/Specific/DummyAnalysis/DummyAnalysis.h src/Generic/Timer.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc -Isrc/Generic -Isrc/SharedAttributes -Isrc/CacheAnalysis -Isrc/CacheAnalysis -Isrc/CodeLine -Isrc/DataAddressAnalysis -Isrc/DotPrint -Isrc/DummyAnalysis -Isrc/HtmlPrint -Isrc/IPETAnalysis -Isrc/PipelineAnalysis -Isrc/SimplePrint -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneAnalysis/../Common/ArchitectureDependent/src -c src/Generic/Config.cc -o obj/Config.o 

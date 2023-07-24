@@ -1,0 +1,333 @@
+\hypertarget{classcfglib_1_1Cfg}{}\section{cfglib\+:\+:Cfg Class Reference}
+\label{classcfglib_1_1Cfg}\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+
+
+{\ttfamily \#include $<$Cfg.\+h$>$}
+
+Inheritance diagram for cfglib\+:\+:Cfg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcfglib_1_1Cfg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Cfg_a0100bef586e13e2ad53c83b20e365c5e}{Cfg} (\hyperlink{classcfglib_1_1Program}{Program} $\ast$program, List\+Of\+String name)
+\item 
+\hyperlink{classcfglib_1_1Cfg_a3c7102871bcac1c06389aa38674c76b1}{Cfg} (List\+Of\+String name)
+\item 
+\hyperlink{classcfglib_1_1Cfg_a279b0b9b7f73a621bc50b35cf7fb7dda}{$\sim$\+Cfg} ()
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Cfg_a87e8932c31bd9747af7eafc92b6d749b}{Clone} (\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&)
+\item 
+List\+Of\+String \hyperlink{classcfglib_1_1Cfg_a429688de55701afc5e5e41a6cfcae050}{Get\+Name} ()
+\item 
+bool \hyperlink{classcfglib_1_1Cfg_a53c796e515ba5bdad1dd17b5e2cea403}{Is\+External} () const
+\item 
+\hyperlink{classcfglib_1_1Program}{Program} $\ast$ \hyperlink{classcfglib_1_1Cfg_aefc6931e39418420ae47e09528bba5af}{Get\+Program} ()
+\item 
+void \hyperlink{classcfglib_1_1Cfg_a6408b372beac5ab2eaa02dbea18ca23c}{Set\+Program} (\hyperlink{classcfglib_1_1Program}{Program} $\ast$p)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_a54ab52821050574fa12eca0eb87f7271}{Get\+Call\+Nodes} (void)
+\item 
+bool \hyperlink{classcfglib_1_1Cfg_a09c2fff20ceddf2a659bbc8e64559f8e}{Is\+Empty} () const
+\item 
+\hyperlink{classcfglib_1_1Node}{Node} $\ast$ \hyperlink{classcfglib_1_1Cfg_a023e8fe06cf55bfecf3c1f4a3ddb3f99}{Create\+New\+Node} (enum \hyperlink{namespacecfglib_a44952a45d827aaa271f7e7dac5bf7752}{node\+\_\+type} type)
+\item 
+\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$ \hyperlink{classcfglib_1_1Cfg_aa3e584ba98c948fe9cb31cbd9ba30215}{Create\+New\+Edge} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$origin, \hyperlink{classcfglib_1_1Node}{Node} $\ast$destination)
+\item 
+void \hyperlink{classcfglib_1_1Cfg_a4150c4a82a82d63ab855595c844148f2}{Remove\+Edge} (\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$e)
+\item 
+void \hyperlink{classcfglib_1_1Cfg_acebbb5cb49f9cf8c50ffe0918cbd98d1}{Remove\+Edge\+No\+Delete} (\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$e)
+\item 
+void \hyperlink{classcfglib_1_1Cfg_aca4049e467e6979666c3273bf3e3045a}{put\+Edge} (\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$E)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_a0a5b78a124083bb3419d10968de0554a}{Get\+All\+Nodes} ()
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Edge}{Edge} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_aae35959d564c688ffe76f3d121c47447}{Get\+All\+Edges} ()
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Loop}{Loop} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_ac5e6efa01325b49924190a1f89727ed5}{Get\+All\+Loops} ()
+\item 
+\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$ \hyperlink{classcfglib_1_1Cfg_a89f9917fc598d5782698823d2d006782}{Find\+Edge} (\hyperlink{classcfglib_1_1Node}{Node} const $\ast$origin, \hyperlink{classcfglib_1_1Node}{Node} const $\ast$destination) const
+\item 
+\hyperlink{classcfglib_1_1Node}{Node} $\ast$ \hyperlink{classcfglib_1_1Cfg_ae3c864797fe19d85c1ab303baa7e9fbb}{Get\+Start\+Node} ()
+\item 
+void \hyperlink{classcfglib_1_1Cfg_ad77f85cebfb1ef7e55afa78f48b6f96e}{Set\+Start\+Node} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_aa94cd8bb8d1d33cdcd6d1a7e0b244370}{Get\+End\+Nodes} ()
+\item 
+void \hyperlink{classcfglib_1_1Cfg_ae235a54ff74dd424c6b5d582ce670c5b}{Set\+End\+Node} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+void \hyperlink{classcfglib_1_1Cfg_a892063ed55599c1618e49dd31555e7fb}{remove\+End\+Node} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Edge}{Edge} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_ac87776adfdc86881d01c4ea529004c1a}{Get\+Incoming\+Edges} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_ac5fcaa98be7d92862fa1cfa12bc539e6}{Get\+Predecessors} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Edge}{Edge} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_aea82731a4de76ef618bc91e8ab11c56b}{Get\+Outgoing\+Edges} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$ $>$ \hyperlink{classcfglib_1_1Cfg_a4f52a0e3814e4d404d5520437d27d407}{Get\+Successors} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$node)
+\item 
+\hyperlink{classcfglib_1_1Node}{Node} $\ast$ \hyperlink{classcfglib_1_1Cfg_a1b40c4d28399a71195159b3fc1057399}{Get\+Source\+Node} (\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$edge)
+\item 
+\hyperlink{classcfglib_1_1Node}{Node} $\ast$ \hyperlink{classcfglib_1_1Cfg_aaf238d539a151d6087a9381f5a89555e}{Get\+Target\+Node} (\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$edge)
+\item 
+\hyperlink{classcfglib_1_1Loop}{Loop} $\ast$ \hyperlink{classcfglib_1_1Cfg_a5c751a3e53b10ecdae556b2936e5303c}{Create\+New\+Loop} (\hyperlink{classcfglib_1_1Node}{Node} $\ast$start\+Node, std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$$>$ const \&other\+Nodes\+List)
+\item 
+\hyperlink{classcfglib_1_1Loop}{Loop} $\ast$ \hyperlink{classcfglib_1_1Cfg_af8e183cfc272143b47dc856f8f368627}{Create\+New\+Loop} ()
+\item 
+void \hyperlink{classcfglib_1_1Cfg_a4c71befb94beac37921b82361825cc54}{Remove\+Loop} (\hyperlink{classcfglib_1_1Loop}{Loop} $\ast$loop)
+\item 
+std\+::ostream \& \hyperlink{classcfglib_1_1Cfg_a05c9fc4c8a7e5c0850e6998722433787}{Write\+Xml} (std\+::ostream \&oss, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+virtual void \hyperlink{classcfglib_1_1Cfg_a3525e0c748971e945193da2a0dd4b571}{Read\+Xml} (\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$tag, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+string \hyperlink{classcfglib_1_1Cfg_ae9317f335c39263f55484b0149725d4c}{get\+String\+Name} ()
+\item 
+void \hyperlink{classcfglib_1_1Cfg_ad939d89b58f8de319335e307069ae2ab}{Yixian\+Test\+Name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a Control Flow Graph. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Cfg_a0100bef586e13e2ad53c83b20e365c5e}\label{classcfglib_1_1Cfg_a0100bef586e13e2ad53c83b20e365c5e}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Cfg@{Cfg}}
+\index{Cfg@{Cfg}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Cfg()}{Cfg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Cfg\+::\+Cfg (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Program}{Program} $\ast$}]{program,  }\item[{List\+Of\+String}]{name }\end{DoxyParamCaption})}
+
+Basic constructor. \mbox{\Hypertarget{classcfglib_1_1Cfg_a3c7102871bcac1c06389aa38674c76b1}\label{classcfglib_1_1Cfg_a3c7102871bcac1c06389aa38674c76b1}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Cfg@{Cfg}}
+\index{Cfg@{Cfg}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Cfg()}{Cfg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Cfg\+::\+Cfg (\begin{DoxyParamCaption}\item[{List\+Of\+String}]{name }\end{DoxyParamCaption})}
+
+constructor for a free \hyperlink{classcfglib_1_1Cfg}{Cfg} (used in clone function) \mbox{\Hypertarget{classcfglib_1_1Cfg_a279b0b9b7f73a621bc50b35cf7fb7dda}\label{classcfglib_1_1Cfg_a279b0b9b7f73a621bc50b35cf7fb7dda}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!````~Cfg@{$\sim$\+Cfg}}
+\index{````~Cfg@{$\sim$\+Cfg}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{$\sim$\+Cfg()}{~Cfg()}}
+{\footnotesize\ttfamily cfglib\+::\+Cfg\+::$\sim$\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Cfg_a87e8932c31bd9747af7eafc92b6d749b}\label{classcfglib_1_1Cfg_a87e8932c31bd9747af7eafc92b6d749b}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Clone@{Clone}}
+\index{Clone@{Clone}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Cfg\+::\+Clone (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&}]{ }\end{DoxyParamCaption})}
+
+Cloning function The program in which this C\+FG is associated have to be set manualy (use the \hyperlink{classcfglib_1_1Cfg_a6408b372beac5ab2eaa02dbea18ca23c}{Cfg\+::\+Set\+Program(\+Program$\ast$ P)} function) \mbox{\Hypertarget{classcfglib_1_1Cfg_aa3e584ba98c948fe9cb31cbd9ba30215}\label{classcfglib_1_1Cfg_aa3e584ba98c948fe9cb31cbd9ba30215}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Create\+New\+Edge@{Create\+New\+Edge}}
+\index{Create\+New\+Edge@{Create\+New\+Edge}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Create\+New\+Edge()}{CreateNewEdge()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Edge}{Edge}$\ast$ cfglib\+::\+Cfg\+::\+Create\+New\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{origin,  }\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{destination }\end{DoxyParamCaption})}
+
+Adding an edge. Given two nodes, create an edge from the first to the second. This edge must not yet exist. \mbox{\Hypertarget{classcfglib_1_1Cfg_a5c751a3e53b10ecdae556b2936e5303c}\label{classcfglib_1_1Cfg_a5c751a3e53b10ecdae556b2936e5303c}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Create\+New\+Loop@{Create\+New\+Loop}}
+\index{Create\+New\+Loop@{Create\+New\+Loop}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Create\+New\+Loop()}{CreateNewLoop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Loop}{Loop}$\ast$ cfglib\+::\+Cfg\+::\+Create\+New\+Loop (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{start\+Node,  }\item[{std\+::vector$<$ \hyperlink{classcfglib_1_1Node}{Node} $\ast$$>$ const \&}]{other\+Nodes\+List }\end{DoxyParamCaption})}
+
+\hyperlink{classcfglib_1_1Loop}{Loop} creation. The loops managed here are natural loops, with only one entry point. The first argument is the head \hyperlink{classcfglib_1_1Node}{Node} (entry point in the loop), then come the list of other Nodes in the loop \mbox{\Hypertarget{classcfglib_1_1Cfg_af8e183cfc272143b47dc856f8f368627}\label{classcfglib_1_1Cfg_af8e183cfc272143b47dc856f8f368627}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Create\+New\+Loop@{Create\+New\+Loop}}
+\index{Create\+New\+Loop@{Create\+New\+Loop}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Create\+New\+Loop()}{CreateNewLoop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Loop}{Loop}$\ast$ cfglib\+::\+Cfg\+::\+Create\+New\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create an uninitialised \hyperlink{classcfglib_1_1Loop}{Loop}. Use loop-\/$>$Add\+Node() beginning with the head \hyperlink{classcfglib_1_1Node}{Node} to fill the loop. \mbox{\Hypertarget{classcfglib_1_1Cfg_a023e8fe06cf55bfecf3c1f4a3ddb3f99}\label{classcfglib_1_1Cfg_a023e8fe06cf55bfecf3c1f4a3ddb3f99}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Create\+New\+Node@{Create\+New\+Node}}
+\index{Create\+New\+Node@{Create\+New\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Create\+New\+Node()}{CreateNewNode()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Node}{Node}$\ast$ cfglib\+::\+Cfg\+::\+Create\+New\+Node (\begin{DoxyParamCaption}\item[{enum \hyperlink{namespacecfglib_a44952a45d827aaa271f7e7dac5bf7752}{node\+\_\+type}}]{type }\end{DoxyParamCaption})}
+
+Creation of a new node. We add new nodes to the C\+FG with this function which returns a pointer to the new node. The first created node is automatically set as the start node. \mbox{\Hypertarget{classcfglib_1_1Cfg_a89f9917fc598d5782698823d2d006782}\label{classcfglib_1_1Cfg_a89f9917fc598d5782698823d2d006782}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Find\+Edge@{Find\+Edge}}
+\index{Find\+Edge@{Find\+Edge}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Find\+Edge()}{FindEdge()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Edge}{Edge}$\ast$ cfglib\+::\+Cfg\+::\+Find\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} const $\ast$}]{origin,  }\item[{\hyperlink{classcfglib_1_1Node}{Node} const $\ast$}]{destination }\end{DoxyParamCaption}) const}
+
+Get the \hyperlink{classcfglib_1_1Edge}{Edge} between the two argument nodes. Return N\+U\+LL if there is no such \hyperlink{classcfglib_1_1Edge}{Edge} \mbox{\Hypertarget{classcfglib_1_1Cfg_aae35959d564c688ffe76f3d121c47447}\label{classcfglib_1_1Cfg_aae35959d564c688ffe76f3d121c47447}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+All\+Edges@{Get\+All\+Edges}}
+\index{Get\+All\+Edges@{Get\+All\+Edges}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+All\+Edges()}{GetAllEdges()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Edge}{Edge}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+All\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a list of all edges \mbox{\Hypertarget{classcfglib_1_1Cfg_ac5e6efa01325b49924190a1f89727ed5}\label{classcfglib_1_1Cfg_ac5e6efa01325b49924190a1f89727ed5}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+All\+Loops@{Get\+All\+Loops}}
+\index{Get\+All\+Loops@{Get\+All\+Loops}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+All\+Loops()}{GetAllLoops()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Loop}{Loop}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+All\+Loops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a list of all loops \mbox{\Hypertarget{classcfglib_1_1Cfg_a0a5b78a124083bb3419d10968de0554a}\label{classcfglib_1_1Cfg_a0a5b78a124083bb3419d10968de0554a}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+All\+Nodes@{Get\+All\+Nodes}}
+\index{Get\+All\+Nodes@{Get\+All\+Nodes}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+All\+Nodes()}{GetAllNodes()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Node}{Node}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+All\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a list of all nodes \mbox{\Hypertarget{classcfglib_1_1Cfg_a54ab52821050574fa12eca0eb87f7271}\label{classcfglib_1_1Cfg_a54ab52821050574fa12eca0eb87f7271}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Call\+Nodes@{Get\+Call\+Nodes}}
+\index{Get\+Call\+Nodes@{Get\+Call\+Nodes}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Call\+Nodes()}{GetCallNodes()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Node}{Node}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+Call\+Nodes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Return every call node of the C\+FG \mbox{\Hypertarget{classcfglib_1_1Cfg_aa94cd8bb8d1d33cdcd6d1a7e0b244370}\label{classcfglib_1_1Cfg_aa94cd8bb8d1d33cdcd6d1a7e0b244370}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+End\+Nodes@{Get\+End\+Nodes}}
+\index{Get\+End\+Nodes@{Get\+End\+Nodes}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+End\+Nodes()}{GetEndNodes()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Node}{Node}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+End\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return a list of end nodes of this C\+FG. \mbox{\Hypertarget{classcfglib_1_1Cfg_ac87776adfdc86881d01c4ea529004c1a}\label{classcfglib_1_1Cfg_ac87776adfdc86881d01c4ea529004c1a}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Incoming\+Edges@{Get\+Incoming\+Edges}}
+\index{Get\+Incoming\+Edges@{Get\+Incoming\+Edges}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Incoming\+Edges()}{GetIncomingEdges()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Edge}{Edge}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+Incoming\+Edges (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Return the incoming edges of a node. \mbox{\Hypertarget{classcfglib_1_1Cfg_a429688de55701afc5e5e41a6cfcae050}\label{classcfglib_1_1Cfg_a429688de55701afc5e5e41a6cfcae050}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily List\+Of\+String cfglib\+::\+Cfg\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+retrieve the function name of this \hyperlink{classcfglib_1_1Cfg}{Cfg} \mbox{\Hypertarget{classcfglib_1_1Cfg_aea82731a4de76ef618bc91e8ab11c56b}\label{classcfglib_1_1Cfg_aea82731a4de76ef618bc91e8ab11c56b}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Outgoing\+Edges@{Get\+Outgoing\+Edges}}
+\index{Get\+Outgoing\+Edges@{Get\+Outgoing\+Edges}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Outgoing\+Edges()}{GetOutgoingEdges()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Edge}{Edge}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+Outgoing\+Edges (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Return the edges outgoing from a node. \mbox{\Hypertarget{classcfglib_1_1Cfg_ac5fcaa98be7d92862fa1cfa12bc539e6}\label{classcfglib_1_1Cfg_ac5fcaa98be7d92862fa1cfa12bc539e6}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Predecessors@{Get\+Predecessors}}
+\index{Get\+Predecessors@{Get\+Predecessors}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Predecessors()}{GetPredecessors()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Node}{Node}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+Predecessors (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Return the predecessors of a node. \mbox{\Hypertarget{classcfglib_1_1Cfg_aefc6931e39418420ae47e09528bba5af}\label{classcfglib_1_1Cfg_aefc6931e39418420ae47e09528bba5af}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Program@{Get\+Program}}
+\index{Get\+Program@{Get\+Program}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Program()}{GetProgram()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Program}{Program}$\ast$ cfglib\+::\+Cfg\+::\+Get\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+retrieve a pointer to the including program \mbox{\Hypertarget{classcfglib_1_1Cfg_a1b40c4d28399a71195159b3fc1057399}\label{classcfglib_1_1Cfg_a1b40c4d28399a71195159b3fc1057399}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Source\+Node@{Get\+Source\+Node}}
+\index{Get\+Source\+Node@{Get\+Source\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Source\+Node()}{GetSourceNode()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Node}{Node}$\ast$ cfglib\+::\+Cfg\+::\+Get\+Source\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$}]{edge }\end{DoxyParamCaption})}
+
+Return the origin of an edge \mbox{\Hypertarget{classcfglib_1_1Cfg_ae3c864797fe19d85c1ab303baa7e9fbb}\label{classcfglib_1_1Cfg_ae3c864797fe19d85c1ab303baa7e9fbb}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Start\+Node@{Get\+Start\+Node}}
+\index{Get\+Start\+Node@{Get\+Start\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Start\+Node()}{GetStartNode()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Node}{Node}$\ast$ cfglib\+::\+Cfg\+::\+Get\+Start\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the start \hyperlink{classcfglib_1_1Node}{Node} of this C\+FG. There is only one start node for each C\+FG. Return 0 if there is no node on this C\+FG \mbox{\Hypertarget{classcfglib_1_1Cfg_ae9317f335c39263f55484b0149725d4c}\label{classcfglib_1_1Cfg_ae9317f335c39263f55484b0149725d4c}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!get\+String\+Name@{get\+String\+Name}}
+\index{get\+String\+Name@{get\+String\+Name}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{get\+String\+Name()}{getStringName()}}
+{\footnotesize\ttfamily string cfglib\+::\+Cfg\+::get\+String\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the associated names of the C\+FG \mbox{\Hypertarget{classcfglib_1_1Cfg_a4f52a0e3814e4d404d5520437d27d407}\label{classcfglib_1_1Cfg_a4f52a0e3814e4d404d5520437d27d407}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Successors@{Get\+Successors}}
+\index{Get\+Successors@{Get\+Successors}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Successors()}{GetSuccessors()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcfglib_1_1Node}{Node}$\ast$$>$ cfglib\+::\+Cfg\+::\+Get\+Successors (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Return the successors of a node. The successors vector is empty if you pass an end \hyperlink{classcfglib_1_1Node}{Node}. Function call are simple Nodes, the successor of a function call \hyperlink{classcfglib_1_1Node}{Node} is the next basic block in the caller \hyperlink{classcfglib_1_1Cfg}{Cfg}. \mbox{\Hypertarget{classcfglib_1_1Cfg_aaf238d539a151d6087a9381f5a89555e}\label{classcfglib_1_1Cfg_aaf238d539a151d6087a9381f5a89555e}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Get\+Target\+Node@{Get\+Target\+Node}}
+\index{Get\+Target\+Node@{Get\+Target\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Get\+Target\+Node()}{GetTargetNode()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Node}{Node}$\ast$ cfglib\+::\+Cfg\+::\+Get\+Target\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$}]{edge }\end{DoxyParamCaption})}
+
+Return the destination of an edge \mbox{\Hypertarget{classcfglib_1_1Cfg_a09c2fff20ceddf2a659bbc8e64559f8e}\label{classcfglib_1_1Cfg_a09c2fff20ceddf2a659bbc8e64559f8e}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Is\+Empty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Cfg\+::\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return true if the graph does not have any node \mbox{\Hypertarget{classcfglib_1_1Cfg_a53c796e515ba5bdad1dd17b5e2cea403}\label{classcfglib_1_1Cfg_a53c796e515ba5bdad1dd17b5e2cea403}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Is\+External@{Is\+External}}
+\index{Is\+External@{Is\+External}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Is\+External()}{IsExternal()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Cfg\+::\+Is\+External (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+tells if the C\+FG is external or not \mbox{\Hypertarget{classcfglib_1_1Cfg_aca4049e467e6979666c3273bf3e3045a}\label{classcfglib_1_1Cfg_aca4049e467e6979666c3273bf3e3045a}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!put\+Edge@{put\+Edge}}
+\index{put\+Edge@{put\+Edge}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{put\+Edge()}{putEdge()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::put\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$}]{E }\end{DoxyParamCaption})}
+
+Put a removed edge in the cfg to use with edges removed by Remove\+Edge\+No\+Delete \mbox{\Hypertarget{classcfglib_1_1Cfg_a3525e0c748971e945193da2a0dd4b571}\label{classcfglib_1_1Cfg_a3525e0c748971e945193da2a0dd4b571}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily virtual void cfglib\+::\+Cfg\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$}]{tag,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Deserialisation function. 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_a876d530446317872259356af9b016e13}{cfglib\+::\+Serialisable}.
+
+\mbox{\Hypertarget{classcfglib_1_1Cfg_a4150c4a82a82d63ab855595c844148f2}\label{classcfglib_1_1Cfg_a4150c4a82a82d63ab855595c844148f2}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Remove\+Edge@{Remove\+Edge}}
+\index{Remove\+Edge@{Remove\+Edge}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Remove\+Edge()}{RemoveEdge()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Remove\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Remove an edge and delete it from memory removes the edge only, not the source/target node \mbox{\Hypertarget{classcfglib_1_1Cfg_acebbb5cb49f9cf8c50ffe0918cbd98d1}\label{classcfglib_1_1Cfg_acebbb5cb49f9cf8c50ffe0918cbd98d1}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Remove\+Edge\+No\+Delete@{Remove\+Edge\+No\+Delete}}
+\index{Remove\+Edge\+No\+Delete@{Remove\+Edge\+No\+Delete}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Remove\+Edge\+No\+Delete()}{RemoveEdgeNoDelete()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Remove\+Edge\+No\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Edge}{Edge} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Remove an edge but do not delete it removes the edge only, not the source/target node \mbox{\Hypertarget{classcfglib_1_1Cfg_a892063ed55599c1618e49dd31555e7fb}\label{classcfglib_1_1Cfg_a892063ed55599c1618e49dd31555e7fb}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!remove\+End\+Node@{remove\+End\+Node}}
+\index{remove\+End\+Node@{remove\+End\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{remove\+End\+Node()}{removeEndNode()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::remove\+End\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Cfg_a4c71befb94beac37921b82361825cc54}\label{classcfglib_1_1Cfg_a4c71befb94beac37921b82361825cc54}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Remove\+Loop@{Remove\+Loop}}
+\index{Remove\+Loop@{Remove\+Loop}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Remove\+Loop()}{RemoveLoop()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Remove\+Loop (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Loop}{Loop} $\ast$}]{loop }\end{DoxyParamCaption})}
+
+\hyperlink{classcfglib_1_1Loop}{Loop} suppression. \mbox{\Hypertarget{classcfglib_1_1Cfg_ae235a54ff74dd424c6b5d582ce670c5b}\label{classcfglib_1_1Cfg_ae235a54ff74dd424c6b5d582ce670c5b}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Set\+End\+Node@{Set\+End\+Node}}
+\index{Set\+End\+Node@{Set\+End\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Set\+End\+Node()}{SetEndNode()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Set\+End\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Set an existing node as an end node. \mbox{\Hypertarget{classcfglib_1_1Cfg_a6408b372beac5ab2eaa02dbea18ca23c}\label{classcfglib_1_1Cfg_a6408b372beac5ab2eaa02dbea18ca23c}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Set\+Program@{Set\+Program}}
+\index{Set\+Program@{Set\+Program}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Set\+Program()}{SetProgram()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Set\+Program (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Program}{Program} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Associate the program p to this C\+FG \mbox{\Hypertarget{classcfglib_1_1Cfg_ad77f85cebfb1ef7e55afa78f48b6f96e}\label{classcfglib_1_1Cfg_ad77f85cebfb1ef7e55afa78f48b6f96e}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Set\+Start\+Node@{Set\+Start\+Node}}
+\index{Set\+Start\+Node@{Set\+Start\+Node}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Set\+Start\+Node()}{SetStartNode()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Set\+Start\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Node}{Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+Change the start node of this C\+FG. \mbox{\Hypertarget{classcfglib_1_1Cfg_a05c9fc4c8a7e5c0850e6998722433787}\label{classcfglib_1_1Cfg_a05c9fc4c8a7e5c0850e6998722433787}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily std\+::ostream\& cfglib\+::\+Cfg\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{oss,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialisation temporary function F\+I\+X\+ME\+: 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_aaeb80cc7397ad312e5ae34f39412ce42}{cfglib\+::\+Serialisable}.
+
+\mbox{\Hypertarget{classcfglib_1_1Cfg_ad939d89b58f8de319335e307069ae2ab}\label{classcfglib_1_1Cfg_ad939d89b58f8de319335e307069ae2ab}} 
+\index{cfglib\+::\+Cfg@{cfglib\+::\+Cfg}!Yixian\+Test\+Name@{Yixian\+Test\+Name}}
+\index{Yixian\+Test\+Name@{Yixian\+Test\+Name}!cfglib\+::\+Cfg@{cfglib\+::\+Cfg}}
+\subsubsection{\texorpdfstring{Yixian\+Test\+Name()}{YixianTestName()}}
+{\footnotesize\ttfamily void cfglib\+::\+Cfg\+::\+Yixian\+Test\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Cfg_8h}{Cfg.\+h}\end{DoxyCompactItemize}

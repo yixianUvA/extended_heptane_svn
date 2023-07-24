@@ -1,0 +1,119 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/minmax/minmax.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: minmax.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  * Changes: JG 2005/12/23: Changed type of main to int, added prototypes.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void swap(int *a, int *b);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int min(int a, int b, int c);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int max(int a, int b, int c);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void swap(int *a, int *b)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  int tmp = *a;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  *a = *b;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  *b = tmp;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int min(int a, int b, int c)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  int m;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>  if (a <= b)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>      if (a <= c)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	m = a;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      else</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	m = c;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  else</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>    m = (b <= c) ? b : c;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>  return m;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int max(int a, int b, int c)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  if (a <= b)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>    swap(&a, &b);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  if (a <= c)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>    swap(&a, &c);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  return a;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  int x = 10;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  int y = 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  int z = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  if (x <= y)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>    swap(&x, &y);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  else if (x <= z)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>    x += min(x, y, z);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>    z *= max(z, y, x);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 0 </td>
+<td><tt><pre>  return (y <= z ? y + z : y - z);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

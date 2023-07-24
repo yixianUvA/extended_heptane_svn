@@ -1,0 +1,139 @@
+\hypertarget{classARM__COMMON}{}\section{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON Class Reference}
+\label{classARM__COMMON}\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+
+
+{\ttfamily \#include $<$D\+A\+A\+Instruction\+\_\+\+A\+R\+M.\+h$>$}
+
+Inheritance diagram for A\+R\+M\+\_\+\+C\+O\+M\+M\+ON\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classARM__COMMON}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classARM__COMMON_a89eb552311ce787557a976aee2fa2db6}{simulate} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision, const string \&instruction\+Asm)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classARM__COMMON_a68cd9533a17558d2e508baaad0a22b9d}{simulate\+Shifter} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision, string \&\hyperlink{classARM__COMMON_ada8583b1c8914cac40a3c29f40211e68}{operand1}, string \&\hyperlink{classARM__COMMON_a7f35ac57d2949b7c5b255142dab7130f}{operand2})
+\item 
+void \hyperlink{classARM__COMMON_a74eb150144162a68438cde4911cf96f7}{set\+Registers\+Infos2ops} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision)
+\item 
+void \hyperlink{classARM__COMMON_ac80dd82cbedd920afbaddbb021359698}{set\+Registers\+Infos3ops} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision)
+\item 
+void \hyperlink{classARM__COMMON_a7c573a648e1b612ce898523608d1ce17}{set\+Registers\+Infos\+Mult\+Long} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classARM__COMMON_afae3f682dc411db3912280e5fc53fdd4}{codeinstr}
+\item 
+string \hyperlink{classARM__COMMON_a6af2d514cf260ca734b75a621003def7}{oreg}
+\item 
+string \hyperlink{classARM__COMMON_ada8583b1c8914cac40a3c29f40211e68}{operand1}
+\item 
+string \hyperlink{classARM__COMMON_a7f35ac57d2949b7c5b255142dab7130f}{operand2}
+\item 
+string \hyperlink{classARM__COMMON_af5cc71acabd150ecfee97a132de88ceb}{operand3}
+\item 
+\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} \hyperlink{classARM__COMMON_a6bef177d4e532499ed708243c9bec81a}{Type\+Operand}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classARM__COMMON_a74eb150144162a68438cde4911cf96f7}\label{classARM__COMMON_a74eb150144162a68438cde4911cf96f7}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!set\+Registers\+Infos2ops@{set\+Registers\+Infos2ops}}
+\index{set\+Registers\+Infos2ops@{set\+Registers\+Infos2ops}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{set\+Registers\+Infos2ops()}{setRegistersInfos2ops()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::set\+Registers\+Infos2ops (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_ac80dd82cbedd920afbaddbb021359698}\label{classARM__COMMON_ac80dd82cbedd920afbaddbb021359698}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!set\+Registers\+Infos3ops@{set\+Registers\+Infos3ops}}
+\index{set\+Registers\+Infos3ops@{set\+Registers\+Infos3ops}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{set\+Registers\+Infos3ops()}{setRegistersInfos3ops()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::set\+Registers\+Infos3ops (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_a7c573a648e1b612ce898523608d1ce17}\label{classARM__COMMON_a7c573a648e1b612ce898523608d1ce17}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!set\+Registers\+Infos\+Mult\+Long@{set\+Registers\+Infos\+Mult\+Long}}
+\index{set\+Registers\+Infos\+Mult\+Long@{set\+Registers\+Infos\+Mult\+Long}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{set\+Registers\+Infos\+Mult\+Long()}{setRegistersInfosMultLong()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::set\+Registers\+Infos\+Mult\+Long (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_a89eb552311ce787557a976aee2fa2db6}\label{classARM__COMMON_a89eb552311ce787557a976aee2fa2db6}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!simulate@{simulate}}
+\index{simulate@{simulate}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::simulate (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision,  }\item[{const string \&}]{asm\+Instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+An instruction must implement a method simulate to compute the state of registers after its execution.
+
+regs contains the contents of the machine registers before the simulation of the instruction. In case some computation can be done on register contents, simulate keeps the computation in textual format (ex\+: \char`\"{}sp+4\char`\"{}). String \char`\"{}$\ast$\char`\"{} denote that nothing is known about the register (and then the precision for the given register is set to false).
+
+asm\+Instr (input) contains the textual representation of the instruction
+
+precision contains information on registers whose contents is known precisely.
+
+There are situations where the contents of a register is not set to \char`\"{}$\ast$\char`\"{} and its precision is set to false (see for instance, instructions of category add, used to compute offsets in arrays)
+
+Rq\+: regs and precision are modified by the simulate function 
+
+Implements \hyperlink{classDAAInstruction_a61d0b9bece1e0ead89a46c0197276324}{D\+A\+A\+Instruction}.
+
+
+
+Reimplemented in \hyperlink{classARM__LOGICAL_a6359a7daad8f3ddbe314a378e030bf1b}{A\+R\+M\+\_\+\+L\+O\+G\+I\+C\+AL}, \hyperlink{classARM__SHIFT_a0438bca8496243c4067bb1ec24abeab4}{A\+R\+M\+\_\+\+S\+H\+I\+FT}, \hyperlink{classARM__STORE_a0db5283c3bda82c617f3d2e541ad0982}{A\+R\+M\+\_\+\+S\+T\+O\+RE}, \hyperlink{classARM__LOAD__MULTIPLE_a77db594a9b9127619da39e047a12ba41}{A\+R\+M\+\_\+\+L\+O\+A\+D\+\_\+\+M\+U\+L\+T\+I\+P\+LE}, \hyperlink{classARM__LOAD_a905a6e8a6154825f9dc739cabfdb148d}{A\+R\+M\+\_\+\+L\+O\+AD}, \hyperlink{classARM__MOV_acbf1dba49a5e4d834e41d5e834ff7e5a}{A\+R\+M\+\_\+\+M\+OV}, \hyperlink{classARM__MUL_a57f827247b5ee156334e9963b3c6bfd4}{A\+R\+M\+\_\+\+M\+UL}, \hyperlink{classARM__REVERSE__SUB_a0606f63f3d08541627b5758675ca052c}{A\+R\+M\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+S\+UB}, \hyperlink{classARM__SUBTRACT_abf5d28fd7366c3310ebe6bbb9b08e26e}{A\+R\+M\+\_\+\+S\+U\+B\+T\+R\+A\+CT}, and \hyperlink{classARM__ADD_a8fd563bc37b1879fef93ee4ccbcfcafd}{A\+R\+M\+\_\+\+A\+DD}.
+
+\mbox{\Hypertarget{classARM__COMMON_a68cd9533a17558d2e508baaad0a22b9d}\label{classARM__COMMON_a68cd9533a17558d2e508baaad0a22b9d}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!simulate\+Shifter@{simulate\+Shifter}}
+\index{simulate\+Shifter@{simulate\+Shifter}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{simulate\+Shifter()}{simulateShifter()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::simulate\+Shifter (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classARM__COMMON_afae3f682dc411db3912280e5fc53fdd4}\label{classARM__COMMON_afae3f682dc411db3912280e5fc53fdd4}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!codeinstr@{codeinstr}}
+\index{codeinstr@{codeinstr}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{codeinstr}{codeinstr}}
+{\footnotesize\ttfamily string A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::codeinstr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_ada8583b1c8914cac40a3c29f40211e68}\label{classARM__COMMON_ada8583b1c8914cac40a3c29f40211e68}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!operand1@{operand1}}
+\index{operand1@{operand1}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{operand1}{operand1}}
+{\footnotesize\ttfamily string A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::operand1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_a7f35ac57d2949b7c5b255142dab7130f}\label{classARM__COMMON_a7f35ac57d2949b7c5b255142dab7130f}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!operand2@{operand2}}
+\index{operand2@{operand2}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{operand2}{operand2}}
+{\footnotesize\ttfamily string A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::operand2\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_af5cc71acabd150ecfee97a132de88ceb}\label{classARM__COMMON_af5cc71acabd150ecfee97a132de88ceb}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!operand3@{operand3}}
+\index{operand3@{operand3}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{operand3}{operand3}}
+{\footnotesize\ttfamily string A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::operand3\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_a6af2d514cf260ca734b75a621003def7}\label{classARM__COMMON_a6af2d514cf260ca734b75a621003def7}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!oreg@{oreg}}
+\index{oreg@{oreg}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{oreg}{oreg}}
+{\footnotesize\ttfamily string A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::oreg\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classARM__COMMON_a6bef177d4e532499ed708243c9bec81a}\label{classARM__COMMON_a6bef177d4e532499ed708243c9bec81a}} 
+\index{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}!Type\+Operand@{Type\+Operand}}
+\index{Type\+Operand@{Type\+Operand}!A\+R\+M\+\_\+\+C\+O\+M\+M\+ON@{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}}
+\subsubsection{\texorpdfstring{Type\+Operand}{TypeOperand}}
+{\footnotesize\ttfamily \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} A\+R\+M\+\_\+\+C\+O\+M\+M\+O\+N\+::\+Type\+Operand\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{DAAInstruction__ARM_8h}{D\+A\+A\+Instruction\+\_\+\+A\+R\+M.\+h}\end{DoxyCompactItemize}

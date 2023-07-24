@@ -1,0 +1,209 @@
+\hypertarget{classcfglib_1_1Program}{}\section{cfglib\+:\+:Program Class Reference}
+\label{classcfglib_1_1Program}\index{cfglib\+::\+Program@{cfglib\+::\+Program}}
+
+
+{\ttfamily \#include $<$Program.\+h$>$}
+
+Inheritance diagram for cfglib\+:\+:Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcfglib_1_1Program}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Program_ad18f1e51efad67f4d553e1de3d5aea55}{Program} (string pgm\+\_\+name)
+\item 
+\hyperlink{classcfglib_1_1Program_a96682ca2803d6f070767e8449c64eeac}{Program} ()
+\item 
+\hyperlink{classcfglib_1_1Program}{Program} $\ast$ \hyperlink{classcfglib_1_1Program_a6060c2b04628609085a7e50fdce5dec3}{Clone} ()
+\item 
+\hyperlink{classcfglib_1_1Program_a91470a76911e981b750085ce19668c34}{$\sim$\+Program} ()
+\item 
+string \hyperlink{classcfglib_1_1Program_acc4f72ffe5f628e35b0f063d4c3f9e9d}{Get\+Name} () const
+\item 
+void \hyperlink{classcfglib_1_1Program_acfcd600e324f86042ce08d27ec506cc2}{Set\+Name} (string pgm\+\_\+name)
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Program_ac8050c9c5e4905f5e27b3071abefba82}{Create\+New\+Cfg} (List\+Of\+String const \&lnames)
+\item 
+bool \hyperlink{classcfglib_1_1Program_a08aa67ec59bdbd28572dc222fdd2e3da}{Set\+Entry\+Point} (string entry\+\_\+point\+\_\+name)
+\item 
+void \hyperlink{classcfglib_1_1Program_a9afd774f6cdaed6441b3ecd37887ecd3}{Set\+Entry\+Point} (\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$function)
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Program_a9223048335b62778f7823825a842d0da}{Get\+Entry\+Point} ()
+\item 
+\hyperlink{namespacecfglib_a6d40ca49d73d6bd01cf38af88645373a}{list\+Of\+Cfg} \hyperlink{classcfglib_1_1Program_a12869527820e336393106010b15ac419}{Get\+All\+Cfgs} ()
+\item 
+int \hyperlink{classcfglib_1_1Program_abd621c3512b0affedf904d6acbe9941b}{Get\+Nb\+Cfgs} ()
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Program_a78a1fa44a467ae9e897aea3710f7e931}{Get\+Cfg\+By\+Name} (std\+::string name)
+\item 
+\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$ \hyperlink{classcfglib_1_1Program_a35902ab795a8defb794e0db1ececdf54}{Get\+Cfg\+By\+Num} (int index)
+\item 
+virtual std\+::ostream \& \hyperlink{classcfglib_1_1Program_af18db304f16fea3e395fbeb7d6a7b358}{Write\+Xml} (std\+::ostream \&os, \hyperlink{classcfglib_1_1Handle}{Handle} \&\hyperlink{classcfglib_1_1Program_a13cc0a03cdf31ab9cfa9a0a7b0dff8ed}{hand})
+\item 
+virtual void \hyperlink{classcfglib_1_1Program_ad854304f1126c700757fb461a36c8cbd}{Read\+Xml} (\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$tag, \hyperlink{classcfglib_1_1Handle}{Handle} \&\hyperlink{classcfglib_1_1Program_a13cc0a03cdf31ab9cfa9a0a7b0dff8ed}{hand})
+\item 
+std\+::ostream \& \hyperlink{classcfglib_1_1Program_a50b65e054b0e6c2a6517e1f7c8a34379}{serialise\+\_\+program} (std\+::ostream \&os)
+\item 
+void \hyperlink{classcfglib_1_1Program_a2eb2e99e2d6dfbb346e23bebba01d2b3}{serialise\+\_\+program} (std\+::string \&file\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcfglib_1_1Program}{Program} $\ast$ \hyperlink{classcfglib_1_1Program_af486d3bd0aac88830c13289e5a416f07}{unserialise\+\_\+program\+\_\+file} (std\+::string const \&file\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Handle}{Handle} \hyperlink{classcfglib_1_1Program_a13cc0a03cdf31ab9cfa9a0a7b0dff8ed}{hand}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a program. A program is a set of functions each with a corresponding C\+FG. A program has one entry point. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Program_ad18f1e51efad67f4d553e1de3d5aea55}\label{classcfglib_1_1Program_ad18f1e51efad67f4d553e1de3d5aea55}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Program@{Program}}
+\index{Program@{Program}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Program\+::\+Program (\begin{DoxyParamCaption}\item[{string}]{pgm\+\_\+name }\end{DoxyParamCaption})}
+
+constructor \mbox{\Hypertarget{classcfglib_1_1Program_a96682ca2803d6f070767e8449c64eeac}\label{classcfglib_1_1Program_a96682ca2803d6f070767e8449c64eeac}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Program@{Program}}
+\index{Program@{Program}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Program\+::\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Program_a91470a76911e981b750085ce19668c34}\label{classcfglib_1_1Program_a91470a76911e981b750085ce19668c34}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!````~Program@{$\sim$\+Program}}
+\index{````~Program@{$\sim$\+Program}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{$\sim$\+Program()}{~Program()}}
+{\footnotesize\ttfamily cfglib\+::\+Program\+::$\sim$\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Program_a6060c2b04628609085a7e50fdce5dec3}\label{classcfglib_1_1Program_a6060c2b04628609085a7e50fdce5dec3}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Clone@{Clone}}
+\index{Clone@{Clone}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Program}{Program}$\ast$ cfglib\+::\+Program\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+clone the program \mbox{\Hypertarget{classcfglib_1_1Program_ac8050c9c5e4905f5e27b3071abefba82}\label{classcfglib_1_1Program_ac8050c9c5e4905f5e27b3071abefba82}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Create\+New\+Cfg@{Create\+New\+Cfg}}
+\index{Create\+New\+Cfg@{Create\+New\+Cfg}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Create\+New\+Cfg()}{CreateNewCfg()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Program\+::\+Create\+New\+Cfg (\begin{DoxyParamCaption}\item[{List\+Of\+String const \&}]{lnames }\end{DoxyParamCaption})}
+
+Add \hyperlink{classcfglib_1_1Cfg}{Cfg} (functions) to \hyperlink{classcfglib_1_1Program}{Program}. The value returned is valid only as long as this \hyperlink{classcfglib_1_1Program}{Program} exists. It must not be used in two diferent Programs. The first created \hyperlink{classcfglib_1_1Cfg}{Cfg} is the entry point. \mbox{\Hypertarget{classcfglib_1_1Program_a12869527820e336393106010b15ac419}\label{classcfglib_1_1Program_a12869527820e336393106010b15ac419}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+All\+Cfgs@{Get\+All\+Cfgs}}
+\index{Get\+All\+Cfgs@{Get\+All\+Cfgs}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+All\+Cfgs()}{GetAllCfgs()}}
+{\footnotesize\ttfamily \hyperlink{namespacecfglib_a6d40ca49d73d6bd01cf38af88645373a}{list\+Of\+Cfg} cfglib\+::\+Program\+::\+Get\+All\+Cfgs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the list of Cfgs of the program. \mbox{\Hypertarget{classcfglib_1_1Program_a78a1fa44a467ae9e897aea3710f7e931}\label{classcfglib_1_1Program_a78a1fa44a467ae9e897aea3710f7e931}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+Cfg\+By\+Name@{Get\+Cfg\+By\+Name}}
+\index{Get\+Cfg\+By\+Name@{Get\+Cfg\+By\+Name}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+Cfg\+By\+Name()}{GetCfgByName()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Program\+::\+Get\+Cfg\+By\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+return the \hyperlink{classcfglib_1_1Cfg}{Cfg} with a specified name, 0 if it does not exists \mbox{\Hypertarget{classcfglib_1_1Program_a35902ab795a8defb794e0db1ececdf54}\label{classcfglib_1_1Program_a35902ab795a8defb794e0db1ececdf54}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+Cfg\+By\+Num@{Get\+Cfg\+By\+Num}}
+\index{Get\+Cfg\+By\+Num@{Get\+Cfg\+By\+Num}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+Cfg\+By\+Num()}{GetCfgByNum()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Program\+::\+Get\+Cfg\+By\+Num (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Return the \hyperlink{classcfglib_1_1Cfg}{Cfg} with a specific number in the list of Cfgs (starting by index 0) or 0 if the index does not exist \mbox{\Hypertarget{classcfglib_1_1Program_a9223048335b62778f7823825a842d0da}\label{classcfglib_1_1Program_a9223048335b62778f7823825a842d0da}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+Entry\+Point@{Get\+Entry\+Point}}
+\index{Get\+Entry\+Point@{Get\+Entry\+Point}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+Entry\+Point()}{GetEntryPoint()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Cfg}{Cfg}$\ast$ cfglib\+::\+Program\+::\+Get\+Entry\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get entry point of the program \mbox{\Hypertarget{classcfglib_1_1Program_acc4f72ffe5f628e35b0f063d4c3f9e9d}\label{classcfglib_1_1Program_acc4f72ffe5f628e35b0f063d4c3f9e9d}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string cfglib\+::\+Program\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get program name \mbox{\Hypertarget{classcfglib_1_1Program_abd621c3512b0affedf904d6acbe9941b}\label{classcfglib_1_1Program_abd621c3512b0affedf904d6acbe9941b}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Get\+Nb\+Cfgs@{Get\+Nb\+Cfgs}}
+\index{Get\+Nb\+Cfgs@{Get\+Nb\+Cfgs}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Get\+Nb\+Cfgs()}{GetNbCfgs()}}
+{\footnotesize\ttfamily int cfglib\+::\+Program\+::\+Get\+Nb\+Cfgs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcfglib_1_1Program_ad854304f1126c700757fb461a36c8cbd}\label{classcfglib_1_1Program_ad854304f1126c700757fb461a36c8cbd}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily virtual void cfglib\+::\+Program\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$}]{tag,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Internal seserialisation function. 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_a876d530446317872259356af9b016e13}{cfglib\+::\+Serialisable}.
+
+\mbox{\Hypertarget{classcfglib_1_1Program_a50b65e054b0e6c2a6517e1f7c8a34379}\label{classcfglib_1_1Program_a50b65e054b0e6c2a6517e1f7c8a34379}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!serialise\+\_\+program@{serialise\+\_\+program}}
+\index{serialise\+\_\+program@{serialise\+\_\+program}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{serialise\+\_\+program()}{serialise\_program()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream\& cfglib\+::\+Program\+::serialise\+\_\+program (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+Serialisation function. \mbox{\Hypertarget{classcfglib_1_1Program_a2eb2e99e2d6dfbb346e23bebba01d2b3}\label{classcfglib_1_1Program_a2eb2e99e2d6dfbb346e23bebba01d2b3}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!serialise\+\_\+program@{serialise\+\_\+program}}
+\index{serialise\+\_\+program@{serialise\+\_\+program}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{serialise\+\_\+program()}{serialise\_program()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void cfglib\+::\+Program\+::serialise\+\_\+program (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+Serialisation to file function \mbox{\Hypertarget{classcfglib_1_1Program_a08aa67ec59bdbd28572dc222fdd2e3da}\label{classcfglib_1_1Program_a08aa67ec59bdbd28572dc222fdd2e3da}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Set\+Entry\+Point@{Set\+Entry\+Point}}
+\index{Set\+Entry\+Point@{Set\+Entry\+Point}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Set\+Entry\+Point()}{SetEntryPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool cfglib\+::\+Program\+::\+Set\+Entry\+Point (\begin{DoxyParamCaption}\item[{string}]{entry\+\_\+point\+\_\+name }\end{DoxyParamCaption})}
+
+The cgf with entry\+\_\+point\+\_\+name as name, becomes the entry point of the program. \begin{DoxyReturn}{Returns}
+true if the entry point exsits, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcfglib_1_1Program_a9afd774f6cdaed6441b3ecd37887ecd3}\label{classcfglib_1_1Program_a9afd774f6cdaed6441b3ecd37887ecd3}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Set\+Entry\+Point@{Set\+Entry\+Point}}
+\index{Set\+Entry\+Point@{Set\+Entry\+Point}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Set\+Entry\+Point()}{SetEntryPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void cfglib\+::\+Program\+::\+Set\+Entry\+Point (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Cfg}{Cfg} $\ast$}]{function }\end{DoxyParamCaption})}
+
+Set the entry point of this program. The \hyperlink{classcfglib_1_1Cfg}{Cfg} passed in argument must be a \hyperlink{classcfglib_1_1Cfg}{Cfg} of this \hyperlink{classcfglib_1_1Program}{Program}. \mbox{\Hypertarget{classcfglib_1_1Program_acfcd600e324f86042ce08d27ec506cc2}\label{classcfglib_1_1Program_acfcd600e324f86042ce08d27ec506cc2}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily void cfglib\+::\+Program\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{string}]{pgm\+\_\+name }\end{DoxyParamCaption})}
+
+Set program name \mbox{\Hypertarget{classcfglib_1_1Program_af486d3bd0aac88830c13289e5a416f07}\label{classcfglib_1_1Program_af486d3bd0aac88830c13289e5a416f07}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!unserialise\+\_\+program\+\_\+file@{unserialise\+\_\+program\+\_\+file}}
+\index{unserialise\+\_\+program\+\_\+file@{unserialise\+\_\+program\+\_\+file}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{unserialise\+\_\+program\+\_\+file()}{unserialise\_program\_file()}}
+{\footnotesize\ttfamily static \hyperlink{classcfglib_1_1Program}{Program}$\ast$ cfglib\+::\+Program\+::unserialise\+\_\+program\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Deserialisation function. This function is the one really meant for user usage. Read\+Xml should not be used. cf. unserialise\+\_\+program for precision on arguments. \mbox{\Hypertarget{classcfglib_1_1Program_af18db304f16fea3e395fbeb7d6a7b358}\label{classcfglib_1_1Program_af18db304f16fea3e395fbeb7d6a7b358}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily virtual std\+::ostream\& cfglib\+::\+Program\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialisation function. 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_aaeb80cc7397ad312e5ae34f39412ce42}{cfglib\+::\+Serialisable}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Program_a13cc0a03cdf31ab9cfa9a0a7b0dff8ed}\label{classcfglib_1_1Program_a13cc0a03cdf31ab9cfa9a0a7b0dff8ed}} 
+\index{cfglib\+::\+Program@{cfglib\+::\+Program}!hand@{hand}}
+\index{hand@{hand}!cfglib\+::\+Program@{cfglib\+::\+Program}}
+\subsubsection{\texorpdfstring{hand}{hand}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Handle}{Handle} cfglib\+::\+Program\+::hand}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Program_8h}{Program.\+h}\end{DoxyCompactItemize}

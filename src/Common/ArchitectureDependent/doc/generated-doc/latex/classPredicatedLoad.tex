@@ -1,0 +1,71 @@
+\hypertarget{classPredicatedLoad}{}\section{Predicated\+Load Class Reference}
+\label{classPredicatedLoad}\index{Predicated\+Load@{Predicated\+Load}}
+
+
+{\ttfamily \#include $<$Instruction\+Type.\+h$>$}
+
+Inheritance diagram for Predicated\+Load\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPredicatedLoad}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPredicatedLoad_a51029c14a98b327ab6acb15be5835057}{Predicated\+Load} (int size, const string \&fu, const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&f, \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$daainstr, int lat)
+\item 
+bool \hyperlink{classPredicatedLoad_a6eba0b6ea212b012d2015fb023804fc3}{is\+Load} ()
+\item 
+bool \hyperlink{classPredicatedLoad_aebf98efc7d6d09ec1d8f9c578a65e156}{is\+Predicated} ()
+\item 
+int \hyperlink{classPredicatedLoad_a0f4d0a0830281e9f87c733eb253a1a5e}{get\+Size\+Of\+Memory\+Access} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPredicatedLoad_a51029c14a98b327ab6acb15be5835057}\label{classPredicatedLoad_a51029c14a98b327ab6acb15be5835057}} 
+\index{Predicated\+Load@{Predicated\+Load}!Predicated\+Load@{Predicated\+Load}}
+\index{Predicated\+Load@{Predicated\+Load}!Predicated\+Load@{Predicated\+Load}}
+\subsubsection{\texorpdfstring{Predicated\+Load()}{PredicatedLoad()}}
+{\footnotesize\ttfamily Predicated\+Load\+::\+Predicated\+Load (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{const string \&}]{fu,  }\item[{const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&}]{f,  }\item[{\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$}]{daainstr,  }\item[{int}]{lat }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPredicatedLoad_a0f4d0a0830281e9f87c733eb253a1a5e}\label{classPredicatedLoad_a0f4d0a0830281e9f87c733eb253a1a5e}} 
+\index{Predicated\+Load@{Predicated\+Load}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Predicated\+Load@{Predicated\+Load}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily int Predicated\+Load\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the memory access in bytes, if the instruction is a load/store and 0 otherwise 
+
+Reimplemented from \hyperlink{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}{Instruction\+Type}.
+
+\mbox{\Hypertarget{classPredicatedLoad_a6eba0b6ea212b012d2015fb023804fc3}\label{classPredicatedLoad_a6eba0b6ea212b012d2015fb023804fc3}} 
+\index{Predicated\+Load@{Predicated\+Load}!is\+Load@{is\+Load}}
+\index{is\+Load@{is\+Load}!Predicated\+Load@{Predicated\+Load}}
+\subsubsection{\texorpdfstring{is\+Load()}{isLoad()}}
+{\footnotesize\ttfamily bool Predicated\+Load\+::is\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a load instruction 
+
+Reimplemented from \hyperlink{classInstructionType_aa3d2c042a4109b1d96dc0d7f20916ba3}{Instruction\+Type}.
+
+\mbox{\Hypertarget{classPredicatedLoad_aebf98efc7d6d09ec1d8f9c578a65e156}\label{classPredicatedLoad_aebf98efc7d6d09ec1d8f9c578a65e156}} 
+\index{Predicated\+Load@{Predicated\+Load}!is\+Predicated@{is\+Predicated}}
+\index{is\+Predicated@{is\+Predicated}!Predicated\+Load@{Predicated\+Load}}
+\subsubsection{\texorpdfstring{is\+Predicated()}{isPredicated()}}
+{\footnotesize\ttfamily bool Predicated\+Load\+::is\+Predicated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is Predicated (with a condition) 
+
+Reimplemented from \hyperlink{classInstructionType_a5b28d5b2e495222817facca7b8826975}{Instruction\+Type}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionType_8h}{Instruction\+Type.\+h}\end{DoxyCompactItemize}

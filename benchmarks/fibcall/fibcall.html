@@ -1,0 +1,171 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/fibcall/fibcall.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: fibcall.c,v 1.2 2008-04-22 14:31:45 dhardy Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: fibcall.c                                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Public Domain Code                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     Summing the Fibonacci series.                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  * Changes: JG 2005/12/21: Inserted prototypes.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  *                         Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             fib(int n);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>fib(int n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i, Fnew, Fold, temp, ans;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Fnew = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Fold = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 30 </td>
+<td><tt><pre>	for (i = 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>29 </td>
+<td><tt><pre>	     i <= 30 && i <= n;	/* apsim_loop 1 0 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>29 </td>
+<td><tt><pre>	     i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(29);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>29 </td>
+<td><tt><pre>	  temp = Fnew;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>29 </td>
+<td><tt><pre>	  Fnew = Fnew + Fold;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>29 </td>
+<td><tt><pre>	  Fold = temp;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	ans = Fnew;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return ans;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main()</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             a;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a = 30;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	fib(a);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return a;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

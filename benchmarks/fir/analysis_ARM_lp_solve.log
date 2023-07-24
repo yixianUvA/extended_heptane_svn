@@ -1,0 +1,12 @@
+The argc is 3
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+
+*** Begin analysis for entry point: main
+This is PipelineAnalysis CheckInputAttributes
+IPET method: NOPIPELINE_ICACHE_DCACHE
+L1	type ICACHE	references 3808	hits 3771	misses 37	
+L1	type DCACHE	references 1573	hits 1374	misses 199	
+L2	type ICACHE	references 37	hits 7	misses 30	
+L2	type DCACHE	references 199	hits 177	misses 22	
+WCET: 93441

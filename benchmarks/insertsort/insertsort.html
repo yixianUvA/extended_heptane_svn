@@ -1,0 +1,217 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/insertsort/insertsort.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: insertsort.c,v 1.1.1.1 2007-12-11 15:22:55 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: insertsort.c                                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Public Domain Code                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     Insertion sort for 10 integer numbers.                            */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The integer array a[] is initialized in main function.            */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/12: Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             cnt1, cnt2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned int    a[11];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main()</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i, j, temp;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[0] = 0;		/* assume all data is positive */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[1] = 11;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[2] = 10;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[3] = 9;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[4] = 8;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[5] = 7;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[6] = 6;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[7] = 5;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[8] = 4;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[9] = 3;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[10] = 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	i = 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 11 </td>
+<td><tt><pre>	while (i <= 10) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(10);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  cnt1++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	  j = i;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  cnt2 = 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 110 </td>
+<td><tt><pre>	  while (a[j] < a[j - 1]) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(10);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    cnt2++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>	    temp = a[j];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>	    a[j] = a[j - 1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>	    a[j - 1] = temp;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>	    j--;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  printf("Inner Loop Counts: %d\n", cnt2);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	  i++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("Outer Loop : %d ,  Inner Loop : %d\n", cnt1, cnt2);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

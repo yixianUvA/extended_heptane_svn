@@ -1,0 +1,83 @@
+\hypertarget{arch_8h}{}\section{src/arch.h File Reference}
+\label{arch_8h}\index{src/arch.\+h@{src/arch.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Parsing\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Instruction\+Type.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Instruction\+Format.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+A\+A\+Instruction.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classArch}{Arch}
+\item 
+class \hyperlink{classArch__dep}{Arch\+\_\+dep}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} \{ \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044acd6ee626d91f5cad585ff543248ac78f}{none\+\_\+offset}, 
+\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044af657f57f8eb8b94ec9bab1e7591c81c5}{immediate\+\_\+offset}, 
+\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044ab171816cc76b3d1001ac20665a5e5880}{register\+\_\+offset}, 
+\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044a30f71b9678bc6cbb893b9aa85373a4f1}{scaled\+\_\+register\+\_\+offset}
+ \}
+\item 
+enum \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} \{ \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba4fb638d94a83ddb3fcf931be7c7e274e}{pre\+\_\+indexing}, 
+\hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba0a0da8d8eb1b66913974dc658769aa7c}{auto\+\_\+indexing}, 
+\hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2bade2099fcb70508682cf12af4a07fd8c7}{post\+\_\+indexing}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}\label{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}} 
+\index{arch.\+h@{arch.\+h}!Addressing\+Mode@{Addressing\+Mode}}
+\index{Addressing\+Mode@{Addressing\+Mode}!arch.\+h@{arch.\+h}}
+\subsubsection{\texorpdfstring{Addressing\+Mode}{AddressingMode}}
+{\footnotesize\ttfamily enum \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pre\+\_\+indexing@{pre\+\_\+indexing}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!pre\+\_\+indexing@{pre\+\_\+indexing}}}\mbox{\Hypertarget{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba4fb638d94a83ddb3fcf931be7c7e274e}\label{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba4fb638d94a83ddb3fcf931be7c7e274e}} 
+pre\+\_\+indexing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{auto\+\_\+indexing@{auto\+\_\+indexing}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!auto\+\_\+indexing@{auto\+\_\+indexing}}}\mbox{\Hypertarget{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba0a0da8d8eb1b66913974dc658769aa7c}\label{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2ba0a0da8d8eb1b66913974dc658769aa7c}} 
+auto\+\_\+indexing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{post\+\_\+indexing@{post\+\_\+indexing}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!post\+\_\+indexing@{post\+\_\+indexing}}}\mbox{\Hypertarget{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2bade2099fcb70508682cf12af4a07fd8c7}\label{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2bade2099fcb70508682cf12af4a07fd8c7}} 
+post\+\_\+indexing&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{arch_8h_a63b66e201ffc27bbc8f89c8808382044}\label{arch_8h_a63b66e201ffc27bbc8f89c8808382044}} 
+\index{arch.\+h@{arch.\+h}!offset\+Type@{offset\+Type}}
+\index{offset\+Type@{offset\+Type}!arch.\+h@{arch.\+h}}
+\subsubsection{\texorpdfstring{offset\+Type}{offsetType}}
+{\footnotesize\ttfamily enum \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none\+\_\+offset@{none\+\_\+offset}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!none\+\_\+offset@{none\+\_\+offset}}}\mbox{\Hypertarget{arch_8h_a63b66e201ffc27bbc8f89c8808382044acd6ee626d91f5cad585ff543248ac78f}\label{arch_8h_a63b66e201ffc27bbc8f89c8808382044acd6ee626d91f5cad585ff543248ac78f}} 
+none\+\_\+offset&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{immediate\+\_\+offset@{immediate\+\_\+offset}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!immediate\+\_\+offset@{immediate\+\_\+offset}}}\mbox{\Hypertarget{arch_8h_a63b66e201ffc27bbc8f89c8808382044af657f57f8eb8b94ec9bab1e7591c81c5}\label{arch_8h_a63b66e201ffc27bbc8f89c8808382044af657f57f8eb8b94ec9bab1e7591c81c5}} 
+immediate\+\_\+offset&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{register\+\_\+offset@{register\+\_\+offset}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!register\+\_\+offset@{register\+\_\+offset}}}\mbox{\Hypertarget{arch_8h_a63b66e201ffc27bbc8f89c8808382044ab171816cc76b3d1001ac20665a5e5880}\label{arch_8h_a63b66e201ffc27bbc8f89c8808382044ab171816cc76b3d1001ac20665a5e5880}} 
+register\+\_\+offset&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{scaled\+\_\+register\+\_\+offset@{scaled\+\_\+register\+\_\+offset}!arch.\+h@{arch.\+h}}\index{arch.\+h@{arch.\+h}!scaled\+\_\+register\+\_\+offset@{scaled\+\_\+register\+\_\+offset}}}\mbox{\Hypertarget{arch_8h_a63b66e201ffc27bbc8f89c8808382044a30f71b9678bc6cbb893b9aa85373a4f1}\label{arch_8h_a63b66e201ffc27bbc8f89c8808382044a30f71b9678bc6cbb893b9aa85373a4f1}} 
+scaled\+\_\+register\+\_\+offset&\\
+\hline
+
+\end{DoxyEnumFields}

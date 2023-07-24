@@ -1,0 +1,28 @@
+digraph G {
+subgraph cluster_fib {
+graph [label = "fib"];
+subgraph cluster_loop0x563391f8cf70 {
+graph [label = "loop [29]"];
+node0x563392053060 [label = "@0x8128 (BB)" ,color="green"];
+node0x563392051a90 [label = "@0x80fc (BB)"];
+node0x563392054670 [label = "@0x8134 (BB)"];
+}
+node0x563392050980 [label = "@0x80d8 (BB)" ,color="blue"];
+node0x563392051a90;
+node0x563392053060;
+node0x563392054670;
+node0x563392054c60 [label = "@0x8144 (BB)"];
+}
+subgraph cluster_main {
+graph [label = "main"];
+node0x563392055460 [label = "@0x815c (Call fib)" ,color="blue"];
+node0x563392055ec0 [label = "@0x8174 (BB)"];
+}
+node0x563392050980 -> node0x563392053060;
+node0x563392051a90 -> node0x563392053060[color="red"];
+node0x563392053060 -> node0x563392054670;
+node0x563392053060 -> node0x563392054c60;
+node0x563392054670 -> node0x563392051a90;
+node0x563392054670 -> node0x563392054c60;
+node0x563392055460 -> node0x563392055ec0;
+}

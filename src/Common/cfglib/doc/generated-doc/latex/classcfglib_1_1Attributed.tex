@@ -1,0 +1,111 @@
+\hypertarget{classcfglib_1_1Attributed}{}\section{cfglib\+:\+:Attributed Class Reference}
+\label{classcfglib_1_1Attributed}\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+
+
+{\ttfamily \#include $<$Attributed.\+h$>$}
+
+Inheritance diagram for cfglib\+:\+:Attributed\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.276423cm]{classcfglib_1_1Attributed}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcfglib_1_1Attributed_a7a9a828f1cd9fcd11bfcb5bed166d132}{Has\+Attribute} (std\+::string symbol)
+\item 
+\hyperlink{classcfglib_1_1Attribute}{Attribute} \& \hyperlink{classcfglib_1_1Attributed_a78db2f7e006d00bf860b32761ec2c88d}{Get\+Attribute} (std\+::string symbol)
+\item 
+std\+::vector$<$ string $>$ \hyperlink{classcfglib_1_1Attributed_ab61bf9157b32995f4b0dfcc61cc0b35b}{get\+Attribute\+List} (void)
+\item 
+void \hyperlink{classcfglib_1_1Attributed_aa0bca88f8daee79c5ab66883608e700c}{Clone\+Attributes\+For} (\hyperlink{classcfglib_1_1Attributed}{Attributed} $\ast$, \hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&)
+\item 
+void \hyperlink{classcfglib_1_1Attributed_a354c313adbd2b325718c2e3c3127edc6}{Set\+Attribute} (std\+::string const \&symbol, \hyperlink{classcfglib_1_1Attribute}{Attribute} \&attribute)
+\item 
+void \hyperlink{classcfglib_1_1Attributed_a725edd325af54006acfb25b4cf8760fd}{Remove\+Attribute} (std\+::string const \&symbol)
+\item 
+void \hyperlink{classcfglib_1_1Attributed_a8952d975e36fc5d1a824ff0d27dfc0df}{Print\+Non\+Serialisable\+Attributes} (std\+::ostream \&os)
+\item 
+std\+::ostream \& \hyperlink{classcfglib_1_1Attributed_af1cf65adeb481619018088533a7dc306}{Write\+Xml\+Attributes} (std\+::ostream \&os, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand\+\_\+ser) const
+\item 
+void \hyperlink{classcfglib_1_1Attributed_afd7bf0f8c2321dbd5c7206ece7da1393}{Read\+Xml\+Attributes} (\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$tag, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+virtual \hyperlink{classcfglib_1_1Attributed_adb9f15c2776aa3976b5a3eff54d3cde7}{$\sim$\+Attributed} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcfglib_1_1Attributed}{Attributed}. All objects to which we can add attributes inherit this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Attributed_adb9f15c2776aa3976b5a3eff54d3cde7}\label{classcfglib_1_1Attributed_adb9f15c2776aa3976b5a3eff54d3cde7}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!````~Attributed@{$\sim$\+Attributed}}
+\index{````~Attributed@{$\sim$\+Attributed}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{$\sim$\+Attributed()}{~Attributed()}}
+{\footnotesize\ttfamily virtual cfglib\+::\+Attributed\+::$\sim$\+Attributed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Attributed_aa0bca88f8daee79c5ab66883608e700c}\label{classcfglib_1_1Attributed_aa0bca88f8daee79c5ab66883608e700c}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Clone\+Attributes\+For@{Clone\+Attributes\+For}}
+\index{Clone\+Attributes\+For@{Clone\+Attributes\+For}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Clone\+Attributes\+For()}{CloneAttributesFor()}}
+{\footnotesize\ttfamily void cfglib\+::\+Attributed\+::\+Clone\+Attributes\+For (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Attributed}{Attributed} $\ast$}]{,  }\item[{\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Attributed_a78db2f7e006d00bf860b32761ec2c88d}\label{classcfglib_1_1Attributed_a78db2f7e006d00bf860b32761ec2c88d}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Get\+Attribute()}{GetAttribute()}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Attribute}{Attribute}\& cfglib\+::\+Attributed\+::\+Get\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{symbol }\end{DoxyParamCaption})}
+
+Get a attribute given its name. The method makes a copy of the attribute by calling its method \char`\"{}clone\char`\"{} before the attribute is stored. All attributed must have a \textquotesingle{}clone\textquotesingle{} method implemented. Method Has\+Attribute has to be called before trying to retrieve an attribute to make sure the attribute with name \textquotesingle{}symbol\textquotesingle{} exists (else, an assertion in the code fails). In the case the attribute contains pointers on other attributes, the attribute copy constructor has to be defined. Example of use of attributes (with n an attributed object) Integer\+Attribute ia(6); // Declare an integer attribute n.\+Set\+Attribute(\char`\"{}myinteger\char`\"{},ia); // Attach a copy of the attribute to object n
+
+Integer\+Attribute ia; // Declare an attribute assert(n.\+Has\+Attribute(\char`\"{}myinteger\char`\"{});// Make sure n has an attribute attached ia=n.\+Get\+Attribute(\char`\"{}myinteger\char`\"{}); // Retrieve a copy of the attribute in ia int val = ia.\+Get\+Value(); // Get it\textquotesingle{}s value (here, a simple integer) \mbox{\Hypertarget{classcfglib_1_1Attributed_ab61bf9157b32995f4b0dfcc61cc0b35b}\label{classcfglib_1_1Attributed_ab61bf9157b32995f4b0dfcc61cc0b35b}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!get\+Attribute\+List@{get\+Attribute\+List}}
+\index{get\+Attribute\+List@{get\+Attribute\+List}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{get\+Attribute\+List()}{getAttributeList()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ cfglib\+::\+Attributed\+::get\+Attribute\+List (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+return every symbols used in the attribute map \mbox{\Hypertarget{classcfglib_1_1Attributed_a7a9a828f1cd9fcd11bfcb5bed166d132}\label{classcfglib_1_1Attributed_a7a9a828f1cd9fcd11bfcb5bed166d132}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Has\+Attribute@{Has\+Attribute}}
+\index{Has\+Attribute@{Has\+Attribute}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Has\+Attribute()}{HasAttribute()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Attributed\+::\+Has\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{symbol }\end{DoxyParamCaption})}
+
+Returns true if the attributed object has an attribute of name \textquotesingle{}symbol\textquotesingle{} attached Must be called before any attempt to call method Get\+Attribute \mbox{\Hypertarget{classcfglib_1_1Attributed_a8952d975e36fc5d1a824ff0d27dfc0df}\label{classcfglib_1_1Attributed_a8952d975e36fc5d1a824ff0d27dfc0df}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Print\+Non\+Serialisable\+Attributes@{Print\+Non\+Serialisable\+Attributes}}
+\index{Print\+Non\+Serialisable\+Attributes@{Print\+Non\+Serialisable\+Attributes}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Print\+Non\+Serialisable\+Attributes()}{PrintNonSerialisableAttributes()}}
+{\footnotesize\ttfamily void cfglib\+::\+Attributed\+::\+Print\+Non\+Serialisable\+Attributes (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+Print information on the non serialisable attributes, by calling their Print method. Used for debug only, to check that all Non\+Serialisable\+Attributes are removed at the end of every analysis. \mbox{\Hypertarget{classcfglib_1_1Attributed_afd7bf0f8c2321dbd5c7206ece7da1393}\label{classcfglib_1_1Attributed_afd7bf0f8c2321dbd5c7206ece7da1393}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Read\+Xml\+Attributes@{Read\+Xml\+Attributes}}
+\index{Read\+Xml\+Attributes@{Read\+Xml\+Attributes}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Attributes()}{ReadXmlAttributes()}}
+{\footnotesize\ttfamily void cfglib\+::\+Attributed\+::\+Read\+Xml\+Attributes (\begin{DoxyParamCaption}\item[{\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$}]{tag,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})}
+
+Unserialise all attributes \mbox{\Hypertarget{classcfglib_1_1Attributed_a725edd325af54006acfb25b4cf8760fd}\label{classcfglib_1_1Attributed_a725edd325af54006acfb25b4cf8760fd}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Remove\+Attribute@{Remove\+Attribute}}
+\index{Remove\+Attribute@{Remove\+Attribute}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Remove\+Attribute()}{RemoveAttribute()}}
+{\footnotesize\ttfamily void cfglib\+::\+Attributed\+::\+Remove\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{symbol }\end{DoxyParamCaption})}
+
+Remove an attribute (frees its memory) (if not removed, an attribute stays attached and consumes memory up to the program termination) \mbox{\Hypertarget{classcfglib_1_1Attributed_a354c313adbd2b325718c2e3c3127edc6}\label{classcfglib_1_1Attributed_a354c313adbd2b325718c2e3c3127edc6}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Set\+Attribute@{Set\+Attribute}}
+\index{Set\+Attribute@{Set\+Attribute}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Set\+Attribute()}{SetAttribute()}}
+{\footnotesize\ttfamily void cfglib\+::\+Attributed\+::\+Set\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{symbol,  }\item[{\hyperlink{classcfglib_1_1Attribute}{Attribute} \&}]{attribute }\end{DoxyParamCaption})}
+
+Add or replace a named attribute. A pointer to a copy of the attribute is stored. In case an already existing attribute is replaced, the attribute is deleted before the new one is installed. \mbox{\Hypertarget{classcfglib_1_1Attributed_af1cf65adeb481619018088533a7dc306}\label{classcfglib_1_1Attributed_af1cf65adeb481619018088533a7dc306}} 
+\index{cfglib\+::\+Attributed@{cfglib\+::\+Attributed}!Write\+Xml\+Attributes@{Write\+Xml\+Attributes}}
+\index{Write\+Xml\+Attributes@{Write\+Xml\+Attributes}!cfglib\+::\+Attributed@{cfglib\+::\+Attributed}}
+\subsubsection{\texorpdfstring{Write\+Xml\+Attributes()}{WriteXmlAttributes()}}
+{\footnotesize\ttfamily std\+::ostream\& cfglib\+::\+Attributed\+::\+Write\+Xml\+Attributes (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand\+\_\+ser }\end{DoxyParamCaption}) const}
+
+Serialise all attributes 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Attributed_8h}{Attributed.\+h}\end{DoxyCompactItemize}

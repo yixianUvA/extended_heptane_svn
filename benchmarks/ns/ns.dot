@@ -1,0 +1,89 @@
+digraph G {
+subgraph cluster_foo {
+graph [label = "foo"];
+subgraph cluster_loop0x55a002829980 {
+graph [label = "loop [5]"];
+node0x55a002825d50 [label = "@0x8284 (BB)" ,color="green"];
+node0x55a002825520 [label = "@0x8278 (BB)"];
+node0x55a002824d20 [label = "@0x826c (BB)" ,color="green"];
+node0x55a002814f90 [label = "@0x80f0 (BB)"];
+node0x55a0028244f0 [label = "@0x8260 (BB)"];
+node0x55a002824410 [label = "@0x8254 (BB)" ,color="green"];
+node0x55a002815750 [label = "@0x80fc (BB)"];
+node0x55a00281d3b0 [label = "@0x8248 (BB)"];
+node0x55a002818df0 [label = "@0x823c (BB)" ,color="green"];
+node0x55a002817470 [label = "@0x8108 (BB)"];
+node0x55a0028193b0 [label = "@0x8230 (BB)"];
+node0x55a002817c10 [label = "@0x8114 (BB)"];
+subgraph cluster_loop0x55a002829580 {
+graph [label = "loop [5]"];
+node0x55a002824d20;
+node0x55a0028244f0;
+node0x55a002824410;
+node0x55a002815750;
+node0x55a00281d3b0;
+node0x55a002818df0;
+node0x55a002817470;
+node0x55a0028193b0;
+node0x55a002817c10;
+subgraph cluster_loop0x55a0028292b0 {
+graph [label = "loop [5]"];
+node0x55a002824410;
+node0x55a00281d3b0;
+node0x55a002818df0;
+node0x55a002817470;
+node0x55a0028193b0;
+node0x55a002817c10;
+subgraph cluster_loop0x55a0026cff40 {
+graph [label = "loop [5]"];
+node0x55a002818df0;
+node0x55a0028193b0;
+node0x55a002817c10;
+}
+}
+}
+}
+node0x55a002814870 [label = "@0x80d8 (BB)" ,color="blue"];
+node0x55a002814f90;
+node0x55a002815750;
+node0x55a002817470;
+node0x55a002817c10;
+node0x55a0028183e0 [label = "@0x8178 (BB)"];
+node0x55a0028193b0;
+node0x55a002818df0;
+node0x55a00281d3b0;
+node0x55a002824410;
+node0x55a0028244f0;
+node0x55a002824d20;
+node0x55a002825520;
+node0x55a002825d50;
+node0x55a002826550 [label = "@0x8290 (BB)"];
+node0x55a002826d80 [label = "@0x8294 (BB)"];
+}
+subgraph cluster_main {
+graph [label = "main"];
+node0x55a0028275c0 [label = "@0x82ac (Call foo)" ,color="blue"];
+node0x55a0028278a0 [label = "@0x82b8 (BB)"];
+}
+node0x55a002814870 -> node0x55a002825d50;
+node0x55a002814f90 -> node0x55a002824d20;
+node0x55a002815750 -> node0x55a002824410;
+node0x55a002817470 -> node0x55a002818df0;
+node0x55a002817c10 -> node0x55a0028183e0;
+node0x55a002817c10 -> node0x55a0028193b0;
+node0x55a0028183e0 -> node0x55a002826d80;
+node0x55a0028193b0 -> node0x55a002818df0[color="red"];
+node0x55a002818df0 -> node0x55a002817c10;
+node0x55a002818df0 -> node0x55a00281d3b0;
+node0x55a00281d3b0 -> node0x55a002824410[color="red"];
+node0x55a002824410 -> node0x55a002817470;
+node0x55a002824410 -> node0x55a0028244f0;
+node0x55a0028244f0 -> node0x55a002824d20[color="red"];
+node0x55a002824d20 -> node0x55a002815750;
+node0x55a002824d20 -> node0x55a002825520;
+node0x55a002825520 -> node0x55a002825d50[color="red"];
+node0x55a002825d50 -> node0x55a002814f90;
+node0x55a002825d50 -> node0x55a002826550;
+node0x55a002826550 -> node0x55a002826d80;
+node0x55a0028275c0 -> node0x55a0028278a0;
+}

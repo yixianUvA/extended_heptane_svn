@@ -1,0 +1,133 @@
+The argc is 4
+The second program is simple
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.00023
+[INFO]	ICacheAnalysis: PS done: 0.000153
+[INFO]	ICacheAnalysis: MAY done: 0.000218
+[INFO]	********HH ICACHE: 0.000716
+[INFO]	ICacheAnalysis: MUST done: 0.00087
+[INFO]	ICacheAnalysis: PS done: 0.000306
+[INFO]	ICacheAnalysis: MAY done: 0.000773
+[INFO]	********HH ICACHE: 0.002053
+[INFO]	********HH DATAADDRESS: 0.002878
+[INFO]	DcacheAnalysis: MUST done: 0.000418
+[INFO]	DcacheAnalysis: PS done: 0.000298
+[INFO]	DcacheAnalysis: MAY done: 0.000405
+[INFO]	********HH DCACHE: 0.001669
+[INFO]	DcacheAnalysis: MUST done: 0.000681
+[INFO]	DcacheAnalysis: PS done: 0.000385
+[INFO]	DcacheAnalysis: MAY done: 0.000798
+[INFO]	********HH DCACHE: 0.002471
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.012248
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	********HH IPET: 0.004634
+
+L1	type ICACHE	references 147	hits 128	misses 19	
+L1	type DCACHE	references 67	hits 61	misses 6	
+L2	type ICACHE	references 19	hits 2	misses 17	
+L2	type DCACHE	references 6	hits 0	misses 6	
+[INFO]	********HH CACHESTATISTICS: 0.000725
+[INFO]	 =======Yixian> Total time for the analyses = 0.059262
+WCET: 4654
+[INFO]	********HH SIMPLEPRINT: 1.3e-05
+[INFO]	********HH DOTPRINT: 0.021231
+[INFO]	********HH CODELINE: 0.06295
+[INFO]	********HH HTMLPRINT: 0.000669
+The file name is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The file name is -t
+The file name is ./configWCET.xml
+The file name is simple
+xml_file is ./resICacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 30
+lloop is 182, 176, 149, 137, 167, 160, 172, 
+node: 182
+node: 176
+node: 149
+node: 137
+node: 167
+node: 160
+node: 172
+maxiter: 4
+15
+Address: 33012 ,CacheSet: 7 ,CHMCValue: CHMCL2Code#1
+Address: 33040 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#1
+Address: 33056 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#1
+Address: 33072 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33120 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#1
+Address: 33132 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#1
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#1
+Address: 33152 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#1
+Address: 33168 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#1
+Address: 33172 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#1
+Address: 33184 ,CacheSet: 13 ,CHMCValue: CHMCL2Code#1
+Address: 33204 ,CacheSet: 13 ,CHMCValue: CHMCL2Code#1
+Address: 33216 ,CacheSet: 14 ,CHMCValue: CHMCL2Code#1
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resICacheL2.xml
+main
+The lanalysis size is 2
+CacheSet: 0 Address: 32768 CACValue: A
+CacheSet: 0 Address: 32784 CACValue: A
+CacheSet: 1 Address: 32800 CACValue: A
+CacheSet: 1 Address: 32816 CACValue: A
+CacheSet: 2 Address: 32832 CACValue: A
+CacheSet: 2 Address: 32848 CACValue: A
+xml_file is ./resDCacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 30
+lloop is 182, 176, 149, 137, 167, 160, 172, 
+node: 182
+node: 176
+node: 149
+node: 137
+node: 167
+node: 160
+node: 172
+maxiter: 4
+17
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resDCacheL2.xml
+main
+The lanalysis size is 2
+[INFO]	 =======**> Infertime Time = 0.003613
+---------------------------------------------------
+CB and HB size information
+The HB size is 15
+The CB size is 6
+******The conflict cache set of Instruction cache Interference*****
+
+******The conflict cache set of Data cache Interference*****
+Conflict Set: 127 Evited Items: 3
+
+*******************Un-united Cache********************
+The sum of conflict cacheset is 0
+The instruction interference is 0
+The sum of conflict cacheset is 1
+The Data Cache Interference is 3
+Interfered by program simple , The times of the evicted item is 3
+
+
+
+*************This is the version of United cache Interference *************
+Interfered by program simple , The times of the evicted item is 3
+******The conflict cache set of Data cache Interference*****
+The conflictUcache size is 1
+Conflict Set: 127 Evited Items: 3
+
+
+xml_file is ./resICacheL2.xml
+__aeabi_idiv
+The lanalysis size is 30
+xml_file is ./resDCacheL2.xml
+__aeabi_idiv
+The lanalysis size is 30

@@ -1,0 +1,803 @@
+\hypertarget{classArch__dep}{}\section{Arch\+\_\+dep Class Reference}
+\label{classArch__dep}\index{Arch\+\_\+dep@{Arch\+\_\+dep}}
+
+
+{\ttfamily \#include $<$arch.\+h$>$}
+
+Inheritance diagram for Arch\+\_\+dep\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArch__dep}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classArch__dep_ace6563eaed5469d5c65d1373dbf6e1cd}{$\sim$\+Arch\+\_\+dep} ()
+\item 
+virtual bool \hyperlink{classArch__dep_a2734ff9ad6b2d894a2573eaedcd46989}{is\+Big\+Endian} ()=0
+\item 
+bool \hyperlink{classArch__dep_a0e7d21d956903e11000d78cab233c24d}{is\+Call} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+bool \hyperlink{classArch__dep_ac03cfb1337393303f438f7915bcc23a9}{is\+Unconditional\+Jump} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+bool \hyperlink{classArch__dep_ac1df28408e3ed4390827a8922d833383}{is\+Conditional\+Jump} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+virtual bool \hyperlink{classArch__dep_ae876048f1f6ac62a6f7cb84067189866}{is\+Function} (const string \&line)=0
+\item 
+virtual bool \hyperlink{classArch__dep_ac537200db0a4cdd0eb3321b65111ccd5}{is\+Instruction} (const string \&line)=0
+\item 
+virtual \hyperlink{classObjdumpFunction}{Objdump\+Function} \hyperlink{classArch__dep_a5d004c41d6eaf7975b69f767a52d2e30}{parse\+Function} (const string \&line)=0
+\item 
+virtual \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \hyperlink{classArch__dep_a6408104eb77881932f05dab9e913ca87}{parse\+Instruction} (const string \&line)=0
+\item 
+virtual t\+\_\+address \hyperlink{classArch__dep_a78780a4581807e2974057810e6aaa6c1}{get\+Jump\+Destination} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)=0
+\item 
+virtual bool \hyperlink{classArch__dep_aa965a7ac1af14109f60aa2ceab99b6d6}{is\+Mem\+Pattern} (const string \&operand)=0
+\item 
+virtual vector$<$ string $>$ \hyperlink{classArch__dep_a02bb8952fdf52e2a11ca009509b7bf46}{extract\+Input\+Registers\+From\+Mem} (const string \&operand)=0
+\item 
+virtual vector$<$ string $>$ \hyperlink{classArch__dep_a4ef649eb06dedb67fe215fc7665f48ba}{extract\+Output\+Registers\+From\+Mem} (const string \&operand)=0
+\item 
+virtual vector$<$ string $>$ \hyperlink{classArch__dep_a6aa967ba3a9e3cf2954cc376c6ce6a06}{get\+Resource\+Functional\+Units} (const string \&instr)
+\item 
+virtual bool \hyperlink{classArch__dep_a1d8126e04db14a502e3b26be2f032552}{is\+Load\+Multiple} (const string \&instr)=0
+\item 
+virtual int \hyperlink{classArch__dep_a914556a124481b77698440f0cf6a5f24}{get\+Number\+Of\+Loads} (const string \&instr)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a54438a476a16d55659124aea0c38397a}{is\+Store\+Multiple} (const string \&instr)=0
+\item 
+virtual int \hyperlink{classArch__dep_afd76af2d5947f461e8a04be6b45c2596}{get\+Number\+Of\+Stores} (const string \&instr)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a0f8a68b8dc2188a0578f3b4d92a289ca}{is\+Return} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)=0
+\item 
+virtual string \hyperlink{classArch__dep_ad09e79609dda858cdbd651064623ae2b}{get\+Callee\+Name} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)=0
+\item 
+virtual void \hyperlink{classArch__dep_a5d50b1a54bf2afc034b813d1008c9f8e}{parse\+Symbol\+Table\+Line} (const string \&line, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)=0
+\item 
+void \hyperlink{classArch__dep_abf6d4090f19269e8718b2597984f52e7}{parse\+Read\+Elf\+Line} (const string \&line, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+bool \hyperlink{classArch__dep_a690346c11242f24dc8d692f864e20ccc}{is\+Word} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+virtual \hyperlink{classObjdumpWord}{Objdump\+Word} \hyperlink{classArch__dep_a9e6075dd5bc43a1522aa65f2d11dad06}{read\+Word\+Instruction} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)=0
+\item 
+bool \hyperlink{classArch__dep_af20f87a328dec6fd2c1fe8d8106c00cb}{is\+Readelf\+Sections\+Marker} (const string \&line)
+\item 
+bool \hyperlink{classArch__dep_ac38abb4817048b6cb4c996042f478318}{is\+Readelf\+Flags\+Marker} (const string \&line)
+\item 
+bool \hyperlink{classArch__dep_ae888c716d93a4d70216826f31997a0b1}{is\+Objdump\+Symbol\+Table\+Marker} (const string \&line)
+\item 
+bool \hyperlink{classArch__dep_ae6672e820c8f1210a9ce6cfa51432560}{is\+Objdump\+Text\+Marker} (const string \&line)
+\item 
+virtual bool \hyperlink{classArch__dep_ac6456dfba496bcf104d460c8610a484f}{is\+Pc\+In\+Input\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a89b89f3e5248442dda296986f5673bb6}{is\+Pc\+In\+Output\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)=0
+\item 
+virtual vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ \hyperlink{classArch__dep_a00e2fabd6cc0f5b9c36593a67f793d7a}{get\+Words\+From\+Instr} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr1, const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr2, vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ words, bool \&is\+\_\+instr2\+\_\+consumed)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a3d926dc01afb4aebf1136dbe0962a30d}{is\+Input\+Written\+Register} (const string \&operand)=0
+\item 
+virtual string \hyperlink{classArch__dep_a286da739265c852e98f2efd622615b96}{extract\+Register\+From\+Input\+Written\+Operand} (const string \&operand)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a6c37096e67b2c02e9c0bd38313245979}{is\+Register\+List} (const string \&operand)=0
+\item 
+virtual vector$<$ string $>$ \hyperlink{classArch__dep_afac73b40e179fbab3fc0954aa060548f}{extract\+Registers\+From\+Register\+List} (const string \&operand)=0
+\item 
+virtual int \hyperlink{classArch__dep_aff5899fb3e5793bf07f43512bfcc04e1}{get\+Size\+Register\+List} (const string \&operand)=0
+\item 
+virtual bool \hyperlink{classArch__dep_ad56e95263903d54aabbb91efdcf7eba4}{is\+Shifter\+Operand} (const string \&operand)=0
+\item 
+virtual string \hyperlink{classArch__dep_a58002697a2ce55ff09eee606807cfab3}{extract\+Register\+From\+Shifter\+Operand} (const string \&operand)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a449f2174ec019b4526e1904716d7bae1}{get\+Register\+And\+Index\+Stack} (const string \&instruction\+Asm, string \&reg, int $\ast$i)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a18db69d3e03bcfbcf5b7d3b36b4f409c}{get\+Load\+Store\+A\+R\+M\+Infos} (bool strong\+Context, string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$vaddrmode, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)=0
+\item 
+virtual bool \hyperlink{classArch__dep_aa96008928838f1ff0f96ba83b07b90e2}{is\+Pc\+Load\+Instruction} (string \&instr)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a30cdbcdc129741df876bda79fd76e9fe}{get\+Instr1\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2)=0
+\item 
+virtual bool \hyperlink{classArch__dep_ae9c1e0474e6414808dc6c8658ef0ddba}{get\+Instr2\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a71398abb52e277ead74615af892a2dd8}{is\+A\+R\+M\+Class\+Instr} (const string \&codeop, const string \&prefix)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a41eb152029e2792b59337bc4b370ec9f}{is\+Conditionned\+A\+R\+M\+Instr} (const string \&codeop, const string \&prefix)=0
+\item 
+virtual bool \hyperlink{classArch__dep_a6d74b532181cea3a40eb28b262a9f6f5}{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, vector$<$ string $>$ \&reg\+List, bool $\ast$write\+Back)=0
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a62ba8da6b630eaffc886affddb769a55}{get\+Resource\+Inputs} (const string \&instr)
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a09460de38072b0a85ac88f64f0ed42c2}{get\+Resource\+Outputs} (const string \&instr)
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_af07d99baab6b3f496f50bd44277f762e}{split\+Instruction} (const string \&instr)
+\item 
+\hyperlink{classInstructionType}{Instruction\+Type} $\ast$ \hyperlink{classArch__dep_a842926338441fd9f65a8775450a1b811}{get\+Instruction\+Type\+From\+Mnemonic} (const string \&mnemonic)
+\item 
+\hyperlink{classInstructionType}{Instruction\+Type} $\ast$ \hyperlink{classArch__dep_ab08ac366e83b7b1f32b982849c9c3ee5}{get\+Instruction\+Type\+From\+Asm} (const string \&instr)
+\item 
+virtual int \hyperlink{classArch__dep_a7f9d441d7b402294c6faf7b81ee5aa59}{get\+N\+B\+Instr\+In\+Delay\+Slot} ()=0
+\item 
+virtual int \hyperlink{classArch__dep_a845395b8503a23b2c192e8b4a05ccba9}{get\+Instruction\+Size} ()=0
+\item 
+int \hyperlink{classArch__dep_adb2c2145f6abeb415436bbe3d622cf70}{get\+Register\+Number} (const string \&reg\+\_\+name)
+\item 
+bool \hyperlink{classArch__dep_ac12a732622a72990042fc34c96ad0188}{is\+Register\+Name} (const string \&reg\+\_\+name)
+\item 
+bool \hyperlink{classArch__dep_aaf6d066028c438c8e01194eb13500468}{is\+Zero\+Register} (const string \&reg\+\_\+name)
+\item 
+bool \hyperlink{classArch__dep_a674e544699e6ba167f7e29e0ea046ffc}{is\+Dec\+Number} (const string \&str)
+\item 
+bool \hyperlink{classArch__dep_a7c5d045c231fa0aa3890f49c35614a0a}{is\+Hex\+Number} (const string \&str)
+\item 
+bool \hyperlink{classArch__dep_a4408d5e5fedffe7a6877f226db4ebc69}{is\+Addr} (const string \&str)
+\item 
+bool \hyperlink{classArch__dep_ac412d77ad36470a99dc562d3e318d78f}{is\+Load} (const string \&instr)
+\item 
+bool \hyperlink{classArch__dep_afff6d978b8e317027e9b6c97818fc6ab}{is\+Store} (const string \&instr)
+\item 
+int \hyperlink{classArch__dep_ac0af59ba86c85f71a733f9e56debc411}{get\+Size\+Of\+Memory\+Access} (const string \&instr)
+\item 
+\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$ \hyperlink{classArch__dep_ab5a1e24af6e96eb1795aec07c1cd3578}{get\+D\+A\+A\+Instruction} (const string \&instr)
+\item 
+int \hyperlink{classArch__dep_a0b52e67e71b9108513e68020f0f741b7}{get\+Latency} (const string \&instr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual vector$<$ string $>$ \hyperlink{classArch__dep_abf3061756ea53bc4eb3c2447fca9fb5c}{split\+Operands} (const string \&operands)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classArch__dep_aef2b07cdb458eeabf49511678238d91c}{zero\+\_\+register\+\_\+num}
+\item 
+map$<$ string, \hyperlink{classInstructionType}{Instruction\+Type} $\ast$ $>$ \hyperlink{classArch__dep_a21dc91a47a70b553207b199458784f77}{mnemonic\+To\+Instruction\+Types}
+\item 
+map$<$ string, int $>$ \hyperlink{classArch__dep_adca30c5e86132ee9d152638d6db513bb}{regs}
+\item 
+map$<$ string, set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$ $>$ $>$ \hyperlink{classArch__dep_aeeeb564f05fb3d397d87f2869663ad2e}{formats}
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_aa92e4e668b37f15cabfca78f2ee4406a}{sections\+To\+Extract}
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a5be691cc406884dde58bcb792268cf4a}{readelf\+\_\+sections\+\_\+markers}
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a3c4bd1d73aa96100fcefbba1219ca9ba}{readelf\+\_\+flags\+\_\+markers}
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a142338c3f4ce8a5f312d436b395a9e44}{objdump\+\_\+text\+\_\+markers}
+\item 
+vector$<$ string $>$ \hyperlink{classArch__dep_a60ff2387eef16e09dceefea48a0da8ab}{objdump\+\_\+symboltable\+\_\+markers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArch__dep_ace6563eaed5469d5c65d1373dbf6e1cd}\label{classArch__dep_ace6563eaed5469d5c65d1373dbf6e1cd}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!````~Arch\+\_\+dep@{$\sim$\+Arch\+\_\+dep}}
+\index{````~Arch\+\_\+dep@{$\sim$\+Arch\+\_\+dep}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{$\sim$\+Arch\+\_\+dep()}{~Arch\_dep()}}
+{\footnotesize\ttfamily virtual Arch\+\_\+dep\+::$\sim$\+Arch\+\_\+dep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArch__dep_a02bb8952fdf52e2a11ca009509b7bf46}\label{classArch__dep_a02bb8952fdf52e2a11ca009509b7bf46}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}}
+\index{extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{extract\+Input\+Registers\+From\+Mem()}{extractInputRegistersFromMem()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Arch\+\_\+dep\+::extract\+Input\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the names of the input registers present in a memory access 
+
+Implemented in \hyperlink{classARM_a9e3c7c33a89377beca2b31ebacf2793c}{A\+RM}, and \hyperlink{classMIPS_acf8659c9a36074bbe47455275a4829f7}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a4ef649eb06dedb67fe215fc7665f48ba}\label{classArch__dep_a4ef649eb06dedb67fe215fc7665f48ba}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}}
+\index{extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{extract\+Output\+Registers\+From\+Mem()}{extractOutputRegistersFromMem()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Arch\+\_\+dep\+::extract\+Output\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the names of the ouput registers present in a memory access 
+
+Implemented in \hyperlink{classARM_a4d2fbc77b15f4672ed20f06cc44e4c4e}{A\+RM}, and \hyperlink{classMIPS_af03518e68285f24da7a0b2e16020d8d2}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a286da739265c852e98f2efd622615b96}\label{classArch__dep_a286da739265c852e98f2efd622615b96}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}}
+\index{extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Input\+Written\+Operand()}{extractRegisterFromInputWrittenOperand()}}
+{\footnotesize\ttfamily virtual string Arch\+\_\+dep\+::extract\+Register\+From\+Input\+Written\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the register in an Input Written Register pattern
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a53017c6d42bb7bee24a36e45bf0300b9}{M\+I\+PS}, and \hyperlink{classARM_a32da27e5c024c3291b12a62ffc2b3070}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a58002697a2ce55ff09eee606807cfab3}\label{classArch__dep_a58002697a2ce55ff09eee606807cfab3}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}}
+\index{extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Shifter\+Operand()}{extractRegisterFromShifterOperand()}}
+{\footnotesize\ttfamily virtual string Arch\+\_\+dep\+::extract\+Register\+From\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the register which is used by the shifter (result can be empty)
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_ae48954f0e93827c1cb8225cac3857464}{M\+I\+PS}, and \hyperlink{classARM_a12e96058317496e995642601bd65fb12}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_afac73b40e179fbab3fc0954aa060548f}\label{classArch__dep_afac73b40e179fbab3fc0954aa060548f}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}}
+\index{extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{extract\+Registers\+From\+Register\+List()}{extractRegistersFromRegisterList()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Arch\+\_\+dep\+::extract\+Registers\+From\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the registers in the list
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a6eecdd7a94436748b1bc224cf78ac075}{M\+I\+PS}, and \hyperlink{classARM_abbd225e086b20313a6eb5afbb45b955a}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ad09e79609dda858cdbd651064623ae2b}\label{classArch__dep_ad09e79609dda858cdbd651064623ae2b}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Callee\+Name@{get\+Callee\+Name}}
+\index{get\+Callee\+Name@{get\+Callee\+Name}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Callee\+Name()}{getCalleeName()}}
+{\footnotesize\ttfamily virtual string Arch\+\_\+dep\+::get\+Callee\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the function called in a \hyperlink{classCall}{Call} Instruction 
+
+Implemented in \hyperlink{classMIPS_adc2a687a1c64a5240d7d1ce7e294fdfc}{M\+I\+PS}, and \hyperlink{classARM_aefb97cfd945153e713c1303e467f9190}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ab5a1e24af6e96eb1795aec07c1cd3578}\label{classArch__dep_ab5a1e24af6e96eb1795aec07c1cd3578}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}}
+\index{get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+D\+A\+A\+Instruction()}{getDAAInstruction()}}
+{\footnotesize\ttfamily \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction}$\ast$ Arch\+\_\+dep\+::get\+D\+A\+A\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the address analysis instruction \mbox{\Hypertarget{classArch__dep_a30cdbcdc129741df876bda79fd76e9fe}\label{classArch__dep_a30cdbcdc129741df876bda79fd76e9fe}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}}
+\index{get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Instr1\+A\+R\+M\+Infos()}{getInstr1ARMInfos()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::get\+Instr1\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_add97e24f0dff226385044368b82cb6f1}{M\+I\+PS}, and \hyperlink{classARM_a4434e1ab868a4d3a26940aaec3366dd0}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ae9c1e0474e6414808dc6c8658ef0ddba}\label{classArch__dep_ae9c1e0474e6414808dc6c8658ef0ddba}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}}
+\index{get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Instr2\+A\+R\+M\+Infos()}{getInstr2ARMInfos()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::get\+Instr2\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_aefb9849f91cfe9bcb6baa71bcf0b4aa8}{M\+I\+PS}, and \hyperlink{classARM_a4a8d73d140cf70b7fb73d0359d9c52d0}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a845395b8503a23b2c192e8b4a05ccba9}\label{classArch__dep_a845395b8503a23b2c192e8b4a05ccba9}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Instruction\+Size@{get\+Instruction\+Size}}
+\index{get\+Instruction\+Size@{get\+Instruction\+Size}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Size()}{getInstructionSize()}}
+{\footnotesize\ttfamily virtual int Arch\+\_\+dep\+::get\+Instruction\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the size in bytes of an instruction 
+
+Implemented in \hyperlink{classARM_a1eb1efd95035b2a16f65bb1f58916e7b}{A\+RM}, and \hyperlink{classMIPS_ad192996344511aa0152adf644cf84238}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_ab08ac366e83b7b1f32b982849c9c3ee5}\label{classArch__dep_ab08ac366e83b7b1f32b982849c9c3ee5}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Instruction\+Type\+From\+Asm@{get\+Instruction\+Type\+From\+Asm}}
+\index{get\+Instruction\+Type\+From\+Asm@{get\+Instruction\+Type\+From\+Asm}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Type\+From\+Asm()}{getInstructionTypeFromAsm()}}
+{\footnotesize\ttfamily \hyperlink{classInstructionType}{Instruction\+Type}$\ast$ Arch\+\_\+dep\+::get\+Instruction\+Type\+From\+Asm (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the \hyperlink{classInstructionType}{Instruction\+Type} object which corresponds to the mnemonic present in instr \mbox{\Hypertarget{classArch__dep_a842926338441fd9f65a8775450a1b811}\label{classArch__dep_a842926338441fd9f65a8775450a1b811}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Instruction\+Type\+From\+Mnemonic@{get\+Instruction\+Type\+From\+Mnemonic}}
+\index{get\+Instruction\+Type\+From\+Mnemonic@{get\+Instruction\+Type\+From\+Mnemonic}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Type\+From\+Mnemonic()}{getInstructionTypeFromMnemonic()}}
+{\footnotesize\ttfamily \hyperlink{classInstructionType}{Instruction\+Type}$\ast$ Arch\+\_\+dep\+::get\+Instruction\+Type\+From\+Mnemonic (\begin{DoxyParamCaption}\item[{const string \&}]{mnemonic }\end{DoxyParamCaption})}
+
+Returns the \hyperlink{classInstructionType}{Instruction\+Type} object which corresponds to the mnemonic \mbox{\Hypertarget{classArch__dep_a78780a4581807e2974057810e6aaa6c1}\label{classArch__dep_a78780a4581807e2974057810e6aaa6c1}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Jump\+Destination@{get\+Jump\+Destination}}
+\index{get\+Jump\+Destination@{get\+Jump\+Destination}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Jump\+Destination()}{getJumpDestination()}}
+{\footnotesize\ttfamily virtual t\+\_\+address Arch\+\_\+dep\+::get\+Jump\+Destination (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the jump target of instr 
+
+Implemented in \hyperlink{classARM_ae889878d4d427bda74ca75645ca0f35a}{A\+RM}, and \hyperlink{classMIPS_a64b2312c1817faef2ca139497ffa7ec9}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a0b52e67e71b9108513e68020f0f741b7}\label{classArch__dep_a0b52e67e71b9108513e68020f0f741b7}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Latency@{get\+Latency}}
+\index{get\+Latency@{get\+Latency}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Latency()}{getLatency()}}
+{\footnotesize\ttfamily int Arch\+\_\+dep\+::get\+Latency (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the latency of the instruction \mbox{\Hypertarget{classArch__dep_a18db69d3e03bcfbcf5b7d3b36b4f409c}\label{classArch__dep_a18db69d3e03bcfbcf5b7d3b36b4f409c}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Load\+Store\+A\+R\+M\+Infos()}{getLoadStoreARMInfos()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::get\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{bool}]{strong\+Context,  }\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$}]{vaddrmode,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a2aa733a21db8dc973feddaac233d66a2}{M\+I\+PS}, and \hyperlink{classARM_acb46d6be8fd6799ed147be2b86991897}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a6d74b532181cea3a40eb28b262a9f6f5}\label{classArch__dep_a6d74b532181cea3a40eb28b262a9f6f5}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos()}{getMultipleLoadStoreARMInfos()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::get\+Multiple\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{vector$<$ string $>$ \&}]{reg\+List,  }\item[{bool $\ast$}]{write\+Back }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_ae09bc40a4598430935a4deb91e81703c}{M\+I\+PS}, and \hyperlink{classARM_a8dc99512e617606f2fb5386b59a8ae47}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a7f9d441d7b402294c6faf7b81ee5aa59}\label{classArch__dep_a7f9d441d7b402294c6faf7b81ee5aa59}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}}
+\index{get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+N\+B\+Instr\+In\+Delay\+Slot()}{getNBInstrInDelaySlot()}}
+{\footnotesize\ttfamily virtual int Arch\+\_\+dep\+::get\+N\+B\+Instr\+In\+Delay\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of instructions in the delay slot 
+
+Implemented in \hyperlink{classARM_a3df5e5b89546f7dfa9e50dc9f8c3518b}{A\+RM}, and \hyperlink{classMIPS_a15519e774487809038024a6cc0febab3}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a914556a124481b77698440f0cf6a5f24}\label{classArch__dep_a914556a124481b77698440f0cf6a5f24}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}}
+\index{get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Loads()}{getNumberOfLoads()}}
+{\footnotesize\ttfamily virtual int Arch\+\_\+dep\+::get\+Number\+Of\+Loads (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of Loads in an instruction 
+
+Implemented in \hyperlink{classARM_afaa30a7fb0948c057acfc2673c4dc4c6}{A\+RM}, and \hyperlink{classMIPS_ad2447a7ac47005463a13e4e78dd55594}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_afd76af2d5947f461e8a04be6b45c2596}\label{classArch__dep_afd76af2d5947f461e8a04be6b45c2596}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}}
+\index{get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Stores()}{getNumberOfStores()}}
+{\footnotesize\ttfamily virtual int Arch\+\_\+dep\+::get\+Number\+Of\+Stores (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of Stores in an instruction 
+
+Implemented in \hyperlink{classARM_a624c0346f9f963c9f42ae155c67e728f}{A\+RM}, and \hyperlink{classMIPS_a8555188088fbf6dba02c37ca43e036c6}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a449f2174ec019b4526e1904716d7bae1}\label{classArch__dep_a449f2174ec019b4526e1904716d7bae1}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}}
+\index{get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Register\+And\+Index\+Stack()}{getRegisterAndIndexStack()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::get\+Register\+And\+Index\+Stack (\begin{DoxyParamCaption}\item[{const string \&}]{instruction\+Asm,  }\item[{string \&}]{reg,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_a32b86b25f6547ba12fc2a8bc348b4aad}{M\+I\+PS}, and \hyperlink{classARM_a19df5de29d005c2629ea2e02f3312ccf}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_adb2c2145f6abeb415436bbe3d622cf70}\label{classArch__dep_adb2c2145f6abeb415436bbe3d622cf70}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Register\+Number@{get\+Register\+Number}}
+\index{get\+Register\+Number@{get\+Register\+Number}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Register\+Number()}{getRegisterNumber()}}
+{\footnotesize\ttfamily int Arch\+\_\+dep\+::get\+Register\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{reg\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the register number of reg\+\_\+name \mbox{\Hypertarget{classArch__dep_a6aa967ba3a9e3cf2954cc376c6ce6a06}\label{classArch__dep_a6aa967ba3a9e3cf2954cc376c6ce6a06}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Resource\+Functional\+Units@{get\+Resource\+Functional\+Units}}
+\index{get\+Resource\+Functional\+Units@{get\+Resource\+Functional\+Units}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Resource\+Functional\+Units()}{getResourceFunctionalUnits()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Arch\+\_\+dep\+::get\+Resource\+Functional\+Units (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the functional units used by an instruction 
+
+Reimplemented in \hyperlink{classARM_a1fa177cc34bbe368167488311b7ab5e5}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a62ba8da6b630eaffc886affddb769a55}\label{classArch__dep_a62ba8da6b630eaffc886affddb769a55}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Resource\+Inputs@{get\+Resource\+Inputs}}
+\index{get\+Resource\+Inputs@{get\+Resource\+Inputs}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Resource\+Inputs()}{getResourceInputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::get\+Resource\+Inputs (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the input resources \mbox{\Hypertarget{classArch__dep_a09460de38072b0a85ac88f64f0ed42c2}\label{classArch__dep_a09460de38072b0a85ac88f64f0ed42c2}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Resource\+Outputs@{get\+Resource\+Outputs}}
+\index{get\+Resource\+Outputs@{get\+Resource\+Outputs}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Resource\+Outputs()}{getResourceOutputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::get\+Resource\+Outputs (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the output resources \mbox{\Hypertarget{classArch__dep_ac0af59ba86c85f71a733f9e56debc411}\label{classArch__dep_ac0af59ba86c85f71a733f9e56debc411}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily int Arch\+\_\+dep\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns the size of the memory access in bytes, if the instr is a load/store and 0 otherwise \mbox{\Hypertarget{classArch__dep_aff5899fb3e5793bf07f43512bfcc04e1}\label{classArch__dep_aff5899fb3e5793bf07f43512bfcc04e1}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Size\+Register\+List@{get\+Size\+Register\+List}}
+\index{get\+Size\+Register\+List@{get\+Size\+Register\+List}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Size\+Register\+List()}{getSizeRegisterList()}}
+{\footnotesize\ttfamily virtual int Arch\+\_\+dep\+::get\+Size\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of registers in operand assumed to be a register list.
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a475db73349cc940f47e5e0c310ac8912}{M\+I\+PS}, and \hyperlink{classARM_a356b1ab7252a6f1183747378a2d66b08}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a00e2fabd6cc0f5b9c36593a67f793d7a}\label{classArch__dep_a00e2fabd6cc0f5b9c36593a67f793d7a}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!get\+Words\+From\+Instr@{get\+Words\+From\+Instr}}
+\index{get\+Words\+From\+Instr@{get\+Words\+From\+Instr}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{get\+Words\+From\+Instr()}{getWordsFromInstr()}}
+{\footnotesize\ttfamily virtual vector$<$\hyperlink{classObjdumpWord}{Objdump\+Word}$>$ Arch\+\_\+dep\+::get\+Words\+From\+Instr (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr1,  }\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr2,  }\item[{vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$}]{words,  }\item[{bool \&}]{is\+\_\+instr2\+\_\+consumed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the .word used by a an instruction
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a1e122412b5edefe1b92b2b4851255a69}{M\+I\+PS}, and \hyperlink{classARM_a550a39c74ccd7308c20d1a3259f25ca2}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a4408d5e5fedffe7a6877f226db4ebc69}\label{classArch__dep_a4408d5e5fedffe7a6877f226db4ebc69}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Addr@{is\+Addr}}
+\index{is\+Addr@{is\+Addr}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Addr()}{isAddr()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Addr (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+Returns true if str is an addr (32 bits) \mbox{\Hypertarget{classArch__dep_a71398abb52e277ead74615af892a2dd8}\label{classArch__dep_a71398abb52e277ead74615af892a2dd8}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}}
+\index{is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+A\+R\+M\+Class\+Instr()}{isARMClassInstr()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+A\+R\+M\+Class\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_aa234e9a3a6942ce0a38894fa4caddbd9}{M\+I\+PS}, and \hyperlink{classARM_a76b4f8a8fe1fb702277f5a4f2b9475d2}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a2734ff9ad6b2d894a2573eaedcd46989}\label{classArch__dep_a2734ff9ad6b2d894a2573eaedcd46989}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Big\+Endian@{is\+Big\+Endian}}
+\index{is\+Big\+Endian@{is\+Big\+Endian}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Big\+Endian()}{isBigEndian()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Big\+Endian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns code section indicator of an objdump file
+
+Returns true if the architecture is a big endian architecture 
+
+Implemented in \hyperlink{classARM_ae86effb7574c3627cd114ec35e5bd096}{A\+RM}, and \hyperlink{classMIPS_ae645fa32988ae74ef68ee141ee88a434}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a0e7d21d956903e11000d78cab233c24d}\label{classArch__dep_a0e7d21d956903e11000d78cab233c24d}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Call@{is\+Call}}
+\index{is\+Call@{is\+Call}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Call()}{isCall()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Call (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is a call instruction \mbox{\Hypertarget{classArch__dep_ac1df28408e3ed4390827a8922d833383}\label{classArch__dep_ac1df28408e3ed4390827a8922d833383}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Conditional\+Jump@{is\+Conditional\+Jump}}
+\index{is\+Conditional\+Jump@{is\+Conditional\+Jump}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Conditional\+Jump()}{isConditionalJump()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Conditional\+Jump (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is a conditional jump instruction \mbox{\Hypertarget{classArch__dep_a41eb152029e2792b59337bc4b370ec9f}\label{classArch__dep_a41eb152029e2792b59337bc4b370ec9f}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}}
+\index{is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Conditionned\+A\+R\+M\+Instr()}{isConditionnedARMInstr()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Conditionned\+A\+R\+M\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_a1ef435e9100290e46e91863960b64c71}{M\+I\+PS}, and \hyperlink{classARM_a9ef2e856b711bdb39806ebb3d59c4ee3}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a674e544699e6ba167f7e29e0ea046ffc}\label{classArch__dep_a674e544699e6ba167f7e29e0ea046ffc}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Dec\+Number@{is\+Dec\+Number}}
+\index{is\+Dec\+Number@{is\+Dec\+Number}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Dec\+Number()}{isDecNumber()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Dec\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+Returns true if str is a positive or negative integer in Dec \mbox{\Hypertarget{classArch__dep_ae876048f1f6ac62a6f7cb84067189866}\label{classArch__dep_ae876048f1f6ac62a6f7cb84067189866}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Function@{is\+Function}}
+\index{is\+Function@{is\+Function}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Function()}{isFunction()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the line corresponds to a function declaration in the objdump file 
+
+Implemented in \hyperlink{classARM_a97cd03133ef631d78cc567c8ded65433}{A\+RM}, and \hyperlink{classMIPS_a2de73769c68612b81e2e15b4eaf07969}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a7c5d045c231fa0aa3890f49c35614a0a}\label{classArch__dep_a7c5d045c231fa0aa3890f49c35614a0a}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Hex\+Number@{is\+Hex\+Number}}
+\index{is\+Hex\+Number@{is\+Hex\+Number}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Hex\+Number()}{isHexNumber()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Hex\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+Returns true if str is a positive integer in \hyperlink{classHex}{Hex} (0x...) \mbox{\Hypertarget{classArch__dep_a3d926dc01afb4aebf1136dbe0962a30d}\label{classArch__dep_a3d926dc01afb4aebf1136dbe0962a30d}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Input\+Written\+Register@{is\+Input\+Written\+Register}}
+\index{is\+Input\+Written\+Register@{is\+Input\+Written\+Register}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Input\+Written\+Register()}{isInputWrittenRegister()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Input\+Written\+Register (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the operand is an Input register which is written
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a9bdb629497575a212f34ee951f1adfe0}{M\+I\+PS}, and \hyperlink{classARM_a4c35c414b95295974d60a365443c1a4a}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ac537200db0a4cdd0eb3321b65111ccd5}\label{classArch__dep_ac537200db0a4cdd0eb3321b65111ccd5}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Instruction@{is\+Instruction}}
+\index{is\+Instruction@{is\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Instruction()}{isInstruction()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the line corresponds to an instruction in the objdump file 
+
+Implemented in \hyperlink{classARM_abb7b6e518a9d8cb404ca7a30ad6e0326}{A\+RM}, and \hyperlink{classMIPS_a86a3224889b2d3e2486072b7bc5c26f3}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_ac412d77ad36470a99dc562d3e318d78f}\label{classArch__dep_ac412d77ad36470a99dc562d3e318d78f}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Load@{is\+Load}}
+\index{is\+Load@{is\+Load}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Load()}{isLoad()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Load (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is a load \mbox{\Hypertarget{classArch__dep_a1d8126e04db14a502e3b26be2f032552}\label{classArch__dep_a1d8126e04db14a502e3b26be2f032552}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Load\+Multiple@{is\+Load\+Multiple}}
+\index{is\+Load\+Multiple@{is\+Load\+Multiple}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Load\+Multiple()}{isLoadMultiple()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Load\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the instructions is a \hyperlink{classLoad}{Load} of multiple data 
+
+Implemented in \hyperlink{classARM_a426d805ed2f8ff041c2904b08f4f8953}{A\+RM}, and \hyperlink{classMIPS_aeb0b38a8be26d938889beb59ee1a98fb}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_aa965a7ac1af14109f60aa2ceab99b6d6}\label{classArch__dep_aa965a7ac1af14109f60aa2ceab99b6d6}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Mem\+Pattern@{is\+Mem\+Pattern}}
+\index{is\+Mem\+Pattern@{is\+Mem\+Pattern}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Mem\+Pattern()}{isMemPattern()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Mem\+Pattern (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if operand is a memory access pattern 
+
+Implemented in \hyperlink{classARM_a0e3c93edce9d2f24aa69eac3accac2bb}{A\+RM}, and \hyperlink{classMIPS_a73e4206a1a7c2ee6461520c52fa5dcde}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_ae888c716d93a4d70216826f31997a0b1}\label{classArch__dep_ae888c716d93a4d70216826f31997a0b1}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Objdump\+Symbol\+Table\+Marker@{is\+Objdump\+Symbol\+Table\+Marker}}
+\index{is\+Objdump\+Symbol\+Table\+Marker@{is\+Objdump\+Symbol\+Table\+Marker}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Objdump\+Symbol\+Table\+Marker()}{isObjdumpSymbolTableMarker()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Objdump\+Symbol\+Table\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})}
+
+Returns true if the input line is a marker of Symbol Table in an Objdump file \mbox{\Hypertarget{classArch__dep_ae6672e820c8f1210a9ce6cfa51432560}\label{classArch__dep_ae6672e820c8f1210a9ce6cfa51432560}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Objdump\+Text\+Marker@{is\+Objdump\+Text\+Marker}}
+\index{is\+Objdump\+Text\+Marker@{is\+Objdump\+Text\+Marker}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Objdump\+Text\+Marker()}{isObjdumpTextMarker()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Objdump\+Text\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})}
+
+Returns true if the input line is a marker of Text Section in an Objdump file \mbox{\Hypertarget{classArch__dep_ac6456dfba496bcf104d460c8610a484f}\label{classArch__dep_ac6456dfba496bcf104d460c8610a484f}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}}
+\index{is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Input\+Resources()}{isPcInInputResources()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Pc\+In\+Input\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the instruction has PC (program counter) in input registers
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_affd67799c774ea1ca747f15d7a483a8c}{M\+I\+PS}, and \hyperlink{classARM_a3ead2b53ee35931a70471d265c5cc449}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a89b89f3e5248442dda296986f5673bb6}\label{classArch__dep_a89b89f3e5248442dda296986f5673bb6}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}}
+\index{is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Output\+Resources()}{isPcInOutputResources()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Pc\+In\+Output\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_a68497c5e46c6106133d4bf5a01db6e7d}{M\+I\+PS}, and \hyperlink{classARM_a664d4db9519b9a24f107cf3f23974453}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_aa96008928838f1ff0f96ba83b07b90e2}\label{classArch__dep_aa96008928838f1ff0f96ba83b07b90e2}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}}
+\index{is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Pc\+Load\+Instruction()}{isPcLoadInstruction()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Pc\+Load\+Instruction (\begin{DoxyParamCaption}\item[{string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classMIPS_ae38afe5659e9efe2ff909fa5c4acc047}{M\+I\+PS}, and \hyperlink{classARM_a765b29f0b8e3226723000d2f8d68ec8e}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ac38abb4817048b6cb4c996042f478318}\label{classArch__dep_ac38abb4817048b6cb4c996042f478318}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Readelf\+Flags\+Marker@{is\+Readelf\+Flags\+Marker}}
+\index{is\+Readelf\+Flags\+Marker@{is\+Readelf\+Flags\+Marker}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Readelf\+Flags\+Marker()}{isReadelfFlagsMarker()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Readelf\+Flags\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})}
+
+Returns true if the input line is a marker of Flags in a Read\+E\+LF file \mbox{\Hypertarget{classArch__dep_af20f87a328dec6fd2c1fe8d8106c00cb}\label{classArch__dep_af20f87a328dec6fd2c1fe8d8106c00cb}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Readelf\+Sections\+Marker@{is\+Readelf\+Sections\+Marker}}
+\index{is\+Readelf\+Sections\+Marker@{is\+Readelf\+Sections\+Marker}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Readelf\+Sections\+Marker()}{isReadelfSectionsMarker()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Readelf\+Sections\+Marker (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})}
+
+Returns true if the input line is a marker of Sections in a Read\+E\+LF file \mbox{\Hypertarget{classArch__dep_a6c37096e67b2c02e9c0bd38313245979}\label{classArch__dep_a6c37096e67b2c02e9c0bd38313245979}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Register\+List@{is\+Register\+List}}
+\index{is\+Register\+List@{is\+Register\+List}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Register\+List()}{isRegisterList()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the operand is a register list
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_aa1efaf59e1d461388886db68f5e54e06}{M\+I\+PS}, and \hyperlink{classARM_a62f252e1f0782243bc908a080ca1b427}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_ac12a732622a72990042fc34c96ad0188}\label{classArch__dep_ac12a732622a72990042fc34c96ad0188}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Register\+Name@{is\+Register\+Name}}
+\index{is\+Register\+Name@{is\+Register\+Name}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Register\+Name()}{isRegisterName()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Register\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{reg\+\_\+name }\end{DoxyParamCaption})}
+
+Returns true if reg\+\_\+name is a register name \mbox{\Hypertarget{classArch__dep_a0f8a68b8dc2188a0578f3b4d92a289ca}\label{classArch__dep_a0f8a68b8dc2188a0578f3b4d92a289ca}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Return@{is\+Return}}
+\index{is\+Return@{is\+Return}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Return()}{isReturn()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Return (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if instr is a return instruction 
+
+Implemented in \hyperlink{classARM_a341bfe78c32b16cd589cc9b4775e38fe}{A\+RM}, and \hyperlink{classMIPS_af2307adac1cb8289cb7510829051f45d}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_ad56e95263903d54aabbb91efdcf7eba4}\label{classArch__dep_ad56e95263903d54aabbb91efdcf7eba4}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Shifter\+Operand@{is\+Shifter\+Operand}}
+\index{is\+Shifter\+Operand@{is\+Shifter\+Operand}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Shifter\+Operand()}{isShifterOperand()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the operand is a shifter
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a9390579a78d85c1024dcde783bff27b7}{M\+I\+PS}, and \hyperlink{classARM_a1dae5cec5d67a1ebb5cfaf4c0c5a0936}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_afff6d978b8e317027e9b6c97818fc6ab}\label{classArch__dep_afff6d978b8e317027e9b6c97818fc6ab}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Store@{is\+Store}}
+\index{is\+Store@{is\+Store}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Store()}{isStore()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Store (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is a store \mbox{\Hypertarget{classArch__dep_a54438a476a16d55659124aea0c38397a}\label{classArch__dep_a54438a476a16d55659124aea0c38397a}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Store\+Multiple@{is\+Store\+Multiple}}
+\index{is\+Store\+Multiple@{is\+Store\+Multiple}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Store\+Multiple()}{isStoreMultiple()}}
+{\footnotesize\ttfamily virtual bool Arch\+\_\+dep\+::is\+Store\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the instructions is a \hyperlink{classStore}{Store} of multiple data 
+
+Implemented in \hyperlink{classARM_a2c8848aa0ead5e445c3f637d527fae03}{A\+RM}, and \hyperlink{classMIPS_a781bec4f737ea512ada3f3fa166463c9}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_ac03cfb1337393303f438f7915bcc23a9}\label{classArch__dep_ac03cfb1337393303f438f7915bcc23a9}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Unconditional\+Jump@{is\+Unconditional\+Jump}}
+\index{is\+Unconditional\+Jump@{is\+Unconditional\+Jump}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Unconditional\+Jump()}{isUnconditionalJump()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Unconditional\+Jump (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is an unconditional jump instruction \mbox{\Hypertarget{classArch__dep_a690346c11242f24dc8d692f864e20ccc}\label{classArch__dep_a690346c11242f24dc8d692f864e20ccc}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Word@{is\+Word}}
+\index{is\+Word@{is\+Word}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Word()}{isWord()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Word (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})}
+
+Returns true if instr is a \hyperlink{classWord}{Word} (not really an instruction) \mbox{\Hypertarget{classArch__dep_aaf6d066028c438c8e01194eb13500468}\label{classArch__dep_aaf6d066028c438c8e01194eb13500468}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!is\+Zero\+Register@{is\+Zero\+Register}}
+\index{is\+Zero\+Register@{is\+Zero\+Register}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{is\+Zero\+Register()}{isZeroRegister()}}
+{\footnotesize\ttfamily bool Arch\+\_\+dep\+::is\+Zero\+Register (\begin{DoxyParamCaption}\item[{const string \&}]{reg\+\_\+name }\end{DoxyParamCaption})}
+
+Returns true if reg\+\_\+name is the register with a content set to 0 \mbox{\Hypertarget{classArch__dep_a5d004c41d6eaf7975b69f767a52d2e30}\label{classArch__dep_a5d004c41d6eaf7975b69f767a52d2e30}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!parse\+Function@{parse\+Function}}
+\index{parse\+Function@{parse\+Function}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{parse\+Function()}{parseFunction()}}
+{\footnotesize\ttfamily virtual \hyperlink{classObjdumpFunction}{Objdump\+Function} Arch\+\_\+dep\+::parse\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Parser of a function declaration line 
+
+Implemented in \hyperlink{classARM_a0f6b3ef390259fd4754cab9752609a20}{A\+RM}, and \hyperlink{classMIPS_a03874bd0a2a980e174ea447482a830c3}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_a6408104eb77881932f05dab9e913ca87}\label{classArch__dep_a6408104eb77881932f05dab9e913ca87}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!parse\+Instruction@{parse\+Instruction}}
+\index{parse\+Instruction@{parse\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{parse\+Instruction()}{parseInstruction()}}
+{\footnotesize\ttfamily virtual \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} Arch\+\_\+dep\+::parse\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Parser of an instruction line 
+
+Implemented in \hyperlink{classARM_a386a5c3f261a13e7b4a5cd4a5b08f289}{A\+RM}, and \hyperlink{classMIPS_a8a3bbe0cf81cf032f3e8e1d1786c888f}{M\+I\+PS}.
+
+\mbox{\Hypertarget{classArch__dep_abf6d4090f19269e8718b2597984f52e7}\label{classArch__dep_abf6d4090f19269e8718b2597984f52e7}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!parse\+Read\+Elf\+Line@{parse\+Read\+Elf\+Line}}
+\index{parse\+Read\+Elf\+Line@{parse\+Read\+Elf\+Line}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{parse\+Read\+Elf\+Line()}{parseReadElfLine()}}
+{\footnotesize\ttfamily void Arch\+\_\+dep\+::parse\+Read\+Elf\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{line,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})}
+
+Parse a line of the Read\+E\+LF file and update the \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} object in parameter \mbox{\Hypertarget{classArch__dep_a5d50b1a54bf2afc034b813d1008c9f8e}\label{classArch__dep_a5d50b1a54bf2afc034b813d1008c9f8e}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}}
+\index{parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{parse\+Symbol\+Table\+Line()}{parseSymbolTableLine()}}
+{\footnotesize\ttfamily virtual void Arch\+\_\+dep\+::parse\+Symbol\+Table\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{line,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Parse a line of the symbol table and update the \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} object in parameter 
+
+Implemented in \hyperlink{classMIPS_ae63e651cee1687716908f3c9f66d9f3f}{M\+I\+PS}, and \hyperlink{classARM_a894de997c1cde8f31a2e08e6a0c0487d}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_a9e6075dd5bc43a1522aa65f2d11dad06}\label{classArch__dep_a9e6075dd5bc43a1522aa65f2d11dad06}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!read\+Word\+Instruction@{read\+Word\+Instruction}}
+\index{read\+Word\+Instruction@{read\+Word\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{read\+Word\+Instruction()}{readWordInstruction()}}
+{\footnotesize\ttfamily virtual \hyperlink{classObjdumpWord}{Objdump\+Word} Arch\+\_\+dep\+::read\+Word\+Instruction (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an \hyperlink{classObjdumpWord}{Objdump\+Word} object containing all the useful information from instr
+
+O\+N\+LY U\+S\+ED W\+I\+TH \hyperlink{classARM}{A\+RM} A\+R\+C\+H\+I\+T\+E\+C\+T\+U\+RE 
+
+Implemented in \hyperlink{classMIPS_a28a3d7f0cc8a69881d46dfa1363351cf}{M\+I\+PS}, and \hyperlink{classARM_ac39db2497e0931f632be7c57ecfc932a}{A\+RM}.
+
+\mbox{\Hypertarget{classArch__dep_af07d99baab6b3f496f50bd44277f762e}\label{classArch__dep_af07d99baab6b3f496f50bd44277f762e}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!split\+Instruction@{split\+Instruction}}
+\index{split\+Instruction@{split\+Instruction}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{split\+Instruction()}{splitInstruction()}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::split\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})}
+
+split each part of the instruction into a vector \mbox{\Hypertarget{classArch__dep_abf3061756ea53bc4eb3c2447fca9fb5c}\label{classArch__dep_abf3061756ea53bc4eb3c2447fca9fb5c}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!split\+Operands@{split\+Operands}}
+\index{split\+Operands@{split\+Operands}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{split\+Operands()}{splitOperands()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Arch\+\_\+dep\+::split\+Operands (\begin{DoxyParamCaption}\item[{const string \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+split the operands into a vector 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classArch__dep_aeeeb564f05fb3d397d87f2869663ad2e}\label{classArch__dep_aeeeb564f05fb3d397d87f2869663ad2e}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!formats@{formats}}
+\index{formats@{formats}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{formats}{formats}}
+{\footnotesize\ttfamily map$<$string, set$<$\hyperlink{classInstructionFormat}{Instruction\+Format}$\ast$$>$ $>$ Arch\+\_\+dep\+::formats\hspace{0.3cm}{\ttfamily [protected]}}
+
+map which associate a string format with an \hyperlink{classInstructionFormat}{Instruction\+Format} object \mbox{\Hypertarget{classArch__dep_a21dc91a47a70b553207b199458784f77}\label{classArch__dep_a21dc91a47a70b553207b199458784f77}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!mnemonic\+To\+Instruction\+Types@{mnemonic\+To\+Instruction\+Types}}
+\index{mnemonic\+To\+Instruction\+Types@{mnemonic\+To\+Instruction\+Types}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{mnemonic\+To\+Instruction\+Types}{mnemonicToInstructionTypes}}
+{\footnotesize\ttfamily map$<$string, \hyperlink{classInstructionType}{Instruction\+Type}$\ast$$>$ Arch\+\_\+dep\+::mnemonic\+To\+Instruction\+Types\hspace{0.3cm}{\ttfamily [protected]}}
+
+map which associate a mnemonic with an \hyperlink{classInstructionType}{Instruction\+Type} object \mbox{\Hypertarget{classArch__dep_a60ff2387eef16e09dceefea48a0da8ab}\label{classArch__dep_a60ff2387eef16e09dceefea48a0da8ab}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!objdump\+\_\+symboltable\+\_\+markers@{objdump\+\_\+symboltable\+\_\+markers}}
+\index{objdump\+\_\+symboltable\+\_\+markers@{objdump\+\_\+symboltable\+\_\+markers}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{objdump\+\_\+symboltable\+\_\+markers}{objdump\_symboltable\_markers}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::objdump\+\_\+symboltable\+\_\+markers\hspace{0.3cm}{\ttfamily [protected]}}
+
+vector which contains symbol table section indicators of an objdump file \mbox{\Hypertarget{classArch__dep_a142338c3f4ce8a5f312d436b395a9e44}\label{classArch__dep_a142338c3f4ce8a5f312d436b395a9e44}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!objdump\+\_\+text\+\_\+markers@{objdump\+\_\+text\+\_\+markers}}
+\index{objdump\+\_\+text\+\_\+markers@{objdump\+\_\+text\+\_\+markers}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{objdump\+\_\+text\+\_\+markers}{objdump\_text\_markers}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::objdump\+\_\+text\+\_\+markers\hspace{0.3cm}{\ttfamily [protected]}}
+
+vector which contains code section indicators of an objdump file \mbox{\Hypertarget{classArch__dep_a3c4bd1d73aa96100fcefbba1219ca9ba}\label{classArch__dep_a3c4bd1d73aa96100fcefbba1219ca9ba}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!readelf\+\_\+flags\+\_\+markers@{readelf\+\_\+flags\+\_\+markers}}
+\index{readelf\+\_\+flags\+\_\+markers@{readelf\+\_\+flags\+\_\+markers}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{readelf\+\_\+flags\+\_\+markers}{readelf\_flags\_markers}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::readelf\+\_\+flags\+\_\+markers\hspace{0.3cm}{\ttfamily [protected]}}
+
+vector which contains flag list indicators of a readelf file \mbox{\Hypertarget{classArch__dep_a5be691cc406884dde58bcb792268cf4a}\label{classArch__dep_a5be691cc406884dde58bcb792268cf4a}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!readelf\+\_\+sections\+\_\+markers@{readelf\+\_\+sections\+\_\+markers}}
+\index{readelf\+\_\+sections\+\_\+markers@{readelf\+\_\+sections\+\_\+markers}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{readelf\+\_\+sections\+\_\+markers}{readelf\_sections\_markers}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::readelf\+\_\+sections\+\_\+markers\hspace{0.3cm}{\ttfamily [protected]}}
+
+vector which contains section list indicators of a readelf file \mbox{\Hypertarget{classArch__dep_adca30c5e86132ee9d152638d6db513bb}\label{classArch__dep_adca30c5e86132ee9d152638d6db513bb}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!regs@{regs}}
+\index{regs@{regs}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{regs}{regs}}
+{\footnotesize\ttfamily map$<$string,int$>$ Arch\+\_\+dep\+::regs\hspace{0.3cm}{\ttfamily [protected]}}
+
+map which associate a string register with its integer value \mbox{\Hypertarget{classArch__dep_aa92e4e668b37f15cabfca78f2ee4406a}\label{classArch__dep_aa92e4e668b37f15cabfca78f2ee4406a}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!sections\+To\+Extract@{sections\+To\+Extract}}
+\index{sections\+To\+Extract@{sections\+To\+Extract}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{sections\+To\+Extract}{sectionsToExtract}}
+{\footnotesize\ttfamily vector$<$string$>$ Arch\+\_\+dep\+::sections\+To\+Extract\hspace{0.3cm}{\ttfamily [protected]}}
+
+vector which contains all the sections (name) to extract from the Read\+E\+LF file \mbox{\Hypertarget{classArch__dep_aef2b07cdb458eeabf49511678238d91c}\label{classArch__dep_aef2b07cdb458eeabf49511678238d91c}} 
+\index{Arch\+\_\+dep@{Arch\+\_\+dep}!zero\+\_\+register\+\_\+num@{zero\+\_\+register\+\_\+num}}
+\index{zero\+\_\+register\+\_\+num@{zero\+\_\+register\+\_\+num}!Arch\+\_\+dep@{Arch\+\_\+dep}}
+\subsubsection{\texorpdfstring{zero\+\_\+register\+\_\+num}{zero\_register\_num}}
+{\footnotesize\ttfamily int Arch\+\_\+dep\+::zero\+\_\+register\+\_\+num\hspace{0.3cm}{\ttfamily [protected]}}
+
+code section indicator of an objdump file
+
+number of the register which is set to 0 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{arch_8h}{arch.\+h}\end{DoxyCompactItemize}

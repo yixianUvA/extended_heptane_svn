@@ -1,0 +1,121 @@
+\hypertarget{classLogger}{}\section{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLogger_a7d12d63e39ef239d8618c70f320af9f5}{kill} ()
+\item 
+static void \hyperlink{classLogger_ad77508d101213f207cc5a0718591674c}{clean} ()
+\item 
+static void \hyperlink{classLogger_a120908976176ae4ccbca24637014b210}{add\+Info} (const string \&)
+\item 
+static void \hyperlink{classLogger_a3f763ca60b87026d16e0df8b84b61ffd}{add\+Warning} (const string \&)
+\item 
+static void \hyperlink{classLogger_ad90a25737a4550c0f98cd59a3f9ede71}{add\+Error} (const string \&)
+\item 
+static void \hyperlink{classLogger_a45bc045e4a10a572eb678ff4790f7406}{add\+Fatal} (const string \&)
+\item 
+static void \hyperlink{classLogger_a563a895bb1f8087848356d6ddf66e215}{print} ()
+\item 
+static bool \hyperlink{classLogger_a958e10841789b9deaf94b45a1aca119b}{get\+Error\+State} ()
+\item 
+static bool \hyperlink{classLogger_af58915accf265cdfe2d2c747c5b58c4e}{is\+Debug\+Mode} ()
+\item 
+static void \hyperlink{classLogger_a08aae7defa6b2371c54bee304969a3a2}{print\+Debug} (const string \&mess)
+\item 
+static void \hyperlink{classLogger_ad758e3048abf6472bec574e3513360e3}{print} (const string \&mess)
+\item 
+static void \hyperlink{classLogger_a17007e8d94f05800f1d5f88687ccc9a8}{print\+Version} ()
+\item 
+static void \hyperlink{classLogger_ae03bdbeb7700b531df4cd67abec9ed0d}{set\+Option\+Trace} (bool b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogger_ad90a25737a4550c0f98cd59a3f9ede71}\label{classLogger_ad90a25737a4550c0f98cd59a3f9ede71}} 
+\index{Logger@{Logger}!add\+Error@{add\+Error}}
+\index{add\+Error@{add\+Error}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{add\+Error()}{addError()}}
+{\footnotesize\ttfamily static void Logger\+::add\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+add an error message and set the error\+\_\+state to true \mbox{\Hypertarget{classLogger_a45bc045e4a10a572eb678ff4790f7406}\label{classLogger_a45bc045e4a10a572eb678ff4790f7406}} 
+\index{Logger@{Logger}!add\+Fatal@{add\+Fatal}}
+\index{add\+Fatal@{add\+Fatal}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{add\+Fatal()}{addFatal()}}
+{\footnotesize\ttfamily static void Logger\+::add\+Fatal (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+print all stored messages, the fatal message and stop the program execution \mbox{\Hypertarget{classLogger_a120908976176ae4ccbca24637014b210}\label{classLogger_a120908976176ae4ccbca24637014b210}} 
+\index{Logger@{Logger}!add\+Info@{add\+Info}}
+\index{add\+Info@{add\+Info}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{add\+Info()}{addInfo()}}
+{\footnotesize\ttfamily static void Logger\+::add\+Info (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+add an info message \mbox{\Hypertarget{classLogger_a3f763ca60b87026d16e0df8b84b61ffd}\label{classLogger_a3f763ca60b87026d16e0df8b84b61ffd}} 
+\index{Logger@{Logger}!add\+Warning@{add\+Warning}}
+\index{add\+Warning@{add\+Warning}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{add\+Warning()}{addWarning()}}
+{\footnotesize\ttfamily static void Logger\+::add\+Warning (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+add a warning message \mbox{\Hypertarget{classLogger_ad77508d101213f207cc5a0718591674c}\label{classLogger_ad77508d101213f207cc5a0718591674c}} 
+\index{Logger@{Logger}!clean@{clean}}
+\index{clean@{clean}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily static void Logger\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove all messages and set error\+\_\+state to false \mbox{\Hypertarget{classLogger_a958e10841789b9deaf94b45a1aca119b}\label{classLogger_a958e10841789b9deaf94b45a1aca119b}} 
+\index{Logger@{Logger}!get\+Error\+State@{get\+Error\+State}}
+\index{get\+Error\+State@{get\+Error\+State}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{get\+Error\+State()}{getErrorState()}}
+{\footnotesize\ttfamily static bool Logger\+::get\+Error\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get the error state \mbox{\Hypertarget{classLogger_af58915accf265cdfe2d2c747c5b58c4e}\label{classLogger_af58915accf265cdfe2d2c747c5b58c4e}} 
+\index{Logger@{Logger}!is\+Debug\+Mode@{is\+Debug\+Mode}}
+\index{is\+Debug\+Mode@{is\+Debug\+Mode}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{is\+Debug\+Mode()}{isDebugMode()}}
+{\footnotesize\ttfamily static bool Logger\+::is\+Debug\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get the debug mode. Set to true if a shell variable called H\+E\+P\+T\+A\+N\+E\+\_\+\+D\+E\+B\+UG exists. \mbox{\Hypertarget{classLogger_a7d12d63e39ef239d8618c70f320af9f5}\label{classLogger_a7d12d63e39ef239d8618c70f320af9f5}} 
+\index{Logger@{Logger}!kill@{kill}}
+\index{kill@{kill}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily static void Logger\+::kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+delete the singleton \mbox{\Hypertarget{classLogger_a563a895bb1f8087848356d6ddf66e215}\label{classLogger_a563a895bb1f8087848356d6ddf66e215}} 
+\index{Logger@{Logger}!print@{print}}
+\index{print@{print}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Logger\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+print all the warnings and errors \mbox{\Hypertarget{classLogger_ad758e3048abf6472bec574e3513360e3}\label{classLogger_ad758e3048abf6472bec574e3513360e3}} 
+\index{Logger@{Logger}!print@{print}}
+\index{print@{print}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Logger\+::print (\begin{DoxyParamCaption}\item[{const string \&}]{mess }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print (always) mess and immediatly. \mbox{\Hypertarget{classLogger_a08aae7defa6b2371c54bee304969a3a2}\label{classLogger_a08aae7defa6b2371c54bee304969a3a2}} 
+\index{Logger@{Logger}!print\+Debug@{print\+Debug}}
+\index{print\+Debug@{print\+Debug}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{print\+Debug()}{printDebug()}}
+{\footnotesize\ttfamily static void Logger\+::print\+Debug (\begin{DoxyParamCaption}\item[{const string \&}]{mess }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print mess in debug mode. \mbox{\Hypertarget{classLogger_a17007e8d94f05800f1d5f88687ccc9a8}\label{classLogger_a17007e8d94f05800f1d5f88687ccc9a8}} 
+\index{Logger@{Logger}!print\+Version@{print\+Version}}
+\index{print\+Version@{print\+Version}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{print\+Version()}{printVersion()}}
+{\footnotesize\ttfamily static void Logger\+::print\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print the version of Heptane in debug mode \mbox{\Hypertarget{classLogger_ae03bdbeb7700b531df4cd67abec9ed0d}\label{classLogger_ae03bdbeb7700b531df4cd67abec9ed0d}} 
+\index{Logger@{Logger}!set\+Option\+Trace@{set\+Option\+Trace}}
+\index{set\+Option\+Trace@{set\+Option\+Trace}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{set\+Option\+Trace()}{setOptionTrace()}}
+{\footnotesize\ttfamily static void Logger\+::set\+Option\+Trace (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Logger_8h}{Logger.\+h}\end{DoxyCompactItemize}

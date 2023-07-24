@@ -1,0 +1,59 @@
+\hypertarget{classStore}{}\section{Store Class Reference}
+\label{classStore}\index{Store@{Store}}
+
+
+{\ttfamily \#include $<$Instruction\+Type.\+h$>$}
+
+Inheritance diagram for Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStore}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStore_af7bb7bf7ccfd067bb6a29fd454f1b8c4}{Store} (int size, const string \&fu, const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&f, \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$daainstr, int lat)
+\item 
+bool \hyperlink{classStore_a773c447c4ac4b781ea6d18d91ff3dd50}{is\+Store} ()
+\item 
+int \hyperlink{classStore_a1b788e1fc3364a4eb304a2611ad37415}{get\+Size\+Of\+Memory\+Access} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStore_af7bb7bf7ccfd067bb6a29fd454f1b8c4}\label{classStore_af7bb7bf7ccfd067bb6a29fd454f1b8c4}} 
+\index{Store@{Store}!Store@{Store}}
+\index{Store@{Store}!Store@{Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{const string \&}]{fu,  }\item[{const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&}]{f,  }\item[{\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$}]{daainstr,  }\item[{int}]{lat }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStore_a1b788e1fc3364a4eb304a2611ad37415}\label{classStore_a1b788e1fc3364a4eb304a2611ad37415}} 
+\index{Store@{Store}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily int Store\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the memory access in bytes, if the instruction is a load/store and 0 otherwise 
+
+Reimplemented from \hyperlink{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}{Instruction\+Type}.
+
+\mbox{\Hypertarget{classStore_a773c447c4ac4b781ea6d18d91ff3dd50}\label{classStore_a773c447c4ac4b781ea6d18d91ff3dd50}} 
+\index{Store@{Store}!is\+Store@{is\+Store}}
+\index{is\+Store@{is\+Store}!Store@{Store}}
+\subsubsection{\texorpdfstring{is\+Store()}{isStore()}}
+{\footnotesize\ttfamily bool Store\+::is\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a store instruction 
+
+Reimplemented from \hyperlink{classInstructionType_aa81de3619fb9d88f52d7d8104f9ac188}{Instruction\+Type}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionType_8h}{Instruction\+Type.\+h}\end{DoxyCompactItemize}

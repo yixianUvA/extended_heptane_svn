@@ -1,0 +1,341 @@
+makefile.depends:  ./src/switchAnalysis.cc ./src/HeptaneExtract.cc ./src/Annotations.cc ./src/loopAnalysis.cc ./src/dominatorData.cc ./src/dominatorAnalysis.cc ./src/ConfigExtract.cc
+obj/switchAnalysis.o: src/switchAnalysis.cc \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ src/switchAnalysis.h src/ConfigExtract.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/switchAnalysis.cc -o obj/switchAnalysis.o 
+obj/HeptaneExtract.o: src/HeptaneExtract.cc src/ConfigExtract.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h \
+ src/dominatorAnalysis.h src/loopAnalysis.h src/switchAnalysis.h \
+ src/Annotations.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/Utl.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/HeptaneExtract.cc -o obj/HeptaneExtract.o 
+obj/Annotations.o: src/Annotations.cc src/Annotations.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h \
+ src/ConfigExtract.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/GlobalAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/SymbolTableAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/ARMWordsAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/MetaInstructionAttribute.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/LoopTree.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/Annotations.cc -o obj/Annotations.o 
+obj/loopAnalysis.o: src/loopAnalysis.cc src/loopAnalysis.h \
+ src/dominatorData.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/loopAnalysis.cc -o obj/loopAnalysis.o 
+obj/dominatorData.o: src/dominatorData.cc src/dominatorData.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/dominatorData.cc -o obj/dominatorData.o 
+obj/dominatorAnalysis.o: src/dominatorAnalysis.cc src/dominatorAnalysis.h \
+ src/dominatorData.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/dominatorAnalysis.cc -o obj/dominatorAnalysis.o 
+obj/ConfigExtract.o: src/ConfigExtract.cc src/ConfigExtract.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CfgLib.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributed.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Attributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Serialisable.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/CloneHandle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Factory.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/SerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/PointerAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Handle.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/NonSerialisableAttributes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Node.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Instruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Edge.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Loop.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Program.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/HeptaneStdTypes.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Cfg.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include/Helper.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/ParsingStructure.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionType.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/InstructionFormat.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/arch.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src/DAAInstruction.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src/Logger.h \
+ /home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src/AddressAttribute.h
+	mkdir obj 2>/dev/null || true 
+	g++ -O3 -Wall -DLINUX -Isrc  -I/usr/include/libxml2 -I/home/yixian/heptane_svn/src/HeptaneExtract/../cfglib_install//include -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/GlobalAttributes/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/utl/src -I/home/yixian/heptane_svn/src/HeptaneExtract/../Common/ArchitectureDependent/src -c src/ConfigExtract.cc -o obj/ConfigExtract.o 

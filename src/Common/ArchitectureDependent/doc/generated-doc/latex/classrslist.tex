@@ -1,0 +1,70 @@
+\hypertarget{classrslist}{}\section{rslist Class Reference}
+\label{classrslist}\index{rslist@{rslist}}
+
+
+{\ttfamily \#include $<$Instruction\+Format.\+h$>$}
+
+Inheritance diagram for rslist\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrslist}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrslist_a8cc8507bb7463598b7af671bb9beadd9}{rslist} (const string \&in=\char`\"{}\char`\"{}, const string \&out=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{classrslist_aaa2d2aa941041c08369254f21e8846b7}{is\+Format} (const vector$<$ string $>$ \&operands)
+\item 
+vector$<$ string $>$ \hyperlink{classrslist_aecc14cc02c8e8e7cc6f1ac2989083bda}{get\+Resource\+Inputs} (const vector$<$ string $>$ \&operands)
+\item 
+vector$<$ string $>$ \hyperlink{classrslist_adc1bf6be9d82f0a616fc374023d8a636}{get\+Resource\+Outputs} (const vector$<$ string $>$ \&operands)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrslist_a8cc8507bb7463598b7af671bb9beadd9}\label{classrslist_a8cc8507bb7463598b7af671bb9beadd9}} 
+\index{rslist@{rslist}!rslist@{rslist}}
+\index{rslist@{rslist}!rslist@{rslist}}
+\subsubsection{\texorpdfstring{rslist()}{rslist()}}
+{\footnotesize\ttfamily rslist\+::rslist (\begin{DoxyParamCaption}\item[{const string \&}]{in = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const string \&}]{out = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+If there are several ressources, separate them with comas, like \char`\"{}\+L\+O, H\+I\char`\"{} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrslist_aecc14cc02c8e8e7cc6f1ac2989083bda}\label{classrslist_aecc14cc02c8e8e7cc6f1ac2989083bda}} 
+\index{rslist@{rslist}!get\+Resource\+Inputs@{get\+Resource\+Inputs}}
+\index{get\+Resource\+Inputs@{get\+Resource\+Inputs}!rslist@{rslist}}
+\subsubsection{\texorpdfstring{get\+Resource\+Inputs()}{getResourceInputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ rslist\+::get\+Resource\+Inputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the input resources 
+
+Implements \hyperlink{classInstructionFormat_a09775d3a3c22f40a0f44504664e586e4}{Instruction\+Format}.
+
+\mbox{\Hypertarget{classrslist_adc1bf6be9d82f0a616fc374023d8a636}\label{classrslist_adc1bf6be9d82f0a616fc374023d8a636}} 
+\index{rslist@{rslist}!get\+Resource\+Outputs@{get\+Resource\+Outputs}}
+\index{get\+Resource\+Outputs@{get\+Resource\+Outputs}!rslist@{rslist}}
+\subsubsection{\texorpdfstring{get\+Resource\+Outputs()}{getResourceOutputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ rslist\+::get\+Resource\+Outputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the output resources 
+
+Implements \hyperlink{classInstructionFormat_a95cd28ffb1bde59b67f676880ab10536}{Instruction\+Format}.
+
+\mbox{\Hypertarget{classrslist_aaa2d2aa941041c08369254f21e8846b7}\label{classrslist_aaa2d2aa941041c08369254f21e8846b7}} 
+\index{rslist@{rslist}!is\+Format@{is\+Format}}
+\index{is\+Format@{is\+Format}!rslist@{rslist}}
+\subsubsection{\texorpdfstring{is\+Format()}{isFormat()}}
+{\footnotesize\ttfamily bool rslist\+::is\+Format (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if operands match the format 
+
+Implements \hyperlink{classInstructionFormat_a9fdcf94dcd7d9a55ba86e7a63f04d1fe}{Instruction\+Format}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionFormat_8h}{Instruction\+Format.\+h}\end{DoxyCompactItemize}

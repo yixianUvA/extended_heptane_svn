@@ -1,0 +1,213 @@
+\hypertarget{classUtl}{}\section{Utl Class Reference}
+\label{classUtl}\index{Utl@{Utl}}
+
+
+{\ttfamily \#include $<$Utl.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classUtl_a23aae7a1cb208168c7b85bcb365ab096}{rm\+Spaces} (string \&str)
+\item 
+static bool \hyperlink{classUtl_a67659f76738d22fab7abfdeaa35b72c5}{is\+Hex\+Number} (const string \&str)
+\item 
+static bool \hyperlink{classUtl_a938efe90aa7bac25352e23841e77ca28}{is\+Addr} (const string \&str)
+\item 
+static bool \hyperlink{classUtl_aac43171c1e74d7a08caa35ea8652ae67}{is\+Dec\+Number} (const string \&str)
+\item 
+static int \hyperlink{classUtl_afbefaa2d4f3c3a5df72f7eb4a292a2e0}{string2int} (string vpattern)
+\item 
+static long \hyperlink{classUtl_a1b9b25dc1c06005add5e2ba44688632f}{string2long} (string vpattern)
+\item 
+static int \hyperlink{classUtl_aa824770fa334f72507116fff411c42a2}{imax} (int i, int j)
+\item 
+static bool \hyperlink{classUtl_a4355032aa27e40814e621559f4bf509e}{replace} (string \&line, char c1, char c2)
+\item 
+static bool \hyperlink{classUtl_a83ad6ff53129a2d3ffae14df4d2c2d9d}{replace\+All} (string \&line, char c1, char c2)
+\item 
+static int \hyperlink{classUtl_a578a26ee8b9ee68d6759874765b6ffd3}{count} (string \&line, char sep)
+\item 
+static string \hyperlink{classUtl_adfb7a7b2da6909b23d167047ef950438}{complement} (string v)
+\item 
+static string \hyperlink{classUtl_abfe3696af92966cdba0868beea93f741}{int2cstring} (long v)
+\item 
+static bool \hyperlink{classUtl_a86f1f52bdce8adce83ffc0feaa66bf37}{eval} (string \&operand1, string \&codop, string \&operand2, long $\ast$v)
+\item 
+static bool \hyperlink{classUtl_a299e81b7065a844d70939d287be40e9a}{evalexpr} (string \&exp, long $\ast$val)
+\item 
+static string \hyperlink{classUtl_ab5e45ebcf3f1ae1b877c1d0ce274803a}{extract\+String\+Value} (string \&arg)
+\item 
+static bool \hyperlink{classUtl_a1f2b58b4443642b1102176d5a9cbd701}{mktmpfile} (string prefix, string \&res)
+\item 
+static void \hyperlink{classUtl_a957cf4b41bffc4ceacaf115397973472}{extract\+Reg\+Val} (string mem\+\_\+pattern, string \&reg, string \&val)
+\item 
+static bool \hyperlink{classUtl_ab2ade6c1ce649f2540a5695e1f07beb7}{getintvalue} (string \&valstr, int $\ast$n)
+\item 
+static vector$<$ string $>$ \hyperlink{classUtl_a02229754bf5fe1d8ecd4e84433cb778d}{split} (string str, string seps)
+\item 
+static bool \hyperlink{classUtl_a0a5af3a4ae8af28de9d536de731d86af}{get\+Index\+First\+Value} (vector$<$ string $>$ \&vect\+Operand, int $\ast$i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtl_adfb7a7b2da6909b23d167047ef950438}\label{classUtl_adfb7a7b2da6909b23d167047ef950438}} 
+\index{Utl@{Utl}!complement@{complement}}
+\index{complement@{complement}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{complement()}{complement()}}
+{\footnotesize\ttfamily static string Utl\+::complement (\begin{DoxyParamCaption}\item[{string}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the complement of the operand string v 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a578a26ee8b9ee68d6759874765b6ffd3}\label{classUtl_a578a26ee8b9ee68d6759874765b6ffd3}} 
+\index{Utl@{Utl}!count@{count}}
+\index{count@{count}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily static int Utl\+::count (\begin{DoxyParamCaption}\item[{string \&}]{line,  }\item[{char}]{sep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the number of element in line with sep as separator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a86f1f52bdce8adce83ffc0feaa66bf37}\label{classUtl_a86f1f52bdce8adce83ffc0feaa66bf37}} 
+\index{Utl@{Utl}!eval@{eval}}
+\index{eval@{eval}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily static bool Utl\+::eval (\begin{DoxyParamCaption}\item[{string \&}]{operand1,  }\item[{string \&}]{codop,  }\item[{string \&}]{operand2,  }\item[{long $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the expression (operand1 codop operand2) is evaluated to v, \char`\"{}false\char`\"{} otherwise. (restriction\+: codop is in \{+,-\/,$\ast$\}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a299e81b7065a844d70939d287be40e9a}\label{classUtl_a299e81b7065a844d70939d287be40e9a}} 
+\index{Utl@{Utl}!evalexpr@{evalexpr}}
+\index{evalexpr@{evalexpr}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{evalexpr()}{evalexpr()}}
+{\footnotesize\ttfamily static bool Utl\+::evalexpr (\begin{DoxyParamCaption}\item[{string \&}]{exp,  }\item[{long $\ast$}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the expression exp is such that (operand1 \{+$\vert$-\/$\vert$$\ast$\} operand2) is evaluated to val, \char`\"{}false\char`\"{} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a957cf4b41bffc4ceacaf115397973472}\label{classUtl_a957cf4b41bffc4ceacaf115397973472}} 
+\index{Utl@{Utl}!extract\+Reg\+Val@{extract\+Reg\+Val}}
+\index{extract\+Reg\+Val@{extract\+Reg\+Val}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{extract\+Reg\+Val()}{extractRegVal()}}
+{\footnotesize\ttfamily static void Utl\+::extract\+Reg\+Val (\begin{DoxyParamCaption}\item[{string}]{mem\+\_\+pattern,  }\item[{string \&}]{reg,  }\item[{string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtl_ab5e45ebcf3f1ae1b877c1d0ce274803a}\label{classUtl_ab5e45ebcf3f1ae1b877c1d0ce274803a}} 
+\index{Utl@{Utl}!extract\+String\+Value@{extract\+String\+Value}}
+\index{extract\+String\+Value@{extract\+String\+Value}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{extract\+String\+Value()}{extractStringValue()}}
+{\footnotesize\ttfamily static string Utl\+::extract\+String\+Value (\begin{DoxyParamCaption}\item[{string \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtl_a0a5af3a4ae8af28de9d536de731d86af}\label{classUtl_a0a5af3a4ae8af28de9d536de731d86af}} 
+\index{Utl@{Utl}!get\+Index\+First\+Value@{get\+Index\+First\+Value}}
+\index{get\+Index\+First\+Value@{get\+Index\+First\+Value}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{get\+Index\+First\+Value()}{getIndexFirstValue()}}
+{\footnotesize\ttfamily static bool Utl\+::get\+Index\+First\+Value (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{vect\+Operand,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtl_ab2ade6c1ce649f2540a5695e1f07beb7}\label{classUtl_ab2ade6c1ce649f2540a5695e1f07beb7}} 
+\index{Utl@{Utl}!getintvalue@{getintvalue}}
+\index{getintvalue@{getintvalue}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{getintvalue()}{getintvalue()}}
+{\footnotesize\ttfamily static bool Utl\+::getintvalue (\begin{DoxyParamCaption}\item[{string \&}]{valstr,  }\item[{int $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtl_aa824770fa334f72507116fff411c42a2}\label{classUtl_aa824770fa334f72507116fff411c42a2}} 
+\index{Utl@{Utl}!imax@{imax}}
+\index{imax@{imax}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{imax()}{imax()}}
+{\footnotesize\ttfamily static int Utl\+::imax (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the max(i,j) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_abfe3696af92966cdba0868beea93f741}\label{classUtl_abfe3696af92966cdba0868beea93f741}} 
+\index{Utl@{Utl}!int2cstring@{int2cstring}}
+\index{int2cstring@{int2cstring}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{int2cstring()}{int2cstring()}}
+{\footnotesize\ttfamily static string Utl\+::int2cstring (\begin{DoxyParamCaption}\item[{long}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the string value conversion of the operand integer v 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a938efe90aa7bac25352e23841e77ca28}\label{classUtl_a938efe90aa7bac25352e23841e77ca28}} 
+\index{Utl@{Utl}!is\+Addr@{is\+Addr}}
+\index{is\+Addr@{is\+Addr}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{is\+Addr()}{isAddr()}}
+{\footnotesize\ttfamily static bool Utl\+::is\+Addr (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the operand string str is an address (hexadecimal value without 0x as prefix), \char`\"{}false\char`\"{} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_aac43171c1e74d7a08caa35ea8652ae67}\label{classUtl_aac43171c1e74d7a08caa35ea8652ae67}} 
+\index{Utl@{Utl}!is\+Dec\+Number@{is\+Dec\+Number}}
+\index{is\+Dec\+Number@{is\+Dec\+Number}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{is\+Dec\+Number()}{isDecNumber()}}
+{\footnotesize\ttfamily static bool Utl\+::is\+Dec\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the operand string str is a decimal value, \char`\"{}false\char`\"{} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a67659f76738d22fab7abfdeaa35b72c5}\label{classUtl_a67659f76738d22fab7abfdeaa35b72c5}} 
+\index{Utl@{Utl}!is\+Hex\+Number@{is\+Hex\+Number}}
+\index{is\+Hex\+Number@{is\+Hex\+Number}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{is\+Hex\+Number()}{isHexNumber()}}
+{\footnotesize\ttfamily static bool Utl\+::is\+Hex\+Number (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the operand string str is an hexadecimal value with 0x as prefix, \char`\"{}false\char`\"{} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a1f2b58b4443642b1102176d5a9cbd701}\label{classUtl_a1f2b58b4443642b1102176d5a9cbd701}} 
+\index{Utl@{Utl}!mktmpfile@{mktmpfile}}
+\index{mktmpfile@{mktmpfile}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{mktmpfile()}{mktmpfile()}}
+{\footnotesize\ttfamily static bool Utl\+::mktmpfile (\begin{DoxyParamCaption}\item[{string}]{prefix,  }\item[{string \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+true if a tmp file (res) is created, \char`\"{}false\char`\"{} otherwise. The name of the created file is prefix+S, where S a string choiced by the system. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a4355032aa27e40814e621559f4bf509e}\label{classUtl_a4355032aa27e40814e621559f4bf509e}} 
+\index{Utl@{Utl}!replace@{replace}}
+\index{replace@{replace}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily static bool Utl\+::replace (\begin{DoxyParamCaption}\item[{string \&}]{line,  }\item[{char}]{c1,  }\item[{char}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+It replaces the first occurrence of c1 by c2 in line \mbox{\Hypertarget{classUtl_a83ad6ff53129a2d3ffae14df4d2c2d9d}\label{classUtl_a83ad6ff53129a2d3ffae14df4d2c2d9d}} 
+\index{Utl@{Utl}!replace\+All@{replace\+All}}
+\index{replace\+All@{replace\+All}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{replace\+All()}{replaceAll()}}
+{\footnotesize\ttfamily static bool Utl\+::replace\+All (\begin{DoxyParamCaption}\item[{string \&}]{line,  }\item[{char}]{c1,  }\item[{char}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+It replaces all the occurrences of c1 by c2 in line \mbox{\Hypertarget{classUtl_a23aae7a1cb208168c7b85bcb365ab096}\label{classUtl_a23aae7a1cb208168c7b85bcb365ab096}} 
+\index{Utl@{Utl}!rm\+Spaces@{rm\+Spaces}}
+\index{rm\+Spaces@{rm\+Spaces}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{rm\+Spaces()}{rmSpaces()}}
+{\footnotesize\ttfamily static void Utl\+::rm\+Spaces (\begin{DoxyParamCaption}\item[{string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+removing spaces at the beginig andthe end of the operand string str \mbox{\Hypertarget{classUtl_a02229754bf5fe1d8ecd4e84433cb778d}\label{classUtl_a02229754bf5fe1d8ecd4e84433cb778d}} 
+\index{Utl@{Utl}!split@{split}}
+\index{split@{split}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily static vector$<$string$>$ Utl\+::split (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{string}]{seps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtl_afbefaa2d4f3c3a5df72f7eb4a292a2e0}\label{classUtl_afbefaa2d4f3c3a5df72f7eb4a292a2e0}} 
+\index{Utl@{Utl}!string2int@{string2int}}
+\index{string2int@{string2int}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{string2int()}{string2int()}}
+{\footnotesize\ttfamily static int Utl\+::string2int (\begin{DoxyParamCaption}\item[{string}]{vpattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the int value conversion of the operand string vpattern 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtl_a1b9b25dc1c06005add5e2ba44688632f}\label{classUtl_a1b9b25dc1c06005add5e2ba44688632f}} 
+\index{Utl@{Utl}!string2long@{string2long}}
+\index{string2long@{string2long}!Utl@{Utl}}
+\subsubsection{\texorpdfstring{string2long()}{string2long()}}
+{\footnotesize\ttfamily static long Utl\+::string2long (\begin{DoxyParamCaption}\item[{string}]{vpattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the long int value conversion of the operand string vpattern 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Utl_8h}{Utl.\+h}\end{DoxyCompactItemize}

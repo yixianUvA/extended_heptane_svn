@@ -1,0 +1,41 @@
+digraph G {
+subgraph cluster_main {
+graph [label = "main"];
+node0x561c9ca131c0 [label = "@0x80d8 (Call binary_search)" ,color="blue"];
+node0x561c9ca138e0 [label = "@0x80e4 (BB)"];
+}
+subgraph cluster_binary_search {
+graph [label = "binary_search"];
+subgraph cluster_loop0x561c9c929ec0 {
+graph [label = "loop [4]"];
+node0x561c9ca1cc30 [label = "@0x81b4 (BB)" ,color="green"];
+node0x561c9ca1c250 [label = "@0x81a0 (BB)"];
+node0x561c9ca17b70 [label = "@0x8144 (BB)"];
+node0x561c9ca165a0 [label = "@0x8118 (BB)"];
+node0x561c9ca1ae80 [label = "@0x8184 (BB)"];
+node0x561c9ca19800 [label = "@0x816c (BB)"];
+node0x561c9ca1b3d0 [label = "@0x8194 (BB)"];
+}
+node0x561c9ca14170 [label = "@0x80f4 (BB)" ,color="blue"];
+node0x561c9ca165a0;
+node0x561c9ca17b70;
+node0x561c9ca19800;
+node0x561c9ca1ae80;
+node0x561c9ca1b3d0;
+node0x561c9ca1c250;
+node0x561c9ca1cc30;
+node0x561c9ca1d660 [label = "@0x81c4 (BB)"];
+}
+node0x561c9ca131c0 -> node0x561c9ca138e0;
+node0x561c9ca14170 -> node0x561c9ca1cc30;
+node0x561c9ca165a0 -> node0x561c9ca17b70;
+node0x561c9ca165a0 -> node0x561c9ca19800;
+node0x561c9ca17b70 -> node0x561c9ca1c250;
+node0x561c9ca19800 -> node0x561c9ca1ae80;
+node0x561c9ca19800 -> node0x561c9ca1b3d0;
+node0x561c9ca1ae80 -> node0x561c9ca1c250;
+node0x561c9ca1b3d0 -> node0x561c9ca1c250;
+node0x561c9ca1c250 -> node0x561c9ca1cc30[color="red"];
+node0x561c9ca1cc30 -> node0x561c9ca165a0;
+node0x561c9ca1cc30 -> node0x561c9ca1d660;
+}

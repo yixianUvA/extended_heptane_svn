@@ -1,0 +1,53 @@
+\hypertarget{classLui}{}\section{Lui Class Reference}
+\label{classLui}\index{Lui@{Lui}}
+
+
+{\ttfamily \#include $<$D\+A\+A\+Instruction\+\_\+\+M\+I\+P\+S.\+h$>$}
+
+Inheritance diagram for Lui\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLui}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLui_acdaa22ad7bf3485619585ea8c6adbda4}{simulate} (vector$<$ string $>$ \&, vector$<$ bool $>$ \&, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision, const string \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+ \subsubsection*{Specific \hyperlink{classLoad}{Load} Instructions }
+
+\subsubsection*{L\+UI (\hyperlink{classLoad}{Load} Upper Immediate) }
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLui_acdaa22ad7bf3485619585ea8c6adbda4}\label{classLui_acdaa22ad7bf3485619585ea8c6adbda4}} 
+\index{Lui@{Lui}!simulate@{simulate}}
+\index{simulate@{simulate}!Lui@{Lui}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Lui\+::simulate (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{regs,  }\item[{vector$<$ bool $>$ \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision,  }\item[{const string \&}]{asm\+Instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+An instruction must implement a method simulate to compute the state of registers after its execution.
+
+regs contains the contents of the machine registers before the simulation of the instruction. In case some computation can be done on register contents, simulate keeps the computation in textual format (ex\+: \char`\"{}sp+4\char`\"{}). String \char`\"{}$\ast$\char`\"{} denote that nothing is known about the register (and then the precision for the given register is set to false).
+
+asm\+Instr (input) contains the textual representation of the instruction
+
+precision contains information on registers whose contents is known precisely.
+
+There are situations where the contents of a register is not set to \char`\"{}$\ast$\char`\"{} and its precision is set to false (see for instance, instructions of category add, used to compute offsets in arrays)
+
+Rq\+: regs and precision are modified by the simulate function 
+
+Implements \hyperlink{classDAAInstruction_a61d0b9bece1e0ead89a46c0197276324}{D\+A\+A\+Instruction}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{DAAInstruction__MIPS_8h}{D\+A\+A\+Instruction\+\_\+\+M\+I\+P\+S.\+h}\end{DoxyCompactItemize}

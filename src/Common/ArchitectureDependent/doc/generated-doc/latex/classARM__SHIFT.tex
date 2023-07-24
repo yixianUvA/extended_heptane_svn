@@ -1,0 +1,51 @@
+\hypertarget{classARM__SHIFT}{}\section{A\+R\+M\+\_\+\+S\+H\+I\+FT Class Reference}
+\label{classARM__SHIFT}\index{A\+R\+M\+\_\+\+S\+H\+I\+FT@{A\+R\+M\+\_\+\+S\+H\+I\+FT}}
+
+
+{\ttfamily \#include $<$D\+A\+A\+Instruction\+\_\+\+A\+R\+M.\+h$>$}
+
+Inheritance diagram for A\+R\+M\+\_\+\+S\+H\+I\+FT\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classARM__SHIFT}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classARM__SHIFT_a0438bca8496243c4067bb1ec24abeab4}{simulate} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision, const string \&instruction\+Asm)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+ \subsubsection*{\hyperlink{classARM}{A\+RM} S\+H\+I\+FT / R\+O\+T\+A\+TE }
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classARM__SHIFT_a0438bca8496243c4067bb1ec24abeab4}\label{classARM__SHIFT_a0438bca8496243c4067bb1ec24abeab4}} 
+\index{A\+R\+M\+\_\+\+S\+H\+I\+FT@{A\+R\+M\+\_\+\+S\+H\+I\+FT}!simulate@{simulate}}
+\index{simulate@{simulate}!A\+R\+M\+\_\+\+S\+H\+I\+FT@{A\+R\+M\+\_\+\+S\+H\+I\+FT}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void A\+R\+M\+\_\+\+S\+H\+I\+F\+T\+::simulate (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision,  }\item[{const string \&}]{asm\+Instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+An instruction must implement a method simulate to compute the state of registers after its execution.
+
+regs contains the contents of the machine registers before the simulation of the instruction. In case some computation can be done on register contents, simulate keeps the computation in textual format (ex\+: \char`\"{}sp+4\char`\"{}). String \char`\"{}$\ast$\char`\"{} denote that nothing is known about the register (and then the precision for the given register is set to false).
+
+asm\+Instr (input) contains the textual representation of the instruction
+
+precision contains information on registers whose contents is known precisely.
+
+There are situations where the contents of a register is not set to \char`\"{}$\ast$\char`\"{} and its precision is set to false (see for instance, instructions of category add, used to compute offsets in arrays)
+
+Rq\+: regs and precision are modified by the simulate function 
+
+Reimplemented from \hyperlink{classARM__COMMON_a89eb552311ce787557a976aee2fa2db6}{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{DAAInstruction__ARM_8h}{D\+A\+A\+Instruction\+\_\+\+A\+R\+M.\+h}\end{DoxyCompactItemize}

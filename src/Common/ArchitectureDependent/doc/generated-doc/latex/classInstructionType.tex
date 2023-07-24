@@ -1,0 +1,240 @@
+\hypertarget{classInstructionType}{}\section{Instruction\+Type Class Reference}
+\label{classInstructionType}\index{Instruction\+Type@{Instruction\+Type}}
+
+
+{\ttfamily \#include $<$Instruction\+Type.\+h$>$}
+
+Inheritance diagram for Instruction\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classInstructionType}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classInstructionType_aa3d2c042a4109b1d96dc0d7f20916ba3}{is\+Load} ()
+\item 
+virtual bool \hyperlink{classInstructionType_aa81de3619fb9d88f52d7d8104f9ac188}{is\+Store} ()
+\item 
+virtual bool \hyperlink{classInstructionType_ad49a039e3b57e3b7b369a7c0c6c0932b}{is\+Call} ()
+\item 
+virtual bool \hyperlink{classInstructionType_a15b0f034f3536f0bc525550406e1d7c6}{is\+Return} ()
+\item 
+virtual bool \hyperlink{classInstructionType_a145a4e04a4db8a0ecf9e4b35b2403ed3}{is\+Unconditional\+Jump} ()
+\item 
+virtual bool \hyperlink{classInstructionType_a3655591172fa6acbf7b9888e879b551d}{is\+Conditional\+Jump} ()
+\item 
+\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$ \hyperlink{classInstructionType_aed61394dd1528a3a68c09bef157e6da8}{get\+D\+A\+A\+Instruction} ()
+\item 
+int \hyperlink{classInstructionType_a737bd48f4e73da7c3a52faa052d9edfe}{get\+Latency} ()
+\item 
+virtual bool \hyperlink{classInstructionType_a5b28d5b2e495222817facca7b8826975}{is\+Predicated} ()
+\item 
+virtual bool \hyperlink{classInstructionType_ab4c4569a2cafed0655f95d9a20bd8ea1}{is\+Word} ()
+\item 
+virtual bool \hyperlink{classInstructionType_ada75c9091ab7e6b4b9a7df984288d1f8}{is\+Basic} ()
+\item 
+virtual int \hyperlink{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}{get\+Size\+Of\+Memory\+Access} ()
+\item 
+bool \hyperlink{classInstructionType_a0711bca7a3ca0a21ff6b9ae940c13acf}{check\+Format} (const vector$<$ string $>$ \&operands)
+\item 
+string \hyperlink{classInstructionType_adf12516c59a85e8032770feec2e1dcae}{get\+Resource\+Functional\+Unit} ()
+\item 
+vector$<$ string $>$ \hyperlink{classInstructionType_acce0f34d0675a5e29518ecba9bcb13c1}{get\+Resource\+Inputs} (const vector$<$ string $>$ \&operands)
+\item 
+vector$<$ string $>$ \hyperlink{classInstructionType_a96e341d8911549b19e8d975297e3e131}{get\+Resource\+Outputs} (const vector$<$ string $>$ \&operands)
+\item 
+virtual \hyperlink{classInstructionType_ae3415fa195f43d8fd0c4c66fab307e3d}{$\sim$\+Instruction\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classInstructionType_a5163498ca8a68d727c6c89cd443a37f8}{functional\+Unit}
+\item 
+set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$ $>$ \hyperlink{classInstructionType_a039493f9dcd605e25bb96ac3f510a501}{formats}
+\item 
+\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$ \hyperlink{classInstructionType_a7dfb488bd47f9168dc5fa1604a18c6c4}{addr\+Analysis\+Instruction}
+\item 
+int \hyperlink{classInstructionType_a99de20a7ccac1417a3e777ff25dfe3ed}{latency}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInstructionType_ae3415fa195f43d8fd0c4c66fab307e3d}\label{classInstructionType_ae3415fa195f43d8fd0c4c66fab307e3d}} 
+\index{Instruction\+Type@{Instruction\+Type}!````~Instruction\+Type@{$\sim$\+Instruction\+Type}}
+\index{````~Instruction\+Type@{$\sim$\+Instruction\+Type}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{$\sim$\+Instruction\+Type()}{~InstructionType()}}
+{\footnotesize\ttfamily virtual Instruction\+Type\+::$\sim$\+Instruction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInstructionType_a0711bca7a3ca0a21ff6b9ae940c13acf}\label{classInstructionType_a0711bca7a3ca0a21ff6b9ae940c13acf}} 
+\index{Instruction\+Type@{Instruction\+Type}!check\+Format@{check\+Format}}
+\index{check\+Format@{check\+Format}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{check\+Format()}{checkFormat()}}
+{\footnotesize\ttfamily bool Instruction\+Type\+::check\+Format (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})}
+
+Returns true if one and only one \hyperlink{classInstructionFormat}{Instruction\+Format} corresponds to the operands \mbox{\Hypertarget{classInstructionType_aed61394dd1528a3a68c09bef157e6da8}\label{classInstructionType_aed61394dd1528a3a68c09bef157e6da8}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}}
+\index{get\+D\+A\+A\+Instruction@{get\+D\+A\+A\+Instruction}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+D\+A\+A\+Instruction()}{getDAAInstruction()}}
+{\footnotesize\ttfamily \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction}$\ast$ Instruction\+Type\+::get\+D\+A\+A\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the address analysis instruction \mbox{\Hypertarget{classInstructionType_a737bd48f4e73da7c3a52faa052d9edfe}\label{classInstructionType_a737bd48f4e73da7c3a52faa052d9edfe}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+Latency@{get\+Latency}}
+\index{get\+Latency@{get\+Latency}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+Latency()}{getLatency()}}
+{\footnotesize\ttfamily int Instruction\+Type\+::get\+Latency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the latency of the instruction \mbox{\Hypertarget{classInstructionType_adf12516c59a85e8032770feec2e1dcae}\label{classInstructionType_adf12516c59a85e8032770feec2e1dcae}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+Resource\+Functional\+Unit@{get\+Resource\+Functional\+Unit}}
+\index{get\+Resource\+Functional\+Unit@{get\+Resource\+Functional\+Unit}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+Resource\+Functional\+Unit()}{getResourceFunctionalUnit()}}
+{\footnotesize\ttfamily string Instruction\+Type\+::get\+Resource\+Functional\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the functional\+Units \mbox{\Hypertarget{classInstructionType_acce0f34d0675a5e29518ecba9bcb13c1}\label{classInstructionType_acce0f34d0675a5e29518ecba9bcb13c1}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+Resource\+Inputs@{get\+Resource\+Inputs}}
+\index{get\+Resource\+Inputs@{get\+Resource\+Inputs}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+Resource\+Inputs()}{getResourceInputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Instruction\+Type\+::get\+Resource\+Inputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})}
+
+Returns the input resources \mbox{\Hypertarget{classInstructionType_a96e341d8911549b19e8d975297e3e131}\label{classInstructionType_a96e341d8911549b19e8d975297e3e131}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+Resource\+Outputs@{get\+Resource\+Outputs}}
+\index{get\+Resource\+Outputs@{get\+Resource\+Outputs}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+Resource\+Outputs()}{getResourceOutputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Instruction\+Type\+::get\+Resource\+Outputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})}
+
+Returns the output resources \mbox{\Hypertarget{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}\label{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}} 
+\index{Instruction\+Type@{Instruction\+Type}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily virtual int Instruction\+Type\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the memory access in bytes, if the instruction is a load/store and 0 otherwise 
+
+Reimplemented in \hyperlink{classPredicatedLoad_a0f4d0a0830281e9f87c733eb253a1a5e}{Predicated\+Load}, \hyperlink{classPredicatedStore_a79f5e84001443055c5ae0547ec337759}{Predicated\+Store}, \hyperlink{classLoad_a35d504d74dfa9ea02ae719f41dd766a8}{Load}, and \hyperlink{classStore_a1b788e1fc3364a4eb304a2611ad37415}{Store}.
+
+\mbox{\Hypertarget{classInstructionType_ada75c9091ab7e6b4b9a7df984288d1f8}\label{classInstructionType_ada75c9091ab7e6b4b9a7df984288d1f8}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Basic@{is\+Basic}}
+\index{is\+Basic@{is\+Basic}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Basic()}{isBasic()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Basic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a basic instruction 
+
+Reimplemented in \hyperlink{classPredicatedBasic_ad3f2e7d2feaef666dd784fcae0f03125}{Predicated\+Basic}, and \hyperlink{classBasic_a3ab68a71a2c405d7e14a11a8ce24fd07}{Basic}.
+
+\mbox{\Hypertarget{classInstructionType_ad49a039e3b57e3b7b369a7c0c6c0932b}\label{classInstructionType_ad49a039e3b57e3b7b369a7c0c6c0932b}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Call@{is\+Call}}
+\index{is\+Call@{is\+Call}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Call()}{isCall()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a call instruction 
+
+Reimplemented in \hyperlink{classCall_a2f33492c84abcac87ff5e388535f6cfb}{Call}.
+
+\mbox{\Hypertarget{classInstructionType_a3655591172fa6acbf7b9888e879b551d}\label{classInstructionType_a3655591172fa6acbf7b9888e879b551d}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Conditional\+Jump@{is\+Conditional\+Jump}}
+\index{is\+Conditional\+Jump@{is\+Conditional\+Jump}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Conditional\+Jump()}{isConditionalJump()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Conditional\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a Conditionnal Jump instruction 
+
+Reimplemented in \hyperlink{classConditionalJump_a2341c5b034b189c24b858651a51d6dba}{Conditional\+Jump}.
+
+\mbox{\Hypertarget{classInstructionType_aa3d2c042a4109b1d96dc0d7f20916ba3}\label{classInstructionType_aa3d2c042a4109b1d96dc0d7f20916ba3}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Load@{is\+Load}}
+\index{is\+Load@{is\+Load}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Load()}{isLoad()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a load instruction 
+
+Reimplemented in \hyperlink{classPredicatedLoad_a6eba0b6ea212b012d2015fb023804fc3}{Predicated\+Load}, and \hyperlink{classLoad_aa7fbffafad6cbfa1b9866f6d09cc7e30}{Load}.
+
+\mbox{\Hypertarget{classInstructionType_a5b28d5b2e495222817facca7b8826975}\label{classInstructionType_a5b28d5b2e495222817facca7b8826975}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Predicated@{is\+Predicated}}
+\index{is\+Predicated@{is\+Predicated}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Predicated()}{isPredicated()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Predicated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is Predicated (with a condition) 
+
+Reimplemented in \hyperlink{classPredicatedLoad_aebf98efc7d6d09ec1d8f9c578a65e156}{Predicated\+Load}, \hyperlink{classPredicatedStore_a204c4cac7241d1d1b61719c5fcbc6512}{Predicated\+Store}, and \hyperlink{classPredicatedBasic_aa63e9f18308f45cc3f74e27d9db3ef29}{Predicated\+Basic}.
+
+\mbox{\Hypertarget{classInstructionType_a15b0f034f3536f0bc525550406e1d7c6}\label{classInstructionType_a15b0f034f3536f0bc525550406e1d7c6}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Return@{is\+Return}}
+\index{is\+Return@{is\+Return}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Return()}{isReturn()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Return (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a return instruction 
+
+Reimplemented in \hyperlink{classReturn_ad3412361560f4acdb1e4f73ab65d3bc7}{Return}.
+
+\mbox{\Hypertarget{classInstructionType_aa81de3619fb9d88f52d7d8104f9ac188}\label{classInstructionType_aa81de3619fb9d88f52d7d8104f9ac188}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Store@{is\+Store}}
+\index{is\+Store@{is\+Store}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Store()}{isStore()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a store instruction 
+
+Reimplemented in \hyperlink{classPredicatedStore_ada88354c4a4838c8ff5fa7b225f8a751}{Predicated\+Store}, and \hyperlink{classStore_a773c447c4ac4b781ea6d18d91ff3dd50}{Store}.
+
+\mbox{\Hypertarget{classInstructionType_a145a4e04a4db8a0ecf9e4b35b2403ed3}\label{classInstructionType_a145a4e04a4db8a0ecf9e4b35b2403ed3}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Unconditional\+Jump@{is\+Unconditional\+Jump}}
+\index{is\+Unconditional\+Jump@{is\+Unconditional\+Jump}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Unconditional\+Jump()}{isUnconditionalJump()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Unconditional\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a Unconditionnal Jump instruction 
+
+Reimplemented in \hyperlink{classUnconditionalJump_ab4588132d702a35f1dc1102dacba2be5}{Unconditional\+Jump}.
+
+\mbox{\Hypertarget{classInstructionType_ab4c4569a2cafed0655f95d9a20bd8ea1}\label{classInstructionType_ab4c4569a2cafed0655f95d9a20bd8ea1}} 
+\index{Instruction\+Type@{Instruction\+Type}!is\+Word@{is\+Word}}
+\index{is\+Word@{is\+Word}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{is\+Word()}{isWord()}}
+{\footnotesize\ttfamily virtual bool Instruction\+Type\+::is\+Word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a \hyperlink{classWord}{Word} 
+
+Reimplemented in \hyperlink{classWord_a2dde02496b26f4c78881259cb44f70e5}{Word}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classInstructionType_a7dfb488bd47f9168dc5fa1604a18c6c4}\label{classInstructionType_a7dfb488bd47f9168dc5fa1604a18c6c4}} 
+\index{Instruction\+Type@{Instruction\+Type}!addr\+Analysis\+Instruction@{addr\+Analysis\+Instruction}}
+\index{addr\+Analysis\+Instruction@{addr\+Analysis\+Instruction}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{addr\+Analysis\+Instruction}{addrAnalysisInstruction}}
+{\footnotesize\ttfamily \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction}$\ast$ Instruction\+Type\+::addr\+Analysis\+Instruction\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInstructionType_a039493f9dcd605e25bb96ac3f510a501}\label{classInstructionType_a039493f9dcd605e25bb96ac3f510a501}} 
+\index{Instruction\+Type@{Instruction\+Type}!formats@{formats}}
+\index{formats@{formats}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{formats}{formats}}
+{\footnotesize\ttfamily set$<$\hyperlink{classInstructionFormat}{Instruction\+Format}$\ast$$>$ Instruction\+Type\+::formats\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInstructionType_a5163498ca8a68d727c6c89cd443a37f8}\label{classInstructionType_a5163498ca8a68d727c6c89cd443a37f8}} 
+\index{Instruction\+Type@{Instruction\+Type}!functional\+Unit@{functional\+Unit}}
+\index{functional\+Unit@{functional\+Unit}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{functional\+Unit}{functionalUnit}}
+{\footnotesize\ttfamily string Instruction\+Type\+::functional\+Unit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInstructionType_a99de20a7ccac1417a3e777ff25dfe3ed}\label{classInstructionType_a99de20a7ccac1417a3e777ff25dfe3ed}} 
+\index{Instruction\+Type@{Instruction\+Type}!latency@{latency}}
+\index{latency@{latency}!Instruction\+Type@{Instruction\+Type}}
+\subsubsection{\texorpdfstring{latency}{latency}}
+{\footnotesize\ttfamily int Instruction\+Type\+::latency\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionType_8h}{Instruction\+Type.\+h}\end{DoxyCompactItemize}

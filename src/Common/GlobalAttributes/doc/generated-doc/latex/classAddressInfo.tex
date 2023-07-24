@@ -1,0 +1,119 @@
+\hypertarget{classAddressInfo}{}\section{Address\+Info Class Reference}
+\label{classAddressInfo}\index{Address\+Info@{Address\+Info}}
+
+
+{\ttfamily \#include $<$Address\+Attribute.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAddressInfo_a1d82e681b86d769de4325b99163ed640}{Address\+Info} ()
+\item 
+void \hyperlink{classAddressInfo_a37271fcb2207dc8b7f816907760fc721}{set\+Name} (string n)
+\item 
+void \hyperlink{classAddressInfo_a024ac80e1b8a35625cb77d6a4c8e6b0e}{set\+Type} (string t)
+\item 
+void \hyperlink{classAddressInfo_a9e530ba6525d74f46da29705a032e84c}{set\+Segment} (string seg)
+\item 
+void \hyperlink{classAddressInfo_a5c8bf00c9f0816ef0dc9794317434418}{set\+Precision} (bool p)
+\item 
+vector$<$ pair$<$ string, string $>$ $>$ \hyperlink{classAddressInfo_a459c495a6d820e9312d733a816a3ba79}{get\+Adr\+Size} ()
+\item 
+string \hyperlink{classAddressInfo_ad4decf39436c2c5f5c7725dd72d1c4e9}{get\+Type} ()
+\item 
+string \hyperlink{classAddressInfo_abe571cf9594ec7309baec30df6b5fc9a}{get\+Name} ()
+\item 
+string \hyperlink{classAddressInfo_a672a6460879dc1f63eb1fd8ee6d18b55}{get\+Segment} ()
+\item 
+bool \hyperlink{classAddressInfo_ac833d1421bef4e4f936a7bad9686c795}{get\+Precision} ()
+\item 
+void \hyperlink{classAddressInfo_a90a057789302f68c43f07ffaafb53af1}{add\+Adr\+Size} (string adr, string size)
+\item 
+void \hyperlink{classAddressInfo_a2c82626af62f839742cfa6797f257e6f}{print} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{classAddressInfo}{Address\+Info} is a structure to group the informations of 1 access to memory realized by an instruction 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAddressInfo_a1d82e681b86d769de4325b99163ed640}\label{classAddressInfo_a1d82e681b86d769de4325b99163ed640}} 
+\index{Address\+Info@{Address\+Info}!Address\+Info@{Address\+Info}}
+\index{Address\+Info@{Address\+Info}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{Address\+Info()}{AddressInfo()}}
+{\footnotesize\ttfamily Address\+Info\+::\+Address\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAddressInfo_a90a057789302f68c43f07ffaafb53af1}\label{classAddressInfo_a90a057789302f68c43f07ffaafb53af1}} 
+\index{Address\+Info@{Address\+Info}!add\+Adr\+Size@{add\+Adr\+Size}}
+\index{add\+Adr\+Size@{add\+Adr\+Size}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{add\+Adr\+Size()}{addAdrSize()}}
+{\footnotesize\ttfamily void Address\+Info\+::add\+Adr\+Size (\begin{DoxyParamCaption}\item[{string}]{adr,  }\item[{string}]{size }\end{DoxyParamCaption})}
+
+This function is used to add a pair\+: $<$begin address to memory area acceded ; size of the access in byte$>$ \mbox{\Hypertarget{classAddressInfo_a459c495a6d820e9312d733a816a3ba79}\label{classAddressInfo_a459c495a6d820e9312d733a816a3ba79}} 
+\index{Address\+Info@{Address\+Info}!get\+Adr\+Size@{get\+Adr\+Size}}
+\index{get\+Adr\+Size@{get\+Adr\+Size}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{get\+Adr\+Size()}{getAdrSize()}}
+{\footnotesize\ttfamily vector$<$pair$<$string,string$>$ $>$ Address\+Info\+::get\+Adr\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_abe571cf9594ec7309baec30df6b5fc9a}\label{classAddressInfo_abe571cf9594ec7309baec30df6b5fc9a}} 
+\index{Address\+Info@{Address\+Info}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Address\+Info\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_ac833d1421bef4e4f936a7bad9686c795}\label{classAddressInfo_ac833d1421bef4e4f936a7bad9686c795}} 
+\index{Address\+Info@{Address\+Info}!get\+Precision@{get\+Precision}}
+\index{get\+Precision@{get\+Precision}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{get\+Precision()}{getPrecision()}}
+{\footnotesize\ttfamily bool Address\+Info\+::get\+Precision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_a672a6460879dc1f63eb1fd8ee6d18b55}\label{classAddressInfo_a672a6460879dc1f63eb1fd8ee6d18b55}} 
+\index{Address\+Info@{Address\+Info}!get\+Segment@{get\+Segment}}
+\index{get\+Segment@{get\+Segment}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{get\+Segment()}{getSegment()}}
+{\footnotesize\ttfamily string Address\+Info\+::get\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_ad4decf39436c2c5f5c7725dd72d1c4e9}\label{classAddressInfo_ad4decf39436c2c5f5c7725dd72d1c4e9}} 
+\index{Address\+Info@{Address\+Info}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Address\+Info\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_a2c82626af62f839742cfa6797f257e6f}\label{classAddressInfo_a2c82626af62f839742cfa6797f257e6f}} 
+\index{Address\+Info@{Address\+Info}!print@{print}}
+\index{print@{print}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Address\+Info\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_a37271fcb2207dc8b7f816907760fc721}\label{classAddressInfo_a37271fcb2207dc8b7f816907760fc721}} 
+\index{Address\+Info@{Address\+Info}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Address\+Info\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})}
+
+accessors \mbox{\Hypertarget{classAddressInfo_a5c8bf00c9f0816ef0dc9794317434418}\label{classAddressInfo_a5c8bf00c9f0816ef0dc9794317434418}} 
+\index{Address\+Info@{Address\+Info}!set\+Precision@{set\+Precision}}
+\index{set\+Precision@{set\+Precision}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{set\+Precision()}{setPrecision()}}
+{\footnotesize\ttfamily void Address\+Info\+::set\+Precision (\begin{DoxyParamCaption}\item[{bool}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_a9e530ba6525d74f46da29705a032e84c}\label{classAddressInfo_a9e530ba6525d74f46da29705a032e84c}} 
+\index{Address\+Info@{Address\+Info}!set\+Segment@{set\+Segment}}
+\index{set\+Segment@{set\+Segment}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{set\+Segment()}{setSegment()}}
+{\footnotesize\ttfamily void Address\+Info\+::set\+Segment (\begin{DoxyParamCaption}\item[{string}]{seg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAddressInfo_a024ac80e1b8a35625cb77d6a4c8e6b0e}\label{classAddressInfo_a024ac80e1b8a35625cb77d6a4c8e6b0e}} 
+\index{Address\+Info@{Address\+Info}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Address\+Info@{Address\+Info}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}}
+{\footnotesize\ttfamily void Address\+Info\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{AddressAttribute_8h}{Address\+Attribute.\+h}\end{DoxyCompactItemize}

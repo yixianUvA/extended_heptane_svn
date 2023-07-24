@@ -1,0 +1,1089 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/ns/ns.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: ns.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Test of deeply nested loops and non-local exits */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  * Changes: JG 2005/12/23: Changed type of main to int, added prototypes.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>                            Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*-------------------------------------------------- *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * LOG:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  $Log: not supported by cvs2svn $</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.3  2005/11/11 10:31:47  ael01</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  updated</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.2  2005/04/04 11:34:58  csg</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  again</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.1  2005/03/29 11:28:43  jgn</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  New file.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.8  2001/05/07 10:05:37  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  no message</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.7  2001/04/25 12:48:15  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Corrected trace names.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.6  2001/04/25 12:17:47  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  no message</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.5  2001/04/25 12:11:31  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Compilable for V850</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.4  2001/04/25 12:09:55  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Now in target mode.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.3  2001/04/25 12:06:36  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Now 4D array. Compiles & runs on PC</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Revision 1.2  2001/04/25 11:59:38  ijae</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  A bit more comments.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *-------------------------------------------------- */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* -------------------------------------------------- *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Define TEST to check the # iterations in inner loop,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  and that the right value is found and returned</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * -------------------------------------------------- */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* #define TEST */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* --------------------------------------------------</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  Array of keys and values, 4-dimensional just</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  for the fun of it.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * -------------------------------------------------- */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             foo(int x);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             keys[5][5][5][5] =</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{0, 0, 0, 0, 0}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{1, 1, 1, 1, 1}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 * [2][0] { {2,2,2,2,2}, {2,2,2,2,2}, {2,2,2,2,2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 * {2,2,2,2,2}, {2,2,2,2,2} }, /* [2][1]</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{2, 2, 2, 2, 2}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 * [3][0] { {3,3,3,3,3}, {3,3,3,3,3}, {3,3,3,3,3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 * {3,3,3,3,3}, {3,3,3,3,3} }, /* [3][1]</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{3, 3, 3, 3, 3}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4, 4},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{4, 4, 4, 4,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef FIND_TARGET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>				400</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#else</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>				401	/* not searched for */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             answer[5][5][5][5] =</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [0][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{123, 123, 123, 123, 123}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [1][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{234, 234, 234, 234, 234}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [2][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{345, 345, 345, 345}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [3][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{456, 456, 456, 456, 456}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* [4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][0] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][1] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][2] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][3] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* [4][4] */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 567},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>			{567, 567, 567, 567, 1111}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>foo(int x)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef TEST</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             c = 0;	/* counter for innerloop */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i, j, k, l;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 4 5 </td>
+<td><tt><pre>	for (i = 0; i < 5; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 24 29 </td>
+<td><tt><pre>	  for (j = 0; j < 5; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 124 149 </td>
+<td><tt><pre>	    for (k = 0; k < 5; k++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>125 624 749 </td>
+<td><tt><pre>	      for (l = 0; l < 5; l++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef TEST</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		c++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>625 </td>
+<td><tt><pre>		if (keys[i][j][k][l] == x) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef TEST</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  printf("   %d\n", c);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		  return answer[i][j][k][l] + keys[i][j][k][l];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	return -1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef TEST</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("result=%d\n", foo(400));</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	foo(400);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

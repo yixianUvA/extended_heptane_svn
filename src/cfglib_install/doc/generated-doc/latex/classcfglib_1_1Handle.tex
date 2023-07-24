@@ -1,0 +1,71 @@
+\hypertarget{classcfglib_1_1Handle}{}\section{cfglib\+:\+:Handle Class Reference}
+\label{classcfglib_1_1Handle}\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+
+
+{\ttfamily \#include $<$Handle.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Handle_a98f8601f6e1dd65a9f9ba0e29254c1ce}{Handle} ()
+\item 
+void \hyperlink{classcfglib_1_1Handle_ab8a43d033b2fe3a68aecf4dbee61dba2}{add\+I\+D\+\_\+handle} (std\+::string const \&id, \hyperlink{classcfglib_1_1Serialisable}{Serialisable} $\ast$$\ast$ptr)
+\item 
+void \hyperlink{classcfglib_1_1Handle_ad50bcb573b09ca46cccd3ac988a653d0}{add\+I\+D\+\_\+serialisable} (std\+::string const \&, \hyperlink{classcfglib_1_1Serialisable}{Serialisable} $\ast$)
+\item 
+std\+::string \hyperlink{classcfglib_1_1Handle_afdd041bbbaea61823ad61918ceaad330}{identify} (\hyperlink{classcfglib_1_1Serialisable}{Serialisable} const $\ast$obj)
+\item 
+void \hyperlink{classcfglib_1_1Handle_a8f524a2c4b97e7e3dda8aaa0d6dcd577}{resolve\+Handles} ()
+\item 
+std\+::string \hyperlink{classcfglib_1_1Handle_a90922bce066e04b5d46df9d29b641840}{get\+Id} (\hyperlink{classcfglib_1_1Serialisable}{Serialisable} const $\ast$obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class manipulate unique identifier during unserisalisation 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Handle_a98f8601f6e1dd65a9f9ba0e29254c1ce}\label{classcfglib_1_1Handle_a98f8601f6e1dd65a9f9ba0e29254c1ce}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!Handle@{Handle}}
+\index{Handle@{Handle}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily cfglib\+::\+Handle\+::\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Handle_ab8a43d033b2fe3a68aecf4dbee61dba2}\label{classcfglib_1_1Handle_ab8a43d033b2fe3a68aecf4dbee61dba2}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!add\+I\+D\+\_\+handle@{add\+I\+D\+\_\+handle}}
+\index{add\+I\+D\+\_\+handle@{add\+I\+D\+\_\+handle}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{add\+I\+D\+\_\+handle()}{addID\_handle()}}
+{\footnotesize\ttfamily void cfglib\+::\+Handle\+::add\+I\+D\+\_\+handle (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{id,  }\item[{\hyperlink{classcfglib_1_1Serialisable}{Serialisable} $\ast$$\ast$}]{ptr }\end{DoxyParamCaption})}
+
+Declare a new handle to a \hyperlink{classcfglib_1_1Serialisable}{Serialisable} object. Declared handles will be updated when the method \hyperlink{classcfglib_1_1Handle_a8f524a2c4b97e7e3dda8aaa0d6dcd577}{resolve\+Handles()} will be called. The first argument is a string id and the second is a pointer to the memory place of the handle Serialisable$\ast$ A\+T\+T\+E\+N\+T\+I\+ON \+: ptr must be use only with no ordered structure !!! \mbox{\Hypertarget{classcfglib_1_1Handle_ad50bcb573b09ca46cccd3ac988a653d0}\label{classcfglib_1_1Handle_ad50bcb573b09ca46cccd3ac988a653d0}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!add\+I\+D\+\_\+serialisable@{add\+I\+D\+\_\+serialisable}}
+\index{add\+I\+D\+\_\+serialisable@{add\+I\+D\+\_\+serialisable}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{add\+I\+D\+\_\+serialisable()}{addID\_serialisable()}}
+{\footnotesize\ttfamily void cfglib\+::\+Handle\+::add\+I\+D\+\_\+serialisable (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{,  }\item[{\hyperlink{classcfglib_1_1Serialisable}{Serialisable} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Declare a \hyperlink{classcfglib_1_1Serialisable}{Serialisable} and its identifier. Objects are declared by the library, an also by library user. \mbox{\Hypertarget{classcfglib_1_1Handle_a90922bce066e04b5d46df9d29b641840}\label{classcfglib_1_1Handle_a90922bce066e04b5d46df9d29b641840}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily std\+::string cfglib\+::\+Handle\+::get\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Serialisable}{Serialisable} const $\ast$}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Handle_afdd041bbbaea61823ad61918ceaad330}\label{classcfglib_1_1Handle_afdd041bbbaea61823ad61918ceaad330}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!identify@{identify}}
+\index{identify@{identify}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{identify()}{identify()}}
+{\footnotesize\ttfamily std\+::string cfglib\+::\+Handle\+::identify (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1Serialisable}{Serialisable} const $\ast$}]{obj }\end{DoxyParamCaption})}
+
+during serialisation give a unique identifier for each \hyperlink{classcfglib_1_1Serialisable}{Serialisable} object. Identity of objects is given by their address (you pass a pointer), be careful to not modify dynamic containers during serialisation. \mbox{\Hypertarget{classcfglib_1_1Handle_a8f524a2c4b97e7e3dda8aaa0d6dcd577}\label{classcfglib_1_1Handle_a8f524a2c4b97e7e3dda8aaa0d6dcd577}} 
+\index{cfglib\+::\+Handle@{cfglib\+::\+Handle}!resolve\+Handles@{resolve\+Handles}}
+\index{resolve\+Handles@{resolve\+Handles}!cfglib\+::\+Handle@{cfglib\+::\+Handle}}
+\subsubsection{\texorpdfstring{resolve\+Handles()}{resolveHandles()}}
+{\footnotesize\ttfamily void cfglib\+::\+Handle\+::resolve\+Handles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Replace all handles with their final value. not intended for library user, this function is used only by unserialisation predefined routine. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Handle_8h}{Handle.\+h}\end{DoxyCompactItemize}

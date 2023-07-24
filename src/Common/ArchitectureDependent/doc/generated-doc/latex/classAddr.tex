@@ -1,0 +1,59 @@
+\hypertarget{classAddr}{}\section{Addr Class Reference}
+\label{classAddr}\index{Addr@{Addr}}
+
+
+{\ttfamily \#include $<$Instruction\+Format.\+h$>$}
+
+Inheritance diagram for Addr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAddr}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAddr_aff6fd4bf7c93990b1427843fff9069ed}{is\+Format} (const vector$<$ string $>$ \&operands)
+\item 
+vector$<$ string $>$ \hyperlink{classAddr_a0ed20cdb01d8b11b023fa3b5e54bab29}{get\+Resource\+Inputs} (const vector$<$ string $>$ \&operands)
+\item 
+vector$<$ string $>$ \hyperlink{classAddr_aa42b861112df7333d93b3dd242e6621b}{get\+Resource\+Outputs} (const vector$<$ string $>$ \&operands)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAddr_a0ed20cdb01d8b11b023fa3b5e54bab29}\label{classAddr_a0ed20cdb01d8b11b023fa3b5e54bab29}} 
+\index{Addr@{Addr}!get\+Resource\+Inputs@{get\+Resource\+Inputs}}
+\index{get\+Resource\+Inputs@{get\+Resource\+Inputs}!Addr@{Addr}}
+\subsubsection{\texorpdfstring{get\+Resource\+Inputs()}{getResourceInputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Addr\+::get\+Resource\+Inputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the input resources 
+
+Implements \hyperlink{classInstructionFormat_a09775d3a3c22f40a0f44504664e586e4}{Instruction\+Format}.
+
+\mbox{\Hypertarget{classAddr_aa42b861112df7333d93b3dd242e6621b}\label{classAddr_aa42b861112df7333d93b3dd242e6621b}} 
+\index{Addr@{Addr}!get\+Resource\+Outputs@{get\+Resource\+Outputs}}
+\index{get\+Resource\+Outputs@{get\+Resource\+Outputs}!Addr@{Addr}}
+\subsubsection{\texorpdfstring{get\+Resource\+Outputs()}{getResourceOutputs()}}
+{\footnotesize\ttfamily vector$<$string$>$ Addr\+::get\+Resource\+Outputs (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the output resources 
+
+Implements \hyperlink{classInstructionFormat_a95cd28ffb1bde59b67f676880ab10536}{Instruction\+Format}.
+
+\mbox{\Hypertarget{classAddr_aff6fd4bf7c93990b1427843fff9069ed}\label{classAddr_aff6fd4bf7c93990b1427843fff9069ed}} 
+\index{Addr@{Addr}!is\+Format@{is\+Format}}
+\index{is\+Format@{is\+Format}!Addr@{Addr}}
+\subsubsection{\texorpdfstring{is\+Format()}{isFormat()}}
+{\footnotesize\ttfamily bool Addr\+::is\+Format (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if operands match the format 
+
+Implements \hyperlink{classInstructionFormat_a9fdcf94dcd7d9a55ba86e7a63f04d1fe}{Instruction\+Format}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionFormat_8h}{Instruction\+Format.\+h}\end{DoxyCompactItemize}

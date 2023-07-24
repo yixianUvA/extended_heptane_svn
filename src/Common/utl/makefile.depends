@@ -1,0 +1,45 @@
+makefile.depends:  ./src/Utl.cc ./src/InstructionARM.cc ./src/Logger.cc
+obj/Utl.o: src/Utl.cc src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../ArchitectureDependent/src -I/usr/include/libxml2 -I../GlobalAttributes/src  -c src/Utl.cc -o obj/Utl.o 
+obj/InstructionARM.o: src/InstructionARM.cc src/InstructionARM.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Attributed.h \
+ ../cfglib/include/Attributes.h ../cfglib/include/Serialisable.h \
+ ../cfglib/include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../cfglib/include/CloneHandle.h ../cfglib/include/Factory.h \
+ ../cfglib/include/SerialisableAttributes.h \
+ ../cfglib/include/PointerAttributes.h ../cfglib/include/Handle.h \
+ ../ArchitectureDependent/src/arch.h \
+ ../ArchitectureDependent/src/ParsingStructure.h src/HeptaneStdTypes.h \
+ ../ArchitectureDependent/src/InstructionType.h \
+ ../ArchitectureDependent/src/InstructionFormat.h \
+ ../ArchitectureDependent/src/arch.h \
+ ../ArchitectureDependent/src/DAAInstruction.h src/Utl.h \
+ ../GlobalAttributes/src/GlobalAttributes.h \
+ ../GlobalAttributes/src/AddressAttribute.h ../cfglib/include/CfgLib.h \
+ ../cfglib/include/NonSerialisableAttributes.h ../cfglib/include/Node.h \
+ ../cfglib/include/Instruction.h ../cfglib/include/Edge.h \
+ ../cfglib/include/Loop.h ../cfglib/include/Program.h \
+ ../cfglib/include/Cfg.h ../cfglib/include/Helper.h \
+ ../GlobalAttributes/src/SymbolTableAttribute.h \
+ ../GlobalAttributes/src/ARMWordsAttribute.h \
+ ../GlobalAttributes/src/MetaInstructionAttribute.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../ArchitectureDependent/src -I/usr/include/libxml2 -I../GlobalAttributes/src  -c src/InstructionARM.cc -o obj/InstructionARM.o 
+obj/Logger.o: src/Logger.cc src/Logger.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../cfglib/include -I../ArchitectureDependent/src -I/usr/include/libxml2 -I../GlobalAttributes/src  -c src/Logger.cc -o obj/Logger.o 

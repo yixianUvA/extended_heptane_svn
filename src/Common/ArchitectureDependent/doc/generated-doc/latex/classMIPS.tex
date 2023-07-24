@@ -1,0 +1,543 @@
+\hypertarget{classMIPS}{}\section{M\+I\+PS Class Reference}
+\label{classMIPS}\index{M\+I\+PS@{M\+I\+PS}}
+
+
+{\ttfamily \#include $<$M\+I\+P\+S.\+h$>$}
+
+Inheritance diagram for M\+I\+PS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_a758824a40d11a4d0003e781d0e8ea51c}{M\+I\+PS} (const bool is\+\_\+big\+\_\+endian\+\_\+p)
+\item 
+\hyperlink{classMIPS_a71b83e8e05e3a5d454faa9fe02a75fe7}{$\sim$\+M\+I\+PS} ()
+\item 
+bool \hyperlink{classMIPS_ae645fa32988ae74ef68ee141ee88a434}{is\+Big\+Endian} ()
+\item 
+bool \hyperlink{classMIPS_a2de73769c68612b81e2e15b4eaf07969}{is\+Function} (const string \&line)
+\item 
+bool \hyperlink{classMIPS_a86a3224889b2d3e2486072b7bc5c26f3}{is\+Instruction} (const string \&line)
+\item 
+\hyperlink{classObjdumpFunction}{Objdump\+Function} \hyperlink{classMIPS_a03874bd0a2a980e174ea447482a830c3}{parse\+Function} (const string \&line)
+\item 
+\hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \hyperlink{classMIPS_a8a3bbe0cf81cf032f3e8e1d1786c888f}{parse\+Instruction} (const string \&line)
+\item 
+t\+\_\+address \hyperlink{classMIPS_a64b2312c1817faef2ca139497ffa7ec9}{get\+Jump\+Destination} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+bool \hyperlink{classMIPS_a73e4206a1a7c2ee6461520c52fa5dcde}{is\+Mem\+Pattern} (const string \&operand)
+\item 
+int \hyperlink{classMIPS_a15519e774487809038024a6cc0febab3}{get\+N\+B\+Instr\+In\+Delay\+Slot} ()
+\item 
+int \hyperlink{classMIPS_ad192996344511aa0152adf644cf84238}{get\+Instruction\+Size} ()
+\item 
+vector$<$ string $>$ \hyperlink{classMIPS_acf8659c9a36074bbe47455275a4829f7}{extract\+Input\+Registers\+From\+Mem} (const string \&operand)
+\item 
+vector$<$ string $>$ \hyperlink{classMIPS_af03518e68285f24da7a0b2e16020d8d2}{extract\+Output\+Registers\+From\+Mem} (const string \&operand)
+\item 
+bool \hyperlink{classMIPS_aeb0b38a8be26d938889beb59ee1a98fb}{is\+Load\+Multiple} (const string \&instr)
+\item 
+int \hyperlink{classMIPS_ad2447a7ac47005463a13e4e78dd55594}{get\+Number\+Of\+Loads} (const string \&instr)
+\item 
+bool \hyperlink{classMIPS_a781bec4f737ea512ada3f3fa166463c9}{is\+Store\+Multiple} (const string \&instr)
+\item 
+int \hyperlink{classMIPS_a8555188088fbf6dba02c37ca43e036c6}{get\+Number\+Of\+Stores} (const string \&instr)
+\item 
+bool \hyperlink{classMIPS_af2307adac1cb8289cb7510829051f45d}{is\+Return} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+string \hyperlink{classMIPS_adc2a687a1c64a5240d7d1ce7e294fdfc}{get\+Callee\+Name} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+void \hyperlink{classMIPS_ae63e651cee1687716908f3c9f66d9f3f}{parse\+Symbol\+Table\+Line} (const string \&line, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+\hyperlink{classObjdumpWord}{Objdump\+Word} \hyperlink{classMIPS_a28a3d7f0cc8a69881d46dfa1363351cf}{read\+Word\+Instruction} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr, \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&table)
+\item 
+bool \hyperlink{classMIPS_affd67799c774ea1ca747f15d7a483a8c}{is\+Pc\+In\+Input\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+bool \hyperlink{classMIPS_a68497c5e46c6106133d4bf5a01db6e7d}{is\+Pc\+In\+Output\+Resources} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr)
+\item 
+vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ \hyperlink{classMIPS_a1e122412b5edefe1b92b2b4851255a69}{get\+Words\+From\+Instr} (const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr1, const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&instr2, vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$ words, bool \&is\+\_\+instr2\+\_\+consumed)
+\item 
+bool \hyperlink{classMIPS_a9bdb629497575a212f34ee951f1adfe0}{is\+Input\+Written\+Register} (const string \&operand)
+\item 
+string \hyperlink{classMIPS_a53017c6d42bb7bee24a36e45bf0300b9}{extract\+Register\+From\+Input\+Written\+Operand} (const string \&operand)
+\item 
+bool \hyperlink{classMIPS_aa1efaf59e1d461388886db68f5e54e06}{is\+Register\+List} (const string \&operand)
+\item 
+vector$<$ string $>$ \hyperlink{classMIPS_a6eecdd7a94436748b1bc224cf78ac075}{extract\+Registers\+From\+Register\+List} (const string \&operand)
+\item 
+int \hyperlink{classMIPS_a475db73349cc940f47e5e0c310ac8912}{get\+Size\+Register\+List} (const string \&operand)
+\item 
+bool \hyperlink{classMIPS_a9390579a78d85c1024dcde783bff27b7}{is\+Shifter\+Operand} (const string \&operand)
+\item 
+string \hyperlink{classMIPS_ae48954f0e93827c1cb8225cac3857464}{extract\+Register\+From\+Shifter\+Operand} (const string \&operand)
+\item 
+bool \hyperlink{classMIPS_a2aa733a21db8dc973feddaac233d66a2}{get\+Load\+Store\+A\+R\+M\+Infos} (bool strong\+Context, string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$vaddrmode, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)
+\item 
+bool \hyperlink{classMIPS_ae38afe5659e9efe2ff909fa5c4acc047}{is\+Pc\+Load\+Instruction} (string \&instr)
+\item 
+bool \hyperlink{classMIPS_add97e24f0dff226385044368b82cb6f1}{get\+Instr1\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2)
+\item 
+bool \hyperlink{classMIPS_aefb9849f91cfe9bcb6baa71bcf0b4aa8}{get\+Instr2\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, \hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$Type\+Operand, string \&operand1, string \&operand2, string \&operand3)
+\item 
+bool \hyperlink{classMIPS_aa234e9a3a6942ce0a38894fa4caddbd9}{is\+A\+R\+M\+Class\+Instr} (const string \&codeop, const string \&prefix)
+\item 
+bool \hyperlink{classMIPS_a1ef435e9100290e46e91863960b64c71}{is\+Conditionned\+A\+R\+M\+Instr} (const string \&codeop, const string \&prefix)
+\item 
+bool \hyperlink{classMIPS_ae09bc40a4598430935a4deb91e81703c}{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos} (string \&instr, string \&codeinstr, string \&oregister, vector$<$ string $>$ \&reg\+List, bool $\ast$write\+Back)
+\item 
+bool \hyperlink{classMIPS_a32b86b25f6547ba12fc2a8bc348b4aad}{get\+Register\+And\+Index\+Stack} (const string \&instruction\+Asm, string \&reg, int $\ast$i)
+\item 
+int \hyperlink{classMIPS_a4a7d7555f5e7fb53cf39be02f6f27fc5}{get\+Memory\+Store\+Latency} ()
+\item 
+int \hyperlink{classMIPS_a9b69a65d964ddba7bcc00d6219262740}{get\+Memory\+Load\+Latency} ()
+\item 
+void \hyperlink{classMIPS_a2c58b6b1405f9fa38305e2b064ed83b8}{set\+Memory\+Store\+Latency} (int val)
+\item 
+void \hyperlink{classMIPS_ab6fbe5813d16f00c5a66c28211b4eec5}{set\+Memory\+Load\+Latency} (int val)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMIPS_a758824a40d11a4d0003e781d0e8ea51c}\label{classMIPS_a758824a40d11a4d0003e781d0e8ea51c}} 
+\index{M\+I\+PS@{M\+I\+PS}!M\+I\+PS@{M\+I\+PS}}
+\index{M\+I\+PS@{M\+I\+PS}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{M\+I\+P\+S()}{MIPS()}}
+{\footnotesize\ttfamily M\+I\+P\+S\+::\+M\+I\+PS (\begin{DoxyParamCaption}\item[{const bool}]{is\+\_\+big\+\_\+endian\+\_\+p }\end{DoxyParamCaption})}
+
+constructor \mbox{\Hypertarget{classMIPS_a71b83e8e05e3a5d454faa9fe02a75fe7}\label{classMIPS_a71b83e8e05e3a5d454faa9fe02a75fe7}} 
+\index{M\+I\+PS@{M\+I\+PS}!````~M\+I\+PS@{$\sim$\+M\+I\+PS}}
+\index{````~M\+I\+PS@{$\sim$\+M\+I\+PS}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{$\sim$\+M\+I\+P\+S()}{~MIPS()}}
+{\footnotesize\ttfamily M\+I\+P\+S\+::$\sim$\+M\+I\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMIPS_acf8659c9a36074bbe47455275a4829f7}\label{classMIPS_acf8659c9a36074bbe47455275a4829f7}} 
+\index{M\+I\+PS@{M\+I\+PS}!extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}}
+\index{extract\+Input\+Registers\+From\+Mem@{extract\+Input\+Registers\+From\+Mem}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{extract\+Input\+Registers\+From\+Mem()}{extractInputRegistersFromMem()}}
+{\footnotesize\ttfamily vector$<$string$>$ M\+I\+P\+S\+::extract\+Input\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the names of the input registers present in operand 
+
+Implements \hyperlink{classArch__dep_a02bb8952fdf52e2a11ca009509b7bf46}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_af03518e68285f24da7a0b2e16020d8d2}\label{classMIPS_af03518e68285f24da7a0b2e16020d8d2}} 
+\index{M\+I\+PS@{M\+I\+PS}!extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}}
+\index{extract\+Output\+Registers\+From\+Mem@{extract\+Output\+Registers\+From\+Mem}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{extract\+Output\+Registers\+From\+Mem()}{extractOutputRegistersFromMem()}}
+{\footnotesize\ttfamily vector$<$string$>$ M\+I\+P\+S\+::extract\+Output\+Registers\+From\+Mem (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the names of the output registers present in operand 
+
+Implements \hyperlink{classArch__dep_a4ef649eb06dedb67fe215fc7665f48ba}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a53017c6d42bb7bee24a36e45bf0300b9}\label{classMIPS_a53017c6d42bb7bee24a36e45bf0300b9}} 
+\index{M\+I\+PS@{M\+I\+PS}!extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}}
+\index{extract\+Register\+From\+Input\+Written\+Operand@{extract\+Register\+From\+Input\+Written\+Operand}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Input\+Written\+Operand()}{extractRegisterFromInputWrittenOperand()}}
+{\footnotesize\ttfamily string M\+I\+P\+S\+::extract\+Register\+From\+Input\+Written\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the register in an Input Written Register pattern
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a286da739265c852e98f2efd622615b96}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ae48954f0e93827c1cb8225cac3857464}\label{classMIPS_ae48954f0e93827c1cb8225cac3857464}} 
+\index{M\+I\+PS@{M\+I\+PS}!extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}}
+\index{extract\+Register\+From\+Shifter\+Operand@{extract\+Register\+From\+Shifter\+Operand}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{extract\+Register\+From\+Shifter\+Operand()}{extractRegisterFromShifterOperand()}}
+{\footnotesize\ttfamily string M\+I\+P\+S\+::extract\+Register\+From\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the register which is used by the shifter (result can be empty)
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a58002697a2ce55ff09eee606807cfab3}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a6eecdd7a94436748b1bc224cf78ac075}\label{classMIPS_a6eecdd7a94436748b1bc224cf78ac075}} 
+\index{M\+I\+PS@{M\+I\+PS}!extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}}
+\index{extract\+Registers\+From\+Register\+List@{extract\+Registers\+From\+Register\+List}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{extract\+Registers\+From\+Register\+List()}{extractRegistersFromRegisterList()}}
+{\footnotesize\ttfamily vector$<$string$>$ M\+I\+P\+S\+::extract\+Registers\+From\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the registers in the list
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_afac73b40e179fbab3fc0954aa060548f}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_adc2a687a1c64a5240d7d1ce7e294fdfc}\label{classMIPS_adc2a687a1c64a5240d7d1ce7e294fdfc}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Callee\+Name@{get\+Callee\+Name}}
+\index{get\+Callee\+Name@{get\+Callee\+Name}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Callee\+Name()}{getCalleeName()}}
+{\footnotesize\ttfamily string M\+I\+P\+S\+::get\+Callee\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name of the function called in a \hyperlink{classCall}{Call} Instruction 
+
+Implements \hyperlink{classArch__dep_ad09e79609dda858cdbd651064623ae2b}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_add97e24f0dff226385044368b82cb6f1}\label{classMIPS_add97e24f0dff226385044368b82cb6f1}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}}
+\index{get\+Instr1\+A\+R\+M\+Infos@{get\+Instr1\+A\+R\+M\+Infos}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Instr1\+A\+R\+M\+Infos()}{getInstr1ARMInfos()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::get\+Instr1\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_a30cdbcdc129741df876bda79fd76e9fe}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_aefb9849f91cfe9bcb6baa71bcf0b4aa8}\label{classMIPS_aefb9849f91cfe9bcb6baa71bcf0b4aa8}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}}
+\index{get\+Instr2\+A\+R\+M\+Infos@{get\+Instr2\+A\+R\+M\+Infos}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Instr2\+A\+R\+M\+Infos()}{getInstr2ARMInfos()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::get\+Instr2\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_ae9c1e0474e6414808dc6c8658ef0ddba}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ad192996344511aa0152adf644cf84238}\label{classMIPS_ad192996344511aa0152adf644cf84238}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Instruction\+Size@{get\+Instruction\+Size}}
+\index{get\+Instruction\+Size@{get\+Instruction\+Size}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Instruction\+Size()}{getInstructionSize()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Instruction\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the size in bytes of an instruction 
+
+Implements \hyperlink{classArch__dep_a845395b8503a23b2c192e8b4a05ccba9}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a64b2312c1817faef2ca139497ffa7ec9}\label{classMIPS_a64b2312c1817faef2ca139497ffa7ec9}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Jump\+Destination@{get\+Jump\+Destination}}
+\index{get\+Jump\+Destination@{get\+Jump\+Destination}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Jump\+Destination()}{getJumpDestination()}}
+{\footnotesize\ttfamily t\+\_\+address M\+I\+P\+S\+::get\+Jump\+Destination (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the jump target of instr 
+
+Implements \hyperlink{classArch__dep_a78780a4581807e2974057810e6aaa6c1}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a2aa733a21db8dc973feddaac233d66a2}\label{classMIPS_a2aa733a21db8dc973feddaac233d66a2}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Load\+Store\+A\+R\+M\+Infos@{get\+Load\+Store\+A\+R\+M\+Infos}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Load\+Store\+A\+R\+M\+Infos()}{getLoadStoreARMInfos()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::get\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{bool}]{strong\+Context,  }\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{\hyperlink{arch_8h_aa5cfff0cd9c5ad5ebda7aeecc4a50c2b}{Addressing\+Mode} $\ast$}]{vaddrmode,  }\item[{\hyperlink{arch_8h_a63b66e201ffc27bbc8f89c8808382044}{offset\+Type} $\ast$}]{Type\+Operand,  }\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a18db69d3e03bcfbcf5b7d3b36b4f409c}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a9b69a65d964ddba7bcc00d6219262740}\label{classMIPS_a9b69a65d964ddba7bcc00d6219262740}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Memory\+Load\+Latency@{get\+Memory\+Load\+Latency}}
+\index{get\+Memory\+Load\+Latency@{get\+Memory\+Load\+Latency}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Memory\+Load\+Latency()}{getMemoryLoadLatency()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Memory\+Load\+Latency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMIPS_a4a7d7555f5e7fb53cf39be02f6f27fc5}\label{classMIPS_a4a7d7555f5e7fb53cf39be02f6f27fc5}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Memory\+Store\+Latency@{get\+Memory\+Store\+Latency}}
+\index{get\+Memory\+Store\+Latency@{get\+Memory\+Store\+Latency}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Memory\+Store\+Latency()}{getMemoryStoreLatency()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Memory\+Store\+Latency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMIPS_ae09bc40a4598430935a4deb91e81703c}\label{classMIPS_ae09bc40a4598430935a4deb91e81703c}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}}
+\index{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos@{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Multiple\+Load\+Store\+A\+R\+M\+Infos()}{getMultipleLoadStoreARMInfos()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::get\+Multiple\+Load\+Store\+A\+R\+M\+Infos (\begin{DoxyParamCaption}\item[{string \&}]{instr,  }\item[{string \&}]{codeinstr,  }\item[{string \&}]{oregister,  }\item[{vector$<$ string $>$ \&}]{reg\+List,  }\item[{bool $\ast$}]{write\+Back }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_a6d74b532181cea3a40eb28b262a9f6f5}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a15519e774487809038024a6cc0febab3}\label{classMIPS_a15519e774487809038024a6cc0febab3}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}}
+\index{get\+N\+B\+Instr\+In\+Delay\+Slot@{get\+N\+B\+Instr\+In\+Delay\+Slot}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+N\+B\+Instr\+In\+Delay\+Slot()}{getNBInstrInDelaySlot()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+N\+B\+Instr\+In\+Delay\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of instructions in the delay slot 
+
+Implements \hyperlink{classArch__dep_a7f9d441d7b402294c6faf7b81ee5aa59}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ad2447a7ac47005463a13e4e78dd55594}\label{classMIPS_ad2447a7ac47005463a13e4e78dd55594}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}}
+\index{get\+Number\+Of\+Loads@{get\+Number\+Of\+Loads}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Loads()}{getNumberOfLoads()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Number\+Of\+Loads (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of Loads in an instruction 
+
+Implements \hyperlink{classArch__dep_a914556a124481b77698440f0cf6a5f24}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a8555188088fbf6dba02c37ca43e036c6}\label{classMIPS_a8555188088fbf6dba02c37ca43e036c6}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}}
+\index{get\+Number\+Of\+Stores@{get\+Number\+Of\+Stores}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Stores()}{getNumberOfStores()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Number\+Of\+Stores (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of Stores in an instruction 
+
+Implements \hyperlink{classArch__dep_afd76af2d5947f461e8a04be6b45c2596}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a32b86b25f6547ba12fc2a8bc348b4aad}\label{classMIPS_a32b86b25f6547ba12fc2a8bc348b4aad}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}}
+\index{get\+Register\+And\+Index\+Stack@{get\+Register\+And\+Index\+Stack}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Register\+And\+Index\+Stack()}{getRegisterAndIndexStack()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::get\+Register\+And\+Index\+Stack (\begin{DoxyParamCaption}\item[{const string \&}]{instruction\+Asm,  }\item[{string \&}]{reg,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_a449f2174ec019b4526e1904716d7bae1}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a475db73349cc940f47e5e0c310ac8912}\label{classMIPS_a475db73349cc940f47e5e0c310ac8912}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Size\+Register\+List@{get\+Size\+Register\+List}}
+\index{get\+Size\+Register\+List@{get\+Size\+Register\+List}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Size\+Register\+List()}{getSizeRegisterList()}}
+{\footnotesize\ttfamily int M\+I\+P\+S\+::get\+Size\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns -\/1
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_aff5899fb3e5793bf07f43512bfcc04e1}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a1e122412b5edefe1b92b2b4851255a69}\label{classMIPS_a1e122412b5edefe1b92b2b4851255a69}} 
+\index{M\+I\+PS@{M\+I\+PS}!get\+Words\+From\+Instr@{get\+Words\+From\+Instr}}
+\index{get\+Words\+From\+Instr@{get\+Words\+From\+Instr}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{get\+Words\+From\+Instr()}{getWordsFromInstr()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classObjdumpWord}{Objdump\+Word}$>$ M\+I\+P\+S\+::get\+Words\+From\+Instr (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr1,  }\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr2,  }\item[{vector$<$ \hyperlink{classObjdumpWord}{Objdump\+Word} $>$}]{words,  }\item[{bool \&}]{is\+\_\+instr2\+\_\+consumed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the .word used by a an instruction
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a00e2fabd6cc0f5b9c36593a67f793d7a}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_aa234e9a3a6942ce0a38894fa4caddbd9}\label{classMIPS_aa234e9a3a6942ce0a38894fa4caddbd9}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}}
+\index{is\+A\+R\+M\+Class\+Instr@{is\+A\+R\+M\+Class\+Instr}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+A\+R\+M\+Class\+Instr()}{isARMClassInstr()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+A\+R\+M\+Class\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_a71398abb52e277ead74615af892a2dd8}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ae645fa32988ae74ef68ee141ee88a434}\label{classMIPS_ae645fa32988ae74ef68ee141ee88a434}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Big\+Endian@{is\+Big\+Endian}}
+\index{is\+Big\+Endian@{is\+Big\+Endian}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Big\+Endian()}{isBigEndian()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Big\+Endian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns code section indicator of an objdump file
+
+Returns true if the architecture is a big endian architecture 
+
+Implements \hyperlink{classArch__dep_a2734ff9ad6b2d894a2573eaedcd46989}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a1ef435e9100290e46e91863960b64c71}\label{classMIPS_a1ef435e9100290e46e91863960b64c71}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}}
+\index{is\+Conditionned\+A\+R\+M\+Instr@{is\+Conditionned\+A\+R\+M\+Instr}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Conditionned\+A\+R\+M\+Instr()}{isConditionnedARMInstr()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Conditionned\+A\+R\+M\+Instr (\begin{DoxyParamCaption}\item[{const string \&}]{codeop,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_a41eb152029e2792b59337bc4b370ec9f}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a2de73769c68612b81e2e15b4eaf07969}\label{classMIPS_a2de73769c68612b81e2e15b4eaf07969}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Function@{is\+Function}}
+\index{is\+Function@{is\+Function}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Function()}{isFunction()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the line corresponds to a function declaration in the objdump file 
+
+Implements \hyperlink{classArch__dep_ae876048f1f6ac62a6f7cb84067189866}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a9bdb629497575a212f34ee951f1adfe0}\label{classMIPS_a9bdb629497575a212f34ee951f1adfe0}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Input\+Written\+Register@{is\+Input\+Written\+Register}}
+\index{is\+Input\+Written\+Register@{is\+Input\+Written\+Register}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Input\+Written\+Register()}{isInputWrittenRegister()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Input\+Written\+Register (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the operand is an Input register which is written
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a3d926dc01afb4aebf1136dbe0962a30d}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a86a3224889b2d3e2486072b7bc5c26f3}\label{classMIPS_a86a3224889b2d3e2486072b7bc5c26f3}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Instruction@{is\+Instruction}}
+\index{is\+Instruction@{is\+Instruction}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Instruction()}{isInstruction()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the line corresponds to an instruction in the objdump file 
+
+Implements \hyperlink{classArch__dep_ac537200db0a4cdd0eb3321b65111ccd5}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_aeb0b38a8be26d938889beb59ee1a98fb}\label{classMIPS_aeb0b38a8be26d938889beb59ee1a98fb}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Load\+Multiple@{is\+Load\+Multiple}}
+\index{is\+Load\+Multiple@{is\+Load\+Multiple}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Load\+Multiple()}{isLoadMultiple()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Load\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instructions is a \hyperlink{classLoad}{Load} of multiple data 
+
+Implements \hyperlink{classArch__dep_a1d8126e04db14a502e3b26be2f032552}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a73e4206a1a7c2ee6461520c52fa5dcde}\label{classMIPS_a73e4206a1a7c2ee6461520c52fa5dcde}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Mem\+Pattern@{is\+Mem\+Pattern}}
+\index{is\+Mem\+Pattern@{is\+Mem\+Pattern}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Mem\+Pattern()}{isMemPattern()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Mem\+Pattern (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if operand is a memory access pattern 
+
+Implements \hyperlink{classArch__dep_aa965a7ac1af14109f60aa2ceab99b6d6}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_affd67799c774ea1ca747f15d7a483a8c}\label{classMIPS_affd67799c774ea1ca747f15d7a483a8c}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}}
+\index{is\+Pc\+In\+Input\+Resources@{is\+Pc\+In\+Input\+Resources}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Input\+Resources()}{isPcInInputResources()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Pc\+In\+Input\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction has PC (program counter) in input registers
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_ac6456dfba496bcf104d460c8610a484f}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a68497c5e46c6106133d4bf5a01db6e7d}\label{classMIPS_a68497c5e46c6106133d4bf5a01db6e7d}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}}
+\index{is\+Pc\+In\+Output\+Resources@{is\+Pc\+In\+Output\+Resources}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Pc\+In\+Output\+Resources()}{isPcInOutputResources()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Pc\+In\+Output\+Resources (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction has PC (program counter) in output registers
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a89b89f3e5248442dda296986f5673bb6}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ae38afe5659e9efe2ff909fa5c4acc047}\label{classMIPS_ae38afe5659e9efe2ff909fa5c4acc047}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}}
+\index{is\+Pc\+Load\+Instruction@{is\+Pc\+Load\+Instruction}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Pc\+Load\+Instruction()}{isPcLoadInstruction()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Pc\+Load\+Instruction (\begin{DoxyParamCaption}\item[{string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classArch__dep_aa96008928838f1ff0f96ba83b07b90e2}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_aa1efaf59e1d461388886db68f5e54e06}\label{classMIPS_aa1efaf59e1d461388886db68f5e54e06}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Register\+List@{is\+Register\+List}}
+\index{is\+Register\+List@{is\+Register\+List}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Register\+List()}{isRegisterList()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Register\+List (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the operand is a register list
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a6c37096e67b2c02e9c0bd38313245979}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_af2307adac1cb8289cb7510829051f45d}\label{classMIPS_af2307adac1cb8289cb7510829051f45d}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Return@{is\+Return}}
+\index{is\+Return@{is\+Return}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Return()}{isReturn()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Return (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if instr is a return instruction 
+
+Implements \hyperlink{classArch__dep_a0f8a68b8dc2188a0578f3b4d92a289ca}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a9390579a78d85c1024dcde783bff27b7}\label{classMIPS_a9390579a78d85c1024dcde783bff27b7}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Shifter\+Operand@{is\+Shifter\+Operand}}
+\index{is\+Shifter\+Operand@{is\+Shifter\+Operand}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Shifter\+Operand()}{isShifterOperand()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Shifter\+Operand (\begin{DoxyParamCaption}\item[{const string \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the operand is a shifter
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_ad56e95263903d54aabbb91efdcf7eba4}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a781bec4f737ea512ada3f3fa166463c9}\label{classMIPS_a781bec4f737ea512ada3f3fa166463c9}} 
+\index{M\+I\+PS@{M\+I\+PS}!is\+Store\+Multiple@{is\+Store\+Multiple}}
+\index{is\+Store\+Multiple@{is\+Store\+Multiple}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{is\+Store\+Multiple()}{isStoreMultiple()}}
+{\footnotesize\ttfamily bool M\+I\+P\+S\+::is\+Store\+Multiple (\begin{DoxyParamCaption}\item[{const string \&}]{instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instructions is a \hyperlink{classStore}{Store} of multiple data 
+
+Implements \hyperlink{classArch__dep_a54438a476a16d55659124aea0c38397a}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a03874bd0a2a980e174ea447482a830c3}\label{classMIPS_a03874bd0a2a980e174ea447482a830c3}} 
+\index{M\+I\+PS@{M\+I\+PS}!parse\+Function@{parse\+Function}}
+\index{parse\+Function@{parse\+Function}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{parse\+Function()}{parseFunction()}}
+{\footnotesize\ttfamily \hyperlink{classObjdumpFunction}{Objdump\+Function} M\+I\+P\+S\+::parse\+Function (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parser of a function declaration line 
+
+Implements \hyperlink{classArch__dep_a5d004c41d6eaf7975b69f767a52d2e30}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a8a3bbe0cf81cf032f3e8e1d1786c888f}\label{classMIPS_a8a3bbe0cf81cf032f3e8e1d1786c888f}} 
+\index{M\+I\+PS@{M\+I\+PS}!parse\+Instruction@{parse\+Instruction}}
+\index{parse\+Instruction@{parse\+Instruction}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{parse\+Instruction()}{parseInstruction()}}
+{\footnotesize\ttfamily \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} M\+I\+P\+S\+::parse\+Instruction (\begin{DoxyParamCaption}\item[{const string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parser of an instruction line 
+
+Implements \hyperlink{classArch__dep_a6408104eb77881932f05dab9e913ca87}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ae63e651cee1687716908f3c9f66d9f3f}\label{classMIPS_ae63e651cee1687716908f3c9f66d9f3f}} 
+\index{M\+I\+PS@{M\+I\+PS}!parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}}
+\index{parse\+Symbol\+Table\+Line@{parse\+Symbol\+Table\+Line}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{parse\+Symbol\+Table\+Line()}{parseSymbolTableLine()}}
+{\footnotesize\ttfamily void M\+I\+P\+S\+::parse\+Symbol\+Table\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{line,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parse a line of the symbol table and update the \hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} object in parameter 
+
+Implements \hyperlink{classArch__dep_a5d50b1a54bf2afc034b813d1008c9f8e}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_a28a3d7f0cc8a69881d46dfa1363351cf}\label{classMIPS_a28a3d7f0cc8a69881d46dfa1363351cf}} 
+\index{M\+I\+PS@{M\+I\+PS}!read\+Word\+Instruction@{read\+Word\+Instruction}}
+\index{read\+Word\+Instruction@{read\+Word\+Instruction}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{read\+Word\+Instruction()}{readWordInstruction()}}
+{\footnotesize\ttfamily \hyperlink{classObjdumpWord}{Objdump\+Word} M\+I\+P\+S\+::read\+Word\+Instruction (\begin{DoxyParamCaption}\item[{const \hyperlink{classObjdumpInstruction}{Objdump\+Instruction} \&}]{instr,  }\item[{\hyperlink{classObjdumpSymbolTable}{Objdump\+Symbol\+Table} \&}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a \hyperlink{classWord}{Word} object containing all the useful information from instr
+
+N\+E\+V\+ER used in \hyperlink{classMIPS}{M\+I\+PS} 
+
+Implements \hyperlink{classArch__dep_a9e6075dd5bc43a1522aa65f2d11dad06}{Arch\+\_\+dep}.
+
+\mbox{\Hypertarget{classMIPS_ab6fbe5813d16f00c5a66c28211b4eec5}\label{classMIPS_ab6fbe5813d16f00c5a66c28211b4eec5}} 
+\index{M\+I\+PS@{M\+I\+PS}!set\+Memory\+Load\+Latency@{set\+Memory\+Load\+Latency}}
+\index{set\+Memory\+Load\+Latency@{set\+Memory\+Load\+Latency}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{set\+Memory\+Load\+Latency()}{setMemoryLoadLatency()}}
+{\footnotesize\ttfamily void M\+I\+P\+S\+::set\+Memory\+Load\+Latency (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMIPS_a2c58b6b1405f9fa38305e2b064ed83b8}\label{classMIPS_a2c58b6b1405f9fa38305e2b064ed83b8}} 
+\index{M\+I\+PS@{M\+I\+PS}!set\+Memory\+Store\+Latency@{set\+Memory\+Store\+Latency}}
+\index{set\+Memory\+Store\+Latency@{set\+Memory\+Store\+Latency}!M\+I\+PS@{M\+I\+PS}}
+\subsubsection{\texorpdfstring{set\+Memory\+Store\+Latency()}{setMemoryStoreLatency()}}
+{\footnotesize\ttfamily void M\+I\+P\+S\+::set\+Memory\+Store\+Latency (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{MIPS_8h}{M\+I\+P\+S.\+h}\end{DoxyCompactItemize}

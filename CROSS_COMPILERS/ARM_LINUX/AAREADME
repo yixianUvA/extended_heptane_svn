@@ -1,0 +1,3 @@
+
+ARM cross complier version : gcc-arm-none-eabi-4_9-2015q2
+https://launchpad.net/gcc-arm-embedded  (testé avec gcc-arm-none-eabi-4_9-2015q2.tar.bz)

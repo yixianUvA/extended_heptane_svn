@@ -1,0 +1,71 @@
+\hypertarget{classcfglib_1_1CloneHandle}{}\section{cfglib\+:\+:Clone\+Handle Class Reference}
+\label{classcfglib_1_1CloneHandle}\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+
+
+{\ttfamily \#include $<$Clone\+Handle.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1CloneHandle_a34428ca2c5f3329aef2be11c3d373fc7}{Clone\+Handle} ()
+\item 
+\hyperlink{classcfglib_1_1CloneHandle_a6902117515dc30a73f7b51565ece724d}{$\sim$\+Clone\+Handle} ()
+\item 
+void \hyperlink{classcfglib_1_1CloneHandle_aa36eb7a49ba2b5c4a02e3ac1d99e4197}{Register\+Clone} (void $\ast$object, void $\ast$clone)
+\item 
+void \hyperlink{classcfglib_1_1CloneHandle_a16170b69d74009e625dcf968b65cfdc7}{Resolve\+Clone} (void $\ast$object, void $\ast$$\ast$ptr) const
+\item 
+bool \hyperlink{classcfglib_1_1CloneHandle_a2310c1f009fb8a3d7588cc68db017510}{Has\+Registered\+Clone} (void $\ast$object) const
+\item 
+void $\ast$ \hyperlink{classcfglib_1_1CloneHandle_a3db1f8cd4dfb5d594a94e89ff3899ee6}{Get\+Clone} (void $\ast$object) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class manipulate clone of objects during cloning. Used to update clone of pointers to the clone of their original target. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1CloneHandle_a34428ca2c5f3329aef2be11c3d373fc7}\label{classcfglib_1_1CloneHandle_a34428ca2c5f3329aef2be11c3d373fc7}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!Clone\+Handle@{Clone\+Handle}}
+\index{Clone\+Handle@{Clone\+Handle}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{Clone\+Handle()}{CloneHandle()}}
+{\footnotesize\ttfamily cfglib\+::\+Clone\+Handle\+::\+Clone\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1CloneHandle_a6902117515dc30a73f7b51565ece724d}\label{classcfglib_1_1CloneHandle_a6902117515dc30a73f7b51565ece724d}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!````~Clone\+Handle@{$\sim$\+Clone\+Handle}}
+\index{````~Clone\+Handle@{$\sim$\+Clone\+Handle}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{$\sim$\+Clone\+Handle()}{~CloneHandle()}}
+{\footnotesize\ttfamily cfglib\+::\+Clone\+Handle\+::$\sim$\+Clone\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1CloneHandle_a3db1f8cd4dfb5d594a94e89ff3899ee6}\label{classcfglib_1_1CloneHandle_a3db1f8cd4dfb5d594a94e89ff3899ee6}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!Get\+Clone@{Get\+Clone}}
+\index{Get\+Clone@{Get\+Clone}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{Get\+Clone()}{GetClone()}}
+{\footnotesize\ttfamily void$\ast$ cfglib\+::\+Clone\+Handle\+::\+Get\+Clone (\begin{DoxyParamCaption}\item[{void $\ast$}]{object }\end{DoxyParamCaption}) const}
+
+Find the clone of a cloneable object. Null if it does not exist yet. \mbox{\Hypertarget{classcfglib_1_1CloneHandle_a2310c1f009fb8a3d7588cc68db017510}\label{classcfglib_1_1CloneHandle_a2310c1f009fb8a3d7588cc68db017510}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!Has\+Registered\+Clone@{Has\+Registered\+Clone}}
+\index{Has\+Registered\+Clone@{Has\+Registered\+Clone}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{Has\+Registered\+Clone()}{HasRegisteredClone()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Clone\+Handle\+::\+Has\+Registered\+Clone (\begin{DoxyParamCaption}\item[{void $\ast$}]{object }\end{DoxyParamCaption}) const}
+
+Search for the clone of a cloneable object. \mbox{\Hypertarget{classcfglib_1_1CloneHandle_aa36eb7a49ba2b5c4a02e3ac1d99e4197}\label{classcfglib_1_1CloneHandle_aa36eb7a49ba2b5c4a02e3ac1d99e4197}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!Register\+Clone@{Register\+Clone}}
+\index{Register\+Clone@{Register\+Clone}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{Register\+Clone()}{RegisterClone()}}
+{\footnotesize\ttfamily void cfglib\+::\+Clone\+Handle\+::\+Register\+Clone (\begin{DoxyParamCaption}\item[{void $\ast$}]{object,  }\item[{void $\ast$}]{clone }\end{DoxyParamCaption})}
+
+Declare a new cloneable object and its corresponding clone. \mbox{\Hypertarget{classcfglib_1_1CloneHandle_a16170b69d74009e625dcf968b65cfdc7}\label{classcfglib_1_1CloneHandle_a16170b69d74009e625dcf968b65cfdc7}} 
+\index{cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}!Resolve\+Clone@{Resolve\+Clone}}
+\index{Resolve\+Clone@{Resolve\+Clone}!cfglib\+::\+Clone\+Handle@{cfglib\+::\+Clone\+Handle}}
+\subsubsection{\texorpdfstring{Resolve\+Clone()}{ResolveClone()}}
+{\footnotesize\ttfamily void cfglib\+::\+Clone\+Handle\+::\+Resolve\+Clone (\begin{DoxyParamCaption}\item[{void $\ast$}]{object,  }\item[{void $\ast$$\ast$}]{ptr }\end{DoxyParamCaption}) const}
+
+Declare a new handle to a cloneable object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{CloneHandle_8h}{Clone\+Handle.\+h}\end{DoxyCompactItemize}

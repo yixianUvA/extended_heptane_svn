@@ -1,0 +1,146 @@
+The argc is 4
+The second program is simple
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000161
+[INFO]	ICacheAnalysis: PS done: 5.6e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000125
+[INFO]	********HH ICACHE: 0.000435
+[INFO]	ICacheAnalysis: MUST done: 0.000657
+[INFO]	ICacheAnalysis: PS done: 8.3e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000597
+[INFO]	********HH ICACHE: 0.001422
+[INFO]	********HH DATAADDRESS: 0.001447
+[INFO]	DcacheAnalysis: MUST done: 0.000246
+[INFO]	DcacheAnalysis: PS done: 8.4e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000175
+[INFO]	********HH DCACHE: 0.000842
+[INFO]	DcacheAnalysis: MUST done: 0.000772
+[INFO]	DcacheAnalysis: PS done: 0.000168
+[INFO]	DcacheAnalysis: MAY done: 0.000809
+[INFO]	********HH DCACHE: 0.002128
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.007397
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	********HH IPET: 0.003083
+
+L1	type ICACHE	references 553	hits 540	misses 13	
+L1	type DCACHE	references 238	hits 234	misses 4	
+L2	type ICACHE	references 13	hits 4	misses 9	
+L2	type DCACHE	references 4	hits 1	misses 3	
+[INFO]	********HH CACHESTATISTICS: 0.000525
+[INFO]	 =======Yixian> Total time for the analyses = 0.041841
+WCET: 14461
+[INFO]	********HH SIMPLEPRINT: 2.3e-05
+[INFO]	********HH DOTPRINT: 0.020427
+[INFO]	********HH CODELINE: 0.051086
+[INFO]	********HH HTMLPRINT: 0.000495
+The file name is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The file name is -t
+The file name is ./configWCET.xml
+The file name is simple
+xml_file is ./resICacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 30
+lloop is 134, 122, 138, 
+node: 134
+node: 122
+node: 138
+maxiter: 29
+36
+Address: 33008 ,CacheSet: 7 ,CHMCValue: CHMCL2Code#1
+Address: 33024 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#1
+Address: 33040 ,CacheSet: 8 ,CHMCValue: CHMCL2Code#1
+Address: 33064 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#1
+Address: 33072 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33092 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33088 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#1
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resICacheL2.xml
+main
+The lanalysis size is 2
+CacheSet: 0 Address: 32768 CACValue: A
+CacheSet: 0 Address: 32784 CACValue: A
+CacheSet: 1 Address: 32800 CACValue: A
+CacheSet: 1 Address: 32816 CACValue: A
+CacheSet: 2 Address: 32832 CACValue: A
+CacheSet: 2 Address: 32848 CACValue: A
+xml_file is ./resDCacheL2.xml
+lanalysis[0] is __aeabi_idiv
+
+The lanalysis size is 30
+lloop is 134, 122, 138, 
+node: 134
+node: 122
+node: 138
+maxiter: 29
+65
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resDCacheL2.xml
+main
+The lanalysis size is 2
+[INFO]	 =======**> Infertime Time = 0.002647
+---------------------------------------------------
+CB and HB size information
+The HB size is 36
+The CB size is 6
+******The conflict cache set of Instruction cache Interference*****
+
+******The conflict cache set of Data cache Interference*****
+Conflict Set: 127 Evited Items: 3
+
+*******************Un-united Cache********************
+The sum of conflict cacheset is 0
+The instruction interference is 0
+The sum of conflict cacheset is 1
+The Data Cache Interference is 3
+Interfered by program simple , The times of the evicted item is 3
+
+
+
+*************This is the version of United cache Interference *************
+Interfered by program simple , The times of the evicted item is 3
+******The conflict cache set of Data cache Interference*****
+The conflictUcache size is 1
+Conflict Set: 127 Evited Items: 3
+
+
+xml_file is ./resICacheL2.xml
+__aeabi_idiv
+The lanalysis size is 30
+xml_file is ./resDCacheL2.xml
+__aeabi_idiv
+The lanalysis size is 30

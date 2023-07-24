@@ -1,0 +1,114 @@
+The argc is 4
+The second program is simple
+The First Parameter is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The configFile is ./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000574
+[INFO]	ICacheAnalysis: PS done: 4e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000423
+[INFO]	********HH ICACHE: 0.001294
+[INFO]	ICacheAnalysis: MUST done: 0.002564
+[INFO]	ICacheAnalysis: PS done: 5e-05
+[INFO]	ICacheAnalysis: MAY done: 0.001714
+[INFO]	********HH ICACHE: 0.004538
+[INFO]	********HH DATAADDRESS: 0.005375
+[INFO]	DcacheAnalysis: MUST done: 0.000775
+[INFO]	DcacheAnalysis: PS done: 3.5e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000579
+[INFO]	********HH DCACHE: 0.002497
+[INFO]	DcacheAnalysis: MUST done: 0.003626
+[INFO]	DcacheAnalysis: PS done: 5e-05
+[INFO]	DcacheAnalysis: MAY done: 0.001811
+[INFO]	********HH DCACHE: 0.006567
+This is PipelineAnalysis CheckInputAttributes
+[INFO]	********HH PIPELINE: 0.024523
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	********HH IPET: 0.004477
+
+L1	type ICACHE	references 101	hits 72	misses 29	
+L1	type DCACHE	references 33	hits 28	misses 5	
+L2	type ICACHE	references 29	hits 7	misses 22	
+L2	type DCACHE	references 5	hits 3	misses 2	
+[INFO]	********HH CACHESTATISTICS: 0.001652
+[INFO]	 =======Yixian> Total time for the analyses = 0.092213
+WCET: 4774
+[INFO]	********HH SIMPLEPRINT: 1.4e-05
+[INFO]	********HH DOTPRINT: 0.022384
+[INFO]	********HH CODELINE: 0.040548
+[INFO]	********HH HTMLPRINT: 0.000565
+The file name is /home/yixian/heptane_svn/bin/HeptaneAnalysis
+The file name is -t
+The file name is ./configWCET.xml
+The file name is simple
+xml_file is ./resICacheL2.xml
+lanalysis[0] is swap
+
+The lanalysis size is 5
+13
+Address: 32784 ,CacheSet: 0 ,CHMCValue: CHMCL2Code#4
+Address: 32816 ,CacheSet: 1 ,CHMCValue: CHMCL2Code#4
+Address: 32848 ,CacheSet: 2 ,CHMCValue: CHMCL2Code#2
+Address: 32880 ,CacheSet: 3 ,CHMCValue: CHMCL2Code#2
+Address: 32892 ,CacheSet: 3 ,CHMCValue: CHMCL2Code#2
+Address: 32912 ,CacheSet: 4 ,CHMCValue: CHMCL2Code#2
+Address: 32976 ,CacheSet: 6 ,CHMCValue: CHMCL2Code#3
+Address: 33072 ,CacheSet: 9 ,CHMCValue: CHMCL2Code#0
+Address: 33104 ,CacheSet: 10 ,CHMCValue: CHMCL2Code#0
+Address: 33136 ,CacheSet: 11 ,CHMCValue: CHMCL2Code#0
+Address: 33168 ,CacheSet: 12 ,CHMCValue: CHMCL2Code#0
+Address: 33200 ,CacheSet: 13 ,CHMCValue: CHMCL2Code#0
+Address: 33264 ,CacheSet: 15 ,CHMCValue: CHMCL2Code#0
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resICacheL2.xml
+main
+The lanalysis size is 2
+CacheSet: 0 Address: 32768 CACValue: A
+CacheSet: 0 Address: 32784 CACValue: A
+CacheSet: 1 Address: 32800 CACValue: A
+CacheSet: 1 Address: 32816 CACValue: A
+CacheSet: 2 Address: 32832 CACValue: A
+CacheSet: 2 Address: 32848 CACValue: A
+xml_file is ./resDCacheL2.xml
+lanalysis[0] is swap
+
+The lanalysis size is 5
+15
+xml_file is nn/home/yixian/heptane_svn/benchmarks/simple/resDCacheL2.xml
+main
+The lanalysis size is 2
+[INFO]	 =======**> Infertime Time = 0.005705
+---------------------------------------------------
+CB and HB size information
+The HB size is 13
+The CB size is 6
+******The conflict cache set of Instruction cache Interference*****
+
+******The conflict cache set of Data cache Interference*****
+Conflict Set: 127 Evited Items: 2
+
+*******************Un-united Cache********************
+The sum of conflict cacheset is 0
+The instruction interference is 0
+The sum of conflict cacheset is 1
+The Data Cache Interference is 2
+Interfered by program simple , The times of the evicted item is 2
+
+
+
+*************This is the version of United cache Interference *************
+Interfered by program simple , The times of the evicted item is 3
+******The conflict cache set of Data cache Interference*****
+The conflictUcache size is 2
+Conflict Set: 0 Evited Items: 1
+Conflict Set: 127 Evited Items: 2
+
+
+xml_file is ./resICacheL2.xml
+swap
+The lanalysis size is 5
+xml_file is ./resDCacheL2.xml
+swap
+The lanalysis size is 5

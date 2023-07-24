@@ -1,0 +1,154 @@
+\hypertarget{XmlExtra_8h}{}\section{include/\+Xml\+Extra.h File Reference}
+\label{XmlExtra_8h}\index{include/\+Xml\+Extra.\+h@{include/\+Xml\+Extra.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$libxml/tree.\+h$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classXmlTag}{Xml\+Tag}
+\item 
+class \hyperlink{classXmlDocument}{Xml\+Document}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ string $>$ \hyperlink{XmlExtra_8h_a1a6655ff32711e031ee463d6e8047872}{List\+String}
+\item 
+typedef vector$<$ \hyperlink{classXmlTag}{Xml\+Tag} $>$ \hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag}
+\item 
+typedef struct \+\_\+xml\+Node \hyperlink{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}{xml\+Node}
+\item 
+typedef \hyperlink{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}{xml\+Node} $\ast$ \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr}
+\item 
+typedef struct \+\_\+xml\+Doc \hyperlink{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}{xml\+Doc}
+\item 
+typedef \hyperlink{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}{xml\+Doc} $\ast$ \hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr} \hyperlink{XmlExtra_8h_a243a59cb5199d9a1f7592429d23203ad}{Parse\+Xml\+File} (const string \&xml\+\_\+file)
+\item 
+int \hyperlink{XmlExtra_8h_ae337a2e9543a7f479976672495fe3fbe}{Good\+Node} (const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&node, const string \&value)
+\item 
+string \hyperlink{XmlExtra_8h_a0527e927733310f94d803ea6686911ea}{Get\+Xml\+Param} (const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&node, const string \&param\+\_\+name)
+\item 
+\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \hyperlink{XmlExtra_8h_a7a568cdee1f6998a17f54780f8e73da4}{get\+Next\+Xml\+Elt} (const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&node)
+\item 
+\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \hyperlink{XmlExtra_8h_afebca9a046179fe9c9e06eaff7d1b8ac}{get\+First\+Child\+Xml\+Elt} (const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&node)
+\item 
+\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \hyperlink{XmlExtra_8h_a0a3b01bb9b7a1e15ac604d127629d161}{get\+Child\+Node\+By\+Name} (\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} parent, const char $\ast$name)
+\item 
+void \hyperlink{XmlExtra_8h_a8250cf25086413ba9491c86a59ff07a2}{init\+X\+ML} ()
+\item 
+string \hyperlink{XmlExtra_8h_a26b42aec36e6460ee50c2d0a64e8f037}{indent\+X\+ML} (int i)
+\item 
+string \hyperlink{XmlExtra_8h_ab8fccb7bd2c7a5baf85b4267600e3d05}{int2string} (int i)
+\item 
+string \hyperlink{XmlExtra_8h_a1c3ca9e7ab2b83e231f7515fbd737e5b}{hexa2string} (int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{XmlExtra_8h_a1a6655ff32711e031ee463d6e8047872}\label{XmlExtra_8h_a1a6655ff32711e031ee463d6e8047872}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!List\+String@{List\+String}}
+\index{List\+String@{List\+String}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{List\+String}{ListString}}
+{\footnotesize\ttfamily typedef vector$<$string$>$ \hyperlink{XmlExtra_8h_a1a6655ff32711e031ee463d6e8047872}{List\+String}}
+
+\mbox{\Hypertarget{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}\label{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!List\+Xml\+Tag@{List\+Xml\+Tag}}
+\index{List\+Xml\+Tag@{List\+Xml\+Tag}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{List\+Xml\+Tag}{ListXmlTag}}
+{\footnotesize\ttfamily typedef vector$<$\hyperlink{classXmlTag}{Xml\+Tag}$>$ \hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag}}
+
+\mbox{\Hypertarget{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}\label{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!xml\+Doc@{xml\+Doc}}
+\index{xml\+Doc@{xml\+Doc}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{xml\+Doc}{xmlDoc}}
+{\footnotesize\ttfamily typedef struct \+\_\+xml\+Doc \hyperlink{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}{xml\+Doc}}
+
+\mbox{\Hypertarget{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}\label{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!xml\+Doc\+Ptr@{xml\+Doc\+Ptr}}
+\index{xml\+Doc\+Ptr@{xml\+Doc\+Ptr}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{xml\+Doc\+Ptr}{xmlDocPtr}}
+{\footnotesize\ttfamily typedef \hyperlink{XmlExtra_8h_ae94acff8b6413934705e29389bcddc17}{xml\+Doc}$\ast$ \hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr}}
+
+\mbox{\Hypertarget{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}\label{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!xml\+Node@{xml\+Node}}
+\index{xml\+Node@{xml\+Node}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{xml\+Node}{xmlNode}}
+{\footnotesize\ttfamily typedef struct \+\_\+xml\+Node \hyperlink{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}{xml\+Node}}
+
+\mbox{\Hypertarget{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}\label{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!xml\+Node\+Ptr@{xml\+Node\+Ptr}}
+\index{xml\+Node\+Ptr@{xml\+Node\+Ptr}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{xml\+Node\+Ptr}{xmlNodePtr}}
+{\footnotesize\ttfamily typedef \hyperlink{XmlExtra_8h_ac8c054adbdabc014ab4584dfb1ce841e}{xml\+Node}$\ast$ \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{XmlExtra_8h_a0a3b01bb9b7a1e15ac604d127629d161}\label{XmlExtra_8h_a0a3b01bb9b7a1e15ac604d127629d161}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!get\+Child\+Node\+By\+Name@{get\+Child\+Node\+By\+Name}}
+\index{get\+Child\+Node\+By\+Name@{get\+Child\+Node\+By\+Name}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{get\+Child\+Node\+By\+Name()}{getChildNodeByName()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} get\+Child\+Node\+By\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr}}]{parent,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{XmlExtra_8h_afebca9a046179fe9c9e06eaff7d1b8ac}\label{XmlExtra_8h_afebca9a046179fe9c9e06eaff7d1b8ac}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!get\+First\+Child\+Xml\+Elt@{get\+First\+Child\+Xml\+Elt}}
+\index{get\+First\+Child\+Xml\+Elt@{get\+First\+Child\+Xml\+Elt}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{get\+First\+Child\+Xml\+Elt()}{getFirstChildXmlElt()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} get\+First\+Child\+Xml\+Elt (\begin{DoxyParamCaption}\item[{const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{XmlExtra_8h_a7a568cdee1f6998a17f54780f8e73da4}\label{XmlExtra_8h_a7a568cdee1f6998a17f54780f8e73da4}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!get\+Next\+Xml\+Elt@{get\+Next\+Xml\+Elt}}
+\index{get\+Next\+Xml\+Elt@{get\+Next\+Xml\+Elt}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{get\+Next\+Xml\+Elt()}{getNextXmlElt()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} get\+Next\+Xml\+Elt (\begin{DoxyParamCaption}\item[{const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{XmlExtra_8h_a0527e927733310f94d803ea6686911ea}\label{XmlExtra_8h_a0527e927733310f94d803ea6686911ea}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!Get\+Xml\+Param@{Get\+Xml\+Param}}
+\index{Get\+Xml\+Param@{Get\+Xml\+Param}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{Get\+Xml\+Param()}{GetXmlParam()}}
+{\footnotesize\ttfamily string Get\+Xml\+Param (\begin{DoxyParamCaption}\item[{const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&}]{node,  }\item[{const string \&}]{param\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{XmlExtra_8h_ae337a2e9543a7f479976672495fe3fbe}\label{XmlExtra_8h_ae337a2e9543a7f479976672495fe3fbe}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!Good\+Node@{Good\+Node}}
+\index{Good\+Node@{Good\+Node}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{Good\+Node()}{GoodNode()}}
+{\footnotesize\ttfamily int Good\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} \&}]{node,  }\item[{const string \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{XmlExtra_8h_a1c3ca9e7ab2b83e231f7515fbd737e5b}\label{XmlExtra_8h_a1c3ca9e7ab2b83e231f7515fbd737e5b}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!hexa2string@{hexa2string}}
+\index{hexa2string@{hexa2string}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{hexa2string()}{hexa2string()}}
+{\footnotesize\ttfamily string hexa2string (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+transform an int into a string, formatted as an hexadecimal \mbox{\Hypertarget{XmlExtra_8h_a26b42aec36e6460ee50c2d0a64e8f037}\label{XmlExtra_8h_a26b42aec36e6460ee50c2d0a64e8f037}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!indent\+X\+ML@{indent\+X\+ML}}
+\index{indent\+X\+ML@{indent\+X\+ML}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{indent\+X\+M\+L()}{indentXML()}}
+{\footnotesize\ttfamily string indent\+X\+ML (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns a string with \char`\"{}i\char`\"{} spaces \mbox{\Hypertarget{XmlExtra_8h_a8250cf25086413ba9491c86a59ff07a2}\label{XmlExtra_8h_a8250cf25086413ba9491c86a59ff07a2}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!init\+X\+ML@{init\+X\+ML}}
+\index{init\+X\+ML@{init\+X\+ML}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{init\+X\+M\+L()}{initXML()}}
+{\footnotesize\ttfamily void init\+X\+ML (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialization of libxml2. You must call this before any \hyperlink{classXmlDocument}{Xml\+Document} request \mbox{\Hypertarget{XmlExtra_8h_ab8fccb7bd2c7a5baf85b4267600e3d05}\label{XmlExtra_8h_ab8fccb7bd2c7a5baf85b4267600e3d05}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!int2string@{int2string}}
+\index{int2string@{int2string}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{int2string()}{int2string()}}
+{\footnotesize\ttfamily string int2string (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Tranformst an int into a string \mbox{\Hypertarget{XmlExtra_8h_a243a59cb5199d9a1f7592429d23203ad}\label{XmlExtra_8h_a243a59cb5199d9a1f7592429d23203ad}} 
+\index{Xml\+Extra.\+h@{Xml\+Extra.\+h}!Parse\+Xml\+File@{Parse\+Xml\+File}}
+\index{Parse\+Xml\+File@{Parse\+Xml\+File}!Xml\+Extra.\+h@{Xml\+Extra.\+h}}
+\subsubsection{\texorpdfstring{Parse\+Xml\+File()}{ParseXmlFile()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr} Parse\+Xml\+File (\begin{DoxyParamCaption}\item[{const string \&}]{xml\+\_\+file }\end{DoxyParamCaption})}
+

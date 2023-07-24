@@ -1,0 +1,261 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/bs/bs.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: bs.c,v 1.1.1.1 2007-12-11 15:22:55 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: bs.c                                                           */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Public Domain Code                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     Binary search for the array of 15 integer elements.               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/12: Prototypes added, printf removed, and changed exit to return in main.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include<stdio.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>struct DATA {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             key;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             value;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             cnt1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>struct DATA     data[15] = {{1, 100},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{5, 200},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{6, 300},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{7, 700},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{8, 900},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{9, 250},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{10, 400},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{11, 600},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{12, 800},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{13, 1500},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{14, 1200},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{15, 110},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{16, 140},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{17, 133},</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{18, 10}};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             binary_search(int x);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	binary_search(8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return (0);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>binary_search(int x)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             fvalue, mid, up, low;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	low = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	up = 14;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	fvalue = -1 /* all data are positive */ ;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 5 </td>
+<td><tt><pre>	while (low <= up) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(4);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>		mid = (low + up) >> 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>		if (data[mid].key == x) {	/* found  */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>			up = low - 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>			fvalue = data[mid].value;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*	printf("FOUND!!\n"); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		} else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		 /* not found */ if (data[mid].key > x) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>			up = mid - 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*	printf("MID-1\n"); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		} else {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>			low = mid + 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*	printf("MID+1\n"); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>		cnt1++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*	printf("Loop Count : %d\n", cnt1); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return fvalue;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

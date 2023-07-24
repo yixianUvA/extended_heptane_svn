@@ -1,0 +1,24 @@
+There are 16 section headers, starting at offset 0x91e8:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00008000 008000 0001dc 00  AX  0   0  4
+  [ 2] .data             PROGBITS        000181dc 0081dc 000078 00  WA  0   0  4
+  [ 3] .bss              NOBITS          00018254 008254 000004 00  WA  0   0  4
+  [ 4] .comment          PROGBITS        00000000 008254 00006e 01  MS  0   0  1
+  [ 5] .wcet_annot       PROGBITS        00000000 0082c2 00000c 00      0   0  1
+  [ 6] .debug_aranges    PROGBITS        00000000 0082ce 000020 00      0   0  1
+  [ 7] .debug_info       PROGBITS        00000000 0082ee 0002c8 00      0   0  1
+  [ 8] .debug_abbrev     PROGBITS        00000000 0085b6 0000f3 00      0   0  1
+  [ 9] .debug_line       PROGBITS        00000000 0086a9 000094 00      0   0  1
+  [10] .debug_frame      PROGBITS        00000000 008740 0001f4 00      0   0  4
+  [11] .debug_str        PROGBITS        00000000 008934 000260 01  MS  0   0  1
+  [12] .ARM.attributes   ARM_ATTRIBUTES  00000000 008b94 000030 00      0   0  1
+  [13] .shstrtab         STRTAB          00000000 009148 00009e 00      0   0  1
+  [14] .symtab           SYMTAB          00000000 008bc4 0003a0 10     15  18  4
+  [15] .strtab           STRTAB          00000000 008f64 0001e4 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)

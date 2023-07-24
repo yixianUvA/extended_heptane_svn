@@ -1,0 +1,319 @@
+makefile.depends:  ./src/Cfg.cc ./src/Edge.cc ./src/CloneHandle.cc ./src/Program.cc ./src/XmlExtra.cc ./src/Loop.cc ./src/Handle.cc ./src/SerialisableAttributes.cc ./src/Instruction.cc ./src/Node.cc ./src/PointerAttributes.cc ./src/Attributed.cc ./src/Factory.cc
+obj/Cfg.o: src/Cfg.cc include/Helper.h include/Handle.h include/Factory.h \
+ include/SerialisableAttributes.h include/Serialisable.h \
+ include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributes.h include/PointerAttributes.h include/CloneHandle.h \
+ include/Handle.h include/Cfg.h include/Attributed.h include/Node.h \
+ include/Instruction.h include/Edge.h include/Loop.h include/Program.h \
+ ../utl/src/HeptaneStdTypes.h include/Node.h include/Program.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Cfg.cc -o obj/Cfg.o 
+obj/Edge.o: src/Edge.cc include/Edge.h include/Attributed.h \
+ include/Attributes.h include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/CloneHandle.h include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/Handle.h include/Cfg.h \
+ include/Node.h include/Instruction.h include/Edge.h include/Loop.h \
+ include/Program.h ../utl/src/HeptaneStdTypes.h include/Handle.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Edge.cc -o obj/Edge.o 
+obj/CloneHandle.o: src/CloneHandle.cc include/CloneHandle.h \
+ include/Factory.h include/SerialisableAttributes.h \
+ include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributes.h include/PointerAttributes.h include/CloneHandle.h \
+ include/Handle.h include/Helper.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/CloneHandle.cc -o obj/CloneHandle.o 
+obj/Program.o: src/Program.cc include/Program.h include/Attributed.h \
+ include/Attributes.h include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/CloneHandle.h include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/Handle.h \
+ ../utl/src/HeptaneStdTypes.h include/Serialisable.h include/Cfg.h \
+ include/Node.h include/Instruction.h include/Edge.h include/Loop.h \
+ include/Program.h include/Handle.h include/CloneHandle.h \
+ include/Factory.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Program.cc -o obj/Program.o 
+obj/XmlExtra.o: src/XmlExtra.cc include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/xmlreader.h \
+ /usr/include/libxml2/libxml/relaxng.h \
+ /usr/include/libxml2/libxml/xmlschemas.h \
+ /usr/include/libxml2/libxml/xpath.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/XmlExtra.cc -o obj/XmlExtra.o 
+obj/Loop.o: src/Loop.cc include/Loop.h include/Attributed.h \
+ include/Attributes.h include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/CloneHandle.h include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/Handle.h include/Helper.h \
+ include/Handle.h include/Node.h include/Instruction.h include/Cfg.h \
+ include/Node.h include/Edge.h include/Loop.h include/Program.h \
+ ../utl/src/HeptaneStdTypes.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Loop.cc -o obj/Loop.o 
+obj/Handle.o: src/Handle.cc include/Handle.h include/Factory.h \
+ include/SerialisableAttributes.h include/Serialisable.h \
+ include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributes.h include/PointerAttributes.h include/CloneHandle.h \
+ include/Handle.h include/Helper.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Handle.cc -o obj/Handle.o 
+obj/SerialisableAttributes.o: src/SerialisableAttributes.cc \
+ include/Attributes.h include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/SerialisableAttributes.h include/Attributes.h include/Handle.h \
+ include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/CloneHandle.h include/Handle.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/SerialisableAttributes.cc -o obj/SerialisableAttributes.o 
+obj/Instruction.o: src/Instruction.cc include/Handle.h include/Factory.h \
+ include/SerialisableAttributes.h include/Serialisable.h \
+ include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributes.h include/PointerAttributes.h include/CloneHandle.h \
+ include/Handle.h include/Helper.h include/Instruction.h \
+ include/Attributed.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Instruction.cc -o obj/Instruction.o 
+obj/Node.o: src/Node.cc include/Node.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributed.h include/Attributes.h include/Serialisable.h \
+ include/XmlExtra.h include/CloneHandle.h include/Factory.h \
+ include/SerialisableAttributes.h include/PointerAttributes.h \
+ include/Handle.h include/Instruction.h include/Handle.h \
+ include/Instruction.h include/Cfg.h include/Node.h include/Edge.h \
+ include/Loop.h include/Program.h ../utl/src/HeptaneStdTypes.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Node.cc -o obj/Node.o 
+obj/PointerAttributes.o: src/PointerAttributes.cc \
+ include/PointerAttributes.h include/Attributes.h include/Serialisable.h \
+ include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/CloneHandle.h include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/Handle.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/PointerAttributes.cc -o obj/PointerAttributes.o 
+obj/Attributed.o: src/Attributed.cc include/Attributed.h \
+ include/Attributes.h include/Serialisable.h include/XmlExtra.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/CloneHandle.h include/Factory.h include/SerialisableAttributes.h \
+ include/PointerAttributes.h include/Handle.h include/Handle.h \
+ include/Factory.h include/SerialisableAttributes.h \
+ include/NonSerialisableAttributes.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Attributed.cc -o obj/Attributed.o 
+obj/Factory.o: src/Factory.cc include/Factory.h \
+ include/SerialisableAttributes.h include/Serialisable.h \
+ include/XmlExtra.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ include/Attributes.h include/PointerAttributes.h include/CloneHandle.h \
+ include/Factory.h include/Handle.h include/Attributes.h
+	g++ -O3 -Wall -DLINUX -I/usr/include/libxml2 -I../utl/src -I./include -c src/Factory.cc -o obj/Factory.o 

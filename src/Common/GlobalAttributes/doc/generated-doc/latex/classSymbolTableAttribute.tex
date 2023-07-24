@@ -1,0 +1,122 @@
+\hypertarget{classSymbolTableAttribute}{}\section{Symbol\+Table\+Attribute Class Reference}
+\label{classSymbolTableAttribute}\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+
+
+{\ttfamily \#include $<$Symbol\+Table\+Attribute.\+h$>$}
+
+Inheritance diagram for Symbol\+Table\+Attribute\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSymbolTableAttribute}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSymbolTableAttribute_a0540a38b6c87455ae69f989d45777cb7}{Symbol\+Table\+Attribute} ()
+\item 
+\hyperlink{classSymbolTableAttribute}{Symbol\+Table\+Attribute} $\ast$ \hyperlink{classSymbolTableAttribute_a0211a7147715180eb5cc7da65e72cf7d}{clone} ()
+\item 
+ostream \& \hyperlink{classSymbolTableAttribute_a8caf49a2a632b014a597acee79d3b4ce}{Write\+Xml} (std\+::ostream \&, cfglib\+::\+Handle \&)
+\item 
+void \hyperlink{classSymbolTableAttribute_ae3a962fbcb5eebcf2f5b9b25814d6714}{Read\+Xml} (Xml\+Tag const $\ast$xml\+\_\+node, cfglib\+::\+Handle \&)
+\item 
+Serialisable\+Attribute $\ast$ \hyperlink{classSymbolTableAttribute_aabc11b586cbe3f02b1d1b2838630fbb0}{create} ()
+\item 
+void \hyperlink{classSymbolTableAttribute_ab456077a4c556eec9ad24103689aa672}{Print} (std\+::ostream \&)
+\item 
+void \hyperlink{classSymbolTableAttribute_ac3d05fcd8b84f1b19e313ca35ab46b6a}{add\+Section} (std\+::string name, unsigned long addr, int size)
+\item 
+void \hyperlink{classSymbolTableAttribute_a37e4e5f0139566dfd77385ced03c1acb}{add\+Variable} (std\+::string name, unsigned long addr, int size, std\+::string section\+\_\+name)
+\item 
+void \hyperlink{classSymbolTableAttribute_a5cebeb90706d6570a12d4abd22ae0173}{set\+GP} (unsigned long val)
+\item 
+unsigned long \hyperlink{classSymbolTableAttribute_abb86ee2aeee7b78d4c93ee083fe7cdb6}{get\+GP} ()
+\item 
+unsigned long \hyperlink{classSymbolTableAttribute_a22e7e68ba19d0c9ea1d5ccfbe02336c2}{get\+Code\+Start\+Addr} ()
+\item 
+void \hyperlink{classSymbolTableAttribute_a6b87c838b987ba648eed8423323b5bf2}{get\+Info} (unsigned long addr, string $\ast$var\+\_\+name, unsigned long $\ast$start\+\_\+addr, int $\ast$size, string $\ast$section\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSymbolTableAttribute_a0540a38b6c87455ae69f989d45777cb7}\label{classSymbolTableAttribute_a0540a38b6c87455ae69f989d45777cb7}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{Symbol\+Table\+Attribute()}{SymbolTableAttribute()}}
+{\footnotesize\ttfamily Symbol\+Table\+Attribute\+::\+Symbol\+Table\+Attribute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSymbolTableAttribute_ac3d05fcd8b84f1b19e313ca35ab46b6a}\label{classSymbolTableAttribute_ac3d05fcd8b84f1b19e313ca35ab46b6a}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!add\+Section@{add\+Section}}
+\index{add\+Section@{add\+Section}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{add\+Section()}{addSection()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::add\+Section (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned long}]{addr,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a37e4e5f0139566dfd77385ced03c1acb}\label{classSymbolTableAttribute_a37e4e5f0139566dfd77385ced03c1acb}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!add\+Variable@{add\+Variable}}
+\index{add\+Variable@{add\+Variable}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{add\+Variable()}{addVariable()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::add\+Variable (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned long}]{addr,  }\item[{int}]{size,  }\item[{std\+::string}]{section\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a0211a7147715180eb5cc7da65e72cf7d}\label{classSymbolTableAttribute_a0211a7147715180eb5cc7da65e72cf7d}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!clone@{clone}}
+\index{clone@{clone}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classSymbolTableAttribute}{Symbol\+Table\+Attribute}$\ast$ Symbol\+Table\+Attribute\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+cloning function \mbox{\Hypertarget{classSymbolTableAttribute_aabc11b586cbe3f02b1d1b2838630fbb0}\label{classSymbolTableAttribute_aabc11b586cbe3f02b1d1b2838630fbb0}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!create@{create}}
+\index{create@{create}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily Serialisable\+Attribute$\ast$ Symbol\+Table\+Attribute\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a22e7e68ba19d0c9ea1d5ccfbe02336c2}\label{classSymbolTableAttribute_a22e7e68ba19d0c9ea1d5ccfbe02336c2}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!get\+Code\+Start\+Addr@{get\+Code\+Start\+Addr}}
+\index{get\+Code\+Start\+Addr@{get\+Code\+Start\+Addr}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{get\+Code\+Start\+Addr()}{getCodeStartAddr()}}
+{\footnotesize\ttfamily unsigned long Symbol\+Table\+Attribute\+::get\+Code\+Start\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_abb86ee2aeee7b78d4c93ee083fe7cdb6}\label{classSymbolTableAttribute_abb86ee2aeee7b78d4c93ee083fe7cdb6}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!get\+GP@{get\+GP}}
+\index{get\+GP@{get\+GP}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{get\+G\+P()}{getGP()}}
+{\footnotesize\ttfamily unsigned long Symbol\+Table\+Attribute\+::get\+GP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a6b87c838b987ba648eed8423323b5bf2}\label{classSymbolTableAttribute_a6b87c838b987ba648eed8423323b5bf2}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!get\+Info@{get\+Info}}
+\index{get\+Info@{get\+Info}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{get\+Info()}{getInfo()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::get\+Info (\begin{DoxyParamCaption}\item[{unsigned long}]{addr,  }\item[{string $\ast$}]{var\+\_\+name,  }\item[{unsigned long $\ast$}]{start\+\_\+addr,  }\item[{int $\ast$}]{size,  }\item[{string $\ast$}]{section\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the informations\+: variable name, start\+\_\+addr, size and section name of the given addr. rq\+: the input address must be in decimal \mbox{\Hypertarget{classSymbolTableAttribute_ab456077a4c556eec9ad24103689aa672}\label{classSymbolTableAttribute_ab456077a4c556eec9ad24103689aa672}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!Print@{Print}}
+\index{Print@{Print}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_ae3a962fbcb5eebcf2f5b9b25814d6714}\label{classSymbolTableAttribute_ae3a962fbcb5eebcf2f5b9b25814d6714}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Tag const $\ast$}]{xml\+\_\+node,  }\item[{cfglib\+::\+Handle \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a5cebeb90706d6570a12d4abd22ae0173}\label{classSymbolTableAttribute_a5cebeb90706d6570a12d4abd22ae0173}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!set\+GP@{set\+GP}}
+\index{set\+GP@{set\+GP}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{set\+G\+P()}{setGP()}}
+{\footnotesize\ttfamily void Symbol\+Table\+Attribute\+::set\+GP (\begin{DoxyParamCaption}\item[{unsigned long}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSymbolTableAttribute_a8caf49a2a632b014a597acee79d3b4ce}\label{classSymbolTableAttribute_a8caf49a2a632b014a597acee79d3b4ce}} 
+\index{Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!Symbol\+Table\+Attribute@{Symbol\+Table\+Attribute}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily ostream\& Symbol\+Table\+Attribute\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{cfglib\+::\+Handle \&}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{SymbolTableAttribute_8h}{Symbol\+Table\+Attribute.\+h}\end{DoxyCompactItemize}

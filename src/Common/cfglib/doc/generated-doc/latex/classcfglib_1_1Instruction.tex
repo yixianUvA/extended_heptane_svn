@@ -1,0 +1,138 @@
+\hypertarget{classcfglib_1_1Instruction}{}\section{cfglib\+:\+:Instruction Class Reference}
+\label{classcfglib_1_1Instruction}\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+
+
+{\ttfamily \#include $<$Instruction.\+h$>$}
+
+Inheritance diagram for cfglib\+:\+:Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcfglib_1_1Instruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcfglib_1_1Instruction_afbca05ecb59e5a9b0b0027aadab48738}{Instruction} ()
+\item 
+\hyperlink{classcfglib_1_1Instruction_a22e42389cb62f96a0b28e3f7ebd1b323}{Instruction} (std\+::string const \&code, \hyperlink{namespacecfglib_a5ae32d51cf4ff1db5485367eab63a500}{asm\+\_\+type} type)
+\item 
+\hyperlink{classcfglib_1_1Instruction_aea2b37b89a6d029c20d0a49f1c89db66}{$\sim$\+Instruction} ()
+\item 
+\hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$ \hyperlink{classcfglib_1_1Instruction_a23db173ff853ab41327333fd8b87b61c}{Clone} ()
+\item 
+\hyperlink{classcfglib_1_1Instruction}{Instruction} $\ast$ \hyperlink{classcfglib_1_1Instruction_a32a5438b8eb037f9551518679e1c576a}{Clone} (\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&)
+\item 
+std\+::ostream \& \hyperlink{classcfglib_1_1Instruction_a1775270fdbf4f48e63d75c1327b51aa6}{Write\+Xml} (std\+::ostream \&os, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+virtual void \hyperlink{classcfglib_1_1Instruction_a993641abc0297a715f66040d6ad7444c}{Read\+Xml} (\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$tag, \hyperlink{classcfglib_1_1Handle}{Handle} \&hand)
+\item 
+std\+::string \hyperlink{classcfglib_1_1Instruction_a383f3ba3adf01b1596825b2314cdd5a9}{Get\+Code} ()
+\item 
+bool \hyperlink{classcfglib_1_1Instruction_accc89f23195a6da61676c34716e15527}{Is\+Code} ()
+\item 
+bool \hyperlink{classcfglib_1_1Instruction_aa0062264ffcc446ea706e15e3430543d}{Is\+Macro} ()
+\item 
+bool \hyperlink{classcfglib_1_1Instruction_a2611829fdb75f7be9545bbb2a0e0ff3f}{Is\+Directive} ()
+\item 
+bool \hyperlink{classcfglib_1_1Instruction_a28fda4549853eed5cb37e0330383b3bc}{Is\+Label} ()
+\item 
+bool \hyperlink{classcfglib_1_1Instruction_aff053b1bab7383efc4f563ad5b6b4c48}{Is\+Other} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Instruction_afbca05ecb59e5a9b0b0027aadab48738}\label{classcfglib_1_1Instruction_afbca05ecb59e5a9b0b0027aadab48738}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Instruction@{Instruction}}
+\index{Instruction@{Instruction}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Instruction()}{Instruction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Instruction\+::\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{classcfglib_1_1Instruction_a22e42389cb62f96a0b28e3f7ebd1b323}\label{classcfglib_1_1Instruction_a22e42389cb62f96a0b28e3f7ebd1b323}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Instruction@{Instruction}}
+\index{Instruction@{Instruction}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Instruction()}{Instruction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cfglib\+::\+Instruction\+::\+Instruction (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{code,  }\item[{\hyperlink{namespacecfglib_a5ae32d51cf4ff1db5485367eab63a500}{asm\+\_\+type}}]{type }\end{DoxyParamCaption})}
+
+Normal constructor \mbox{\Hypertarget{classcfglib_1_1Instruction_aea2b37b89a6d029c20d0a49f1c89db66}\label{classcfglib_1_1Instruction_aea2b37b89a6d029c20d0a49f1c89db66}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!````~Instruction@{$\sim$\+Instruction}}
+\index{````~Instruction@{$\sim$\+Instruction}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{$\sim$\+Instruction()}{~Instruction()}}
+{\footnotesize\ttfamily cfglib\+::\+Instruction\+::$\sim$\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfglib_1_1Instruction_a23db173ff853ab41327333fd8b87b61c}\label{classcfglib_1_1Instruction_a23db173ff853ab41327333fd8b87b61c}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Clone@{Clone}}
+\index{Clone@{Clone}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Instruction}{Instruction}$\ast$ cfglib\+::\+Instruction\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cloning function \mbox{\Hypertarget{classcfglib_1_1Instruction_a32a5438b8eb037f9551518679e1c576a}\label{classcfglib_1_1Instruction_a32a5438b8eb037f9551518679e1c576a}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Clone@{Clone}}
+\index{Clone@{Clone}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classcfglib_1_1Instruction}{Instruction}$\ast$ cfglib\+::\+Instruction\+::\+Clone (\begin{DoxyParamCaption}\item[{\hyperlink{classcfglib_1_1CloneHandle}{Clone\+Handle} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfglib_1_1Instruction_a383f3ba3adf01b1596825b2314cdd5a9}\label{classcfglib_1_1Instruction_a383f3ba3adf01b1596825b2314cdd5a9}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Get\+Code@{Get\+Code}}
+\index{Get\+Code@{Get\+Code}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Get\+Code()}{GetCode()}}
+{\footnotesize\ttfamily std\+::string cfglib\+::\+Instruction\+::\+Get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the assembly code line \mbox{\Hypertarget{classcfglib_1_1Instruction_accc89f23195a6da61676c34716e15527}\label{classcfglib_1_1Instruction_accc89f23195a6da61676c34716e15527}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Is\+Code@{Is\+Code}}
+\index{Is\+Code@{Is\+Code}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Is\+Code()}{IsCode()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Instruction\+::\+Is\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the line is a Code line \mbox{\Hypertarget{classcfglib_1_1Instruction_a2611829fdb75f7be9545bbb2a0e0ff3f}\label{classcfglib_1_1Instruction_a2611829fdb75f7be9545bbb2a0e0ff3f}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Is\+Directive@{Is\+Directive}}
+\index{Is\+Directive@{Is\+Directive}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Is\+Directive()}{IsDirective()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Instruction\+::\+Is\+Directive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the line is a Directive \mbox{\Hypertarget{classcfglib_1_1Instruction_a28fda4549853eed5cb37e0330383b3bc}\label{classcfglib_1_1Instruction_a28fda4549853eed5cb37e0330383b3bc}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Is\+Label@{Is\+Label}}
+\index{Is\+Label@{Is\+Label}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Is\+Label()}{IsLabel()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Instruction\+::\+Is\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the line is a Labem \mbox{\Hypertarget{classcfglib_1_1Instruction_aa0062264ffcc446ea706e15e3430543d}\label{classcfglib_1_1Instruction_aa0062264ffcc446ea706e15e3430543d}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Is\+Macro@{Is\+Macro}}
+\index{Is\+Macro@{Is\+Macro}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Is\+Macro()}{IsMacro()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Instruction\+::\+Is\+Macro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the line is a Macro line \mbox{\Hypertarget{classcfglib_1_1Instruction_aff053b1bab7383efc4f563ad5b6b4c48}\label{classcfglib_1_1Instruction_aff053b1bab7383efc4f563ad5b6b4c48}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Is\+Other@{Is\+Other}}
+\index{Is\+Other@{Is\+Other}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Is\+Other()}{IsOther()}}
+{\footnotesize\ttfamily bool cfglib\+::\+Instruction\+::\+Is\+Other (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the line is an other type of line (eg comment, empty line) \mbox{\Hypertarget{classcfglib_1_1Instruction_a993641abc0297a715f66040d6ad7444c}\label{classcfglib_1_1Instruction_a993641abc0297a715f66040d6ad7444c}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily virtual void cfglib\+::\+Instruction\+::\+Read\+Xml (\begin{DoxyParamCaption}\item[{\hyperlink{classXmlTag}{Xml\+Tag} const $\ast$}]{tag,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialisation function 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_a876d530446317872259356af9b016e13}{cfglib\+::\+Serialisable}.
+
+\mbox{\Hypertarget{classcfglib_1_1Instruction_a1775270fdbf4f48e63d75c1327b51aa6}\label{classcfglib_1_1Instruction_a1775270fdbf4f48e63d75c1327b51aa6}} 
+\index{cfglib\+::\+Instruction@{cfglib\+::\+Instruction}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!cfglib\+::\+Instruction@{cfglib\+::\+Instruction}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily std\+::ostream\& cfglib\+::\+Instruction\+::\+Write\+Xml (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\hyperlink{classcfglib_1_1Handle}{Handle} \&}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialisation function. 
+
+Implements \hyperlink{classcfglib_1_1Serialisable_aaeb80cc7397ad312e5ae34f39412ce42}{cfglib\+::\+Serialisable}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Instruction_8h}{Instruction.\+h}\end{DoxyCompactItemize}

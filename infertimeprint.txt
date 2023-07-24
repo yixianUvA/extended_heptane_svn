@@ -1,0 +1,200 @@
+branch3   branch3
+0.003370
+branch3   bs
+0.004319
+branch3   fibcall
+0.003620
+branch3   fir
+0.007867
+branch3   insertsort
+0.005754
+branch3   minmax
+0.010368
+branch3   ns
+0.008471
+branch3   qurt
+0.045079
+branch3   select
+0.010908
+branch3   simple
+0.002463
+bs   branch3
+0.004642
+bs   bs
+0.005728
+bs   fibcall
+0.005884
+bs   fir
+0.007824
+bs   insertsort
+0.006798
+bs   minmax
+0.007443
+bs   ns
+0.008986
+bs   qurt
+0.042833
+bs   select
+0.010273
+bs   simple
+0.003613
+fibcall   branch3
+0.003811
+fibcall   bs
+0.004544
+fibcall   fibcall
+0.003940
+fibcall   fir
+0.006871
+fibcall   insertsort
+0.004937
+fibcall   minmax
+0.006492
+fibcall   ns
+0.007904
+fibcall   qurt
+0.043446
+fibcall   select
+0.008945
+fibcall   simple
+0.002647
+fir   branch3
+0.007888
+fir   bs
+0.008969
+fir   fibcall
+0.008248
+fir   fir
+0.010346
+fir   insertsort
+0.010322
+fir   minmax
+0.009414
+fir   ns
+0.010534
+fir   qurt
+0.044093
+fir   select
+0.011762
+fir   simple
+0.006604
+insertsort   branch3
+0.004883
+insertsort   bs
+0.006752
+insertsort   fibcall
+0.005192
+insertsort   fir
+0.008147
+insertsort   insertsort
+0.008264
+insertsort   minmax
+0.008769
+insertsort   ns
+0.009754
+insertsort   qurt
+0.045856
+insertsort   select
+0.012259
+insertsort   simple
+0.004733
+minmax   branch3
+0.008674
+minmax   bs
+0.011046
+minmax   fibcall
+0.007574
+minmax   fir
+0.009960
+minmax   insertsort
+0.009310
+minmax   minmax
+0.010273
+minmax   ns
+0.012090
+minmax   qurt
+0.045562
+minmax   select
+0.012616
+minmax   simple
+0.005705
+ns   branch3
+0.008137
+ns   bs
+0.008743
+ns   fibcall
+0.008795
+ns   fir
+0.010152
+ns   insertsort
+0.009666
+ns   minmax
+0.009821
+ns   ns
+0.009830
+ns   qurt
+0.045785
+ns   select
+0.012300
+ns   simple
+0.007142
+qurt   branch3
+0.056033
+qurt   bs
+0.057028
+qurt   fibcall
+0.057693
+qurt   fir
+0.060455
+qurt   insertsort
+0.056306
+qurt   minmax
+0.057498
+qurt   ns
+0.060579
+qurt   qurt
+0.092901
+qurt   select
+0.065110
+qurt   simple
+0.053768
+select   branch3
+0.021037
+select   bs
+0.012450
+select   fibcall
+0.010572
+select   fir
+0.013150
+select   insertsort
+0.011964
+select   minmax
+0.011960
+select   ns
+0.014266
+select   qurt
+0.046013
+select   select
+0.014706
+select   simple
+0.009082
+simple   branch3
+0.002356
+simple   bs
+0.003293
+simple   fibcall
+0.002438
+simple   fir
+0.006321
+simple   insertsort
+0.003763
+simple   minmax
+0.005713
+simple   ns
+0.007295
+simple   qurt
+0.039821
+simple   select
+0.010500
+simple   simple
+0.001604

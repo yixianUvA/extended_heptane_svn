@@ -1,0 +1,390 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/select/./ARMlib.h</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* ---------------------------------------------------------------------</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Copyright IRISA, 2003-2017</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>This file is part of Heptane, a tool for Worst-Case Execution Time (WCET)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>estimation.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>APP deposit IDDN.FR.001.510039.000.S.P.2003.000.10600</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Heptane is free software: you can redistribute it and/or modify</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>it under the terms of the GNU General Public License as published by</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>the Free Software Foundation, either version 3 of the License, or</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>(at your option) any later version.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Heptane is distributed in the hope that it will be useful,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>but WITHOUT ANY WARRANTY; without even the implied warranty of</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>GNU General Public License for more details (COPYING.txt).</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>See CREDITS.txt for credits of authorship</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>------------------------------------------------------------------------ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef ARM_LIB</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define ARM_LIB</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /* Fonctions de libgcc redefinies ici (functions sans retour car branchement à une adresse d'une autre fonction).*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// int</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_idiv() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_i2d() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_uidivmod() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmpge() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_i2f() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// double</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_ddiv() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dsub() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dmul() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmpge() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmpeq() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmpgt() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmple(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_d2f(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dadd() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_d2iz() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// float</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>420 </td>
+<td><tt><pre>void __aeabi_fcmplt(){}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>560 </td>
+<td><tt><pre>void __aeabi_fcmpgt(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fdiv(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmpeq(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fmul(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fsub(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_f2d(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fadd(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_ui2(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_ui2d(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmpun(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmplt(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+</table>
+<h1>/home/yixian/heptane_svn/benchmarks/select/select.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/  </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: select.c                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Numerical Recipes in C - The Second Edition                 */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     A function to select the Nth largest number in the floating poi-  */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     nt array arr[].                                                   */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The parameters to function select are k and n. Then the function  */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     selects k-th largest number out of n original numbers.            */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/ </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define SWAP(a,b) temp=(a);(a)=(b);(b)=temp;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>float arr[20] = {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  5, 4, 10.3, 1.1, 5.7, 100, 231, 111, 49.5, 99,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  10, 150, 222.22, 101, 77, 44, 35, 20.54, 99.99, 888.88</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>float select(unsigned long k, unsigned long n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  unsigned long i,ir,j,l,mid;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  float a,temp;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  int flag, flag2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  l=0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  ir=n-1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  flag = flag2 = 0; </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 8 </td>
+<td><tt><pre>  while (!flag) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    ANNOT_MAXITER(7);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>    if (ir <= l+1) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>      if (ir == l+1) </pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	if (arr[ir] < arr[l]) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	  SWAP(arr[l],arr[ir])</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>      flag = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    } else </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	i=l+1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	j=ir;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	a=arr[l];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	flag2 = 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 42 </td>
+<td><tt><pre>	while (!flag2) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(5); </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>35 420 </td>
+<td><tt><pre>	  while (arr[i] < a) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	      ANNOT_MAXITER(12); </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>385 </td>
+<td><tt><pre>	      i++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>35 560 </td>
+<td><tt><pre>	  while (arr[j] > a)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	      ANNOT_MAXITER(16);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>525 </td>
+<td><tt><pre>	      j--;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>35 </td>
+<td><tt><pre>	  if (j < i)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	    flag2 = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  else</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>35 </td>
+<td><tt><pre>	      SWAP(arr[i],arr[j]);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	arr[l]=arr[j];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	arr[j]=a;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	if (j >= k) { ir=j-1;} </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>	if (i <= k) l=i;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  return arr[k-1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main()</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  select(10, 20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* #include <stdio.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void main()</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  int kieme= 15;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  float val = select(kieme, 20);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  printf("For array[20], the %d th largest value is: %g\n", kieme, val);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+</table>
+</body> </html>

@@ -1,0 +1,127 @@
+\hypertarget{classXmlTag}{}\section{Xml\+Tag Class Reference}
+\label{classXmlTag}\index{Xml\+Tag@{Xml\+Tag}}
+
+
+{\ttfamily \#include $<$Xml\+Extra.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classXmlTag_af160832d5881c3d1fdeb173dd5278925}{Xml\+Tag} (\hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr}, \hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr} ptr)
+\item 
+\hyperlink{classXmlTag_a9413177ebf22e741d1d1cb14707bff63}{Xml\+Tag} (\hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr})
+\item 
+\hyperlink{classXmlTag_abbb5fef8e3d0dc433a6aaaf88a821d2f}{$\sim$\+Xml\+Tag} ()
+\item 
+int \hyperlink{classXmlTag_aad4c7b8e57cc6d6162338693c5f50721}{get\+Attribute\+Int} (string Attribute\+Name) const
+\item 
+double \hyperlink{classXmlTag_a24fd3594f3ec5f2391f1f3c75a0ddbfd}{get\+Attribute\+Double} (string Attribute\+Name) const
+\item 
+int \hyperlink{classXmlTag_a311499d078b772530223c6f2ebbf6857}{get\+Attribute\+Hexa} (string Attribute\+Name) const
+\item 
+string \hyperlink{classXmlTag_af17526426288613884f5f028c18d5b73}{get\+Attribute\+String} (string Attribute\+Name) const
+\item 
+string \hyperlink{classXmlTag_a0a6f6d258cff2682c36260f448d63ab3}{get\+Content} () const
+\item 
+\hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag} \hyperlink{classXmlTag_a9aad053ee1d3cda7ce2cb76eb61b406a}{search\+Children} (string children\+Name) const
+\item 
+\hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag} \hyperlink{classXmlTag_a7ef12656343543108cae06ceb94fc0ab}{get\+All\+Children} () const
+\item 
+string \hyperlink{classXmlTag_a75a408a38dc1e24965b64bf46a23f57f}{get\+Name} () const
+\item 
+void \hyperlink{classXmlTag_a75522d91e1514e5180d66341dd92f4af}{print} () const
+\item 
+void \hyperlink{classXmlTag_a240d1daa84c853ca638208ee26cd6842}{print1} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a generic pointer to an X\+ML tag. provides an encapsulation for all libxml2 xlm\+Tag methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classXmlTag_af160832d5881c3d1fdeb173dd5278925}\label{classXmlTag_af160832d5881c3d1fdeb173dd5278925}} 
+\index{Xml\+Tag@{Xml\+Tag}!Xml\+Tag@{Xml\+Tag}}
+\index{Xml\+Tag@{Xml\+Tag}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{Xml\+Tag()}{XmlTag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Xml\+Tag\+::\+Xml\+Tag (\begin{DoxyParamCaption}\item[{\hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr}}]{,  }\item[{\hyperlink{XmlExtra_8h_a4ad4a6885d35984ee31738a688402096}{xml\+Node\+Ptr}}]{ptr }\end{DoxyParamCaption})}
+
+X\+Path-\/style initialization \mbox{\Hypertarget{classXmlTag_a9413177ebf22e741d1d1cb14707bff63}\label{classXmlTag_a9413177ebf22e741d1d1cb14707bff63}} 
+\index{Xml\+Tag@{Xml\+Tag}!Xml\+Tag@{Xml\+Tag}}
+\index{Xml\+Tag@{Xml\+Tag}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{Xml\+Tag()}{XmlTag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Xml\+Tag\+::\+Xml\+Tag (\begin{DoxyParamCaption}\item[{\hyperlink{XmlExtra_8h_a5956a7913c28011b6a948fbe62075f56}{xml\+Doc\+Ptr}}]{ }\end{DoxyParamCaption})}
+
+Init at root document \mbox{\Hypertarget{classXmlTag_abbb5fef8e3d0dc433a6aaaf88a821d2f}\label{classXmlTag_abbb5fef8e3d0dc433a6aaaf88a821d2f}} 
+\index{Xml\+Tag@{Xml\+Tag}!````~Xml\+Tag@{$\sim$\+Xml\+Tag}}
+\index{````~Xml\+Tag@{$\sim$\+Xml\+Tag}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{$\sim$\+Xml\+Tag()}{~XmlTag()}}
+{\footnotesize\ttfamily Xml\+Tag\+::$\sim$\+Xml\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desallocate the good arg 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classXmlTag_a7ef12656343543108cae06ceb94fc0ab}\label{classXmlTag_a7ef12656343543108cae06ceb94fc0ab}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+All\+Children@{get\+All\+Children}}
+\index{get\+All\+Children@{get\+All\+Children}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+All\+Children()}{getAllChildren()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag} Xml\+Tag\+::get\+All\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get all children tags of this tag \mbox{\Hypertarget{classXmlTag_a24fd3594f3ec5f2391f1f3c75a0ddbfd}\label{classXmlTag_a24fd3594f3ec5f2391f1f3c75a0ddbfd}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Attribute\+Double@{get\+Attribute\+Double}}
+\index{get\+Attribute\+Double@{get\+Attribute\+Double}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Attribute\+Double()}{getAttributeDouble()}}
+{\footnotesize\ttfamily double Xml\+Tag\+::get\+Attribute\+Double (\begin{DoxyParamCaption}\item[{string}]{Attribute\+Name }\end{DoxyParamCaption}) const}
+
+Taking an attribute\textquotesingle{}s of type double, acording to its name as parameter $\ast$ \mbox{\Hypertarget{classXmlTag_a311499d078b772530223c6f2ebbf6857}\label{classXmlTag_a311499d078b772530223c6f2ebbf6857}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Attribute\+Hexa@{get\+Attribute\+Hexa}}
+\index{get\+Attribute\+Hexa@{get\+Attribute\+Hexa}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Attribute\+Hexa()}{getAttributeHexa()}}
+{\footnotesize\ttfamily int Xml\+Tag\+::get\+Attribute\+Hexa (\begin{DoxyParamCaption}\item[{string}]{Attribute\+Name }\end{DoxyParamCaption}) const}
+
+Taking an attribute\textquotesingle{}s of type hexadecimal, acording to its name as parameter \mbox{\Hypertarget{classXmlTag_aad4c7b8e57cc6d6162338693c5f50721}\label{classXmlTag_aad4c7b8e57cc6d6162338693c5f50721}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Attribute\+Int@{get\+Attribute\+Int}}
+\index{get\+Attribute\+Int@{get\+Attribute\+Int}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Attribute\+Int()}{getAttributeInt()}}
+{\footnotesize\ttfamily int Xml\+Tag\+::get\+Attribute\+Int (\begin{DoxyParamCaption}\item[{string}]{Attribute\+Name }\end{DoxyParamCaption}) const}
+
+Taking an attribute\textquotesingle{}s of type int, acording to its name as parameter \mbox{\Hypertarget{classXmlTag_af17526426288613884f5f028c18d5b73}\label{classXmlTag_af17526426288613884f5f028c18d5b73}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Attribute\+String@{get\+Attribute\+String}}
+\index{get\+Attribute\+String@{get\+Attribute\+String}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Attribute\+String()}{getAttributeString()}}
+{\footnotesize\ttfamily string Xml\+Tag\+::get\+Attribute\+String (\begin{DoxyParamCaption}\item[{string}]{Attribute\+Name }\end{DoxyParamCaption}) const}
+
+Taking an attribute\textquotesingle{}s of type string, acording to its name as parameter \mbox{\Hypertarget{classXmlTag_a0a6f6d258cff2682c36260f448d63ab3}\label{classXmlTag_a0a6f6d258cff2682c36260f448d63ab3}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Content()}{getContent()}}
+{\footnotesize\ttfamily string Xml\+Tag\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the \hyperlink{classXmlTag}{Xml\+Tag} contents \mbox{\Hypertarget{classXmlTag_a75a408a38dc1e24965b64bf46a23f57f}\label{classXmlTag_a75a408a38dc1e24965b64bf46a23f57f}} 
+\index{Xml\+Tag@{Xml\+Tag}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Xml\+Tag\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get back the X\+ML tag\textquotesingle{}s name (i.\+e, what is it exactly in the tag \+: $<$\+T\+A\+G parm=\char`\"{}dd\char`\"{}$>$ will return \char`\"{}\+T\+A\+G\char`\"{} \mbox{\Hypertarget{classXmlTag_a75522d91e1514e5180d66341dd92f4af}\label{classXmlTag_a75522d91e1514e5180d66341dd92f4af}} 
+\index{Xml\+Tag@{Xml\+Tag}!print@{print}}
+\index{print@{print}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Xml\+Tag\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Debug only \mbox{\Hypertarget{classXmlTag_a240d1daa84c853ca638208ee26cd6842}\label{classXmlTag_a240d1daa84c853ca638208ee26cd6842}} 
+\index{Xml\+Tag@{Xml\+Tag}!print1@{print1}}
+\index{print1@{print1}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{print1()}{print1()}}
+{\footnotesize\ttfamily void Xml\+Tag\+::print1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classXmlTag_a9aad053ee1d3cda7ce2cb76eb61b406a}\label{classXmlTag_a9aad053ee1d3cda7ce2cb76eb61b406a}} 
+\index{Xml\+Tag@{Xml\+Tag}!search\+Children@{search\+Children}}
+\index{search\+Children@{search\+Children}!Xml\+Tag@{Xml\+Tag}}
+\subsubsection{\texorpdfstring{search\+Children()}{searchChildren()}}
+{\footnotesize\ttfamily \hyperlink{XmlExtra_8h_ade6a1aa0dc76b2c26a120f5c2f10ff7d}{List\+Xml\+Tag} Xml\+Tag\+::search\+Children (\begin{DoxyParamCaption}\item[{string}]{children\+Name }\end{DoxyParamCaption}) const}
+
+searching a list of Tags from current node, with a specific name (very simple X\+Path -\/like syntax). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{XmlExtra_8h}{Xml\+Extra.\+h}\end{DoxyCompactItemize}

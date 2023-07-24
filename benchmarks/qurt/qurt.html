@@ -1,0 +1,490 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/yixian/heptane_svn/benchmarks/qurt/./ARMlib.h</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* ---------------------------------------------------------------------</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Copyright IRISA, 2003-2017</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>This file is part of Heptane, a tool for Worst-Case Execution Time (WCET)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>estimation.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>APP deposit IDDN.FR.001.510039.000.S.P.2003.000.10600</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Heptane is free software: you can redistribute it and/or modify</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>it under the terms of the GNU General Public License as published by</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>the Free Software Foundation, either version 3 of the License, or</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>(at your option) any later version.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Heptane is distributed in the hope that it will be useful,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>but WITHOUT ANY WARRANTY; without even the implied warranty of</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>GNU General Public License for more details (COPYING.txt).</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>See CREDITS.txt for credits of authorship</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>------------------------------------------------------------------------ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef ARM_LIB</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define ARM_LIB</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /* Fonctions de libgcc redefinies ici (functions sans retour car branchement à une adresse d'une autre fonction).*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// int</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_idiv() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_i2d() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_uidivmod() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmpge() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_i2f() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// double</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>66 </td>
+<td><tt><pre>void __aeabi_ddiv() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>121 </td>
+<td><tt><pre>void __aeabi_dsub() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>123 </td>
+<td><tt><pre>void __aeabi_dmul() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>60 </td>
+<td><tt><pre>void __aeabi_dcmpge() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 </td>
+<td><tt><pre>void __aeabi_dcmpeq() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>void __aeabi_dcmpgt() {}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>void __aeabi_dcmple(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_d2f(){}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>117 </td>
+<td><tt><pre>void __aeabi_dadd() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_d2iz() {}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>// float</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmplt(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmpgt(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fdiv(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fcmpeq(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fmul(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fsub(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_f2d(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_fadd(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_ui2(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_ui2d(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmpun(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void __aeabi_dcmplt(){}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+</table>
+<h1>/home/yixian/heptane_svn/benchmarks/qurt/qurt.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: qurt.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: qurt.c                                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Turbo C Programming for Engineering by Hyun Soo Ahn         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     Root computation of quadratic equations.                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The real and imaginary parts of the solution are stored in the    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     array x1[] and x2[].                                              */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/14: Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>** Benchmark Suite for Real-Time Applications, by Sung-Soo Lim</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**    III-7. qurt.c : the root computation of a quadratic equation</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**                 (from the book C Programming for EEs by Hyun Soon Ahn)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double          my_fabs(double n);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double          my_sqrt(double val);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double          a[3], x1[2], x2[2];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             flag;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             qurt();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>my_fabs(double n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>60 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          f;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>60 </td>
+<td><tt><pre>	if (n >= 0)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>37 </td>
+<td><tt><pre>		f = n;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>23 </td>
+<td><tt><pre>		f = -n;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>60 </td>
+<td><tt><pre>	return f;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>60 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>my_sqrt(double val)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	double          x = val / 10;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          dx;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          diff;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	double          min_tol = 0.00001;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i, flag;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	flag = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	if (val == 0)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		x = 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	else {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 57 60 </td>
+<td><tt><pre>	  for (i = 1; i < 20; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(19); </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>	    if (!flag) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>	      dx = (val - (x * x)) / (2.0 * x);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>	      x = x + dx;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>	      diff = val - (x * x);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>	      if (my_fabs(diff) <= min_tol)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>57 </td>
+<td><tt><pre>		flag = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    } else</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	      x = x;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	return (x);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  //double x = my_sqrt((double)44.0);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[0] = 1.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[1] = -3.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[2] = 2.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	qurt();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[0] = 1.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[1] = -2.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[2] = 1.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	qurt();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[0] = 1.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[1] = -4.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	a[2] = 8.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	qurt();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>qurt()</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          d, w1, w2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	if (a[0] == 0.0)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		return (999);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	d = a[1] * a[1] - 4 * a[0] * a[2];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	w1 = 2.0 * a[0];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	w2 = my_sqrt(my_fabs(d));</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>	if (d > 0.0) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		flag = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		x1[0] = (-a[1] + w2) / w1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		x1[1] = 0.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		x2[0] = (-a[1] - w2) / w1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		x2[1] = 0.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		return (0);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	} else if (d == 0.0) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		flag = 0;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		x1[0] = -a[1] / w1;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		x1[1] = 0.0;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		x2[0] = x1[0];</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		x2[1] = 0.0;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		return (0);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	} else {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		flag = -1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		w2 /= w1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		x1[0] = -a[1] / w1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		x1[1] = w2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		x2[0] = x1[0];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		x2[1] = -w2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		return (0);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>3 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

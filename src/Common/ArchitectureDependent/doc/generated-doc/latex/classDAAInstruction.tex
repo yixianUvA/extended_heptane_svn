@@ -1,0 +1,244 @@
+\hypertarget{classDAAInstruction}{}\section{D\+A\+A\+Instruction Class Reference}
+\label{classDAAInstruction}\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+
+
+{\ttfamily \#include $<$D\+A\+A\+Instruction.\+h$>$}
+
+Inheritance diagram for D\+A\+A\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classDAAInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classDAAInstruction_a61d0b9bece1e0ead89a46c0197276324}{simulate} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, \hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&vstack, \hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&v\+Stack\+Precision, const string \&asm\+Instr)=0
+\item 
+virtual \hyperlink{classDAAInstruction_a6db9518dfdbe63ad9853c980244e8cd7}{$\sim$ D\+A\+A\+Instruction} ()=0
+\item 
+void \hyperlink{classDAAInstruction_a5777e370fcddd3fcee56292a0b11ce76}{killop1} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, vector$<$ bool $>$ \&precision)
+\item 
+void \hyperlink{classDAAInstruction_af578262b493bcef395ca2a3013dc8f0c}{killop2} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, vector$<$ bool $>$ \&precision)
+\item 
+void \hyperlink{classDAAInstruction_aa83f60d8f5ffdce5192c9699df67afbb}{add} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, bool b\+Augment\+Precision)
+\item 
+void \hyperlink{classDAAInstruction_ad2828825e913269a17a24391bab25bfe}{minus} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_afa5c8e1e48253021eb5517084c90e9a3}{mult} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a6288019f03a686afb96918bf43573fc3}{move} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_add9aa31194d56406bd69063a440aef87}{load\+Constant} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision, string vcste)
+\item 
+void \hyperlink{classDAAInstruction_aabf28b332cc945a681e3e83492947b7f}{arithmetic\+\_\+shift\+\_\+right} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a72e52e2c935ee6ab3d494973a5142ebd}{logical\+\_\+shift\+\_\+left} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a8b488a5cdf1e29c351abdc29cfe5d6a3}{logical\+\_\+shift\+\_\+right} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_ac58387921102a26711f0ea67950d071d}{rotate\+\_\+right} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a68127dd0fdad592f7d1918e851f08c36}{rotate\+\_\+right\+\_\+extended} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a2d1231a596ba8600708564d705453f8f}{op\+\_\+and} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a80e4ca4fa44a2eeb2531f5084e0cab3e}{op\+\_\+or} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a71983578f511b37f053de641a06f8ae4}{op\+\_\+eor} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+void \hyperlink{classDAAInstruction_a3ae2804abee589621799869c38895cf7}{op\+\_\+bic} (\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&regs, \hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&precision)
+\item 
+bool \hyperlink{classDAAInstruction_a41c1397757508bba967c2fa0baf2174e}{get\+Stack\+Index} (string \&operand1, string \&operand2, string \&operand3, int $\ast$i)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ string $>$ \hyperlink{classDAAInstruction_a9a78da79cf0a261829690f0eb90af6cf}{get\+Operands} (const string \&instruction\+Asm)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDAAInstruction_ac888c18ef9af44f4f706f890b4fc9c76}{num\+\_\+register0}
+\item 
+int \hyperlink{classDAAInstruction_a4e13622e1d95fae89159a5e01a6407e0}{num\+\_\+register1}
+\item 
+int \hyperlink{classDAAInstruction_a5af649a9a34f6b1c97a230673de15870}{num\+\_\+register2}
+\item 
+int \hyperlink{classDAAInstruction_af5fc536f45cd3db86fe4802a52fbf773}{num\+\_\+register3}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class to define the methods for all categories of mips instructions. The methods are called to determine the contents of registers after all instructions, in order to finally obtained the addresses referenced by load/store instructions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDAAInstruction_a6db9518dfdbe63ad9853c980244e8cd7}\label{classDAAInstruction_a6db9518dfdbe63ad9853c980244e8cd7}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!````~ D\+A\+A\+Instruction@{$\sim$ D\+A\+A\+Instruction}}
+\index{````~ D\+A\+A\+Instruction@{$\sim$ D\+A\+A\+Instruction}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{$\sim$ D\+A\+A\+Instruction()}{~ DAAInstruction()}}
+{\footnotesize\ttfamily virtual D\+A\+A\+Instruction\+::$\sim$ \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDAAInstruction_aa83f60d8f5ffdce5192c9699df67afbb}\label{classDAAInstruction_aa83f60d8f5ffdce5192c9699df67afbb}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!add@{add}}
+\index{add@{add}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{bool}]{b\+Augment\+Precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_aabf28b332cc945a681e3e83492947b7f}\label{classDAAInstruction_aabf28b332cc945a681e3e83492947b7f}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!arithmetic\+\_\+shift\+\_\+right@{arithmetic\+\_\+shift\+\_\+right}}
+\index{arithmetic\+\_\+shift\+\_\+right@{arithmetic\+\_\+shift\+\_\+right}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{arithmetic\+\_\+shift\+\_\+right()}{arithmetic\_shift\_right()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::arithmetic\+\_\+shift\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a9a78da79cf0a261829690f0eb90af6cf}\label{classDAAInstruction_a9a78da79cf0a261829690f0eb90af6cf}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!get\+Operands@{get\+Operands}}
+\index{get\+Operands@{get\+Operands}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{get\+Operands()}{getOperands()}}
+{\footnotesize\ttfamily static vector$<$ string $>$ D\+A\+A\+Instruction\+::get\+Operands (\begin{DoxyParamCaption}\item[{const string \&}]{instruction\+Asm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns all the operands of an asm instruction in a vector (i.\+e. simply parse the asm line) \mbox{\Hypertarget{classDAAInstruction_a41c1397757508bba967c2fa0baf2174e}\label{classDAAInstruction_a41c1397757508bba967c2fa0baf2174e}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!get\+Stack\+Index@{get\+Stack\+Index}}
+\index{get\+Stack\+Index@{get\+Stack\+Index}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{get\+Stack\+Index()}{getStackIndex()}}
+{\footnotesize\ttfamily bool D\+A\+A\+Instruction\+::get\+Stack\+Index (\begin{DoxyParamCaption}\item[{string \&}]{operand1,  }\item[{string \&}]{operand2,  }\item[{string \&}]{operand3,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a5777e370fcddd3fcee56292a0b11ce76}\label{classDAAInstruction_a5777e370fcddd3fcee56292a0b11ce76}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!killop1@{killop1}}
+\index{killop1@{killop1}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{killop1()}{killop1()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::killop1 (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{vector$<$ bool $>$ \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_af578262b493bcef395ca2a3013dc8f0c}\label{classDAAInstruction_af578262b493bcef395ca2a3013dc8f0c}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!killop2@{killop2}}
+\index{killop2@{killop2}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{killop2()}{killop2()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::killop2 (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{vector$<$ bool $>$ \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_add9aa31194d56406bd69063a440aef87}\label{classDAAInstruction_add9aa31194d56406bd69063a440aef87}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!load\+Constant@{load\+Constant}}
+\index{load\+Constant@{load\+Constant}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{load\+Constant()}{loadConstant()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::load\+Constant (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{string}]{vcste }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a72e52e2c935ee6ab3d494973a5142ebd}\label{classDAAInstruction_a72e52e2c935ee6ab3d494973a5142ebd}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!logical\+\_\+shift\+\_\+left@{logical\+\_\+shift\+\_\+left}}
+\index{logical\+\_\+shift\+\_\+left@{logical\+\_\+shift\+\_\+left}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{logical\+\_\+shift\+\_\+left()}{logical\_shift\_left()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::logical\+\_\+shift\+\_\+left (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a8b488a5cdf1e29c351abdc29cfe5d6a3}\label{classDAAInstruction_a8b488a5cdf1e29c351abdc29cfe5d6a3}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!logical\+\_\+shift\+\_\+right@{logical\+\_\+shift\+\_\+right}}
+\index{logical\+\_\+shift\+\_\+right@{logical\+\_\+shift\+\_\+right}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{logical\+\_\+shift\+\_\+right()}{logical\_shift\_right()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::logical\+\_\+shift\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_ad2828825e913269a17a24391bab25bfe}\label{classDAAInstruction_ad2828825e913269a17a24391bab25bfe}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!minus@{minus}}
+\index{minus@{minus}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{minus()}{minus()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::minus (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a6288019f03a686afb96918bf43573fc3}\label{classDAAInstruction_a6288019f03a686afb96918bf43573fc3}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!move@{move}}
+\index{move@{move}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_afa5c8e1e48253021eb5517084c90e9a3}\label{classDAAInstruction_afa5c8e1e48253021eb5517084c90e9a3}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!mult@{mult}}
+\index{mult@{mult}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{mult()}{mult()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::mult (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a2d1231a596ba8600708564d705453f8f}\label{classDAAInstruction_a2d1231a596ba8600708564d705453f8f}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!op\+\_\+and@{op\+\_\+and}}
+\index{op\+\_\+and@{op\+\_\+and}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{op\+\_\+and()}{op\_and()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::op\+\_\+and (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a3ae2804abee589621799869c38895cf7}\label{classDAAInstruction_a3ae2804abee589621799869c38895cf7}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!op\+\_\+bic@{op\+\_\+bic}}
+\index{op\+\_\+bic@{op\+\_\+bic}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{op\+\_\+bic()}{op\_bic()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::op\+\_\+bic (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a71983578f511b37f053de641a06f8ae4}\label{classDAAInstruction_a71983578f511b37f053de641a06f8ae4}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!op\+\_\+eor@{op\+\_\+eor}}
+\index{op\+\_\+eor@{op\+\_\+eor}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{op\+\_\+eor()}{op\_eor()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::op\+\_\+eor (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a80e4ca4fa44a2eeb2531f5084e0cab3e}\label{classDAAInstruction_a80e4ca4fa44a2eeb2531f5084e0cab3e}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!op\+\_\+or@{op\+\_\+or}}
+\index{op\+\_\+or@{op\+\_\+or}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{op\+\_\+or()}{op\_or()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::op\+\_\+or (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_ac58387921102a26711f0ea67950d071d}\label{classDAAInstruction_ac58387921102a26711f0ea67950d071d}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!rotate\+\_\+right@{rotate\+\_\+right}}
+\index{rotate\+\_\+right@{rotate\+\_\+right}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{rotate\+\_\+right()}{rotate\_right()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::rotate\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a68127dd0fdad592f7d1918e851f08c36}\label{classDAAInstruction_a68127dd0fdad592f7d1918e851f08c36}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!rotate\+\_\+right\+\_\+extended@{rotate\+\_\+right\+\_\+extended}}
+\index{rotate\+\_\+right\+\_\+extended@{rotate\+\_\+right\+\_\+extended}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{rotate\+\_\+right\+\_\+extended()}{rotate\_right\_extended()}}
+{\footnotesize\ttfamily void D\+A\+A\+Instruction\+::rotate\+\_\+right\+\_\+extended (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDAAInstruction_a61d0b9bece1e0ead89a46c0197276324}\label{classDAAInstruction_a61d0b9bece1e0ead89a46c0197276324}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!simulate@{simulate}}
+\index{simulate@{simulate}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily virtual void D\+A\+A\+Instruction\+::simulate (\begin{DoxyParamCaption}\item[{\hyperlink{DAAInstruction_8h_af0fae93a861de9cf37988d5673cac523}{reg\+Table} \&}]{regs,  }\item[{\hyperlink{DAAInstruction_8h_a0e8cae02815a5f8adc750122d790b455}{reg\+Precision\+Table} \&}]{precision,  }\item[{\hyperlink{DAAInstruction_8h_a1b0e70ac1a04f06c8132055ed01f589f}{stack\+Type} \&}]{vstack,  }\item[{\hyperlink{DAAInstruction_8h_ac5cb793e9dac3fa9693da78b7e29ab30}{stack\+Prec\+Type} \&}]{v\+Stack\+Precision,  }\item[{const string \&}]{asm\+Instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+An instruction must implement a method simulate to compute the state of registers after its execution.
+
+regs contains the contents of the machine registers before the simulation of the instruction. In case some computation can be done on register contents, simulate keeps the computation in textual format (ex\+: \char`\"{}sp+4\char`\"{}). String \char`\"{}$\ast$\char`\"{} denote that nothing is known about the register (and then the precision for the given register is set to false).
+
+asm\+Instr (input) contains the textual representation of the instruction
+
+precision contains information on registers whose contents is known precisely.
+
+There are situations where the contents of a register is not set to \char`\"{}$\ast$\char`\"{} and its precision is set to false (see for instance, instructions of category add, used to compute offsets in arrays)
+
+Rq\+: regs and precision are modified by the simulate function 
+
+Implemented in \hyperlink{classShift_a1dd9f0dff19b0b13ec8f4583ac0231cb}{Shift}, \hyperlink{classLi_aa87ceab8573c0719a73c8b603b2ef52e}{Li}, \hyperlink{classLui_acdaa22ad7bf3485619585ea8c6adbda4}{Lui}, \hyperlink{classSubu_a17847aa559986dd3f6a3e34f5f0ceb82}{Subu}, \hyperlink{classAddiu_aeb693e0251545bee996d120e0c8b245d}{Addiu}, \hyperlink{classAdd_a6048e7447a91cb9edd65eb94184f9494}{Add}, \hyperlink{classARM__TODO__LOIC_af547e3b446a38bb9bc52c6063a2e5f4f}{A\+R\+M\+\_\+\+T\+O\+D\+O\+\_\+\+L\+O\+IC}, \hyperlink{classKillOp2_ad2d90893485443bd3acc3897518fcaf1}{Kill\+Op2}, \hyperlink{classARM__COMPARE_ae9edd15b40befea710d1de4be1bbeecb}{A\+R\+M\+\_\+\+C\+O\+M\+P\+A\+RE}, \hyperlink{classARM__LOGICAL_a6359a7daad8f3ddbe314a378e030bf1b}{A\+R\+M\+\_\+\+L\+O\+G\+I\+C\+AL}, \hyperlink{classKillOp1_a6339ad6983ea00502b4b48c4ed1e84d8}{Kill\+Op1}, \hyperlink{classARM__SHIFT_a0438bca8496243c4067bb1ec24abeab4}{A\+R\+M\+\_\+\+S\+H\+I\+FT}, \hyperlink{classARM__BRANCH_aa0d9c3dd00b171810002e84021435ff1}{A\+R\+M\+\_\+\+B\+R\+A\+N\+CH}, \hyperlink{classMove_a50865c6a36b58a052e97ef3d8f8bb171}{Move}, \hyperlink{classARM__STORE__MULTIPLE_a93baf296893b2f7f596b057ffb229f09}{A\+R\+M\+\_\+\+S\+T\+O\+R\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE}, \hyperlink{classARM__STORE_a0db5283c3bda82c617f3d2e541ad0982}{A\+R\+M\+\_\+\+S\+T\+O\+RE}, \hyperlink{classDCall_ac6f60c68197da960b2063cbc2372a056}{D\+Call}, \hyperlink{classARM__PUSH_ad2d67e12753861f52a0ee63f55239ca1}{A\+R\+M\+\_\+\+P\+U\+SH}, \hyperlink{classARM__NOP_a9a78eb5aae1d48b00841d9581591840a}{A\+R\+M\+\_\+\+N\+OP}, \hyperlink{classDStore_a8904d7d03313fcb850f1649f4c64b5ea}{D\+Store}, \hyperlink{classARM__POP_abdf7c32b3daaed8c6c4c1c984d90ab27}{A\+R\+M\+\_\+\+P\+OP}, \hyperlink{classDLoad_a778b78818ffa64ca396d6d51a57d5306}{D\+Load}, \hyperlink{classARM__LOAD__MULTIPLE_a77db594a9b9127619da39e047a12ba41}{A\+R\+M\+\_\+\+L\+O\+A\+D\+\_\+\+M\+U\+L\+T\+I\+P\+LE}, \hyperlink{classARM__LOAD_a905a6e8a6154825f9dc739cabfdb148d}{A\+R\+M\+\_\+\+L\+O\+AD}, \hyperlink{classNop_ad6506482eaee86cd0ce4de541b2e2221}{Nop}, \hyperlink{classARM__MOV_acbf1dba49a5e4d834e41d5e834ff7e5a}{A\+R\+M\+\_\+\+M\+OV}, \hyperlink{classARM__MUL_a57f827247b5ee156334e9963b3c6bfd4}{A\+R\+M\+\_\+\+M\+UL}, \hyperlink{classARM__REVERSE__SUB_a0606f63f3d08541627b5758675ca052c}{A\+R\+M\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+S\+UB}, \hyperlink{classARM__SUBTRACT_abf5d28fd7366c3310ebe6bbb9b08e26e}{A\+R\+M\+\_\+\+S\+U\+B\+T\+R\+A\+CT}, \hyperlink{classARM__ADD_a8fd563bc37b1879fef93ee4ccbcfcafd}{A\+R\+M\+\_\+\+A\+DD}, and \hyperlink{classARM__COMMON_a89eb552311ce787557a976aee2fa2db6}{A\+R\+M\+\_\+\+C\+O\+M\+M\+ON}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDAAInstruction_ac888c18ef9af44f4f706f890b4fc9c76}\label{classDAAInstruction_ac888c18ef9af44f4f706f890b4fc9c76}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!num\+\_\+register0@{num\+\_\+register0}}
+\index{num\+\_\+register0@{num\+\_\+register0}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{num\+\_\+register0}{num\_register0}}
+{\footnotesize\ttfamily int D\+A\+A\+Instruction\+::num\+\_\+register0}
+
+\mbox{\Hypertarget{classDAAInstruction_a4e13622e1d95fae89159a5e01a6407e0}\label{classDAAInstruction_a4e13622e1d95fae89159a5e01a6407e0}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!num\+\_\+register1@{num\+\_\+register1}}
+\index{num\+\_\+register1@{num\+\_\+register1}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{num\+\_\+register1}{num\_register1}}
+{\footnotesize\ttfamily int D\+A\+A\+Instruction\+::num\+\_\+register1}
+
+\mbox{\Hypertarget{classDAAInstruction_a5af649a9a34f6b1c97a230673de15870}\label{classDAAInstruction_a5af649a9a34f6b1c97a230673de15870}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!num\+\_\+register2@{num\+\_\+register2}}
+\index{num\+\_\+register2@{num\+\_\+register2}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{num\+\_\+register2}{num\_register2}}
+{\footnotesize\ttfamily int D\+A\+A\+Instruction\+::num\+\_\+register2}
+
+\mbox{\Hypertarget{classDAAInstruction_af5fc536f45cd3db86fe4802a52fbf773}\label{classDAAInstruction_af5fc536f45cd3db86fe4802a52fbf773}} 
+\index{D\+A\+A\+Instruction@{D\+A\+A\+Instruction}!num\+\_\+register3@{num\+\_\+register3}}
+\index{num\+\_\+register3@{num\+\_\+register3}!D\+A\+A\+Instruction@{D\+A\+A\+Instruction}}
+\subsubsection{\texorpdfstring{num\+\_\+register3}{num\_register3}}
+{\footnotesize\ttfamily int D\+A\+A\+Instruction\+::num\+\_\+register3}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{DAAInstruction_8h}{D\+A\+A\+Instruction.\+h}\end{DoxyCompactItemize}

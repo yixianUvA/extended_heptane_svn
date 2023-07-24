@@ -1,0 +1,52 @@
+
+/tmp/simple:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00008000 l    d  .text	00000000 .text
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    df *ABS*	00000000 simple.c
+00018058 g       .text	00000000 _bss_end__
+00018058 g       .text	00000000 __bss_start__
+00018058 g       .text	00000000 __bss_end__
+00018058 g       .text	00000000 __bss_start
+00008000 g     F .text	00000058 main
+00018058 g       .text	00000000 __end__
+00018058 g       .text	00000000 _edata
+00018058 g       .text	00000000 _end
+00080000 g       .ARM.attributes	00000000 _stack
+00018058 g       .text	00000000 __data_start
+
+
+
+Disassembly of section .text:
+
+00008000 <main>:
+    8000:	e24dd010 	sub	sp, sp, #16
+    8004:	e59d200c 	ldr	r2, [sp, #12]
+    8008:	e1a03002 	mov	r3, r2
+    800c:	e1a03103 	lsl	r3, r3, #2
+    8010:	e0833002 	add	r3, r3, r2
+    8014:	e1a03083 	lsl	r3, r3, #1
+    8018:	e1a02003 	mov	r2, r3
+    801c:	e59d3008 	ldr	r3, [sp, #8]
+    8020:	e0823003 	add	r3, r2, r3
+    8024:	e2433001 	sub	r3, r3, #1
+    8028:	e58d300c 	str	r3, [sp, #12]
+    802c:	e3a03000 	mov	r3, #0
+    8030:	e58d3004 	str	r3, [sp, #4]
+    8034:	e59d3008 	ldr	r3, [sp, #8]
+    8038:	e2833001 	add	r3, r3, #1
+    803c:	e58d3008 	str	r3, [sp, #8]
+    8040:	e59d300c 	ldr	r3, [sp, #12]
+    8044:	e2433001 	sub	r3, r3, #1
+    8048:	e58d300c 	str	r3, [sp, #12]
+    804c:	e1a00000 	nop			; (mov r0, r0)
+    8050:	e28dd010 	add	sp, sp, #16
+    8054:	e12fff1e 	bx	lr

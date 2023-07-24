@@ -1,0 +1,43 @@
+argc is 
+
+2
+argv[1] is 
+./configWCET.xml
+Heptane Analysis, version 3.1
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000282
+[INFO]	ICacheAnalysis: PS done: 0.000158
+[INFO]	ICacheAnalysis: MAY done: 0.000245
+[INFO]	******** ICACHE: 0.00084
+[INFO]	ICacheAnalysis: MUST done: 0.000343
+[INFO]	ICacheAnalysis: PS done: 0.000118
+[INFO]	ICacheAnalysis: MAY done: 0.000216
+[INFO]	******** ICACHE: 0.000799
+[INFO]	******** DATAADDRESS: 0.002567
+[INFO]	DcacheAnalysis: MUST done: 0.000306
+[INFO]	DcacheAnalysis: PS done: 0.000259
+[INFO]	DcacheAnalysis: MAY done: 0.00035
+[INFO]	******** DCACHE: 0.001451
+[INFO]	DcacheAnalysis: MUST done: 0.000401
+[INFO]	DcacheAnalysis: PS done: 0.00029
+[INFO]	DcacheAnalysis: MAY done: 0.000479
+[INFO]	******** DCACHE: 0.001864
+[INFO]	******** PIPELINE: 0.014111
+IPET method: NOPIPELINE_ICACHE_DCACHE
+[INFO]	******** IPET: 0.003603
+
+L1	type ICACHE	references 148	hits 138	misses 10	
+L1	type DCACHE	references 66	hits 60	misses 6	
+L2	type ICACHE	references 10	hits 2	misses 8	
+L2	type DCACHE	references 6	hits 0	misses 6	
+[INFO]	******** CACHESTATISTICS: 0.000757
+[INFO]	 =======> Total time for the analyses = 0.060888
+WCET: 3654
+[INFO]	******** SIMPLEPRINT: 2e-06
+[INFO]	******** DOTPRINT: 0.023958
+[INFO]	******** CODELINE: 0.068995
+[INFO]	******** HTMLPRINT: 0.000728
+[INFO]	 =======> Total Time = 0.155772

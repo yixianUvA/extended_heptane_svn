@@ -1,0 +1,4660 @@
+countnegative
+countnegative
+countnegative
+countnegative
+countnegative
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	105	FM 	11	NC 	0	AM 	11	
+A 	11	U 	0	UN 	11	N 	105	
+AH 	4	FM 	10	NC 	0	AM 	8	
+isqrt
+isqrt
+isqrt
+isqrt
+isqrt
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	216	FM 	24	NC 	6	AM 	7	
+A 	7	U 	6	UN 	24	N 	216	
+AH 	5	FM 	21	NC 	6	AM 	5	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	282	FM 	31	NC 	10	AM 	10	
+A 	10	U 	10	UN 	31	N 	282	
+AH 	5	FM 	28	NC 	10	AM 	8	
+jfdctint
+jfdctint
+jfdctint
+jfdctint
+jfdctint
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+Instruction cache state
+A 	742	U 	0	UN 	0	N 	0	
+AH 	645	FM 	87	NC 	3	AM 	7	
+A 	7	U 	3	UN 	87	N 	645	
+AH 	6	FM 	85	NC 	2	AM 	4	
+
+Data cache state
+A 	953	U 	0	UN 	0	N 	0	
+AH 	837	FM 	103	NC 	5	AM 	8	
+A 	8	U 	5	UN 	103	N 	837	
+AH 	6	FM 	101	NC 	4	AM 	5	
+lift
+lift
+lift
+lift
+lift
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	788	FM 	14	NC 	116	AM 	28	
+A 	28	U 	116	UN 	14	N 	788	
+AH 	16	FM 	124	NC 	1	AM 	17	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	1120	FM 	38	NC 	116	AM 	39	
+A 	39	U 	116	UN 	38	N 	1120	
+AH 	18	FM 	148	NC 	3	AM 	24	
+ludcmp
+ludcmp
+ludcmp
+ludcmp
+ludcmp
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+Instruction cache state
+A 	877	U 	0	UN 	0	N 	0	
+AH 	749	FM 	93	NC 	12	AM 	23	
+A 	23	U 	12	UN 	93	N 	749	
+AH 	26	FM 	82	NC 	7	AM 	13	
+
+Data cache state
+A 	1116	U 	0	UN 	0	N 	0	
+AH 	921	FM 	105	NC 	62	AM 	28	
+A 	28	U 	62	UN 	105	N 	921	
+AH 	26	FM 	136	NC 	15	AM 	18	
+minver
+minver
+minver
+minver
+minver
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+Instruction cache state
+A 	994	U 	0	UN 	0	N 	0	
+AH 	844	FM 	116	NC 	15	AM 	19	
+A 	19	U 	15	UN 	116	N 	844	
+AH 	14	FM 	113	NC 	14	AM 	9	
+
+Data cache state
+A 	1292	U 	0	UN 	0	N 	0	
+AH 	1071	FM 	145	NC 	49	AM 	27	
+A 	27	U 	49	UN 	145	N 	1071	
+AH 	14	FM 	172	NC 	18	AM 	17	
+petrinet
+petrinet
+petrinet
+petrinet
+petrinet
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+Instruction cache state
+A 	1659	U 	0	UN 	0	N 	0	
+AH 	1421	FM 	5	NC 	227	AM 	6	
+A 	6	U 	227	UN 	5	N 	1421	
+AH 	6	FM 	228	NC 	0	AM 	4	
+
+Data cache state
+A 	2646	U 	0	UN 	0	N 	0	
+AH 	2345	FM 	68	NC 	227	AM 	6	
+A 	6	U 	227	UN 	68	N 	2345	
+AH 	6	FM 	291	NC 	0	AM 	4	
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	86	FM 	9	NC 	0	AM 	7	
+A 	7	U 	0	UN 	9	N 	86	
+AH 	4	FM 	8	NC 	0	AM 	4	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	107	FM 	11	NC 	0	AM 	10	
+A 	10	U 	0	UN 	11	N 	107	
+AH 	4	FM 	10	NC 	0	AM 	7	
+statemate
+statemate
+statemate
+statemate
+statemate
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+Instruction cache state
+A 	2368	U 	0	UN 	0	N 	0	
+AH 	1959	FM 	2	NC 	249	AM 	158	
+A 	158	U 	249	UN 	2	N 	1959	
+AH 	63	FM 	315	NC 	15	AM 	16	
+
+Data cache state
+A 	3431	U 	0	UN 	0	N 	0	
+AH 	3007	FM 	4	NC 	255	AM 	165	
+A 	165	U 	255	UN 	4	N 	3007	
+AH 	69	FM 	317	NC 	17	AM 	21	
+countnegative
+countnegative
+countnegative
+countnegative
+countnegative
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+Instruction cache state
+A 	207	U 	0	UN 	0	N 	0	
+AH 	179	FM 	15	NC 	0	AM 	13	
+A 	13	U 	0	UN 	15	N 	179	
+AH 	8	FM 	11	NC 	1	AM 	8	
+
+Data cache state
+A 	257	U 	0	UN 	0	N 	0	
+AH 	208	FM 	26	NC 	6	AM 	17	
+A 	17	U 	6	UN 	26	N 	208	
+AH 	9	FM 	22	NC 	8	AM 	10	
+bsort100
+bsort100
+bsort100
+bsort100
+bsort100
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+crc
+crc
+crc
+crc
+crc
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+fft
+fft
+fft
+fft
+fft
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+isqrt
+isqrt
+isqrt
+isqrt
+isqrt
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+lift
+lift
+lift
+lift
+lift
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+nsichneu
+nsichneu
+nsichneu
+nsichneu
+nsichneu
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+prime
+prime
+prime
+prime
+prime
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+statemate
+statemate
+statemate
+statemate
+statemate
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+bsort100
+bsort100
+bsort100
+bsort100
+bsort100
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+Instruction cache state
+A 	101	U 	0	UN 	0	N 	0	
+AH 	71	FM 	17	NC 	2	AM 	11	
+A 	11	U 	2	UN 	17	N 	71	
+AH 	5	FM 	17	NC 	3	AM 	5	
+
+Data cache state
+A 	136	U 	0	UN 	0	N 	0	
+AH 	101	FM 	21	NC 	2	AM 	12	
+A 	12	U 	2	UN 	21	N 	101	
+AH 	5	FM 	21	NC 	3	AM 	6	
+crc
+crc
+crc
+crc
+crc
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+Instruction cache state
+A 	520	U 	0	UN 	0	N 	0	
+AH 	373	FM 	78	NC 	33	AM 	36	
+A 	36	U 	33	UN 	78	N 	373	
+AH 	33	FM 	75	NC 	19	AM 	20	
+
+Data cache state
+A 	662	U 	0	UN 	0	N 	0	
+AH 	487	FM 	94	NC 	41	AM 	40	
+A 	40	U 	41	UN 	94	N 	487	
+AH 	47	FM 	81	NC 	23	AM 	24	
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+deg2rad
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	16	NC 	1	AM 	12	
+A 	12	U 	1	UN 	16	N 	73	
+AH 	7	FM 	15	NC 	0	AM 	7	
+
+Data cache state
+A 	127	U 	0	UN 	0	N 	0	
+AH 	91	FM 	18	NC 	1	AM 	17	
+A 	17	U 	1	UN 	18	N 	91	
+AH 	8	FM 	17	NC 	0	AM 	11	
+fft
+fft
+fft
+fft
+fft
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+Instruction cache state
+A 	2904	U 	0	UN 	0	N 	0	
+AH 	2304	FM 	159	NC 	390	AM 	51	
+A 	51	U 	390	UN 	159	N 	2304	
+AH 	36	FM 	462	NC 	77	AM 	25	
+
+Data cache state
+A 	3636	U 	0	UN 	0	N 	0	
+AH 	2898	FM 	264	NC 	414	AM 	60	
+A 	60	U 	414	UN 	264	N 	2898	
+AH 	37	FM 	567	NC 	101	AM 	33	
+isqrt
+isqrt
+isqrt
+isqrt
+isqrt
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+Instruction cache state
+A 	253	U 	0	UN 	0	N 	0	
+AH 	182	FM 	45	NC 	11	AM 	15	
+A 	15	U 	11	UN 	45	N 	182	
+AH 	9	FM 	43	NC 	12	AM 	7	
+
+Data cache state
+A 	333	U 	0	UN 	0	N 	0	
+AH 	244	FM 	55	NC 	15	AM 	19	
+A 	19	U 	15	UN 	55	N 	244	
+AH 	9	FM 	53	NC 	17	AM 	10	
+lift
+lift
+lift
+lift
+lift
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+Instruction cache state
+A 	946	U 	0	UN 	0	N 	0	
+AH 	677	FM 	17	NC 	172	AM 	80	
+A 	80	U 	172	UN 	17	N 	677	
+AH 	39	FM 	198	NC 	4	AM 	28	
+
+Data cache state
+A 	1313	U 	0	UN 	0	N 	0	
+AH 	989	FM 	55	NC 	172	AM 	97	
+A 	97	U 	172	UN 	55	N 	989	
+AH 	43	FM 	236	NC 	6	AM 	39	
+nsichneu
+nsichneu
+nsichneu
+nsichneu
+nsichneu
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+Instruction cache state
+A 	8084	U 	0	UN 	0	N 	0	
+AH 	5957	FM 	0	NC 	356	AM 	1771	
+A 	1771	U 	356	UN 	0	N 	5957	
+AH 	834	FM 	1290	NC 	0	AM 	3	
+
+Data cache state
+A 	13067	U 	0	UN 	0	N 	0	
+AH 	10499	FM 	1	NC 	796	AM 	1771	
+A 	1771	U 	796	UN 	1	N 	10499	
+AH 	834	FM 	1731	NC 	0	AM 	3	
+prime
+prime
+prime
+prime
+prime
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+Instruction cache state
+A 	248	U 	0	UN 	0	N 	0	
+AH 	208	FM 	8	NC 	4	AM 	28	
+A 	28	U 	4	UN 	8	N 	208	
+AH 	14	FM 	7	NC 	4	AM 	15	
+
+Data cache state
+A 	296	U 	0	UN 	0	N 	0	
+AH 	249	FM 	8	NC 	4	AM 	35	
+A 	35	U 	4	UN 	8	N 	249	
+AH 	17	FM 	7	NC 	4	AM 	19	
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+rad2deg
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+Instruction cache state
+A 	102	U 	0	UN 	0	N 	0	
+AH 	73	FM 	14	NC 	2	AM 	13	
+A 	13	U 	2	UN 	14	N 	73	
+AH 	8	FM 	13	NC 	1	AM 	7	
+
+Data cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	16	NC 	2	AM 	17	
+A 	17	U 	2	UN 	16	N 	93	
+AH 	9	FM 	15	NC 	1	AM 	10	
+statemate
+statemate
+statemate
+statemate
+statemate
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+Instruction cache state
+A 	2395	U 	0	UN 	0	N 	0	
+AH 	1684	FM 	1	NC 	42	AM 	668	
+A 	668	U 	42	UN 	1	N 	1684	
+AH 	264	FM 	401	NC 	14	AM 	32	
+
+Data cache state
+A 	3459	U 	0	UN 	0	N 	0	
+AH 	2684	FM 	41	NC 	49	AM 	685	
+A 	685	U 	49	UN 	41	N 	2684	
+AH 	271	FM 	441	NC 	21	AM 	42	
+branch3
+branch3
+branch3
+branch3
+branch3
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+Instruction cache state
+A 	45	U 	0	UN 	0	N 	0	
+AH 	29	FM 	2	NC 	1	AM 	13	
+A 	13	U 	1	UN 	2	N 	29	
+AH 	5	FM 	1	NC 	3	AM 	7	
+
+Data cache state
+A 	51	U 	0	UN 	0	N 	0	
+AH 	33	FM 	2	NC 	1	AM 	15	
+A 	15	U 	1	UN 	2	N 	33	
+AH 	6	FM 	1	NC 	3	AM 	8	
+bs
+bs
+bs
+bs
+bs
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+Instruction cache state
+A 	67	U 	0	UN 	0	N 	0	
+AH 	48	FM 	13	NC 	0	AM 	6	
+A 	6	U 	0	UN 	13	N 	48	
+AH 	2	FM 	13	NC 	1	AM 	3	
+
+Data cache state
+A 	91	U 	0	UN 	0	N 	0	
+AH 	67	FM 	18	NC 	0	AM 	6	
+A 	6	U 	0	UN 	18	N 	67	
+AH 	2	FM 	18	NC 	1	AM 	3	
+fibcall
+fibcall
+fibcall
+fibcall
+fibcall
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+Instruction cache state
+A 	46	U 	0	UN 	0	N 	0	
+AH 	33	FM 	5	NC 	1	AM 	7	
+A 	7	U 	1	UN 	5	N 	33	
+AH 	4	FM 	4	NC 	0	AM 	5	
+
+Data cache state
+A 	59	U 	0	UN 	0	N 	0	
+AH 	42	FM 	7	NC 	2	AM 	8	
+A 	8	U 	2	UN 	7	N 	42	
+AH 	5	FM 	5	NC 	1	AM 	6	
+fir
+fir
+fir
+fir
+fir
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+Instruction cache state
+A 	131	U 	0	UN 	0	N 	0	
+AH 	94	FM 	22	NC 	1	AM 	14	
+A 	14	U 	1	UN 	22	N 	94	
+AH 	7	FM 	22	NC 	0	AM 	8	
+
+Data cache state
+A 	172	U 	0	UN 	0	N 	0	
+AH 	123	FM 	23	NC 	5	AM 	21	
+A 	21	U 	5	UN 	23	N 	123	
+AH 	10	FM 	25	NC 	0	AM 	14	
+insertsort
+insertsort
+insertsort
+insertsort
+insertsort
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+Instruction cache state
+A 	78	U 	0	UN 	0	N 	0	
+AH 	58	FM 	9	NC 	0	AM 	11	
+A 	11	U 	0	UN 	9	N 	58	
+AH 	5	FM 	8	NC 	0	AM 	7	
+
+Data cache state
+A 	110	U 	0	UN 	0	N 	0	
+AH 	88	FM 	10	NC 	0	AM 	12	
+A 	12	U 	0	UN 	10	N 	88	
+AH 	5	FM 	9	NC 	0	AM 	8	
+minmax
+minmax
+minmax
+minmax
+minmax
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+Instruction cache state
+A 	164	U 	0	UN 	0	N 	0	
+AH 	117	FM 	0	NC 	7	AM 	40	
+A 	40	U 	7	UN 	0	N 	117	
+AH 	15	FM 	0	NC 	10	AM 	22	
+
+Data cache state
+A 	219	U 	0	UN 	0	N 	0	
+AH 	165	FM 	0	NC 	8	AM 	46	
+A 	46	U 	8	UN 	0	N 	165	
+AH 	18	FM 	0	NC 	10	AM 	26	
+ns
+ns
+ns
+ns
+ns
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+Instruction cache state
+A 	128	U 	0	UN 	0	N 	0	
+AH 	93	FM 	17	NC 	1	AM 	17	
+A 	17	U 	1	UN 	17	N 	93	
+AH 	7	FM 	16	NC 	3	AM 	9	
+
+Data cache state
+A 	158	U 	0	UN 	0	N 	0	
+AH 	117	FM 	20	NC 	2	AM 	19	
+A 	19	U 	2	UN 	20	N 	117	
+AH 	7	FM 	19	NC 	5	AM 	10	
+qurt
+qurt
+qurt
+qurt
+qurt
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+Instruction cache state
+A 	1629	U 	0	UN 	0	N 	0	
+AH 	1287	FM 	75	NC 	174	AM 	93	
+A 	93	U 	174	UN 	75	N 	1287	
+AH 	71	FM 	68	NC 	154	AM 	49	
+
+Data cache state
+A 	2091	U 	0	UN 	0	N 	0	
+AH 	1688	FM 	84	NC 	204	AM 	115	
+A 	115	U 	204	UN 	84	N 	1688	
+AH 	86	FM 	75	NC 	178	AM 	64	
+select
+select
+select
+select
+select
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+Instruction cache state
+A 	168	U 	0	UN 	0	N 	0	
+AH 	118	FM 	40	NC 	2	AM 	8	
+A 	8	U 	2	UN 	40	N 	118	
+AH 	5	FM 	39	NC 	1	AM 	5	
+
+Data cache state
+A 	241	U 	0	UN 	0	N 	0	
+AH 	182	FM 	44	NC 	4	AM 	11	
+A 	11	U 	4	UN 	44	N 	182	
+AH 	6	FM 	43	NC 	4	AM 	6	
+simple
+simple
+simple
+simple
+simple
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	
+Instruction cache state
+A 	22	U 	0	UN 	0	N 	0	
+AH 	16	FM 	0	NC 	0	AM 	6	
+A 	6	U 	0	UN 	0	N 	16	
+AH 	3	FM 	0	NC 	0	AM 	3	
+
+Data cache state
+A 	26	U 	0	UN 	0	N 	0	
+AH 	19	FM 	0	NC 	0	AM 	7	
+A 	7	U 	0	UN 	0	N 	19	
+AH 	3	FM 	0	NC 	0	AM 	4	

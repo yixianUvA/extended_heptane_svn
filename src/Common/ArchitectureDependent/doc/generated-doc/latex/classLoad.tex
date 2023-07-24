@@ -1,0 +1,59 @@
+\hypertarget{classLoad}{}\section{Load Class Reference}
+\label{classLoad}\index{Load@{Load}}
+
+
+{\ttfamily \#include $<$Instruction\+Type.\+h$>$}
+
+Inheritance diagram for Load\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLoad}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLoad_a31df9cdc72b2e48362ee6c29b7fdbc96}{Load} (int size, const string \&fu, const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&f, \hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$daainstr, int lat)
+\item 
+bool \hyperlink{classLoad_aa7fbffafad6cbfa1b9866f6d09cc7e30}{is\+Load} ()
+\item 
+int \hyperlink{classLoad_a35d504d74dfa9ea02ae719f41dd766a8}{get\+Size\+Of\+Memory\+Access} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoad_a31df9cdc72b2e48362ee6c29b7fdbc96}\label{classLoad_a31df9cdc72b2e48362ee6c29b7fdbc96}} 
+\index{Load@{Load}!Load@{Load}}
+\index{Load@{Load}!Load@{Load}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily Load\+::\+Load (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{const string \&}]{fu,  }\item[{const set$<$ \hyperlink{classInstructionFormat}{Instruction\+Format} $\ast$$>$ \&}]{f,  }\item[{\hyperlink{classDAAInstruction}{D\+A\+A\+Instruction} $\ast$}]{daainstr,  }\item[{int}]{lat }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoad_a35d504d74dfa9ea02ae719f41dd766a8}\label{classLoad_a35d504d74dfa9ea02ae719f41dd766a8}} 
+\index{Load@{Load}!get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}}
+\index{get\+Size\+Of\+Memory\+Access@{get\+Size\+Of\+Memory\+Access}!Load@{Load}}
+\subsubsection{\texorpdfstring{get\+Size\+Of\+Memory\+Access()}{getSizeOfMemoryAccess()}}
+{\footnotesize\ttfamily int Load\+::get\+Size\+Of\+Memory\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the memory access in bytes, if the instruction is a load/store and 0 otherwise 
+
+Reimplemented from \hyperlink{classInstructionType_a40c94ccf0b13f186524e06972f08bca3}{Instruction\+Type}.
+
+\mbox{\Hypertarget{classLoad_aa7fbffafad6cbfa1b9866f6d09cc7e30}\label{classLoad_aa7fbffafad6cbfa1b9866f6d09cc7e30}} 
+\index{Load@{Load}!is\+Load@{is\+Load}}
+\index{is\+Load@{is\+Load}!Load@{Load}}
+\subsubsection{\texorpdfstring{is\+Load()}{isLoad()}}
+{\footnotesize\ttfamily bool Load\+::is\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the instruction is a load instruction 
+
+Reimplemented from \hyperlink{classInstructionType_aa3d2c042a4109b1d96dc0d7f20916ba3}{Instruction\+Type}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InstructionType_8h}{Instruction\+Type.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+Heptane extract::Generating files (bs)
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-cpp -I. -I.. bs.c>/tmp/bs.c
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -O0 -fomit-frame-pointer -ggdb -c -S  /tmp/bs.c -o /tmp/bs.s
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/bs.s -o /tmp/bs.o
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/bs /tmp/bs.o
+** Executing : /bin/cp -f /tmp/bs ./bs.exe 
+** Executing : /bin/cp -f /tmp/bs.s ./bs.s
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/bs>./bs.readelf
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/bs > /tmp/bs.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/bs.objdump ./bs.objdump
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/bs >  /tmp/bs.annot
+** Executing : /home/yixian/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.switch_begin /tmp/bs > /tmp/bs.switch
+Heptane extract::Creating Cfg
+

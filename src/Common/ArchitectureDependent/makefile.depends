@@ -1,0 +1,39 @@
+makefile.depends:  ./src/DAAInstruction_ARM.cc ./src/arch.cc ./src/InstructionFormat.cc ./src/DAAInstruction_MIPS.cc ./src/MIPS.cc ./src/DAAInstruction.cc ./src/ARM.cc ./src/InstructionType.cc
+obj/DAAInstruction_ARM.o: src/DAAInstruction_ARM.cc src/ARM.h src/arch.h \
+ src/ParsingStructure.h ../utl/src/HeptaneStdTypes.h \
+ src/InstructionType.h src/InstructionFormat.h src/DAAInstruction.h \
+ ../utl/src/Logger.h src/DAAInstruction_ARM.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/DAAInstruction_ARM.cc -o obj/DAAInstruction_ARM.o 
+obj/arch.o: src/arch.cc src/arch.h src/ParsingStructure.h \
+ ../utl/src/HeptaneStdTypes.h src/InstructionType.h \
+ src/InstructionFormat.h src/DAAInstruction.h src/MIPS.h src/ARM.h \
+ ../utl/src/Logger.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/arch.cc -o obj/arch.o 
+obj/InstructionFormat.o: src/InstructionFormat.cc src/InstructionFormat.h \
+ src/arch.h src/ParsingStructure.h ../utl/src/HeptaneStdTypes.h \
+ src/InstructionType.h src/DAAInstruction.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/InstructionFormat.cc -o obj/InstructionFormat.o 
+obj/DAAInstruction_MIPS.o: src/DAAInstruction_MIPS.cc \
+ src/DAAInstruction_MIPS.h src/DAAInstruction.h src/arch.h \
+ src/ParsingStructure.h ../utl/src/HeptaneStdTypes.h \
+ src/InstructionType.h src/InstructionFormat.h src/MIPS.h \
+ ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/DAAInstruction_MIPS.cc -o obj/DAAInstruction_MIPS.o 
+obj/MIPS.o: src/MIPS.cc src/MIPS.h src/arch.h src/ParsingStructure.h \
+ ../utl/src/HeptaneStdTypes.h src/InstructionType.h \
+ src/InstructionFormat.h src/DAAInstruction.h ../utl/src/Logger.h \
+ src/DAAInstruction_MIPS.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/MIPS.cc -o obj/MIPS.o 
+obj/DAAInstruction.o: src/DAAInstruction.cc src/DAAInstruction.h \
+ src/arch.h src/ParsingStructure.h ../utl/src/HeptaneStdTypes.h \
+ src/InstructionType.h src/InstructionFormat.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/DAAInstruction.cc -o obj/DAAInstruction.o 
+obj/ARM.o: src/ARM.cc src/ARM.h src/arch.h src/ParsingStructure.h \
+ ../utl/src/HeptaneStdTypes.h src/InstructionType.h \
+ src/InstructionFormat.h src/DAAInstruction.h ../utl/src/Logger.h \
+ src/DAAInstruction_ARM.h ../utl/src/Utl.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/ARM.cc -o obj/ARM.o 
+obj/InstructionType.o: src/InstructionType.cc src/InstructionType.h \
+ src/InstructionFormat.h src/arch.h src/ParsingStructure.h \
+ ../utl/src/HeptaneStdTypes.h src/DAAInstruction.h
+	g++ -O3 -Wall -DLINUX -Isrc -I../utl/src -c src/InstructionType.cc -o obj/InstructionType.o 
